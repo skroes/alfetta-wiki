@@ -1,0 +1,5 @@
+# PDFs worden als binary getrackt — geen diff-pogingen, geen merge-noise.
+# Walking-skeleton host deze direct in git (zie DECISIONS.md B-11 in
+# skroes/alfetta-project). Bij PRD-B content-scale wordt opnieuw bekeken of
+# git-lfs de betere keuze wordt.
+*.pdf binary
