@@ -45,3 +45,7 @@ Vercel Git integration, push naar `main` → auto deploy.
 ## Componenten
 
 - `components/SourceRef.tsx` — rendert het bron-blok onderaan elke pagina + `<Cite>` inline anchor
+
+## Security
+
+Zie [`SECURITY.md`](SECURITY.md) voor de dependency-triage. Next.js zit bewust op 14.2.x tot er een Nextra 3.x release is die Next 16 ondersteunt (of tot we naar Nextra 4 migreren als onderdeel van PRD-B).

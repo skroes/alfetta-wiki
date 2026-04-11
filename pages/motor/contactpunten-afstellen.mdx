@@ -1,6 +1,6 @@
 ---
 title: "Contactpunten afstellen — 2.0L Alfetta motor"
-status: validated
+status: in-review
 source:
   doc: DOC-04
   title: "Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
@@ -8,29 +8,33 @@ source:
   url: https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view
   language: en
 tags: [motor, ontsteking, onderhoud, contactpunten]
-validated_on: 2026-04-11
+drafted_on: 2026-04-11
+drafted_by: "/dev4alfetta (machine-vertaling uit staging/DOC-04/pages/035.md)"
+awaiting: "/alfettaspecialist inhoudelijke validatie → alleen dan mag status validated worden"
 ---
 
 import { SourceRef, Cite } from '../../components/SourceRef'
 
+> **Status: in-review.** Deze pagina is een eerste NL-vertaling uit de OCR-staging van DOC-04 p35, opgesteld onder `/dev4alfetta`. Volgens de bronregel in het [werkrepo](https://github.com/skroes/alfetta-project) mag alleen `/alfettaspecialist` de `validated` status zetten. Tot die inhoudelijke review is dit een concept — lees langs de bron, niet in plaats ervan.
+
 # Contactpunten afstellen
 
-> **TL;DR** — Controleer de spleet tussen de contactpunten met een voelermaat. De juiste waarde is **0,4 – 0,5 mm**. Klopt hij niet, stel bij op de verdeler terwijl de nok de contactpunten maximaal open drukt. <Cite p="35" />
+> **TL;DR** — Controleer de spleet tussen de contactpunten met een voelermaat. Volgens DOC-04 p35 is de specificatie **0,4 – 0,5 mm**. Klopt hij niet, stel bij op de verdeler terwijl de nok en volger de contactpunten maximaal open drukken. <Cite p="35" />
 
-## Wat
+## Controle
 
-Je controleert en stelt de spleet tussen de contactpunten in de stroomverdeler af. Bij een verkeerde spleet loopt de ontsteking uit de pas. De procedure hieronder geldt voor de fabrieks-verdeler op de 1977 Alfetta 2.0 (Marelli of Bosch). <Cite p="35" />
-
-## Stappen (controle)
+DOC-04 p35 beschrijft de controle in deze stappen: <Cite p="35" />
 
 1. Haal de luchtinlaat van de carburateur weg. <Cite p="35" />
 2. Draai de bevestiging los en haal het beschermkapje van de verdeler af. <Cite p="35" />
 3. Haal de verdelerkap eraf. <Cite p="35" />
 4. Haal de verdelerrotor eraf. Bij een Marelli-verdeler draai je eerst de bevestigingsbout van de rotor los. <Cite p="35" />
 5. Draai de krukas rond totdat de verdeleras de contactpunten volledig open drukt. <Cite p="35" />
-6. Meet met een voelermaat of de spleet gelijk is aan **0,4 – 0,5 mm**. <Cite p="35" />
+6. Controleer met een voelermaat of de spleet gelijk is aan de specificatie: **0,4 – 0,5 mm**. <Cite p="35" />
 
-## Stappen (afstellen — alleen als de controle afwijkt)
+## Afstellen (alleen als de controle afwijkt)
+
+Als de gemeten spleet niet klopt, beschrijft DOC-04 p35 de afstelling als volgt: <Cite p="35" />
 
 1. Draai de bevestigingsschroef van het vaste contactpunt los. <Cite p="35" />
 2. Draai de verdeleras zo dat de nok en volger de contactpunten maximaal open drukken. <Cite p="35" />
@@ -40,8 +44,8 @@ Je controleert en stelt de spleet tussen de contactpunten in de stroomverdeler a
 
 ## Let op
 
-- Bij een **Marelli-verdeler** moet je eerst een bevestigingsbout losdraaien voordat je de rotor eraf kunt halen. DOC-04 noemt dit expliciet voor Marelli; voor andere verdeler-types staat er geen afwijkende instructie. <Cite p="35" />
-- Na deze procedure blijft ook de ontstekings-timing een controle waard. Die procedure staat op dezelfde pagina onder "Ignition timing", maar valt buiten deze walking-skeleton pagina.
+- DOC-04 p35 noemt één expliciete variant-instructie: **bij een Marelli-verdeler** moet je eerst een bevestigingsbout losdraaien voordat je de rotor eraf kunt halen. Voor andere verdeler-types staat er op deze pagina geen afwijkende instructie. <Cite p="35" />
+- Onder "Ignition timing" beschrijft dezelfde bronpagina de ontstekings-timing procedure. Die valt buiten deze pagina en hoort op een eigen MDX wanneer de content-pipeline er aan toe is.
 
 ## Jargon (EN → NL)
 
