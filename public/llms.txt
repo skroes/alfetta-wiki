@@ -1,0 +1,15 @@
+# Alfetta Archief
+
+> Privé archief voor Serge's 1977 Alfa Romeo Alfetta 2.0 Serie 2. Alle inhoud letterlijk uit door Serge aangeleverde bronnen — geen training-data, geen AI-hallucinatie. Elke claim heeft een DOC-code en pagina-referentie.
+
+## Start
+
+- [Alfetta Archief](https://alfetta-wiki.vercel.app/): Privé archief voor Serge's 1977 Alfa Romeo Alfetta 2.0 Serie 2
+
+## Motor
+
+- [Contactpunten afstellen](https://alfetta-wiki.vercel.app/motor/contactpunten-afstellen)
+
+## Governance
+
+- [Bronregel](https://alfetta-wiki.vercel.app/governance/bronregel): Hoe we met bronnen omgaan in het Alfetta archief

@@ -1,0 +1,57 @@
+---
+title: "Bronregel"
+description: "Hoe we met bronnen omgaan in het Alfetta archief"
+---
+
+# Bronregel
+
+Deze site volgt de strikte bronregel van het Alfetta werkrepo
+[`skroes/alfetta-project`](https://github.com/skroes/alfetta-project).
+
+## De regel
+
+Alle inhoud op deze site komt **uitsluitend** uit door Serge aangeleverde
+bronnen. Concrete bronnen:
+
+- Fabrieks-workshop manuals (Alfa Romeo publ. 2064, 2448, 1681, 1982, …)
+- Haynes Owners Workshop Manual (1982)
+- Parts catalog
+- Eigenaar-handboek (Italiaans origineel + NL vertaling indien beschikbaar)
+- Research notes van Serge zelf
+
+## Wat er niet op mag
+
+- **Geen training-data** — ook niet als "startpunt" of "placeholder"
+- **Geen AI-hallucinatie** — als een bron iets niet zegt, staat het hier niet
+- **Geen guesswork** — "waarschijnlijk" is geen bron
+- **Geen Wikipedia-samenvattingen** — alleen wat in een concrete bron staat
+
+## Wat wél mag
+
+- Letterlijk citeren uit een bron (met `<Cite p="X" />` verwijzing)
+- Vertalen van brontekst naar Nederlands (met jargon-blok)
+- Combineren van meerdere bronnen die hetzelfde onderwerp dekken (elk met eigen `<Cite>`)
+- Expliciet markeren van aannames als een bron onduidelijk is (zie Serie 1 / Serie 2 discussie in werkrepo ISS-003)
+
+## Hoe je het zelf kunt checken
+
+Elke content-pagina op deze site heeft onderaan een `<SourceRef>` blok. Daarin staat:
+
+- De DOC-code (bv. `DOC-04`)
+- Volledige titel en publicatienummer
+- Welke pagina's uit het origineel
+- Brontaal (IT/EN/NL/DE)
+- Een "PDF openen ↗" link die de Drive-PDF op de juiste pagina opent
+
+Als je wilt controleren of de vertaling klopt, klik die link en lees het origineel naast de NL tekst.
+
+## Waarom zo streng
+
+Een ouderwetse 1977 auto met slechte NL documentatie betekent dat elke "dat
+zou ik zo doen"-suggestie op internet gevaarlijk kan zijn: verkeerde torque,
+verkeerde volgorde, verkeerde speling. In het beste geval werkt het niet, in
+het slechtste geval breekt er iets. De fabrieks-waardes staan in de
+originele handboeken — die willen we letterlijk vertalen, niet herinterpreteren.
+
+De volledige bronregel-tekst staat in het werkrepo in
+[`AGENTS.md`](https://github.com/skroes/alfetta-project/blob/main/AGENTS.md).
