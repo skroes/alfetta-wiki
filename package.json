@@ -5,10 +5,11 @@
   "description": "Publicatie-laag voor Alfetta archief (skroes/alfetta-project) — walking skeleton",
   "scripts": {
     "dev": "next dev -p 3017",
-    "prebuild": "node scripts/generate-llms-txt.js",
+    "prebuild": "node scripts/generate-llms-txt.js && ./scripts/validate-sources.sh",
     "build": "next build",
     "start": "next start -p 3017",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:mdx": "next lint --ext .mdx"
   },
   "dependencies": {
     "next": "^14.2.35",
@@ -21,6 +22,9 @@
     "@types/node": "20.14.12",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "eslint-plugin-mdx": "3.6.2",
     "typescript": "5.5.3"
   }
 }

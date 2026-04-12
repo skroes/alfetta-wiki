@@ -8,8 +8,21 @@
 
 ## Motor
 
+- [Technische specificaties](https://alfetta-wiki.vercel.app/motor/technische-specificaties)
+- [Motor uitbouwen](https://alfetta-wiki.vercel.app/motor/motor-uitbouwen)
+- [Inspectie kleppen, veren & krukas](https://alfetta-wiki.vercel.app/motor/inspectie-kleppen-veren)
+- [Klepspeling controleren](https://alfetta-wiki.vercel.app/motor/klepspeling-controleren)
+- [Cilinderkop revisie](https://alfetta-wiki.vercel.app/motor/cilinderkop-revisie)
+- [Koelsysteem](https://alfetta-wiki.vercel.app/motor/koelsysteem)
+- [Gasklep-kabel afstellen](https://alfetta-wiki.vercel.app/motor/gasklep-kabel-afstellen)
+- [Stationair toerental & CO](https://alfetta-wiki.vercel.app/motor/stationair-toerental-co)
 - [Contactpunten afstellen](https://alfetta-wiki.vercel.app/motor/contactpunten-afstellen)
+- [Ontstekings-timing](https://alfetta-wiki.vercel.app/motor/ontstekings-timing)
+- [Weber 40 DCOE carburateur](https://alfetta-wiki.vercel.app/motor/weber-carburateur)
+- [Solex C 40 DDH-8 carburateur](https://alfetta-wiki.vercel.app/motor/solex-carburateur)
+- [Dellorto DHLA 40F carburateur](https://alfetta-wiki.vercel.app/motor/dellorto-carburateur)
 
 ## Governance
 
 - [Bronregel](https://alfetta-wiki.vercel.app/governance/bronregel): Hoe we met bronnen omgaan in het Alfetta archief
+- [Methode](https://alfetta-wiki.vercel.app/governance/methode): Technische documentatie van de bewezen keten: PDF → OCR → staging → NL vertaling → MDX → figuren → wiki

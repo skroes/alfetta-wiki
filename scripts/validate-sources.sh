@@ -27,6 +27,11 @@ while IFS= read -r file; do
         continue
     fi
 
+    # Skip catalogus/index pagina's (geen artikel-bronregel)
+    if [[ "$rel" == "bronnen.mdx" ]] || [[ "$rel" == "figuren.mdx" ]]; then
+        continue
+    fi
+
     CHECKED=$((CHECKED + 1))
     file_errors=0
 

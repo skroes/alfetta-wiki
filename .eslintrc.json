@@ -1,0 +1,17 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:mdx/recommended"],
+  "overrides": [
+    {
+      "files": ["*.mdx"],
+      "extends": ["plugin:mdx/recommended"],
+      "rules": {
+        "react/jsx-no-undef": "error",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
+      }
+    }
+  ],
+  "settings": {
+    "mdx/code-blocks": false
+  }
+}

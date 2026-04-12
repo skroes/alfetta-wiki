@@ -93,7 +93,7 @@ Dan is Marker niet nodig — direct naar stap 3.
 
 **MDX template:** zie een bestaande pagina als voorbeeld, bijv. `pages/motor/contactpunten-afstellen.mdx`. Elke pagina bevat:
 
-- **Frontmatter** met `title`, `status`, `source` (doc, title, pages, pdf, archive\_url, language), `tags`, `drafted_on/by`, `validated_date/by`
+- **Frontmatter** met `title`, `status`, `source` (doc, title, pages, pdf, archive\_url, language), `tags`, `drafted_on/by`, `validated_date/by`. **Semantiek source.pages:** bevat ALLE pagina's die op de wiki-pagina geciteerd worden (via Cite of Figure), niet alleen de primaire tekstpagina. Dit is de volledige provenance-trail.
 - **Imports** van SourceRef, Cite en Figure components
 - **Status-banner** als blockquote bovenaan
 - **TL;DR** met kerngetallen vetgedrukt en inline Cite verwijzingen
@@ -157,6 +157,11 @@ of `size="sm"` met `float="right"` voor een klein plaatje naast de tekst.
 **Hoofd-navigatie** in `pages/_meta.ts` — voeg nieuwe secties toe als ze er komen (bijv. `onderstel: 'Onderstel'`).
 
 **Bij nieuwe DOC:** ook `pages/bronnen.mdx` updaten met voorpagina-thumbnail + PDF link.
+
+**Pagina-types:** niet alle MDX bestanden zijn artikel-pagina's met bronregel-vereisten. Er zijn twee typen:
+
+- **Artikel-pagina's** (bijv. `motor/koelsysteem.mdx`) — verplicht: frontmatter met source.doc/pages, minstens 1 Cite, SourceRef onderaan
+- **Catalogus-pagina's** (bijv. `bronnen.mdx`, `figuren.mdx`) — overzichtspagina's zonder eigen bronverwijzing. Worden overgeslagen door de bronregel-validator.
 
 ---
 

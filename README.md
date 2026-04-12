@@ -6,7 +6,7 @@ Privé Nextra-site voor Serge's **1977 Alfa Romeo Alfetta 2.0 Serie 2**. Alle in
 
 ## Status
 
-**Walking skeleton.** Eén gevalideerde pagina (`/motor/contactpunten-afstellen`), de rest volgt per `validated` DOC-pagina uit het werkrepo.
+**Content-scale fase.** 13 gevalideerde motorpagina's live uit DOC-04 (Engine, publ 2448, april 1977). 73 figuren geëxtraheerd met metadata. Bronnen-overzicht, figuren-gallery, governance-sectie. Quality gates in opbouw (ESLint, bronregel-validator, robots.txt).
 
 ## Stack
 
@@ -40,11 +40,13 @@ Vercel Git integration, push naar `main` → auto deploy.
 1. Bron wordt geselecteerd + vertaald in [`skroes/alfetta-project`](https://github.com/skroes/alfetta-project) (werkrepo)
 2. Canonical NL mdx komt in `alfetta-project/content/{doc}/...mdx` met `status: validated`
 3. Die mdx wordt gekopieerd naar `alfetta-wiki/pages/{section}/...mdx`
-4. `<SourceRef>` en `<Cite>` zorgen voor klikbare bron-verwijzing terug naar de PDF op Drive
+4. `<SourceRef>` en `<Cite>` zorgen voor bron-verwijzing met per-pagina deep-links naar de lokaal gehoste PDF
 
 ## Componenten
 
-- `components/SourceRef.tsx` — rendert het bron-blok onderaan elke pagina + `<Cite>` inline anchor
+- `components/SourceRef.tsx` — rendert het bron-blok onderaan elke pagina met per-pagina PDF deep-links + `<Cite>` inline anchor
+- `components/Figure.tsx` — inline figuur met lightbox, float, size opties
+- `components/FigureGallery.tsx` — doorzoekbare gallery met fuzzy search, tag/pagina filters
 
 ## Security
 
