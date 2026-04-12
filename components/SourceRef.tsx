@@ -6,37 +6,25 @@ type SourceProps = {
   doc: string
   title: string
   pages: number[]
-  /**
-   * Intern pad naar de gehoste PDF, bijv. "/docs/DOC-04-engine.pdf".
-   * Dit bouwt de werkende deep-link met `#page=N` via de native browser
-   * PDF-viewer. Verplicht voor nieuwe pagina's.
-   */
   pdf?: string
-  /**
-   * Canonical herkomst-URL (meestal Google Drive). Wordt getoond als
-   * "Archief-locatie" label. Klikbaar, maar Drive's viewer negeert `#page=`
-   * — dus de primaire deep-link-knop wijst naar `pdf`, niet hiernaartoe.
-   */
   archive_url?: string
-  /**
-   * Legacy prop (walking-skeleton pre-B-11). Als `pdf` ontbreekt valt de
-   * component terug op `url` voor de deep-link. Nieuwe pagina's zetten
-   * `pdf` + `archive_url` en laten `url` weg.
-   */
+  /** Legacy prop — nieuwe pagina's gebruiken pdf + archive_url */
   url?: string
   language?: SourceLanguage
 }
 
+/** Korte display-naam: "DOC-04" → "Alfetta Workshop Manual" */
+const DOC_DISPLAY: Record<string, string> = {
+  'DOC-04': 'Alfetta Workshop Manual — Engine',
+}
+
 export function SourceRef(props: SourceProps) {
   const { doc, title, pages, pdf, archive_url, url, language = 'it' } = props
-  const firstPage = pages[0]
   const rangeLabel =
-    pages.length === 1 ? `p. ${pages[0]}` : `p. ${pages[0]}–${pages[pages.length - 1]}`
+    pages.length === 1 ? `p.\u00A0${pages[0]}` : `p.\u00A0${pages[0]}–${pages[pages.length - 1]}`
 
-  // Primaire deep-link — bij voorkeur de lokaal-gehoste PDF (native viewer
-  // honoreert #page=N). Fallback op legacy `url` voor backwards-compat.
+  const displayName = DOC_DISPLAY[doc] ?? doc
   const primarySource = pdf ?? url
-  const deepLink = primarySource ? `${primarySource}#page=${firstPage}` : undefined
 
   return (
     <aside
@@ -47,25 +35,36 @@ export function SourceRef(props: SourceProps) {
         borderLeft: '4px solid #cc0000',
         background: 'rgba(204,0,0,0.06)',
         fontSize: '0.95rem',
-        borderRadius: '4px'
+        borderRadius: '4px',
       }}
     >
       <div>
-        <strong>Bron: {doc}</strong> — {title}, {rangeLabel} ({language.toUpperCase()})
+        <span style={{ marginRight: '0.4em' }}>📄</span>
+        <strong>Bron: {displayName}</strong> — {title}, {rangeLabel} ({language.toUpperCase()})
       </div>
-      {deepLink && (
-        <div style={{ marginTop: '0.4rem' }}>
-          <a href={deepLink} target="_blank" rel="noreferrer">
-            PDF openen op p. {firstPage} ↗
-          </a>
+
+      {/* Per-pagina deep-links naar de PDF */}
+      {primarySource && (
+        <div style={{ marginTop: '0.4rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+          {pages.map((p) => (
+            <a
+              key={p}
+              href={`${primarySource}#page=${p}`}
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: 'underline' }}
+            >
+              <span style={{ marginRight: '0.25em' }}>📕</span>
+              PDF openen op p.{'\u00A0'}{p} ↗
+            </a>
+          ))}
         </div>
       )}
+
       {archive_url && (
         <div style={{ marginTop: '0.3rem', fontSize: '0.85em', opacity: 0.75 }}>
           Archief-locatie:{' '}
-          <a href={archive_url} target="_blank" rel="noreferrer">
-            {archive_url.replace(/^https?:\/\//, '').replace(/\/+$/, '')}
-          </a>
+          <span>{archive_url.replace(/^https?:\/\//, '').replace(/\/+$/, '')}</span>
         </div>
       )}
     </aside>
