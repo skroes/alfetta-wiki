@@ -272,7 +272,7 @@ export default function FigureGallery() {
             />
             <table style={{ fontSize: '0.85rem', width: '100%', borderCollapse: 'collapse' }}>
               <tbody>
-                <tr><td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>Bron</td><td>{data.doc} &mdash; pagina {selected.page}</td></tr>
+                <tr><td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>Bron</td><td>{data.doc} &mdash; Alfetta Workshop Manual &mdash; pagina {selected.page}</td></tr>
                 <tr><td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>Bestand</td><td style={{ fontFamily: 'monospace', fontSize: '0.8rem' }}>{selected.filename}</td></tr>
                 <tr><td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>Tags</td><td>{selected.tags.map(t => <span key={t} className="fig-tag" onClick={(e) => { e.stopPropagation(); setTagFilter(t); setSelected(null) }} style={{ display: 'inline-block', borderRadius: '0.25rem', padding: '0.1rem 0.4rem', marginRight: '0.3rem', fontSize: '0.75rem', cursor: 'pointer' }}>{t}</span>)}</td></tr>
                 <tr>
