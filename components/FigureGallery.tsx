@@ -146,10 +146,34 @@ export default function FigureGallery() {
         :is(html[class~="dark"]) .fig-reset {
           color: #f87171;
         }
+        @media (max-width: 640px) {
+          .fig-grid {
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)) !important;
+            gap: 0.625rem !important;
+          }
+          .fig-thumb {
+            height: 120px !important;
+          }
+          .fig-filters {
+            flex-direction: column !important;
+          }
+          .fig-filters input,
+          .fig-filters select {
+            width: 100% !important;
+            flex: unset !important;
+          }
+          .fig-lightbox-overlay {
+            padding: 0.75rem !important;
+          }
+          .fig-lightbox-panel {
+            padding: 1rem !important;
+            border-radius: 0.5rem !important;
+          }
+        }
       `}</style>
 
       {/* Search & filters */}
-      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+      <div className="fig-filters" style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
         <input
           type="text"
           placeholder="Zoek op titel, tag, pagina..."
@@ -183,7 +207,7 @@ export default function FigureGallery() {
       </p>
 
       {/* Grid */}
-      <div style={{
+      <div className="fig-grid" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
         gap: '1rem',
@@ -201,7 +225,7 @@ export default function FigureGallery() {
               transition: 'box-shadow 0.15s',
             }}
           >
-            <div className="fig-thumb" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '160px', overflow: 'hidden' }}>
+            <div className="fig-thumb" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 160, overflow: 'hidden' }}>
               <img
                 src={`/figures/doc-04/${fig.filename}`}
                 alt={fig.title}
@@ -221,6 +245,7 @@ export default function FigureGallery() {
       {selected && (
         <div
           onClick={() => setSelected(null)}
+          className="fig-lightbox-overlay"
           style={{
             position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.75)', zIndex: 50,
             display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem',
