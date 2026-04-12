@@ -32,6 +32,11 @@ while IFS= read -r file; do
         continue
     fi
 
+    # Skip eigen-content pagina's (multi-bron, eigen validatie-regime)
+    if [[ "$rel" == eigenaar/* ]]; then
+        continue
+    fi
+
     CHECKED=$((CHECKED + 1))
     file_errors=0
 

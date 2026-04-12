@@ -22,6 +22,11 @@
 - [Solex C 40 DDH-8 carburateur](https://alfetta-wiki.vercel.app/motor/solex-carburateur)
 - [Dellorto DHLA 40F carburateur](https://alfetta-wiki.vercel.app/motor/dellorto-carburateur)
 
+## Eigenaar
+
+- [Het Verhaal](https://alfetta-wiki.vercel.app/eigenaar/het-verhaal)
+- [Bedieningsoverzicht](https://alfetta-wiki.vercel.app/eigenaar/bedieningsoverzicht)
+
 ## Governance
 
 - [Bronregel](https://alfetta-wiki.vercel.app/governance/bronregel): Hoe we met bronnen omgaan in het Alfetta archief
