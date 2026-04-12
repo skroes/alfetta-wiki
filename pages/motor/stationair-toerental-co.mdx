@@ -1,0 +1,80 @@
+---
+title: "Stationair toerental & CO-uitstoot afstellen — 2.0L Alfetta motor"
+status: validated
+source:
+  doc: DOC-04
+  title: "Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages: [34]
+  pdf: /docs/DOC-04-engine.pdf
+  archive_url: https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view
+  language: en
+tags: [motor, brandstof, afstelling, stationair, co-uitstoot]
+drafted_on: 2026-04-12
+drafted_by: "/dev4alfetta (machine-vertaling uit staging/doc-04/pages/034.md)"
+validated_date: 2026-04-12
+validated_by: "/alfettaspecialist (visuele vergelijking met DOC-04 scans)"
+---
+
+import { SourceRef, Cite } from '../../components/SourceRef'
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele DOC-04 scans.
+
+# Stationair toerental & CO-uitstoot afstellen
+
+> **TL;DR** — Stel eerst de gasklep-uitlijning in bij stilstaande motor, start dan de motor en stel het stationair toerental af op **850 ± 50 tpm** met gelijke vacuümwaarden voor en achter. CO-gehalte mag maximaal **4,5%** bedragen. <Cite p="34" />
+
+## Gasklep-uitlijning en stationair toerental
+
+### Voorbereiding (motor uit)
+
+1. Verwijder de borgclip en maak de bedieningsstang los van gasklePhendel 1. <Cite p="34" />
+2. Draai de gasklep-openingsschroef 2 volledig los. <Cite p="34" />
+3. Draai schroef 3 los terwijl je hendel 1 omhoog drukt, totdat de gasklep van zowel de voor- als achtercarburateur volledig dicht is. Houd hendel 1 omhoog gedrukt en draai schroef 3 aan tot deze contact maakt — hiermee lijn je de gasklep van beide carburateurs uit. <Cite p="34" />
+4. Draai schroef 2 aan tot hij hendel 1 net raakt, en draai dan nog één slag door. <Cite p="34" />
+5. Draai de mengselschroeven 4 volledig in (zonder kracht), en draai ze vervolgens **vier slagen** terug. <Cite p="34" />
+6. Sluit de bedieningsstang weer aan op gasklephendel 1. <Cite p="34" />
+
+### Afstelling (motor warm)
+
+1. Start de motor en laat hem warmdraaien. Zet de motor af. <Cite p="34" />
+2. Monteer de vacuümmeter C.2.0014 met houder R.4.0139. Sluit de meterslangen aan op de vacuümpoorten van de carburateurs, na het verwijderen van schroeven 5, met behulp van adapters C.2.0015 (of C.2.0031 bij geontvergiftigde carburateurs). <Cite p="34" />
+3. Start de motor opnieuw en stel de gasklep-koppelschroef 3 af zodat het vacuüm van het 1e en 2e kanaal gelijk is aan dat van het 3e en 4e kanaal, terwijl het stationair toerental op **850 ± 50 tpm** staat (controleer met een nauwkeurige elektronische toerenteller). <Cite p="34" />
+4. Als de motor onregelmatig loopt: stel mengselschroef 4 bij, zonder het stationair toerental en de vacuüminstelling te verstoren. <Cite p="34" />
+
+## CO-uitstoot testen
+
+1. Meet het CO-percentage in de uitlaatgassen van een geontvergiftigde motor, aan het uiteinde van de uitlaatpijp of bij de spruitstuk-aftap (indien aanwezig), met een CO-meter. Het CO-percentage mag niet hoger zijn dan **4,5%**. <Cite p="34" />
+2. Om het CO-percentage bij te stellen: stel de mengselschroeven 4 af. Let erop dat je het stationair toerental en de vacuüminstelling niet verstoort. <Cite p="34" />
+3. Na het afstellen: zet de motor af, ontkoppel de vacuümmeter en CO-meter, en monteer de pluggen 5 terug. <Cite p="34" />
+
+## Let op
+
+- Deze procedure gaat uit van een **dubbelcarburateur-opstelling** (voor en achter). De schroeven 3, 4 en 5 verwijzen naar specifieke posities op de carburateur — raadpleeg het bijbehorende figuur op DOC-04 p34. <Cite p="34" />
+- Het begrip "geontvergiftigde carburateurs" (detoxed carburetters) verwijst naar carburateurs met uitstootregelgeving. De adapter-keuze (C.2.0015 vs C.2.0031) hangt daarvan af. <Cite p="34" />
+- Stel de contactpunten af **vóór** deze procedure — zie [Contactpunten afstellen](/motor/contactpunten-afstellen). <Cite p="35" />
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Idle speed | Stationair toerental | DOC-04 p34 titel |
+| Throttle alignment | Gasklep-uitlijning | |
+| Throttle lever | Gasklephendel | Hendel 1 in de figuur |
+| Throttle opening adjusting screw | Gasklep-openingsschroef | Schroef 2 |
+| Throttles coupling screw | Gasklep-koppelschroef | Schroef 3 |
+| Mixture screws | Mengselschroeven | Schroef 4 |
+| Vacuum meter | Vacuümmeter | Speciaal gereedschap C.2.0014 |
+| CO tester | CO-meter | |
+| Detoxed carburetters | Geontvergiftigde carburateurs | Met uitstootregelgeving |
+| Exhaust manifold tap | Spruitstuk-aftap | |
+| R.P.M. | tpm (toeren per minuut) | |
+| Circlip | Borgclip | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[34]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>

@@ -1,0 +1,96 @@
+---
+title: "Ontstekings-timing & verdeler testen — 2.0L Alfetta motor"
+status: validated
+source:
+  doc: DOC-04
+  title: "Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages: [36]
+  pdf: /docs/DOC-04-engine.pdf
+  archive_url: https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view
+  language: en
+tags: [motor, ontsteking, afstelling, verdeler]
+drafted_on: 2026-04-12
+drafted_by: "/dev4alfetta (machine-vertaling uit staging/doc-04/pages/036.md)"
+validated_date: 2026-04-12
+validated_by: "/alfettaspecialist (visuele vergelijking met DOC-04 scans)"
+---
+
+import { SourceRef, Cite } from '../../components/SourceRef'
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele DOC-04 scans.
+
+# Ontstekings-timing & verdeler testen
+
+> **TL;DR** — Stel de ontsteking af door het verdelerhuis te draaien (linksom = vooruit, rechtsom = achteruit). Controleer statische en maximale voortijling met een elektronische toerenteller: de aanwijzer op het frontdeksel moet op lijn staan met de merktekens op de krukas-poelie — **F** voor statisch, **M** voor maximaal. <Cite p="36" />
+
+## Ontstekings-timing afstellen
+
+Als de timing bijgesteld moet worden: <Cite p="36" />
+
+1. Draai de moer los op de bout die het verdelerhuis vastzet. <Cite p="36" />
+2. Draai het verdelerhuis **linksom** (tegen de klok in) om de ontsteking te **vervroegen**, of **rechtsom** (met de klok mee) om de ontsteking te **vertragen**. Draai de moer weer vast. <Cite p="36" />
+3. Verwijder de testlamp en plaats de verdelerkap terug. <Cite p="36" />
+4. Sluit de draden weer aan. <Cite p="36" />
+
+## Statische en maximale voortijling controleren
+
+1. Sluit het ontstekingssysteem aan op de tester. <Cite p="36" />
+2. Start de motor en controleer met een elektronische toerenteller dat bij het opgegeven toerental de aanwijzer op het frontdeksel op lijn staat met de merktekens op de krukas-poelie: <Cite p="36" />
+   - **F** = statische voortijling <Cite p="36" />
+   - **M** = maximale voortijling <Cite p="36" />
+3. Zet de motor af. <Cite p="36" />
+
+Als de merktekens en aanwijzer niet uitgelijnd zijn: draai de bevestigingsbout van het verdelerhuis los en draai het huis **rechtsom** om te vertragen of **linksom** om te vervroegen. <Cite p="36" />
+
+Plaats de beschermkappen terug. <Cite p="36" />
+
+Als deze afstelling de juiste voortijling niet oplevert, moet de verdeler **vervangen** worden. <Cite p="36" />
+
+## Verdeler testen op de proefbank
+
+Gereviseerde verdelers of verdelers die niet aan specificatie voldoen moeten op de proefbank getest worden. <Cite p="36" />
+
+### Vóór de test
+
+1. Controleer met speciaal gereedschap C.5.0114 en een testlamp of de contactdruk volgens specificatie is. <Cite p="36" />
+2. Controleer de contactpuntenspleet en stel indien nodig bij volgens de procedure op pagina 35 — zie [Contactpunten afstellen](/motor/contactpunten-afstellen). <Cite p="36" />
+
+### Testprocedure
+
+1. Monteer de verdeler op de proefbank en maak de aansluitingen. <Cite p="36" />
+2. Stel de vonk op nul bij de gradenverdeling van de schijf op de bank, door de verdeler met de hand of de bankmotor aan te drijven (niet hoger dan 50 tpm). <Cite p="36" />
+3. Controleer of de sluithoek (dwell angle) volgens specificatie is. Zet de automatische-voortijlingscurve uit. <Cite p="36" />
+
+## Let op
+
+- De draairichting voor vervroegen/vertragen is **vanuit het perspectief van bovenaf kijkend** op de verdeler. <Cite p="36" />
+- De contactpuntenspleet (0,4 – 0,5 mm) moet in orde zijn vóór je de timing afstelt — zie [Contactpunten afstellen](/motor/contactpunten-afstellen). <Cite p="35" />
+- Specifieke voortijlingswaarden (graden en toerental) staan niet op p36 maar in de technische specificaties. Raadpleeg DOC-04 p5-6 of DOC-06 (Inspection Specifications).
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Ignition timing | Ontstekings-timing | DOC-04 p36 |
+| Distributor body | Verdelerhuis | |
+| Advance / retard | Vervroegen / vertragen | Ontstekings-timing |
+| Static advance | Statische voortijling | Merkteken F op poelie |
+| Maximum advance | Maximale voortijling | Merkteken M op poelie |
+| Crankshaft pulley | Krukas-poelie | |
+| Front cover | Frontdeksel | Waar de aanwijzer zit |
+| Pointer | Aanwijzer | |
+| Reference marks | Merktekens | F en M op de poelie |
+| Test lamp | Testlamp | |
+| Contact pressure | Contactdruk | Gemeten met C.5.0114 |
+| Dwell angle | Sluithoek | Gemeten op proefbank |
+| Advance curve | Voortijlingscurve | |
+| Protection covers | Beschermkappen | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[36]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
