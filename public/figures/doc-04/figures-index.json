@@ -1,0 +1,951 @@
+{
+  "doc": "DOC-04",
+  "source": "Alfa Romeo Workshop Manual — Engine (publ 2448, april 1977)",
+  "generated": "2026-04-12",
+  "tool": "marker-pdf v1.10.2 (Surya layout detection)",
+  "total_figures": 73,
+  "figures": [
+    {
+      "filename": "doc04-p06-fig02-motor-doorsnede.png",
+      "page": 6,
+      "figure": 2,
+      "title": "Motor complete doorsnede",
+      "tags": [
+        "motor",
+        "overzicht"
+      ],
+      "related_page": "/motor/technische-specificaties",
+      "size_bytes": 355242
+    },
+    {
+      "filename": "doc04-p07-fig02-motorkap-beugels.png",
+      "page": 7,
+      "figure": 2,
+      "title": "Motorkap beugels steunpunten 1-3",
+      "tags": [
+        "motor",
+        "uitbouwen"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 63764
+    },
+    {
+      "filename": "doc04-p07-fig03-motor-ophangpunt.png",
+      "page": 7,
+      "figure": 3,
+      "title": "Motor ophangpunt 4",
+      "tags": [
+        "motor",
+        "uitbouwen"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 50952
+    },
+    {
+      "filename": "doc04-p07-fig04-radiateur-koelslang.png",
+      "page": 7,
+      "figure": 4,
+      "title": "Radiateur koelslang 5",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "koelsysteem"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 51842
+    },
+    {
+      "filename": "doc04-p08-fig02-motorruimte-bovenaanzicht.png",
+      "page": 8,
+      "figure": 2,
+      "title": "Motorruimte bovenaanzicht luchtfilter",
+      "tags": [
+        "motor",
+        "uitbouwen"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 69045
+    },
+    {
+      "filename": "doc04-p08-fig03-slangen-oliekoeler.png",
+      "page": 8,
+      "figure": 3,
+      "title": "Slangen oliekoeler 9-10",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "olie"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 101032
+    },
+    {
+      "filename": "doc04-p08-fig04-motor-links-oliefilter.png",
+      "page": 8,
+      "figure": 4,
+      "title": "Motor linkszijde oliefilter 6-8",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "olie"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 72952
+    },
+    {
+      "filename": "doc04-p08-fig05-inlaat-carburateurs.png",
+      "page": 8,
+      "figure": 5,
+      "title": "Inlaatzijde carburateurs 11-14",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "carburateur"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 72796
+    },
+    {
+      "filename": "doc04-p09-fig02-klepdeksel-verdeler.png",
+      "page": 9,
+      "figure": 2,
+      "title": "Klepdeksel en verdeler 2-3",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "ontsteking"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 60191
+    },
+    {
+      "filename": "doc04-p09-fig03-uitlaat-koppeling.png",
+      "page": 9,
+      "figure": 3,
+      "title": "Uitlaat koppeling ophangpunt 4-7",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "uitlaat"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 57280
+    },
+    {
+      "filename": "doc04-p09-fig04-uitlaat-flens.png",
+      "page": 9,
+      "figure": 4,
+      "title": "Uitlaat flensverbinding 8-9",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "uitlaat"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 57779
+    },
+    {
+      "filename": "doc04-p10-fig02-onderkant-uitlaat.png",
+      "page": 10,
+      "figure": 2,
+      "title": "Onderkant uitlaat ophangpunt",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "uitlaat"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 51638
+    },
+    {
+      "filename": "doc04-p10-fig03-cardanas-versnellingsbak.png",
+      "page": 10,
+      "figure": 3,
+      "title": "Cardanas bij versnellingsbak",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "transmissie"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 131704
+    },
+    {
+      "filename": "doc04-p11-fig02-motorsteun-bout.png",
+      "page": 11,
+      "figure": 2,
+      "title": "Motorsteun bout losdraaien",
+      "tags": [
+        "motor",
+        "uitbouwen"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 79950
+    },
+    {
+      "filename": "doc04-p11-fig03-onderkant-ophangpunt.png",
+      "page": 11,
+      "figure": 3,
+      "title": "Onderkant ophangpunt losdraaien",
+      "tags": [
+        "motor",
+        "uitbouwen"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 82103
+    },
+    {
+      "filename": "doc04-p11-fig04-koppelingshuis-onderkant.png",
+      "page": 11,
+      "figure": 4,
+      "title": "Koppelingshuis onderkant",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "koppeling"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 76883
+    },
+    {
+      "filename": "doc04-p11-fig05-koppelingshuis-doorsnede.png",
+      "page": 11,
+      "figure": 5,
+      "title": "Koppelingshuis doorsnede technisch",
+      "tags": [
+        "motor",
+        "koppeling"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 38738
+    },
+    {
+      "filename": "doc04-p12-fig02-cardanas-onderkant.png",
+      "page": 12,
+      "figure": 2,
+      "title": "Cardanas onderkant tunnel",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "transmissie"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 124130
+    },
+    {
+      "filename": "doc04-p12-fig03-vliegwiel-inspectieluik.png",
+      "page": 12,
+      "figure": 3,
+      "title": "Vliegwiel inspectieluik 1",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "vliegwiel"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 35998
+    },
+    {
+      "filename": "doc04-p12-fig04-carter-oliepeilstok.png",
+      "page": 12,
+      "figure": 4,
+      "title": "Carter oliepeilstok 2",
+      "tags": [
+        "motor",
+        "uitbouwen"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 51623
+    },
+    {
+      "filename": "doc04-p12-fig05-verdeler-slangen.png",
+      "page": 12,
+      "figure": 5,
+      "title": "Verdeler met vacuumslangen 3",
+      "tags": [
+        "motor",
+        "uitbouwen",
+        "ontsteking"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 44640
+    },
+    {
+      "filename": "doc04-p12-fig06-motor-ophijsen.png",
+      "page": 12,
+      "figure": 6,
+      "title": "Motor ophijsen kettingtakel",
+      "tags": [
+        "motor",
+        "uitbouwen"
+      ],
+      "related_page": "/motor/motor-uitbouwen",
+      "size_bytes": 53684
+    },
+    {
+      "filename": "doc04-p13-fig02-koppeling-drukgroep.png",
+      "page": 13,
+      "figure": 2,
+      "title": "Koppeling drukgroep voorkant 1-2",
+      "tags": [
+        "motor",
+        "inspectie",
+        "koppeling"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 55545
+    },
+    {
+      "filename": "doc04-p13-fig03-vliegwiel-achterkant.png",
+      "page": 13,
+      "figure": 3,
+      "title": "Vliegwiel achterkant met gereedschap 3",
+      "tags": [
+        "motor",
+        "inspectie",
+        "vliegwiel"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 60033
+    },
+    {
+      "filename": "doc04-p13-fig04-carburateur-bevestiging.png",
+      "page": 13,
+      "figure": 4,
+      "title": "Carburateur bevestiging 4-5",
+      "tags": [
+        "motor",
+        "inspectie",
+        "carburateur"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 44660
+    },
+    {
+      "filename": "doc04-p14-fig02-v-snaar-dynamo.png",
+      "page": 14,
+      "figure": 2,
+      "title": "V-snaar aandrijving dynamo 1-5",
+      "tags": [
+        "motor",
+        "inspectie",
+        "dynamo"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 78750
+    },
+    {
+      "filename": "doc04-p14-fig03-waterpomp-thermostaat.png",
+      "page": 14,
+      "figure": 3,
+      "title": "Waterpomp en thermostaat 6-7",
+      "tags": [
+        "motor",
+        "inspectie",
+        "koelsysteem"
+      ],
+      "related_page": "/motor/koelsysteem",
+      "size_bytes": 79629
+    },
+    {
+      "filename": "doc04-p14-fig04-brandstofpomp-oliefilter.png",
+      "page": 14,
+      "figure": 4,
+      "title": "Brandstofpomp en oliefilter 8-9",
+      "tags": [
+        "motor",
+        "inspectie",
+        "brandstof"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 75371
+    },
+    {
+      "filename": "doc04-p14-fig05-inlaatspruitstuk-kleppen.png",
+      "page": 14,
+      "figure": 5,
+      "title": "Inlaatspruitstuk kleppen 10",
+      "tags": [
+        "motor",
+        "inspectie",
+        "kleppen"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 59106
+    },
+    {
+      "filename": "doc04-p15-fig02-thermostaat-wateruitlaat.png",
+      "page": 15,
+      "figure": 2,
+      "title": "Thermostaat wateruitlaat 1-2",
+      "tags": [
+        "motor",
+        "demontage",
+        "koelsysteem"
+      ],
+      "related_page": "/motor/koelsysteem",
+      "size_bytes": 64616
+    },
+    {
+      "filename": "doc04-p15-fig03-uitlaatspruitstuk-flenzen.png",
+      "page": 15,
+      "figure": 3,
+      "title": "Uitlaatspruitstuk flenzen 3-4",
+      "tags": [
+        "motor",
+        "demontage",
+        "uitlaat"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 50878
+    },
+    {
+      "filename": "doc04-p15-fig04-brandstofpomp-zijkant.png",
+      "page": 15,
+      "figure": 4,
+      "title": "Brandstofpomp zijkant 5-6",
+      "tags": [
+        "motor",
+        "demontage",
+        "brandstof"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 62284
+    },
+    {
+      "filename": "doc04-p15-fig05-cilinderkop-bouten.png",
+      "page": 15,
+      "figure": 5,
+      "title": "Cilinderkop bouten doppenbak 7-8",
+      "tags": [
+        "motor",
+        "demontage",
+        "cilinderkop"
+      ],
+      "related_page": "/motor/cilinderkop-revisie",
+      "size_bytes": 54910
+    },
+    {
+      "filename": "doc04-p16-fig02-distributieketting-boven.png",
+      "page": 16,
+      "figure": 2,
+      "title": "Distributieketting bovenaanzicht 1-2",
+      "tags": [
+        "motor",
+        "demontage",
+        "distributie"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 48566
+    },
+    {
+      "filename": "doc04-p16-fig03-nokkenas-tandwielen.png",
+      "page": 16,
+      "figure": 3,
+      "title": "Nokkenas tandwielen detail 3",
+      "tags": [
+        "motor",
+        "demontage",
+        "nokkenas"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 36832
+    },
+    {
+      "filename": "doc04-p16-fig04-cilinderkopbouten.png",
+      "page": 16,
+      "figure": 4,
+      "title": "Cilinderkopbouten tapeinden 4",
+      "tags": [
+        "motor",
+        "demontage",
+        "cilinderkop"
+      ],
+      "related_page": "/motor/cilinderkop-revisie",
+      "size_bytes": 45576
+    },
+    {
+      "filename": "doc04-p17-fig02-klepstel-gereedschap.png",
+      "page": 17,
+      "figure": 2,
+      "title": "Klepstel gereedschap kleplichter 1-2",
+      "tags": [
+        "motor",
+        "demontage",
+        "kleppen"
+      ],
+      "related_page": "/motor/klepspeling-controleren",
+      "size_bytes": 70520
+    },
+    {
+      "filename": "doc04-p17-fig03-motorblok-krukas.png",
+      "page": 17,
+      "figure": 3,
+      "title": "Motorblok krukas lagerdeksels 3-4",
+      "tags": [
+        "motor",
+        "demontage",
+        "krukas"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 57221
+    },
+    {
+      "filename": "doc04-p17-fig04-vliegwiel-krukas.png",
+      "page": 17,
+      "figure": 4,
+      "title": "Vliegwiel krukas achterplaat 5-6",
+      "tags": [
+        "motor",
+        "demontage",
+        "vliegwiel",
+        "krukas"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 66790
+    },
+    {
+      "filename": "doc04-p17-fig05-motorblok-voorkant.png",
+      "page": 17,
+      "figure": 5,
+      "title": "Motorblok voorkant distributie 7",
+      "tags": [
+        "motor",
+        "demontage",
+        "distributie"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 54115
+    },
+    {
+      "filename": "doc04-p18-fig02-distributiedeksel-nokkenas.png",
+      "page": 18,
+      "figure": 2,
+      "title": "Distributiedeksel nokkenas 1-2",
+      "tags": [
+        "motor",
+        "montage",
+        "nokkenas"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 59727
+    },
+    {
+      "filename": "doc04-p18-fig03-distributieketting-voorkant.png",
+      "page": 18,
+      "figure": 3,
+      "title": "Distributieketting voorkant deksel 3-6",
+      "tags": [
+        "motor",
+        "montage",
+        "distributie"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 75222
+    },
+    {
+      "filename": "doc04-p18-fig04-distributieketting-tandwiel.png",
+      "page": 18,
+      "figure": 4,
+      "title": "Distributieketting tandwielen 7-8",
+      "tags": [
+        "motor",
+        "montage",
+        "distributie"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 75657
+    },
+    {
+      "filename": "doc04-p18-fig05-motorblok-achterkant.png",
+      "page": 18,
+      "figure": 5,
+      "title": "Motorblok achterkant tapeinden 9",
+      "tags": [
+        "motor",
+        "montage"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 70666
+    },
+    {
+      "filename": "doc04-p19-fig02-achterplaat-krukaslager.png",
+      "page": 19,
+      "figure": 2,
+      "title": "Achterplaat krukaslager 1",
+      "tags": [
+        "motor",
+        "montage",
+        "krukas"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 55358
+    },
+    {
+      "filename": "doc04-p19-fig03-krukas-drijfstangen.png",
+      "page": 19,
+      "figure": 3,
+      "title": "Krukas met drijfstangen 2-3",
+      "tags": [
+        "motor",
+        "montage",
+        "krukas"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 52796
+    },
+    {
+      "filename": "doc04-p19-fig04-drijfstanglager-meting.png",
+      "page": 19,
+      "figure": 4,
+      "title": "Drijfstanglager meting 4",
+      "tags": [
+        "motor",
+        "inspectie",
+        "krukas"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 27021
+    },
+    {
+      "filename": "doc04-p19-fig05-drijfstang-trekker.png",
+      "page": 19,
+      "figure": 5,
+      "title": "Drijfstang trekker gereedschap 5",
+      "tags": [
+        "motor",
+        "montage",
+        "krukas"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 48714
+    },
+    {
+      "filename": "doc04-p20-fig02-cilinderkop-kleppen.png",
+      "page": 20,
+      "figure": 2,
+      "title": "Cilinderkop kleppen bovenaanzicht 1-4",
+      "tags": [
+        "motor",
+        "cilinderkop",
+        "kleppen"
+      ],
+      "related_page": "/motor/cilinderkop-revisie",
+      "size_bytes": 50561
+    },
+    {
+      "filename": "doc04-p20-fig03-klepveer-trekker.png",
+      "page": 20,
+      "figure": 3,
+      "title": "Klepveer trekker gereedschap 5-6",
+      "tags": [
+        "motor",
+        "cilinderkop",
+        "kleppen"
+      ],
+      "related_page": "/motor/cilinderkop-revisie",
+      "size_bytes": 57954
+    },
+    {
+      "filename": "doc04-p21-fig02-cilinderwand-honen.png",
+      "page": 21,
+      "figure": 2,
+      "title": "Cilinderwand honen 1-2",
+      "tags": [
+        "motor",
+        "cilinderwand",
+        "inspectie"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 40887
+    },
+    {
+      "filename": "doc04-p23-fig02-klepspeling-meting.png",
+      "page": 23,
+      "figure": 2,
+      "title": "Klepspeling meting klokken 1-2",
+      "tags": [
+        "motor",
+        "klepspeling",
+        "meting"
+      ],
+      "related_page": "/motor/klepspeling-controleren",
+      "size_bytes": 45542
+    },
+    {
+      "filename": "doc04-p23-fig03-klepgeleider-doorsnede.png",
+      "page": 23,
+      "figure": 3,
+      "title": "Klepgeleider doorsnede 1",
+      "tags": [
+        "motor",
+        "klepspeling",
+        "klepgeleider"
+      ],
+      "related_page": "/motor/klepspeling-controleren",
+      "size_bytes": 40734
+    },
+    {
+      "filename": "doc04-p24-fig02-klepzitting-frezen.png",
+      "page": 24,
+      "figure": 2,
+      "title": "Klepzitting frezen gereedschap 1",
+      "tags": [
+        "motor",
+        "cilinderkop",
+        "klepzitting"
+      ],
+      "related_page": "/motor/cilinderkop-revisie",
+      "size_bytes": 38263
+    },
+    {
+      "filename": "doc04-p25-fig02-krukas-gradenboog.png",
+      "page": 25,
+      "figure": 2,
+      "title": "Krukas gradenboog timing meting",
+      "tags": [
+        "motor",
+        "ontstekingstiming",
+        "krukas"
+      ],
+      "related_page": "/motor/ontstekings-timing",
+      "size_bytes": 49632
+    },
+    {
+      "filename": "doc04-p25-fig03-zuiger-cilinderliner.png",
+      "page": 25,
+      "figure": 3,
+      "title": "Zuiger en cilinderliner doorsnede",
+      "tags": [
+        "motor",
+        "zuiger",
+        "cilinder"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 42216
+    },
+    {
+      "filename": "doc04-p26-fig02-krukaslager-keerring.png",
+      "page": 26,
+      "figure": 2,
+      "title": "Krukaslager keerring doorsnede",
+      "tags": [
+        "motor",
+        "krukas",
+        "afdichting"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 41747
+    },
+    {
+      "filename": "doc04-p27-fig02-distributieketting-spanner.png",
+      "page": 27,
+      "figure": 2,
+      "title": "Distributieketting spanner montage",
+      "tags": [
+        "motor",
+        "distributie",
+        "ketting"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 54026
+    },
+    {
+      "filename": "doc04-p27-fig03-nokkenashuis-meetblokken.png",
+      "page": 27,
+      "figure": 3,
+      "title": "Nokkenashuis meetblokken controle",
+      "tags": [
+        "motor",
+        "nokkenas",
+        "meting"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 41066
+    },
+    {
+      "filename": "doc04-p28-fig02-ontstekingstiming-meting.png",
+      "page": 28,
+      "figure": 2,
+      "title": "Ontstekingstiming gradenboog en klok",
+      "tags": [
+        "motor",
+        "ontstekingstiming",
+        "meting"
+      ],
+      "related_page": "/motor/ontstekings-timing",
+      "size_bytes": 52250
+    },
+    {
+      "filename": "doc04-p29-fig02-klepgeleider-montage.png",
+      "page": 29,
+      "figure": 2,
+      "title": "Klepgeleider montage doorsnede",
+      "tags": [
+        "motor",
+        "cilinderkop",
+        "klepgeleider"
+      ],
+      "related_page": "/motor/cilinderkop-revisie",
+      "size_bytes": 45995
+    },
+    {
+      "filename": "doc04-p29-fig03-klepzitting-frezen-detail.png",
+      "page": 29,
+      "figure": 3,
+      "title": "Klepzitting frezen detail",
+      "tags": [
+        "motor",
+        "cilinderkop",
+        "klepzitting"
+      ],
+      "related_page": "/motor/cilinderkop-revisie",
+      "size_bytes": 41233
+    },
+    {
+      "filename": "doc04-p30-fig02-cilinderbus-honen.png",
+      "page": 30,
+      "figure": 2,
+      "title": "Cilinderbus honen gereedschap",
+      "tags": [
+        "motor",
+        "cilinder",
+        "honen"
+      ],
+      "related_page": "/motor/inspectie-kleppen-veren",
+      "size_bytes": 30557
+    },
+    {
+      "filename": "doc04-p30-fig03-klepspeling-voelermaat.png",
+      "page": 30,
+      "figure": 3,
+      "title": "Klepspeling voelermaat meting",
+      "tags": [
+        "motor",
+        "klepspeling",
+        "meting"
+      ],
+      "related_page": "/motor/klepspeling-controleren",
+      "size_bytes": 28521
+    },
+    {
+      "filename": "doc04-p33-fig02-gasklep-kabel-afstelling.png",
+      "page": 33,
+      "figure": 2,
+      "title": "Gasklep kabel afstelling A",
+      "tags": [
+        "motor",
+        "gasklep",
+        "afstelling"
+      ],
+      "related_page": "/motor/gasklep-kabel-afstellen",
+      "size_bytes": 32464
+    },
+    {
+      "filename": "doc04-p33-fig03-gasklep-mechanisme.png",
+      "page": 33,
+      "figure": 3,
+      "title": "Gasklep kabel mechanisme B-C",
+      "tags": [
+        "motor",
+        "gasklep",
+        "afstelling"
+      ],
+      "related_page": "/motor/gasklep-kabel-afstellen",
+      "size_bytes": 30731
+    },
+    {
+      "filename": "doc04-p34-fig02-stationair-carburateurs.png",
+      "page": 34,
+      "figure": 2,
+      "title": "Stationair afstelling carburateurs 1-5",
+      "tags": [
+        "motor",
+        "stationair",
+        "carburateur"
+      ],
+      "related_page": "/motor/stationair-toerental-co",
+      "size_bytes": 88433
+    },
+    {
+      "filename": "doc04-p35-fig02-contactpunten-ontsteking.png",
+      "page": 35,
+      "figure": 2,
+      "title": "Contactpunten ontsteking 1-4",
+      "tags": [
+        "motor",
+        "ontsteking",
+        "contactpunten"
+      ],
+      "related_page": "/motor/contactpunten-afstellen",
+      "size_bytes": 53579
+    },
+    {
+      "filename": "doc04-p37-fig02-weber-dcoe-exploded.png",
+      "page": 37,
+      "figure": 2,
+      "title": "Weber 40 DCOE exploded view",
+      "tags": [
+        "motor",
+        "carburateur",
+        "weber"
+      ],
+      "related_page": "/motor/weber-carburateur",
+      "size_bytes": 255227
+    },
+    {
+      "filename": "doc04-p40-fig02-vlotter-hoogte-meting.png",
+      "page": 40,
+      "figure": 2,
+      "title": "Weber vlotter hoogte meting A",
+      "tags": [
+        "motor",
+        "carburateur",
+        "weber",
+        "vlotter"
+      ],
+      "related_page": "/motor/weber-carburateur",
+      "size_bytes": 33385
+    },
+    {
+      "filename": "doc04-p41-fig02-solex-ddh8-exploded.png",
+      "page": 41,
+      "figure": 2,
+      "title": "Solex C 40 DDH-8 exploded view",
+      "tags": [
+        "motor",
+        "carburateur",
+        "solex"
+      ],
+      "related_page": "/motor/solex-carburateur",
+      "size_bytes": 193184
+    },
+    {
+      "filename": "doc04-p44-fig02-dellorto-vlotter-hoogte.png",
+      "page": 44,
+      "figure": 2,
+      "title": "Dellorto vlotter hoogte meting B",
+      "tags": [
+        "motor",
+        "carburateur",
+        "dellorto",
+        "vlotter"
+      ],
+      "related_page": "/motor/dellorto-carburateur",
+      "size_bytes": 28261
+    },
+    {
+      "filename": "doc04-p45-fig02-dellorto-dhla-exploded.png",
+      "page": 45,
+      "figure": 2,
+      "title": "Dellorto DHLA 40F exploded view",
+      "tags": [
+        "motor",
+        "carburateur",
+        "dellorto"
+      ],
+      "related_page": "/motor/dellorto-carburateur",
+      "size_bytes": 211985
+    }
+  ]
+}
