@@ -1,3 +1,4 @@
 export default {
-  bronregel: 'Bronregel'
+  bronregel: 'Bronregel',
+  methode: 'Methode'
 }

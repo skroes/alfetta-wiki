@@ -1,0 +1,216 @@
+---
+title: "Methode — van PDF naar wiki-pagina"
+description: "Technische documentatie van de bewezen keten: PDF → OCR → staging → NL vertaling → MDX → figuren → wiki"
+---
+
+# Methode — van PDF naar wiki-pagina
+
+Dit document beschrijft de bewezen keten waarmee bronnen uit het archief vertaald worden naar
+gepubliceerde wiki-pagina's. Het is zowel naslagwerk als herbruikbaar recept voor toekomstige
+projecten met vergelijkbare PDF-naar-wiki workflows.
+
+## Overzicht keten
+
+```
+PDF (scan)
+  → OCR + staging (Marker/Surya)
+    → per-pagina markdown + figuren (PNG)
+      → NL vertaling + validatie (/alfettaspecialist)
+        → MDX met frontmatter + SourceRef + Cite + jargon-blok
+          → Figure-integratie (inline + gallery)
+            → Nextra build + Vercel deploy
+```
+
+Elke stap is idempotent — je kunt op elk punt opnieuw beginnen zonder eerdere stappen te breken.
+
+---
+
+## Stap 1 — PDF binnenhalen
+
+**Input:** originele PDF (scan of digitaal)
+**Output:** PDF in `pdfs/` lokale cache + Google Drive backup
+
+**Tooling:**
+- `scripts/sync-pdfs.sh` — idempotente download uit Google Drive naar lokale cache
+- `references/drive-urls.md` — canonical URLs + file_ids
+
+**Acties:**
+1. Upload PDF naar Google Drive (`Alfetta Archive/workshop-manuals/`)
+2. Set permissions: "anyone with link, viewer"
+3. Voeg rij toe aan `references/drive-urls.md`
+4. Update manifest in `scripts/sync-pdfs.sh`
+5. Draai `./scripts/sync-pdfs.sh`
+
+**Naamconventie:** Titel (publicatienummer, datum).pdf
+Voorbeeld: `Alfetta Workshop Manual - Engine (2448, april 1977).pdf`
+
+---
+
+## Stap 2 — OCR + staging
+
+**Input:** PDF zonder tekstlaag (scans)
+**Output:** per-pagina markdown + per-pagina figuren (PNG) in `staging/DOC-XX/`
+
+**Tooling:**
+- [Marker](https://github.com/VikParuchuri/marker) v1.10.2 — AI-based PDF→markdown converter
+- [Surya](https://github.com/VikParuchuri/surya) — OCR/layout engine (dependency van Marker)
+
+**Commando:**
+```bash
+marker_single "pad-naar-pdf" --output_dir /tmp/doc-XX-marker
+```
+
+**Resultaat:**
+- `output-dir/document.md` — volledige markdown (alle pagina's)
+- `output-dir/images/` — figuren per pagina (layout-detected), genummerd 0\_image\_0.png etc.
+
+**Post-processing:**
+1. Split de volledige markdown naar per-pagina bestanden in `staging/DOC-XX/pages/001.md`, `002.md` etc.
+2. Figuren hernoemen naar conventie (zie stap 5)
+3. Quality check: steekproef van 3-5 pagina's op leesbaarheid
+
+**Alternatief** (als PDF al een tekstlaag heeft, bijv. DOC-03):
+```bash
+pdftotext -f N -l N -layout bestand.pdf -
+```
+Dan is Marker niet nodig — direct naar stap 3.
+
+---
+
+## Stap 3 — NL vertaling
+
+**Input:** staging markdown (EN/IT)
+**Output:** Nederlandse MDX met frontmatter, Cite-verwijzingen, jargon-blok
+
+**Wie:** `/alfettaspecialist` (de Alfa Specialist persona)
+
+**Vertaalregels (uit TONE-OF-VOICE.md):**
+- Nederlands, actieve zinnen, je-vorm
+- TL;DR bovenaan (max 3 zinnen, kerngetallen vetgedrukt)
+- Elke feitelijke claim krijgt een Cite-verwijzing inline
+- Technisch jargon: origineel Engels/Italiaans behouden in jargon-blok onderaan
+- "Geen bron = geen antwoord" — nooit aanvullen uit training data
+
+**MDX template:** zie een bestaande pagina als voorbeeld, bijv. `pages/motor/contactpunten-afstellen.mdx`. Elke pagina bevat:
+
+- **Frontmatter** met `title`, `status`, `source` (doc, title, pages, pdf, archive\_url, language), `tags`, `drafted_on/by`, `validated_date/by`
+- **Imports** van SourceRef, Cite en Figure components
+- **Status-banner** als blockquote bovenaan
+- **TL;DR** met kerngetallen vetgedrukt en inline Cite verwijzingen
+- **Secties** met vertaalde content, elke claim voorzien van Cite
+- **Jargon-tabel** (EN → NL) onderaan
+- **SourceRef component** helemaal onderaan met doc, title, pages, pdf, archive\_url props
+
+---
+
+## Stap 4 — Validatie
+
+**Input:** vertaalde MDX
+**Output:** `status: validated` in frontmatter
+
+**Wie:** `/alfettaspecialist`
+
+**Validatie-checklist:**
+1. Elke feitelijke claim is traceerbaar naar bronpagina
+2. Meetwaarden kloppen exact (kruischeck met PDF scan)
+3. Stappenvolgorde is correct en compleet
+4. Jargon-blok dekt alle vertaalde termen
+5. Geen informatie toegevoegd die niet in de bron staat
+
+**Status-model (uit DECISIONS.md B-10):**
+`pending → in-review → validated → published`
+
+---
+
+## Stap 5 — Figuren
+
+**Input:** Marker-geëxtraheerde PNG's
+**Output:** hernoemde figuren in `public/figures/doc-XX/` + `figures-index.json`
+
+**Naamconventie:** `docXX-pNN-figNN-beschrijving.png`
+Voorbeeld: `doc04-p06-fig02-motor-doorsnede.png`
+
+**Selectie-criterium:** bestanden groter dan 10 KB zijn technische figuren (logos en headers onder 10 KB worden overgeslagen)
+
+**figures-index.json schema:** JSON met velden `doc`, `source`, `total_figures`, en een `figures` array. Per figuur: `filename`, `page`, `figure` (nummer), `title`, `tags` (array), `related_page` (wiki-pad), `size_bytes`. Zie `public/figures/doc-04/figures-index.json` als voorbeeld.
+
+**Inline plaatsing via Figure component:**
+
+Props: `src` (zonder extensie), `caption`, `page`, `size` (sm/md/lg/full), `float` (left/right).
+Voorbeeld: een figuur met `src="doc04-p06-fig02-motor-doorsnede"`, `size="full"` voor volledige breedte,
+of `size="sm"` met `float="right"` voor een klein plaatje naast de tekst.
+
+**Plaatsings-strategie:**
+- Exploded views → bovenaan de pagina (full width)
+- Meetdiagrammen → naast de betreffende specificatie (float right, sm)
+- Procedure-foto's → bij de relevante stap
+
+---
+
+## Stap 6 — Wiki-structuur
+
+**Input:** verzameling MDX pagina's
+**Output:** Nextra navigatie via `_meta.ts` bestanden
+
+**Structuur per wiki-sectie:** elke sectie is een directory onder `pages/` met een eigen `_meta.ts` voor de navigatie-volgorde en MDX bestanden per onderwerp.
+
+**Hoofd-navigatie** in `pages/_meta.ts` — voeg nieuwe secties toe als ze er komen (bijv. `onderstel: 'Onderstel'`).
+
+**Bij nieuwe DOC:** ook `pages/bronnen.mdx` updaten met voorpagina-thumbnail + PDF link.
+
+---
+
+## Stap 7 — Build + deploy
+
+**Tooling:**
+- Next.js 14.2 + Nextra 3.3.1 (pages router)
+- Vercel Git integration (auto-deploy op push naar `main`)
+
+**Commando's:**
+1. `pnpm build` — verificatie
+2. `git add` + `git commit` met conventionele commit message
+3. `git push` — triggert Vercel auto-deploy
+
+**Verificatie na deploy:**
+1. Pagina bereikbaar op alfetta-wiki.vercel.app
+2. SourceRef deep-link opent PDF op juiste pagina
+3. Figuren laden, lightbox werkt
+4. Navigatie toont nieuwe pagina's
+
+---
+
+## Components referentie
+
+| Component | Pad | Doel |
+|-----------|-----|------|
+| `SourceRef` | `components/SourceRef.tsx` | Bronvermelding onderaan pagina (📄 icoon, display-naam, per-pagina PDF links) |
+| `Cite` | `components/SourceRef.tsx` | Inline `[pN]` verwijzing die naar SourceRef scrollt |
+| `Figure` | `components/Figure.tsx` | Inline figuur met lightbox, float, size opties |
+| `FigureGallery` | `components/FigureGallery.tsx` | Doorzoekbare gallery met fuzzy search, tag/pagina filters |
+
+**Bij nieuwe DOC:** in `SourceRef.tsx` de `DOC_DISPLAY` mapping uitbreiden met de nieuwe DOC-code en display-naam (bijv. DOC-03 → "Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes").
+
+---
+
+## Relaties
+
+- `alfetta-project/staging/` → `alfetta-wiki/pages/` (vertaalde MDX)
+- `alfetta-project/pdfs/` → `alfetta-wiki/public/docs/` (PDF bestanden)
+- `alfetta-project/TONE-OF-VOICE.md` → vertaalregels
+- `alfetta-project/prds/` + `tasks/` → planning en tracking
+
+**Twee repo's, twee rollen:**
+- `alfetta-project` = werkrepo (bronnen, staging, governance, planning)
+- `alfetta-wiki` = publicatie-repo (MDX, components, Nextra, Vercel deploy)
+
+---
+
+## Hergebruik voor andere projecten
+
+Deze methode is niet Alfetta-specifiek. De keten werkt voor elk project waar je:
+1. Gescande PDF's hebt als bron
+2. Vertaalde/bewerkte content wilt publiceren
+3. Traceerbaarheid naar de originele bron wilt behouden
+
+Vervang: DOC-codes, SourceRef mapping, wiki-structuur, TONE-OF-VOICE regels.
+Behoud: Marker/Surya pipeline, Figure component, figures-index.json schema, Nextra + Vercel setup.
