@@ -27,6 +27,26 @@
 - [Solex C 40 DDH-8 carburateur](https://alfetta-wiki.vercel.app/motor/solex-carburateur)
 - [Dellorto DHLA 40F carburateur](https://alfetta-wiki.vercel.app/motor/dellorto-carburateur)
 
+## Transmissie
+
+- [Transaxle verwijderen](https://alfetta-wiki.vercel.app/transmissie/transaxle-verwijderen)
+- [Koppeling verwijderen](https://alfetta-wiki.vercel.app/transmissie/koppeling-verwijderen)
+- [Transaxle terugplaatsen](https://alfetta-wiki.vercel.app/transmissie/transaxle-terugplaatsen)
+- [Hydraulisch ontluchten](https://alfetta-wiki.vercel.app/transmissie/hydraulisch-ontluchten)
+- [Transmissievloeistoffen](https://alfetta-wiki.vercel.app/transmissie/transmissie-vloeistoffen)
+- [Koppeling specificaties](https://alfetta-wiki.vercel.app/transmissie/koppeling-specificaties)
+- [Koppeling revisie](https://alfetta-wiki.vercel.app/transmissie/koppeling-revisie)
+- [Versnellingsbak specificaties](https://alfetta-wiki.vercel.app/transmissie/versnellingsbak-specificaties)
+- [Differentieel specificaties](https://alfetta-wiki.vercel.app/transmissie/differentieel-specificaties)
+
+## Specificaties
+
+- [Motor-specificaties 2000](https://alfetta-wiki.vercel.app/specificaties/motor-specificaties-2000)
+- [Voertuig-identificatie 2000](https://alfetta-wiki.vercel.app/specificaties/voertuig-identificatie-2000)
+- [Oliedruk & motortemperaturen](https://alfetta-wiki.vercel.app/specificaties/oliedruk-motortemperaturen)
+- [Stationair toerental & brandstof](https://alfetta-wiki.vercel.app/specificaties/stationair-brandstof-specificaties)
+- [Ontsteking-componenten & timing](https://alfetta-wiki.vercel.app/specificaties/ontsteking-componenten)
+
 ## Eigenaar
 
 - [Het Verhaal](https://alfetta-wiki.vercel.app/eigenaar/het-verhaal)
