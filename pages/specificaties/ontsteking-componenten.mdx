@@ -1,0 +1,105 @@
+---
+title: "Ontsteking-componenten & timing — Alfetta 2000"
+status: validated
+source:
+  doc: DOC-06
+  title: "Alfetta Inspection Specifications — Berlina & Coupé"
+  pages: [67, 68, 69]
+  pdf: /docs/DOC-06-inspection-specs.pdf
+  archive_url: https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view
+  language: en
+tags: [ontsteking, timing, specificaties, referentie]
+drafted_on: 2026-04-13
+drafted_by: "/dev4alfetta (machine-vertaling uit staging/DOC-06/pages/067.md + 068.md + 069.md)"
+validated_date: 2026-04-13
+validated_by: "/dev4alfetta (visuele vergelijking met DOC-06 staging)"
+---
+
+import { SourceRef, Cite } from '../../components/SourceRef'
+
+> **Status: validated** (2026-04-13). Gevalideerd uit DOC-06 staging pp 67–69 — Group 05 Ignition, Starter, Charging.
+
+# Ontsteking-componenten & timing
+
+> **TL;DR** — Alfetta 2.0 (016.23): statisch **7°±1° BTDC** bij 850±50 rpm. Maximum **38°±0,5° BTDC** bij 5100 rpm. Bougie torque **2,5–3,5 kgm** (25–34 Nm). <Cite p="67" />
+
+## Ontstekingstiming — Alfetta 2.0 (016.23)
+
+<Cite p="67" />
+
+| Parameter | Waarde |
+|-----------|--------|
+| Statisch (F) | **7°±1° BTDC** bij **850±50 rpm** |
+| Maximum (M) | **38°±0,5° BTDC** bij **5100 rpm** |
+
+> Maximum-afstelling: aanwijzer uitgelijnd met keep **M** op verdeler. Vacuum-slang losgekoppeld tijdens meten.
+
+## Ontstekings-componenten — Alfetta 2.0 (motor 016.23)
+
+DOC-06 geeft de volgende component-aanduidingen per fabrikant: <Cite p="67" />
+
+**Bobijn (Ignition coil):**
+- 116.55.65.079.00 — BOSCH 0.221.119.044
+- 116.33.65.079.00 — MARELLI BZR202B
+- 116.55.65.079.01 — BOSCH 0.221.119.044
+
+**Verdeler (Distributor):**
+- 116.36.05.011.01 — BOSCH 0.231.178.0013
+- 116.36.05.011.00 — MARELLI S 145 CX
+
+**Bougie (Spark plug):**
+- 105.14.05.106.01 — LODGE 2HL
+
+**Dynamo/Alternator:**
+- 116.10.05.060.03 — BOSCH K1-14V45A22
+- 116.10.05.060.01 — PARIS-RHONE A13R121
+- 116.10.05.060.18 — SEV MARCHAL A14/55A
+- 116.10.05.060.08 (1) — BOSCH K1-14V55A20
+- 116.10.05.060.12 (1) — PARIS-RHONE A13R192
+- 116.55.05.060.00 (1) — MARELLI
+
+(1) Met geïntegreerde elektronische spanningsregelaar <Cite p="67" />
+
+**Regelaar (Regulator):**
+- 105.36.65.028.00 — BOSCH-AD1
+- 116.10.65.028.01 — PARIS-RHONE AYC2112
+- 116.10.65.028.05 — SEV MARCHAL (blauwe markering)
+
+**Startmotor (Starter):**
+- 105.12.05.030.03 — BOSCH GF-12V-1.1PS
+- 116.55.05.030.00 — PARIS-RHONE D10E70
+- 116.55.05.030.01 — MARELLI E100-1.3-12
+
+## Bougie-koppelwaarden
+
+<Cite p="69" />
+
+| Component | Koppel |
+|-----------|--------|
+| Bougie (met smeervet op schroefdraad per item 1) | **2,5–3,5 kgm** (25–34 Nm) |
+
+**Smeermiddel bougiedraad**: ISECO Molykote A — Part. No. 4500-18304 <Cite p="69" />
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|------------|---------|
+| Ignition coil | Bobijn | |
+| Distributor | Verdeler | |
+| Spark plug | Bougie | |
+| Alternator | Dynamo / Alternator | |
+| Regulator | Spanningsregelaar | |
+| Starter | Startmotor | |
+| BTDC | Voor BDP (Bovenste Dood Punt) | Ontstekingstijdstip |
+| Static advance (F) | Statische voorontsteking | |
+| Max. advance (M) | Maximale voortijling | Aanwijzer op keep M |
+| Integral electronic voltage regulator | Geïntegreerde elektronische spanningsregelaar | |
+
+<SourceRef
+  doc="DOC-06"
+  title="Alfetta Inspection Specifications — Berlina & Coupé"
+  pages={[67, 68, 69]}
+  pdf="/docs/DOC-06-inspection-specs.pdf"
+  archive_url="https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view"
+  language="en"
+/>
