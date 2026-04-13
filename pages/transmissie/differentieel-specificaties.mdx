@@ -1,0 +1,113 @@
+---
+title: "Differentieel technische specificaties — hypoid 10/41, totaaloverbrengingen"
+status: validated
+source:
+  doc: DOC-05
+  title: "Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages: [60, 81]
+  pdf: /docs/DOC-05-clutch-gearbox-diff.pdf
+  archive_url: https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view
+  language: en
+tags: [transmissie, differentieel, specificaties, overbrengingsverhouding, aandraaimomenten]
+drafted_on: 2026-04-13
+drafted_by: "/dev4alfetta (machine-vertaling + visuele verificatie uit staging/DOC-05/pages/060+081.md)"
+validated_date: 2026-04-13
+validated_by: "/dev4alfetta (visueel gecontroleerd tegen PDF-scan p60)"
+---
+
+import { SourceRef, Cite } from '../../components/SourceRef'
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — overbrengingsverhoudingen visueel gecontroleerd tegen originele PDF-scan p60.
+
+# Differentieel technische specificaties
+
+> **TL;DR** — Hypoid tandkrans/nok-tandwiel, reductieverhouding **10/41**. Totale overbrengingen per versnelling: 1e 1:13,53 ... 5e 1:3,40. Tandharkspeling op montage: **0,13 tot 0,18 mm**. Differentieel-draaiweerstand: **10 tot 20 Kgcm**. Tandkrans-bouten aandraaien op **6,8 tot 7,5 Kgm** (geoliede toestand). <Cite p="60" /> <Cite p="81" />
+
+## Technische gegevens differentieel
+
+| Kenmerk | Waarde |
+|---------|--------|
+| Type tandkrans/nok-tandwiel | Hypoid |
+| Reductieverhouding | **10/41** |
+| Differentieel-draaglagers | 2 conische rollagers (taper roller) |
+| Differentieel-lager voorbespanning | Via afstandsringen (shims) |
+| Draaiweerstand differentieel-lagers | **10 tot 20 Kgcm** |
+| Binnenste halfas-lagers | 2 kogellagers |
+| Afstand nok-tandwiel tot tandkrans-as | **56,500 mm** |
+| Afstand nok-tandwiel tot buitenste oppervlak stelpen (C.6.0164) | **66,500 mm** |
+| Tandharkspeling tandkrans/nok-tandwiel op montage | **0,13 tot 0,18 mm** |
+| Speling zonnewiel/planeetwieltanden op montage | **0 tot 0,05 mm** |
+| Speling remblokken/remschijven op montage | **0,1 mm** per zijde |
+| Dikte remblokken (nieuw) | **15 mm** |
+
+## Totale overbrengingsverhoudingen (versnellingsbak + differentieel)
+
+| Versnelling | Totale overbrenging |
+|------------|---------------------|
+| 1e | **1 : 13,53** |
+| 2e | **1 : 8,20** |
+| 3e | **1 : 5,62** |
+| 4e | **1 : 4,26** |
+| 5e | **1 : 3,40** |
+| Achteruit | **1 : 11,73** |
+
+## Bouw differentieel
+
+De tandkrans en het nok-tandwiel zijn van het hypoid-type. De buitenste halfassen van het differentieel zijn van het scharnierende type met constantesnelheidskruisgewrichten aan elk einde. <Cite p="60" />
+
+## Aandraaimomenten differentieel
+
+| Verbinding | Moment | Toestand |
+|-----------|--------|---------|
+| Bouten, tandkrans aan differentieel-drager | **6,8 tot 7,5 Kgm** | Geoliede toestand |
+| Nok-as-moer | **11,4 tot 12,6 Kgm** | Droog |
+| Moeren, afstandsstukken A.2.0234 en tussenflens aan versnellingsbak-differentieel-huis | **1,7 tot 2,4 Kgm** | Droog |
+| Moeren, differentieel-deksel en zijdeksel aan versnellingsbak-differentieel-huis | **1,9 tot 2,3 Kgm** | Droog |
+| Moeren, remklaauwen aan differentieel-huis | **4,7 tot 5,4 Kgm** | Droog |
+| Bouten, remschijven en afstandsstukken aan differentieel-halfassen | **5,1 tot 5,7 Kgm** | Droog |
+| Hydraulische rem-pijp-koppelingen | **0,9 tot 1 Kgm** | Droog |
+
+## Smeermiddelen differentieel
+
+| Toepassing | Middel |
+|-----------|--------|
+| Buitenste oppervlakken oliedichtingen binnenste halfassen | AGIP F1 ROTRA MP SAE 85W/90 of Shell Spirax 90 HD |
+| Aanligvlakken tussenflens (reinigen met methylated spirit / trichloorethaan) | LOWAC PERFECT SEAL |
+| Aanligvlakken binnenstehals-deksels met differentieel-huis | LOWAC PERFECT SEAL |
+| Lippen oliedichtingen en werkoppervlakken binnenste halfassen | ISECO MOLYKOTE BR 2 |
+
+## Let op
+
+- De tandkrans en het nok-tandwiel worden als **gekoppeld paar** geleverd. Het is niet mogelijk slechts één van de twee tandwielen te vervangen. <Cite p="65" />
+- Montagevolgorde bij herbouw: afstand nok-tandwiel instellen → voorbespanning differentieel-draaglagers instellen → tandharkspeling instellen. Zie staging p67-72 voor uitgebreide uitlijnprocedure (Blok B in SELECTIE.md). <Cite p="67" />
+- Kortste halfas aan de linkerkant monteren. <Cite p="74" />
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Crownwheel | Tandkrans | Groot hypoid-tandwiel differentieel |
+| Pinion | Nok-tandwiel | Klein hypoid-tandwiel op versnellingsbak-as |
+| Hypoid | Hypoid | Type tandwielgeometrie — assen snijden niet |
+| Reduction ratio | Reductieverhouding | Van motor naar achteras |
+| Differential carrier | Differentieel-drager | Kuipenframe met planeetwielen |
+| Differential carrier bearings | Differentieel-draaglagers | Conische rollagers |
+| Taper roller bearing | Conisch rollager | Lagertype differentieel-drager |
+| Preload | Voorbespanning | Axiale voorspanning lagers via shims |
+| Shims | Afstandsringen | Afstelplaatjes voor voorbespanning en positie |
+| Backlash | Tandharkspeling | Speling tussen tandkrans en nok-tandwiel |
+| Sun wheel | Zonnewiel | Binnenzijde differentieel |
+| Planetary gear | Planeetwiel | Rondom zonnewiel in differentieel |
+| Inner half-shaft | Binnenste halfas | Verbindt differentieel met De Dion-as |
+| Outer half-shaft | Buitenste halfas | Verbindt De Dion-as met wiel |
+| Constant velocity universal joint | Constantesnelheidskruisgewricht | CV-gewricht aan beide uiteinden buitenste halfas |
+| Side cover | Zijdeksel | Afdekking binnenste halfas-lagerpositie |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[60, 81]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
