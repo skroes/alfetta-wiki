@@ -76,11 +76,83 @@ const KIND_BADGE: Record<FigureKind, { icon: string; label: string }> = {
   'page-scan': { icon: '\u{1F4C4}', label: 'page-scan' },
 }
 
+// Leesbare DOC-titel voor group-header. Bij nieuwe DOCs: hier aanvullen of
+// afleiden uit canonical JSON metadata. Fallback: alleen de DOC-code.
+const DOC_LABELS: Record<string, string> = {
+  'DOC-04': 'Alfetta Workshop Manual: Engine',
+}
+
+type ViewMode = 'grouped' | 'flat'
+
+// Groepeer figures per DOC; behoud originele volgorde binnen groep en tussen groepen
+// (stable: eerste voorkomen per DOC bepaalt groepsvolgorde).
+function groupByDoc(figs: Figure[]): Array<[string, Figure[]]> {
+  const order: string[] = []
+  const buckets: Record<string, Figure[]> = {}
+  for (const f of figs) {
+    const key = f.doc || 'UNKNOWN'
+    if (!(key in buckets)) {
+      buckets[key] = []
+      order.push(key)
+    }
+    buckets[key].push(f)
+  }
+  return order.map(k => [k, buckets[k]] as [string, Figure[]])
+}
+
+function renderCard(fig: Figure, setSelected: (f: Figure) => void) {
+  const badge = KIND_BADGE[fig.kind]
+  return (
+    <div
+      key={fig.id}
+      className="fig-card"
+      onClick={() => setSelected(fig)}
+      style={{
+        border: '1px solid hsl(var(--nextra-border-color, 0 0% 90%))',
+        borderRadius: '0.5rem',
+        overflow: 'hidden',
+        cursor: 'pointer',
+        transition: 'box-shadow 0.15s',
+      }}
+    >
+      <div className="fig-thumb" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 160, overflow: 'hidden', position: 'relative' }}>
+        <img
+          src={fig.public_path}
+          alt={fig.label}
+          loading="lazy"
+          style={{ maxWidth: '100%', maxHeight: '160px', objectFit: 'contain' }}
+        />
+        <span
+          className="fig-kind-badge"
+          title={badge.label}
+          aria-label={badge.label}
+          style={{
+            position: 'absolute',
+            top: '0.25rem',
+            right: '0.25rem',
+            fontSize: '0.9rem',
+            lineHeight: 1,
+            padding: '0.15rem 0.3rem',
+            borderRadius: '0.25rem',
+          }}
+        >
+          {badge.icon}
+        </span>
+      </div>
+      <div style={{ padding: '0.5rem 0.625rem' }}>
+        <div style={{ fontSize: '0.8rem', fontWeight: 600, lineHeight: 1.3, marginBottom: '0.25rem' }}>{fig.label}</div>
+        <div className="fig-meta-muted" style={{ fontSize: '0.7rem' }}>p. {fig.page}</div>
+      </div>
+    </div>
+  )
+}
+
 export default function FigureGallery() {
   const [search, setSearch] = useState('')
   const [tagFilter, setTagFilter] = useState<string | null>(null)
   const [pageFilter, setPageFilter] = useState<string | null>(null)
   const [kindFilter, setKindFilter] = useState<FigureKind | 'all'>('all')
+  const [viewMode, setViewMode] = useState<ViewMode>('grouped')
   const [selected, setSelected] = useState<Figure | null>(null)
 
   const figures = data.figures || []
@@ -176,66 +248,78 @@ export default function FigureGallery() {
         </select>
       </div>
 
-      <p className="fig-meta-muted" style={{ fontSize: '0.8rem', marginBottom: '1rem' }}>
-        {filtered.length} van {figures.length} figuren
-        {(search || tagFilter || pageFilter || kindFilter !== 'all') && (
-          <> &mdash; <button onClick={() => { setSearch(''); setTagFilter(null); setPageFilter(null); setKindFilter('all') }} className="fig-reset" style={{ background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline', fontSize: '0.8rem' }}>reset filters</button></>
-        )}
+      <p className="fig-meta-muted" style={{ fontSize: '0.8rem', marginBottom: '1rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
+        <span>
+          {filtered.length} van {figures.length} figuren
+          {(search || tagFilter || pageFilter || kindFilter !== 'all') && (
+            <> &mdash; <button onClick={() => { setSearch(''); setTagFilter(null); setPageFilter(null); setKindFilter('all') }} className="fig-reset" style={{ background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline', fontSize: '0.8rem' }}>reset filters</button></>
+          )}
+        </span>
+        <span style={{ marginLeft: 'auto' }}>
+          weergave:
+          {' '}
+          <button
+            onClick={() => setViewMode('grouped')}
+            aria-pressed={viewMode === 'grouped'}
+            className="fig-view-toggle"
+            style={{ background: 'none', border: 'none', cursor: 'pointer', textDecoration: viewMode === 'grouped' ? 'underline' : 'none', fontSize: '0.8rem', fontWeight: viewMode === 'grouped' ? 600 : 400, color: 'inherit', padding: '0 0.25rem' }}
+          >
+            per document
+          </button>
+          {' / '}
+          <button
+            onClick={() => setViewMode('flat')}
+            aria-pressed={viewMode === 'flat'}
+            className="fig-view-toggle"
+            style={{ background: 'none', border: 'none', cursor: 'pointer', textDecoration: viewMode === 'flat' ? 'underline' : 'none', fontSize: '0.8rem', fontWeight: viewMode === 'flat' ? 600 : 400, color: 'inherit', padding: '0 0.25rem' }}
+          >
+            flat
+          </button>
+        </span>
       </p>
 
-      {/* Grid */}
-      <div className="fig-grid" style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-        gap: '1rem',
-      }}>
-        {filtered.map(fig => {
-          const badge = KIND_BADGE[fig.kind]
-          return (
-            <div
-              key={fig.id}
-              className="fig-card"
-              onClick={() => setSelected(fig)}
-              style={{
-                border: '1px solid hsl(var(--nextra-border-color, 0 0% 90%))',
-                borderRadius: '0.5rem',
-                overflow: 'hidden',
-                cursor: 'pointer',
-                transition: 'box-shadow 0.15s',
-              }}
-            >
-              <div className="fig-thumb" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 160, overflow: 'hidden', position: 'relative' }}>
-                <img
-                  src={fig.public_path}
-                  alt={fig.label}
-                  loading="lazy"
-                  style={{ maxWidth: '100%', maxHeight: '160px', objectFit: 'contain' }}
-                />
-                <span
-                  className="fig-kind-badge"
-                  title={badge.label}
-                  aria-label={badge.label}
-                  style={{
-                    position: 'absolute',
-                    top: '0.25rem',
-                    right: '0.25rem',
-                    fontSize: '0.9rem',
-                    lineHeight: 1,
-                    padding: '0.15rem 0.3rem',
-                    borderRadius: '0.25rem',
-                  }}
-                >
-                  {badge.icon}
-                </span>
-              </div>
-              <div style={{ padding: '0.5rem 0.625rem' }}>
-                <div style={{ fontSize: '0.8rem', fontWeight: 600, lineHeight: 1.3, marginBottom: '0.25rem' }}>{fig.label}</div>
-                <div className="fig-meta-muted" style={{ fontSize: '0.7rem' }}>p. {fig.page}</div>
-              </div>
-            </div>
-          )
-        })}
-      </div>
+      {/* Grid — grouped (default) of flat */}
+      {viewMode === 'flat' ? (
+        <div className="fig-grid" style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+          gap: '1rem',
+        }}>
+          {filtered.map(fig => renderCard(fig, setSelected))}
+        </div>
+      ) : (
+        <div>
+          {groupByDoc(filtered).map(([docCode, figs], idx) => {
+            if (figs.length === 0) return null
+            const docLabel = DOC_LABELS[docCode]
+            const headerText = docLabel
+              ? `${docCode} — ${docLabel} (${figs.length})`
+              : `${docCode} (${figs.length})`
+            return (
+              <section
+                key={docCode}
+                className="fig-doc-group"
+                style={idx > 0 ? {
+                  marginTop: '2rem',
+                  paddingTop: '1rem',
+                  borderTop: '1px solid hsl(var(--nextra-border-color, 0 0% 90%))',
+                } : undefined}
+              >
+                <h3 className="fig-doc-header" style={{ fontSize: '1rem', fontWeight: 600, margin: '0 0 0.75rem 0' }}>
+                  {headerText}
+                </h3>
+                <div className="fig-grid" style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+                  gap: '1rem',
+                }}>
+                  {figs.map(fig => renderCard(fig, setSelected))}
+                </div>
+              </section>
+            )
+          })}
+        </div>
+      )}
 
       {/* Lightbox */}
       {selected && (
