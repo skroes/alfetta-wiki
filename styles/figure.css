@@ -1,0 +1,83 @@
+/* Figure + lightbox styling.
+ * Geëxtraheerd uit components/Figure.tsx — inline <style> blok triggerde
+ * React hydration mismatch (server escapte quotes in `[class~="dark"]`
+ * als &quot; terwijl client " rendert). Global CSS vermijdt dat.
+ */
+
+.fig-inline {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0.75rem 0;
+  transition: box-shadow 0.15s;
+}
+:is(html[class~="dark"]) .fig-inline {
+  border-color: #374151;
+}
+.fig-inline:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+:is(html[class~="dark"]) .fig-inline:hover {
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.06);
+}
+.fig-inline-thumb {
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-in;
+}
+:is(html[class~="dark"]) .fig-inline-thumb {
+  background: #111827;
+}
+.fig-inline-caption {
+  padding: 0.375rem 0.625rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #374151;
+  border-top: 1px solid #e5e7eb;
+}
+:is(html[class~="dark"]) .fig-inline-caption {
+  color: #d1d5db;
+  border-top-color: #374151;
+}
+.fig-inline-page {
+  color: #9ca3af;
+  font-size: 0.7rem;
+}
+.fig-lightbox-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: zoom-out;
+}
+.fig-lightbox-img {
+  max-width: 90vw;
+  max-height: 88vh;
+  border-radius: 0.375rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+.fig-lightbox-caption {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #e5e7eb;
+  font-size: 0.85rem;
+}
+@media (max-width: 640px) {
+  .fig-inline[style] {
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+  }
+}
