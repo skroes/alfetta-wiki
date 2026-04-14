@@ -43,23 +43,36 @@ export function SourceRef(props: SourceProps) {
         <strong>Bron: {displayName}</strong> — {title}, {rangeLabel} ({language.toUpperCase()})
       </div>
 
-      {/* Per-pagina deep-links naar de PDF */}
-      {primarySource && (
-        <div style={{ marginTop: '0.4rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-          {pages.map((p) => (
-            <a
-              key={p}
-              href={`${primarySource}#page=${p}`}
-              target="_blank"
-              rel="noreferrer"
-              style={{ textDecoration: 'underline' }}
-            >
-              <span style={{ marginRight: '0.25em' }}>📕</span>
-              PDF openen op p.{'\u00A0'}{p} ↗
-            </a>
-          ))}
-        </div>
-      )}
+      {/* Per-pagina deep-links: PDF-jump + page-scan JPG */}
+      <div style={{ marginTop: '0.5rem', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+        {pages.map((p) => {
+          const pagePadded = String(p).padStart(3, '0')
+          const scanUrl = `/pages/${doc}/${pagePadded}.jpg`
+          return (
+            <div key={p} style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', fontSize: '0.9em' }}>
+              <span style={{ minWidth: '3.5em', opacity: 0.7 }}>p.{'\u00A0'}{p}</span>
+              {primarySource && (
+                <a
+                  href={`${primarySource}#page=${p}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: 'underline' }}
+                >
+                  📕 PDF (opent op pagina) ↗
+                </a>
+              )}
+              <a
+                href={scanUrl}
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: 'underline' }}
+              >
+                🖼️ scan (JPG) ↗
+              </a>
+            </div>
+          )
+        })}
+      </div>
 
       {archive_url && (
         <div style={{ marginTop: '0.3rem', fontSize: '0.85em', opacity: 0.75 }}>
