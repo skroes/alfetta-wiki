@@ -153,6 +153,59 @@ for DOC_CODE in "${DOCS[@]}"; do
 EOF
         done
 
+        # Page-scan entries: scan public/pages/DOC-XX/*.jpg en grep <PageScan doc=".." page={N}>
+        pages_dir="$WIKI_ROOT/public/pages/$DOC_CODE"
+        if [[ -d "$pages_dir" ]]; then
+            # Verzamel PageScan-placements: "pageN|mdx_path"
+            tmp_pagescan="$(mktemp)"
+            while IFS= read -r line; do
+                mdx_path="${line%%:*}"
+                rest="${line#*:}"
+                # Accepteer page={35} of page="35"
+                page_val="$(echo "$rest" | sed -n 's/.*page={\([0-9][0-9]*\)}.*/\1/p')"
+                [[ -z "$page_val" ]] && page_val="$(echo "$rest" | sed -n 's/.*page="\([0-9][0-9]*\)".*/\1/p')"
+                [[ -z "$page_val" ]] && continue
+                rel_mdx="alfetta-wiki/${mdx_path#$WIKI_ROOT/}"
+                echo "$page_val|$rel_mdx" >> "$tmp_pagescan"
+            done < <(grep -rHE "<PageScan[^>]*doc=\"$DOC_CODE\"" "$PAGES_ROOT" 2>/dev/null || true)
+
+            for p in $(ls "$pages_dir" | sort); do
+                page_num="${p%.jpg}"
+                page_num="${page_num#0}"; page_num="${page_num#0}"
+                page_int="$((10#${page_num:-0}))"
+                page_padded="$(printf '%03d' "$page_int")"
+                used_pagescan="$(grep "^${page_int}|" "$tmp_pagescan" 2>/dev/null | cut -d'|' -f2 | sort -u || true)"
+                if [[ -n "$used_pagescan" ]]; then
+                    used_ps_json="$(echo "$used_pagescan" | awk 'BEGIN{ORS=""; print "["} {if(NR>1) printf ", "; printf "\"%s\"", $0} END{print "]"}')"
+                else
+                    used_ps_json="[]"
+                fi
+
+                if [[ $first -eq 1 ]]; then
+                    first=0
+                else
+                    echo "    },"
+                fi
+
+                cat <<EOF
+    {
+      "id": "${DOC_CODE}-p${page_padded}-full",
+      "doc": "$DOC_CODE",
+      "page": ${page_int},
+      "kind": "page-scan",
+      "source": "alfetta-project/staging/$DOC_CODE/images/${page_padded}.jpg",
+      "public_path": "/pages/$DOC_CODE/${page_padded}.jpg",
+      "label": "${DOC_CODE} p${page_int} — volledige pagina-scan",
+      "caption_nl": "",
+      "tags": [],
+      "used_in": $used_ps_json,
+      "needs_label": false,
+      "validated": false
+EOF
+            done
+            rm -f "$tmp_pagescan"
+        fi
+
         # Sluit laatste entry + array
         if [[ $first -eq 0 ]]; then
             echo "    }"
