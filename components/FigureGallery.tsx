@@ -71,11 +71,6 @@ function fuzzyMatch(text: string, query: string): boolean {
   return terms.every(term => lower.includes(term))
 }
 
-const KIND_BADGE: Record<FigureKind, { icon: string; label: string }> = {
-  'figure-crop': { icon: '\u{1F5BC}\uFE0F', label: 'crop' },
-  'page-scan': { icon: '\u{1F4C4}', label: 'page-scan' },
-}
-
 // Leesbare DOC-titel voor group-header. Bij nieuwe DOCs: hier aanvullen of
 // afleiden uit canonical JSON metadata. Fallback: alleen de DOC-code.
 const DOC_LABELS: Record<string, string> = {
@@ -101,7 +96,6 @@ function groupByDoc(figs: Figure[]): Array<[string, Figure[]]> {
 }
 
 function renderCard(fig: Figure, setSelected: (f: Figure) => void) {
-  const badge = KIND_BADGE[fig.kind]
   return (
     <div
       key={fig.id}
@@ -115,29 +109,13 @@ function renderCard(fig: Figure, setSelected: (f: Figure) => void) {
         transition: 'box-shadow 0.15s',
       }}
     >
-      <div className="fig-thumb" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 160, overflow: 'hidden', position: 'relative' }}>
+      <div className="fig-thumb" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 160, overflow: 'hidden' }}>
         <img
           src={fig.public_path}
           alt={fig.label}
           loading="lazy"
           style={{ maxWidth: '100%', maxHeight: '160px', objectFit: 'contain' }}
         />
-        <span
-          className="fig-kind-badge"
-          title={badge.label}
-          aria-label={badge.label}
-          style={{
-            position: 'absolute',
-            top: '0.25rem',
-            right: '0.25rem',
-            fontSize: '0.9rem',
-            lineHeight: 1,
-            padding: '0.15rem 0.3rem',
-            borderRadius: '0.25rem',
-          }}
-        >
-          {badge.icon}
-        </span>
       </div>
       <div style={{ padding: '0.5rem 0.625rem' }}>
         <div style={{ fontSize: '0.8rem', fontWeight: 600, lineHeight: 1.3, marginBottom: '0.25rem' }}>{fig.label}</div>
@@ -151,11 +129,13 @@ export default function FigureGallery() {
   const [search, setSearch] = useState('')
   const [tagFilter, setTagFilter] = useState<string | null>(null)
   const [pageFilter, setPageFilter] = useState<string | null>(null)
-  const [kindFilter, setKindFilter] = useState<FigureKind | 'all'>('all')
   const [viewMode, setViewMode] = useState<ViewMode>('grouped')
   const [selected, setSelected] = useState<Figure | null>(null)
 
-  const figures = data.figures || []
+  // /figuren toont uitsluitend begeleidende illustraties (figure-crops), geen
+  // full-page scans. Page-scans blijven bereikbaar via <SourceRef> deeplinks en
+  // directe /pages/DOC-XX/NNN.jpg URLs, maar horen niet in de visuele index.
+  const figures = (data.figures || []).filter(f => f.kind === 'figure-crop')
 
   const allTags = useMemo(() => {
     const s = new Set<string>()
@@ -177,7 +157,6 @@ export default function FigureGallery() {
 
   const filtered = useMemo(() => {
     return figures.filter(f => {
-      if (kindFilter !== 'all' && f.kind !== kindFilter) return false
       if (tagFilter) {
         if (!(f.tags || []).includes(tagFilter)) return false
       }
@@ -187,12 +166,12 @@ export default function FigureGallery() {
       }
       if (search) {
         const tags = (f.tags || []).join(' ')
-        const searchable = `${f.label || ''} ${tags} ${f.id} p${f.page} ${f.filename_slug || ''} ${f.kind}`
+        const searchable = `${f.label || ''} ${tags} ${f.id} p${f.page} ${f.filename_slug || ''}`
         if (!fuzzyMatch(searchable, search)) return false
       }
       return true
     })
-  }, [figures, search, tagFilter, pageFilter, kindFilter])
+  }, [figures, search, tagFilter, pageFilter])
 
   const inputStyle = {
     padding: '0.5rem 0.75rem',
@@ -219,16 +198,6 @@ export default function FigureGallery() {
           style={{ ...inputStyle, flex: '1 1 250px' }}
         />
         <select
-          value={kindFilter}
-          onChange={e => setKindFilter(e.target.value as FigureKind | 'all')}
-          style={inputStyle}
-          aria-label="Type filter"
-        >
-          <option value="all">Alle types</option>
-          <option value="figure-crop">Crops</option>
-          <option value="page-scan">Page-scans</option>
-        </select>
-        <select
           value={tagFilter || ''}
           onChange={e => setTagFilter(e.target.value || null)}
           style={inputStyle}
@@ -249,8 +218,8 @@ export default function FigureGallery() {
       <p className="fig-meta-muted" style={{ fontSize: '0.8rem', marginBottom: '1rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
         <span>
           {filtered.length} van {figures.length} figuren
-          {(search || tagFilter || pageFilter || kindFilter !== 'all') && (
-            <> &mdash; <button onClick={() => { setSearch(''); setTagFilter(null); setPageFilter(null); setKindFilter('all') }} className="fig-reset" style={{ background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline', fontSize: '0.8rem' }}>reset filters</button></>
+          {(search || tagFilter || pageFilter) && (
+            <> &mdash; <button onClick={() => { setSearch(''); setTagFilter(null); setPageFilter(null) }} className="fig-reset" style={{ background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline', fontSize: '0.8rem' }}>reset filters</button></>
           )}
         </span>
         <span style={{ marginLeft: 'auto' }}>
@@ -341,7 +310,6 @@ export default function FigureGallery() {
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem', gap: '0.5rem' }}>
               <h3 style={{ margin: 0, fontSize: '1.1rem' }}>
-                <span style={{ marginRight: '0.35rem' }} aria-hidden="true">{KIND_BADGE[selected.kind].icon}</span>
                 {selected.label}
               </h3>
               <button onClick={() => setSelected(null)} style={{ background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', lineHeight: 1, color: 'inherit', opacity: 0.6 }}>&times;</button>
@@ -353,10 +321,6 @@ export default function FigureGallery() {
             />
             <table style={{ fontSize: '0.85rem', width: '100%', borderCollapse: 'collapse' }}>
               <tbody>
-                <tr>
-                  <td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>Type</td>
-                  <td>{KIND_BADGE[selected.kind].label}</td>
-                </tr>
                 <tr>
                   <td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>Bron</td>
                   <td>{selected.doc} &mdash; pagina {selected.page}</td>
