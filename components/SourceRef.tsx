@@ -43,32 +43,32 @@ export function SourceRef(props: SourceProps) {
         <strong>Bron: {displayName}</strong> — {title}, {rangeLabel} ({language.toUpperCase()})
       </div>
 
-      {/* Per-pagina deep-links: PDF-jump + page-scan JPG, elk op eigen regel */}
+      {/* Per-pagina deep-links: eerst alle PDF-jumps, dan alle JPG page-scans */}
       <div style={{ marginTop: '0.5rem', display: 'flex', flexDirection: 'column', gap: '0.2rem', fontSize: '0.9em' }}>
+        {primarySource && pages.map((p) => (
+          <a
+            key={`pdf-${p}`}
+            href={`${primarySource}#page=${p}`}
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: 'underline' }}
+          >
+            📕 open PDF (opent op pagina p{p}) ↗
+          </a>
+        ))}
+        {pages.length > 0 && <div style={{ height: '0.4rem' }} />}
         {pages.map((p) => {
           const pagePadded = String(p).padStart(3, '0')
-          const scanUrl = `/pages/${doc}/${pagePadded}.jpg`
           return (
-            <React.Fragment key={p}>
-              {primarySource && (
-                <a
-                  href={`${primarySource}#page=${p}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ textDecoration: 'underline' }}
-                >
-                  📕 open PDF (opent op pagina p{p}) ↗
-                </a>
-              )}
-              <a
-                href={scanUrl}
-                target="_blank"
-                rel="noreferrer"
-                style={{ textDecoration: 'underline' }}
-              >
-                🖼️ open pagina p{p} scan (JPG) ↗
-              </a>
-            </React.Fragment>
+            <a
+              key={`scan-${p}`}
+              href={`/pages/${doc}/${pagePadded}.jpg`}
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: 'underline' }}
+            >
+              🖼️ open pagina p{p} scan (JPG) ↗
+            </a>
           )
         })}
       </div>

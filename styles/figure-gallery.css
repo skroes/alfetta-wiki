@@ -1,0 +1,86 @@
+.figure-gallery select option {
+  background: var(--shiki-bg, #fff);
+  color: var(--shiki-color, #000);
+}
+:is(html[class~="dark"]) .figure-gallery select option {
+  background: #1a1a2e;
+  color: #e5e7eb;
+}
+.fig-card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+:is(html[class~="dark"]) .fig-card:hover {
+  box-shadow: 0 2px 12px rgba(255,255,255,0.08);
+}
+.fig-thumb {
+  background: #f3f4f6;
+}
+:is(html[class~="dark"]) .fig-thumb {
+  background: #1e1e2e;
+}
+.fig-meta-muted {
+  color: #6b7280;
+}
+:is(html[class~="dark"]) .fig-meta-muted {
+  color: #9ca3af;
+}
+.fig-tag {
+  background: #e5e7eb;
+  color: #374151;
+}
+:is(html[class~="dark"]) .fig-tag {
+  background: #374151;
+  color: #d1d5db;
+}
+.fig-lightbox-panel {
+  background: #ffffff;
+  color: #111827;
+}
+:is(html[class~="dark"]) .fig-lightbox-panel {
+  background: #1a1a2e;
+  color: #e5e7eb;
+}
+.fig-lightbox-panel img {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+:is(html[class~="dark"]) .fig-lightbox-panel img {
+  background: #111827;
+  border: 1px solid #374151;
+}
+.fig-link {
+  color: #2563eb;
+}
+:is(html[class~="dark"]) .fig-link {
+  color: #60a5fa;
+}
+.fig-reset {
+  color: #dc2626;
+}
+:is(html[class~="dark"]) .fig-reset {
+  color: #f87171;
+}
+@media (max-width: 640px) {
+  .fig-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)) !important;
+    gap: 0.625rem !important;
+  }
+  .fig-thumb {
+    height: 120px !important;
+  }
+  .fig-filters {
+    flex-direction: column !important;
+  }
+  .fig-filters input,
+  .fig-filters select {
+    width: 100% !important;
+    flex: unset !important;
+  }
+  .fig-lightbox-overlay {
+    padding: 0.75rem !important;
+  }
+  .fig-lightbox-panel {
+    padding: 1rem !important;
+    border-radius: 0.5rem !important;
+  }
+}
