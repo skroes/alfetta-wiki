@@ -55,7 +55,8 @@ for DOC_CODE in "${DOCS[@]}"; do
     # Verzamel placements: { src_basename: [mdx_path, ...] }
     # Tijdelijke files (macOS bash 3.2 mist associative arrays in dit pad)
     tmp_placements="$(mktemp)"
-    trap 'rm -f "$tmp_placements"' EXIT
+    tmp_captions="$(mktemp)"
+    trap 'rm -f "$tmp_placements" "$tmp_captions"' EXIT
 
     while IFS= read -r line; do
         # line = "pad/naar/file.mdx:<Figure src="doc04-..." ..."
@@ -72,6 +73,27 @@ for DOC_CODE in "${DOCS[@]}"; do
         echo "$src_base|$rel_mdx" >> "$tmp_placements"
     done < <(grep -rH "<Figure src=\"${short_slug}-" "$PAGES_ROOT" 2>/dev/null || true)
 
+    # Verzamel caption-lookup: src_base -> caption uit <Figure src="..." caption="..." ... />
+    # Multi-line safe via perl (slurp mode). Output: src_base<TAB>caption
+    # Deduplicatie: eerste voorkomen wint (deterministic via sort + LC_ALL=C + find volgorde).
+    if [[ -d "$PAGES_ROOT" ]]; then
+        find "$PAGES_ROOT" -name '*.mdx' -print0 2>/dev/null \
+          | LC_ALL=C sort -z \
+          | xargs -0 perl -0777 -ne '
+              while (/<Figure\b[^>]*?\bsrc="([^"]+)"[^>]*?\bcaption="([^"]*)"[^>]*?\/?>/sg) {
+                  my ($src, $cap) = ($1, $2);
+                  $src =~ s/\.(png|jpg|jpeg)$//i;
+                  print "$src\t$cap\n";
+              }
+              # Ook andere volgorde: caption voor src
+              while (/<Figure\b[^>]*?\bcaption="([^"]*)"[^>]*?\bsrc="([^"]+)"[^>]*?\/?>/sg) {
+                  my ($cap, $src) = ($1, $2);
+                  $src =~ s/\.(png|jpg|jpeg)$//i;
+                  print "$src\t$cap\n";
+              }
+          ' > "$tmp_captions" 2>/dev/null || true
+    fi
+
     # Bouw JSON
     {
         echo '{'
@@ -84,8 +106,8 @@ for DOC_CODE in "${DOCS[@]}"; do
         echo '  "figures": ['
 
         first=1
-        # Loop alle figure-files in deterministic volgorde
-        for f in $(ls "$fig_dir" | sort); do
+        # Loop alle figure-files (alleen png/jpg) in deterministic volgorde
+        for f in $(ls "$fig_dir" | grep -Ei '\.(png|jpg|jpeg)$' | LC_ALL=C sort); do
             base="${f%.*}"   # doc04-p35-fig02-contactpunten-ontsteking
             ext="${f##*.}"
 
@@ -109,15 +131,35 @@ for DOC_CODE in "${DOCS[@]}"; do
             page_int="$((10#${page:-0}))"
             id="${DOC_CODE}-p${page}-fig${fig_nr}"
 
-            # Label: slug → "Contactpunten ontsteking" (replace - with space, capitalize first)
-            if [[ -n "$slug" ]]; then
+            # Label: eerst MDX caption proberen (primary), anders default formatter.
+            # MDX caption lookup op src_base (= filename zonder extensie)
+            mdx_caption=""
+            if [[ -s "$tmp_captions" ]]; then
+                mdx_caption="$(awk -F'\t' -v k="$base" '$1==k {print $2; exit}' "$tmp_captions")"
+            fi
+
+            if [[ -n "$mdx_caption" ]]; then
+                label="$mdx_caption"
+                needs_label=false
+            elif [[ -n "$slug" ]]; then
+                # Default crop-label: "Figuur N — slug with spaces, first-letter-upper"
                 label_raw="$(echo "$slug" | tr '-' ' ')"
-                label="$(echo "$label_raw" | awk '{print toupper(substr($0,1,1)) substr($0,2)}')"
+                label_cased="$(echo "$label_raw" | awk '{print toupper(substr($0,1,1)) substr($0,2)}')"
+                # fig_nr zonder leading zero voor leesbaar label
+                fig_int="$((10#${fig_nr:-0}))"
+                if [[ "$fig_int" -gt 0 ]]; then
+                    label="Figuur ${fig_int} — ${label_cased}"
+                else
+                    # fig_nr=00 (bv. voorpagina) — label zonder figuur-nummer
+                    label="$label_cased"
+                fi
                 needs_label=false
             else
                 label=""
                 needs_label=true
             fi
+            # JSON-escape label: backslash en dubbele quote
+            label="$(printf '%s' "$label" | sed 's/\\/\\\\/g; s/"/\\"/g')"
 
             # Verzamel used_in (kan meerdere zijn). `|| true` voorkomt set -e bij geen-match.
             used_in_list="$(grep "^${base}|" "$tmp_placements" 2>/dev/null | cut -d'|' -f2 | sort -u || true)"
@@ -169,7 +211,7 @@ EOF
                 echo "$page_val|$rel_mdx" >> "$tmp_pagescan"
             done < <(grep -rHE "<PageScan[^>]*doc=\"$DOC_CODE\"" "$PAGES_ROOT" 2>/dev/null || true)
 
-            for p in $(ls "$pages_dir" | sort); do
+            for p in $(ls "$pages_dir" | grep -Ei '\.jpg$' | LC_ALL=C sort); do
                 page_num="${p%.jpg}"
                 page_num="${page_num#0}"; page_num="${page_num#0}"
                 page_int="$((10#${page_num:-0}))"
@@ -195,7 +237,7 @@ EOF
       "kind": "page-scan",
       "source": "alfetta-project/staging/$DOC_CODE/images/${page_padded}.jpg",
       "public_path": "/pages/$DOC_CODE/${page_padded}.jpg",
-      "label": "${DOC_CODE} p${page_int} — volledige pagina-scan",
+      "label": "${DOC_CODE} pagina ${page_int} (full-page scan)",
       "caption_nl": "",
       "tags": [],
       "used_in": $used_ps_json,
@@ -220,6 +262,6 @@ EOF
     used_count="$(cut -d'|' -f1 "$tmp_placements" | sort -u | wc -l | tr -d ' ')"
     echo "[$DOC_CODE] figures=$crop_count, placements=$placement_count (over $used_count unieke crops) → $out_file"
 
-    rm -f "$tmp_placements"
+    rm -f "$tmp_placements" "$tmp_captions"
     trap - EXIT
 done
