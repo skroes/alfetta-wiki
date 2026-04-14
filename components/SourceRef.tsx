@@ -43,14 +43,13 @@ export function SourceRef(props: SourceProps) {
         <strong>Bron: {displayName}</strong> — {title}, {rangeLabel} ({language.toUpperCase()})
       </div>
 
-      {/* Per-pagina deep-links: PDF-jump + page-scan JPG */}
-      <div style={{ marginTop: '0.5rem', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+      {/* Per-pagina deep-links: PDF-jump + page-scan JPG, elk op eigen regel */}
+      <div style={{ marginTop: '0.5rem', display: 'flex', flexDirection: 'column', gap: '0.2rem', fontSize: '0.9em' }}>
         {pages.map((p) => {
           const pagePadded = String(p).padStart(3, '0')
           const scanUrl = `/pages/${doc}/${pagePadded}.jpg`
           return (
-            <div key={p} style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', fontSize: '0.9em' }}>
-              <span style={{ minWidth: '3.5em', opacity: 0.7 }}>p.{'\u00A0'}{p}</span>
+            <React.Fragment key={p}>
               {primarySource && (
                 <a
                   href={`${primarySource}#page=${p}`}
@@ -58,7 +57,7 @@ export function SourceRef(props: SourceProps) {
                   rel="noreferrer"
                   style={{ textDecoration: 'underline' }}
                 >
-                  📕 PDF (opent op pagina) ↗
+                  📕 open PDF (opent op pagina p{p}) ↗
                 </a>
               )}
               <a
@@ -67,9 +66,9 @@ export function SourceRef(props: SourceProps) {
                 rel="noreferrer"
                 style={{ textDecoration: 'underline' }}
               >
-                🖼️ scan (JPG) ↗
+                🖼️ open pagina p{p} scan (JPG) ↗
               </a>
-            </div>
+            </React.Fragment>
           )
         })}
       </div>
