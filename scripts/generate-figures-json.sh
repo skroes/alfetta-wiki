@@ -176,6 +176,15 @@ for DOC_CODE in "${DOCS[@]}"; do
                 echo "    },"
             fi
 
+            # related_page: afgeleid uit eerste used_in[] → /route zonder .mdx
+            related_page=""
+            if [[ -n "$used_in_list" ]]; then
+                first_used="$(echo "$used_in_list" | head -n1)"
+                # strip "alfetta-wiki/pages" prefix en ".mdx" suffix
+                related_page="${first_used#alfetta-wiki/pages}"
+                related_page="${related_page%.mdx}"
+            fi
+
             cat <<EOF
     {
       "id": "$id",
@@ -189,6 +198,7 @@ for DOC_CODE in "${DOCS[@]}"; do
       "label": "$label",
       "caption_nl": "",
       "tags": [],
+      "related_page": "$related_page",
       "used_in": $used_in_json,
       "needs_label": $needs_label,
       "validated": false
@@ -229,6 +239,14 @@ EOF
                     echo "    },"
                 fi
 
+                # related_page: afgeleid uit eerste used_in[] (of leeg bij geen placement)
+                related_page_ps=""
+                if [[ -n "$used_pagescan" ]]; then
+                    first_ps_used="$(echo "$used_pagescan" | head -n1)"
+                    related_page_ps="${first_ps_used#alfetta-wiki/pages}"
+                    related_page_ps="${related_page_ps%.mdx}"
+                fi
+
                 cat <<EOF
     {
       "id": "${DOC_CODE}-p${page_padded}-full",
@@ -240,6 +258,7 @@ EOF
       "label": "${DOC_CODE} pagina ${page_int} (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "$related_page_ps",
       "used_in": $used_ps_json,
       "needs_label": false,
       "validated": false

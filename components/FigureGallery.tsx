@@ -163,15 +163,14 @@ export default function FigureGallery() {
     return Array.from(s).sort()
   }, [figures])
 
-  // Gebruik `used_in` (eerste entry) als pagina-filter kandidaat — mapbaar naar route.
+  // Verzamel álle routes uit used_in — een figure kan in meerdere MDX-pagina's voorkomen.
   const allPages = useMemo(() => {
     const s = new Set<string>()
     figures.forEach(f => {
-      const first = (f.used_in || [])[0]
-      if (first) {
-        const route = usedInToRoute(first)
+      ;(f.used_in || []).forEach(u => {
+        const route = usedInToRoute(u)
         if (route) s.add(route)
-      }
+      })
     })
     return Array.from(s).sort()
   }, [figures])
@@ -183,9 +182,8 @@ export default function FigureGallery() {
         if (!(f.tags || []).includes(tagFilter)) return false
       }
       if (pageFilter) {
-        const first = (f.used_in || [])[0]
-        const route = first ? usedInToRoute(first) : null
-        if (route !== pageFilter) return false
+        const routes = (f.used_in || []).map(usedInToRoute).filter(Boolean) as string[]
+        if (!routes.includes(pageFilter)) return false
       }
       if (search) {
         const tags = (f.tags || []).join(' ')

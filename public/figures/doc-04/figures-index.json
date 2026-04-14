@@ -18,6 +18,7 @@
       "label": "Voorpagina",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -34,6 +35,7 @@
       "label": "Motor complete doorsnede — 2.0L viercilinder",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/technische-specificaties",
       "used_in": ["alfetta-wiki/pages/motor/technische-specificaties.mdx"],
       "needs_label": false,
       "validated": false
@@ -50,6 +52,7 @@
       "label": "Motorkap beugels steunpunten 1-3",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-uitbouwen",
       "used_in": ["alfetta-wiki/pages/motor/motor-uitbouwen.mdx"],
       "needs_label": false,
       "validated": false
@@ -66,6 +69,7 @@
       "label": "Figuur 3 — Motor ophangpunt",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -82,6 +86,7 @@
       "label": "Radiateur koelslang 5",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-uitbouwen",
       "used_in": ["alfetta-wiki/pages/motor/motor-uitbouwen.mdx"],
       "needs_label": false,
       "validated": false
@@ -98,6 +103,7 @@
       "label": "Motorruimte bovenaanzicht — luchtfilter en aansluitingen",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-uitbouwen",
       "used_in": ["alfetta-wiki/pages/motor/motor-uitbouwen.mdx"],
       "needs_label": false,
       "validated": false
@@ -114,6 +120,7 @@
       "label": "Figuur 3 — Slangen oliekoeler",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -130,6 +137,7 @@
       "label": "Figuur 4 — Motor links oliefilter",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -146,6 +154,7 @@
       "label": "Inlaatzijde carburateurs 11-14",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-uitbouwen",
       "used_in": ["alfetta-wiki/pages/motor/motor-uitbouwen.mdx"],
       "needs_label": false,
       "validated": false
@@ -162,6 +171,7 @@
       "label": "Figuur 2 — Klepdeksel verdeler",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -178,6 +188,7 @@
       "label": "Uitlaat koppeling ophangpunt 4-7",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-uitbouwen",
       "used_in": ["alfetta-wiki/pages/motor/motor-uitbouwen.mdx"],
       "needs_label": false,
       "validated": false
@@ -194,6 +205,7 @@
       "label": "Figuur 4 — Uitlaat flens",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -210,6 +222,7 @@
       "label": "Figuur 2 — Onderkant uitlaat",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -226,6 +239,7 @@
       "label": "Cardanas bij versnellingsbak",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-uitbouwen",
       "used_in": ["alfetta-wiki/pages/motor/motor-uitbouwen.mdx"],
       "needs_label": false,
       "validated": false
@@ -242,6 +256,7 @@
       "label": "Figuur 2 — Motorsteun bout",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -258,6 +273,7 @@
       "label": "Figuur 3 — Onderkant ophangpunt",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -274,6 +290,7 @@
       "label": "Figuur 4 — Koppelingshuis onderkant",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -290,6 +307,7 @@
       "label": "Figuur 5 — Koppelingshuis doorsnede",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -306,6 +324,7 @@
       "label": "Figuur 2 — Cardanas onderkant",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -322,6 +341,7 @@
       "label": "Figuur 3 — Vliegwiel inspectieluik",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -338,6 +358,7 @@
       "label": "Figuur 4 — Carter oliepeilstok",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -354,6 +375,7 @@
       "label": "Figuur 5 — Verdeler slangen",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -370,6 +392,7 @@
       "label": "Motor ophijsen met kettingtakel",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-uitbouwen",
       "used_in": ["alfetta-wiki/pages/motor/motor-uitbouwen.mdx"],
       "needs_label": false,
       "validated": false
@@ -386,6 +409,7 @@
       "label": "Koppeling drukgroep voorkant (1-2)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -402,6 +426,7 @@
       "label": "Vliegwiel achterkant met gereedschap (3)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -418,6 +443,7 @@
       "label": "Figuur 4 — Carburateur bevestiging",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -434,6 +460,7 @@
       "label": "V-snaar aandrijving dynamo (1-5)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -450,6 +477,7 @@
       "label": "Figuur 3 — Waterpomp thermostaat",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -466,6 +494,7 @@
       "label": "Brandstofpomp en oliefilter (8-9)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -482,6 +511,7 @@
       "label": "Figuur 5 — Inlaatspruitstuk kleppen",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -498,6 +528,7 @@
       "label": "Thermostaat wateruitlaat 1-2",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/koelsysteem",
       "used_in": ["alfetta-wiki/pages/motor/koelsysteem.mdx", "alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -514,6 +545,7 @@
       "label": "Figuur 3 — Uitlaatspruitstuk flenzen",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -530,6 +562,7 @@
       "label": "Brandstofpomp zijkant (5-6)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -546,6 +579,7 @@
       "label": "Cilinderkop bouten doppenbak (7-8)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -562,6 +596,7 @@
       "label": "Distributieketting bovenaanzicht (1-2)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -578,6 +613,7 @@
       "label": "Nokkenas tandwielen detail (3)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -594,6 +630,7 @@
       "label": "Figuur 4 — Cilinderkopbouten",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -610,6 +647,7 @@
       "label": "Figuur 2 — Klepstel gereedschap",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -626,6 +664,7 @@
       "label": "Figuur 3 — Motorblok krukas",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -642,6 +681,7 @@
       "label": "Figuur 4 — Vliegwiel krukas",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -658,6 +698,7 @@
       "label": "Figuur 5 — Motorblok voorkant",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -674,6 +715,7 @@
       "label": "Distributiedeksel nokkenas (1-2)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -690,6 +732,7 @@
       "label": "Distributieketting voorkant deksel (3-6)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -706,6 +749,7 @@
       "label": "Figuur 4 — Distributieketting tandwiel",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -722,6 +766,7 @@
       "label": "Figuur 5 — Motorblok achterkant",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -738,6 +783,7 @@
       "label": "Achterplaat krukaslager (1)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/motor-demonteren-werkbank",
       "used_in": ["alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -754,6 +800,7 @@
       "label": "Krukas met drijfstangen 2-3",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/inspectie-kleppen-veren",
       "used_in": ["alfetta-wiki/pages/motor/inspectie-kleppen-veren.mdx", "alfetta-wiki/pages/motor/motor-demonteren-werkbank.mdx"],
       "needs_label": false,
       "validated": false
@@ -770,6 +817,7 @@
       "label": "Figuur 4 — Drijfstanglager meting",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -786,6 +834,7 @@
       "label": "Figuur 5 — Drijfstang trekker",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -802,6 +851,7 @@
       "label": "Cilinderkop kleppen bovenaanzicht — nokkenassen en klepschotels (1–4)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/cilinderkop-demonteren-toleranties",
       "used_in": ["alfetta-wiki/pages/motor/cilinderkop-demonteren-toleranties.mdx"],
       "needs_label": false,
       "validated": false
@@ -818,6 +868,7 @@
       "label": "Klepveer indrukken met gereedschap A.2.0192 (5) en A.3.0324 (6)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/cilinderkop-demonteren-toleranties",
       "used_in": ["alfetta-wiki/pages/motor/cilinderkop-demonteren-toleranties.mdx"],
       "needs_label": false,
       "validated": false
@@ -834,6 +885,7 @@
       "label": "Figuur 2 — Cilinderwand honen",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -850,6 +902,7 @@
       "label": "Figuur 2 — Klepspeling meting",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -866,6 +919,7 @@
       "label": "Figuur 3 — Klepgeleider doorsnede",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -882,6 +936,7 @@
       "label": "Figuur 2 — Klepzitting frezen",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -898,6 +953,7 @@
       "label": "Krukas gradenboog voor timing-meting",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/krukas-zuigers-herbouwen",
       "used_in": ["alfetta-wiki/pages/motor/krukas-zuigers-herbouwen.mdx", "alfetta-wiki/pages/motor/ontstekings-timing.mdx"],
       "needs_label": false,
       "validated": false
@@ -914,6 +970,7 @@
       "label": "Zuiger en cilinderliner doorsnede",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/inspectie-kleppen-veren",
       "used_in": ["alfetta-wiki/pages/motor/inspectie-kleppen-veren.mdx", "alfetta-wiki/pages/motor/krukas-zuigers-herbouwen.mdx"],
       "needs_label": false,
       "validated": false
@@ -930,6 +987,7 @@
       "label": "Figuur 2 — Krukaslager keerring",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -946,6 +1004,7 @@
       "label": "Distributieketting spanner montage",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/distributieketting",
       "used_in": ["alfetta-wiki/pages/motor/distributieketting.mdx"],
       "needs_label": false,
       "validated": false
@@ -962,6 +1021,7 @@
       "label": "Nokkenashuis meetblokken controle",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/distributieketting",
       "used_in": ["alfetta-wiki/pages/motor/distributieketting.mdx"],
       "needs_label": false,
       "validated": false
@@ -978,6 +1038,7 @@
       "label": "Gradenboog C.6.0111 en meetklok op cilinder 4",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/klepspeling-controleren",
       "used_in": ["alfetta-wiki/pages/motor/klepspeling-controleren.mdx"],
       "needs_label": false,
       "validated": false
@@ -994,6 +1055,7 @@
       "label": "Klepgeleider montage doorsnede",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/cilinderkop-revisie",
       "used_in": ["alfetta-wiki/pages/motor/cilinderkop-revisie.mdx"],
       "needs_label": false,
       "validated": false
@@ -1010,6 +1072,7 @@
       "label": "Klepzitting frezen detail",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/cilinderkop-revisie",
       "used_in": ["alfetta-wiki/pages/motor/cilinderkop-revisie.mdx"],
       "needs_label": false,
       "validated": false
@@ -1026,6 +1089,7 @@
       "label": "Figuur 2 — Cilinderbus honen",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1042,6 +1106,7 @@
       "label": "Klepspeling voelermaat meting",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/cilinderkop-revisie",
       "used_in": ["alfetta-wiki/pages/motor/cilinderkop-revisie.mdx"],
       "needs_label": false,
       "validated": false
@@ -1058,6 +1123,7 @@
       "label": "Gasklep kabel afstelling — speling A",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/gasklep-kabel-afstellen",
       "used_in": ["alfetta-wiki/pages/motor/gasklep-kabel-afstellen.mdx"],
       "needs_label": false,
       "validated": false
@@ -1074,6 +1140,7 @@
       "label": "Gasklep mechanisme — maten B en C",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/gasklep-kabel-afstellen",
       "used_in": ["alfetta-wiki/pages/motor/gasklep-kabel-afstellen.mdx"],
       "needs_label": false,
       "validated": false
@@ -1090,6 +1157,7 @@
       "label": "Stationair afstelling — schroeven 1-5 op de carburateurs",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/stationair-toerental-co",
       "used_in": ["alfetta-wiki/pages/motor/stationair-toerental-co.mdx"],
       "needs_label": false,
       "validated": false
@@ -1106,6 +1174,7 @@
       "label": "Contactpunten ontsteking 1-4",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/contactpunten-afstellen",
       "used_in": ["alfetta-wiki/pages/motor/contactpunten-afstellen.mdx"],
       "needs_label": false,
       "validated": false
@@ -1122,6 +1191,7 @@
       "label": "Weber 40 DCOE — exploded view met onderdeelnummers",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/weber-carburateur",
       "used_in": ["alfetta-wiki/pages/motor/weber-carburateur.mdx"],
       "needs_label": false,
       "validated": false
@@ -1138,6 +1208,7 @@
       "label": "Vlotterniveau meting — afstand A = 7,5 mm",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/weber-carburateur",
       "used_in": ["alfetta-wiki/pages/motor/weber-carburateur.mdx"],
       "needs_label": false,
       "validated": false
@@ -1154,6 +1225,7 @@
       "label": "Solex C 40 DDH-8 exploded view",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/solex-carburateur",
       "used_in": ["alfetta-wiki/pages/motor/solex-carburateur.mdx"],
       "needs_label": false,
       "validated": false
@@ -1170,6 +1242,7 @@
       "label": "Dellorto vlotter hoogte meting B",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/dellorto-carburateur",
       "used_in": ["alfetta-wiki/pages/motor/dellorto-carburateur.mdx"],
       "needs_label": false,
       "validated": false
@@ -1186,6 +1259,7 @@
       "label": "Dellorto DHLA 40F exploded view",
       "caption_nl": "",
       "tags": [],
+      "related_page": "/motor/dellorto-carburateur",
       "used_in": ["alfetta-wiki/pages/motor/dellorto-carburateur.mdx"],
       "needs_label": false,
       "validated": false
@@ -1200,6 +1274,7 @@
       "label": "DOC-04 pagina 1 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1214,6 +1289,7 @@
       "label": "DOC-04 pagina 2 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1228,6 +1304,7 @@
       "label": "DOC-04 pagina 3 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1242,6 +1319,7 @@
       "label": "DOC-04 pagina 4 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1256,6 +1334,7 @@
       "label": "DOC-04 pagina 5 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1270,6 +1349,7 @@
       "label": "DOC-04 pagina 6 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1284,6 +1364,7 @@
       "label": "DOC-04 pagina 7 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1298,6 +1379,7 @@
       "label": "DOC-04 pagina 8 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1312,6 +1394,7 @@
       "label": "DOC-04 pagina 9 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1326,6 +1409,7 @@
       "label": "DOC-04 pagina 10 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1340,6 +1424,7 @@
       "label": "DOC-04 pagina 11 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1354,6 +1439,7 @@
       "label": "DOC-04 pagina 12 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1368,6 +1454,7 @@
       "label": "DOC-04 pagina 13 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1382,6 +1469,7 @@
       "label": "DOC-04 pagina 14 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1396,6 +1484,7 @@
       "label": "DOC-04 pagina 15 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1410,6 +1499,7 @@
       "label": "DOC-04 pagina 16 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1424,6 +1514,7 @@
       "label": "DOC-04 pagina 17 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1438,6 +1529,7 @@
       "label": "DOC-04 pagina 18 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1452,6 +1544,7 @@
       "label": "DOC-04 pagina 19 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1466,6 +1559,7 @@
       "label": "DOC-04 pagina 20 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1480,6 +1574,7 @@
       "label": "DOC-04 pagina 21 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1494,6 +1589,7 @@
       "label": "DOC-04 pagina 22 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1508,6 +1604,7 @@
       "label": "DOC-04 pagina 23 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1522,6 +1619,7 @@
       "label": "DOC-04 pagina 24 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1536,6 +1634,7 @@
       "label": "DOC-04 pagina 25 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1550,6 +1649,7 @@
       "label": "DOC-04 pagina 26 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1564,6 +1664,7 @@
       "label": "DOC-04 pagina 27 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1578,6 +1679,7 @@
       "label": "DOC-04 pagina 28 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1592,6 +1694,7 @@
       "label": "DOC-04 pagina 29 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1606,6 +1709,7 @@
       "label": "DOC-04 pagina 30 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1620,6 +1724,7 @@
       "label": "DOC-04 pagina 31 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1634,6 +1739,7 @@
       "label": "DOC-04 pagina 32 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1648,6 +1754,7 @@
       "label": "DOC-04 pagina 33 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1662,6 +1769,7 @@
       "label": "DOC-04 pagina 34 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1676,6 +1784,7 @@
       "label": "DOC-04 pagina 35 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1690,6 +1799,7 @@
       "label": "DOC-04 pagina 36 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1704,6 +1814,7 @@
       "label": "DOC-04 pagina 37 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1718,6 +1829,7 @@
       "label": "DOC-04 pagina 38 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1732,6 +1844,7 @@
       "label": "DOC-04 pagina 39 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1746,6 +1859,7 @@
       "label": "DOC-04 pagina 40 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1760,6 +1874,7 @@
       "label": "DOC-04 pagina 41 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1774,6 +1889,7 @@
       "label": "DOC-04 pagina 42 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1788,6 +1904,7 @@
       "label": "DOC-04 pagina 43 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1802,6 +1919,7 @@
       "label": "DOC-04 pagina 44 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1816,6 +1934,7 @@
       "label": "DOC-04 pagina 45 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1830,6 +1949,7 @@
       "label": "DOC-04 pagina 46 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1844,6 +1964,7 @@
       "label": "DOC-04 pagina 47 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1858,6 +1979,7 @@
       "label": "DOC-04 pagina 48 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
@@ -1872,6 +1994,7 @@
       "label": "DOC-04 pagina 49 (full-page scan)",
       "caption_nl": "",
       "tags": [],
+      "related_page": "",
       "used_in": [],
       "needs_label": false,
       "validated": false
