@@ -256,8 +256,14 @@ EOF
         echo '}'
     } > "$out_file"
 
+    # Sync canonical → wiki-public kopie zodat FigureGallery (Nextra/Next.js) de
+    # canonical JSON kan importeren via relatief pad. Canonical blijft source-of-truth
+    # in alfetta-project/content/$doc_slug/figures.json.
+    wiki_public_copy="$FIGURES_ROOT/$doc_slug/figures-index.json"
+    cp "$out_file" "$wiki_public_copy"
+
     # Stats
-    crop_count="$(ls "$fig_dir" | wc -l | tr -d ' ')"
+    crop_count="$(ls "$fig_dir" | grep -Eic '\.(png|jpg|jpeg)$' || true)"
     placement_count="$(wc -l < "$tmp_placements" | tr -d ' ')"
     used_count="$(cut -d'|' -f1 "$tmp_placements" | sort -u | wc -l | tr -d ' ')"
     echo "[$DOC_CODE] figures=$crop_count, placements=$placement_count (over $used_count unieke crops) → $out_file"
