@@ -1,6 +1,6 @@
 ---
 title: "Koelsysteem — 2.0L Alfetta motor"
-status: validated
+status: in-review
 source:
   doc: DOC-04
   title: "Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
@@ -13,6 +13,7 @@ drafted_on: 2026-04-12
 drafted_by: "/dev4alfetta (machine-vertaling uit staging/doc-04/pages/031.md)"
 validated_date: 2026-04-12
 validated_by: "/alfettaspecialist (visuele vergelijking met DOC-04 scans)"
+validated_note: "p31 + p5 content gevalideerd 2026-04-12. p15 demontage-sectie toegevoegd 2026-04-14 uit OCR — nog specialist-check nodig, daarom status → in-review."
 ---
 
 import { SourceRef, Cite } from '../../components/SourceRef'
@@ -39,7 +40,31 @@ Vóór de koelsysteem-procedures beschrijft p31 het afronden van de motorherbouw
 6. Verwijder de motor van de montagebok met een werkplaatskraan. Monteer het uitlaatspruitstuk, de warmeluchtgeleiding en de motorsteunen. Let erop dat de steun met de markering **N** aan de uitlaatzijde zit. <Cite p="31" />
 7. Monteer de startmotor. <Cite p="31" />
 
-<Figure src="doc04-p15-fig02-thermostaat-wateruitlaat" caption="Thermostaat wateruitlaat 1-2" page={15} size="sm" float="right" />
+## Demontage koelsysteem-componenten (p15)
+
+> Sectie toegevoegd 2026-04-14 op basis van DOC-04 p15 OCR-bron — nog niet door `/alfettaspecialist` inhoudelijk gevalideerd. Volgt dezelfde stappenvolgorde (1 t/m 8) als de bronpagina.
+
+<Figure src="doc04-p15-fig02-thermostaat-wateruitlaat" caption="Thermostaat-klepdeksel met bevestigingsmoeren (1) en deksel (2)" page={15} size="sm" float="right" />
+
+1. Draai moeren (1) los waarmee het thermostaat-klepdeksel (2) vastzit; verwijder deksel, pakking en thermostaatklep. <Cite p="15" />
+
+<Figure src="doc04-p15-fig03-uitlaatspruitstuk-flenzen" caption="Coolant temperature sender (3) en inlaatspruitstuk-bevestiging (4)" page={15} size="sm" float="right" />
+
+2. Verwijder de coolant temperature sender (3). <Cite p="15" />
+3. Draai de moeren los die het inlaatspruitstuk (4) aan de cilinderkop bevestigen; haal de hotair-stove bracket weg en verwijder het inlaatspruitstuk. <Cite p="15" />
+
+<Figure src="doc04-p15-fig04-brandstofpomp-zijkant" caption="Brandstofpomp-bevestigingsmoeren (5) en pomp (6)" page={15} size="sm" float="right" />
+
+4. Draai moeren (5) los waarmee de brandstofpomp (6) aan het voordeksel vastzit; verwijder pomp, pakking, afstandsstuk en pushrod. <Cite p="15" />
+5. Verwijder de oliedruk-schakelaar. <Cite p="15" />
+
+<Figure src="doc04-p15-fig05-cilinderkop-bouten" caption="Coolant telltale switch (7) en spanner A.5.0180 (8) voor nokkenas-afdekplaat" page={15} size="sm" float="right" />
+
+6. Verwijder de coolant temperature telltale switch (7). <Cite p="15" />
+7. Draai de bouten los die aan de voorkant de nokkenas-afdekplaat op de cilinderkop bevestigen. <Cite p="15" />
+8. Met spanner A.5.0180 (8) draai je de schroeven los die de nokkenas-afdekplaat aan de cilinderkop bevestigen; verwijder de afdekplaat. <Cite p="15" />
+
+> **Scope-opmerking**: stappen 3 (inlaatspruitstuk), 4 (brandstofpomp) en 7-8 (nokkenas-afdekplaat) horen inhoudelijk niet bij koelsysteem maar zijn in dezelfde OCR-procedure opgenomen. Zie ISS-011 voor herindeling naar passende MDX zodra `/alfettaspecialist` dit oppakt.
 
 ## Thermostaatklep testen
 
