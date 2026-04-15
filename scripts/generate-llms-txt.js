@@ -187,6 +187,17 @@ function generateLlmsTxt() {
     lines.push('')
   }
 
+  // Pointers naar machine-readable resources voor LLM-clients
+  lines.push('## Resources')
+  lines.push('')
+  lines.push(
+    `- [llms-full.txt](${BASE_URL}/llms-full.txt): Volledige content-dump van alle gevalideerde pagina's, geconcateneerd in sitemap-volgorde — direct geschikt voor LLM-context.`
+  )
+  lines.push(
+    `- [sitemap.xml](${BASE_URL}/sitemap.xml): XML-sitemap met alle URL's, lastmod en priority — voor crawlers en RAG-pipelines.`
+  )
+  lines.push('')
+
   return lines.join('\n')
 }
 

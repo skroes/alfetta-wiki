@@ -1,0 +1,3427 @@
+# Alfetta Archief — volledige content-dump
+
+> Bron: https://alfetta-wiki.vercel.app
+> Gegenereerd: 2026-04-15T07:33:31Z
+> Bevat alleen pagina's met frontmatter status: validated.
+> Voor structuur zie https://alfetta-wiki.vercel.app/llms.txt en https://alfetta-wiki.vercel.app/sitemap.xml
+
+---
+
+
+# Deze Alfetta — Serge's 1977 Alfetta 2000
+
+Bron: https://alfetta-wiki.vercel.app/eigenaar/deze-alfetta
+
+
+
+> **Status: validated** — feiten uit RDW kentekenregister, INDEX.md, en DOC-06 p.11. Internal/private data (kenteken, aankoopdatum, eigenaar-aantal) staat alleen in het archief, niet op deze pagina.
+
+# Deze Alfetta
+
+## Identiteit
+
+**Alfa Romeo Alfetta 2000** — **bouwjaar 1977**, carrosseriekleur **blauw** *(Alfa-kleurcode nog aan te vullen uit fabrieksplaatje)*.
+
+Voertuigcategorie M1 (personenauto), benzinemotor, 4 cilinders.
+
+Voor de model-context — 1977-only dashboard met aluminium "2000"-strip, transaxle-layout, De Dion achteras en de evolutie 1972–1984 — zie [Het verhaal](/eigenaar/het-verhaal).
+
+## Registratie (NL)
+
+| Datum | Wat |
+|---|---|
+| 24 mei 1977 | Inschrijving voertuig in Nederland |
+| 1 juni 1977 | Datum eerste toelating en eerste tenaamstelling NL |
+
+Bron: RDW kentekencheck.
+
+## Afmetingen en gewicht
+
+| | |
+|---|---|
+| Massa rijklaar | 1.235 kg |
+| Massa ledig voertuig | 1.135 kg |
+| Wielbasis | 251 cm |
+| Aantal assen | 2 (voor + achter) |
+| Aantal wielen | 4 |
+
+Bron: RDW kentekencheck.
+
+## Technische basis
+
+- 4-cilinder benzinemotor — aluminium DOHC, 1.962 cc (zie [DOC-04](/bronnen#doc-04--alfetta-workshop-manual-engine) voor motorspecificaties)
+- Vijfversnellingsbak in transaxle (motor voor, bak achter)
+- De Dion achteras
+- Emissieklasse: EURO 0
+
+## Tipo & Motor — wat de codes betekenen
+
+Deze auto is officieel **Tipo 116.55**, motor **016.23**. Beide codes zijn opgebouwd volgens een vast patroon uit de fabriek-documentatie.
+
+### 116.55 — voertuigtype (`basistype.typevariant`)
+
+- **116** = basistype → de hele Alfetta-modellenlijn (alles op het Alfetta-platform). [p11]
+- **.55** = typevariant → Alfetta 2.0 Berlina LHD. [p11]
+
+Verwante codes in dezelfde familie: [p11]
+
+| Code | Betekenis |
+|------|-----------|
+| **116.55** | Alfetta 2.0 Berlina LHD — *deze auto* |
+| 116.56 | Alfetta 2.0 Berlina RHD |
+| 116.36 | Alfetta GTV 2000 (coupé) |
+
+Het typenummer staat op het typeplaatje, op het schutbord en op de identificatieplaat. [p11]
+
+### 016.23 — motortype (`motorfamilie.uitvoering`)
+
+- **016** = motorfamilie → 2-liter DOHC (Alfetta/GTV klasse). [p11]
+- **.23** = Alfetta 2000-uitvoering. [p11]
+
+Het nummer staat op de linker achterzijde van het cilinderblok, gevolgd door een doorlopend serienummer vanaf `*000001*`. [p11]
+
+## Wat deze auto niet is
+
+- **Geen Alfetta 2000 L (Lusso)** — die verscheen pas in 1978 met 130 pk en een kunststof houtlook-dashboardstrip. Deze auto is uit 1977, eerste bouwjaar met aluminium "2000"-strip.
+- **Geen `116.55C`** — die code staat niet in DOC-06 p.11 en komt niet voor in het archief. Vermoedelijk een parts-catalogus-suffix of typo; niet gebruiken voor identificatie.
+- **Geen GTV 2000** — dat is de coupé-variant `116.36`, niet deze sedan.
+- **Geen Serie 1** — zie [Het verhaal](/eigenaar/het-verhaal) voor de Serie 1 vs Serie 2 verschillen (exterieur, interieur, achterlichten, dashboard).
+
+## Aan te vullen
+
+- Fabrieks-kleurcode (AR-code) — zie fabrieksplaatje onder motorkap of origineel instructieboek
+- Foto's van de auto (via `fotos/` pipeline, privacy-tier `internal`)
+
+<SourceRef
+  doc="DOC-06"
+  title="Alfetta Inspection Specifications — Berlina & Coupé"
+  pages={[11]}
+  pdf="/docs/DOC-06-inspection-specs.pdf"
+  archive_url="https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view"
+  language="en"
+/>
+
+---
+
+
+# Cilinderkop demonteren & toleranties — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/cilinderkop-demonteren-toleranties
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Cilinderkop demonteren & toleranties
+
+> **TL;DR** — Klem de kop op gereedschap A.2.0195, verwijder nokkenassen en kleppen in de juiste volgorde. Klepgeleider-uitsteek: **13,3–13,5 mm** (inlaat) en **16,3–16,5 mm** (uitlaat). Na herboring: klepgeleider-boring **9,000–9,015 mm**. Cilinderkophoogte na vlakken: minimaal **111,5 mm**. [p20] [p21]
+
+## Cilinderkop demonteren op werkbank
+
+
+
+Ga als volgt te werk om de cilinderkop te demonteren: [p20]
+
+1. Klem gereedschap A.2.0195 (1) in een bankschroef en zet de kop op het gereedschap. [p20]
+2. Draai de moeren (2) los waarmee de lagercaps (3) zijn bevestigd en verwijder ze. Verwijder daarna de nokkenassen (4). [p20]
+
+### Nokkenas demonteren
+
+3. Verwijder de splitpen en trek de bout uit. [p20]
+4. Draai de moer los waarmee het kettingwiel aan de nokkenas is bevestigd. [p20]
+5. Verwijder het kettingwiel, de flens en de spiebout. [p20]
+
+### Kleppen en veren verwijderen
+
+
+
+6. Verwijder — in de juiste volgorde voor eenvoudiger herplaatsing — de klepschotels uit hun zittingen in de kop, en de klepspeling-stelplaatjes. [p20]
+7. Druk met gereedschap A.2.0192 (5) en A.3.0324 (6) de klepveren in en verwijder de klemkegels. Verwijder daarna — in montagevolgorde zodat je ze op de oorspronkelijke positie terugplaatst — de bovenste veerzetels, de binnen- en buitenveren en de afdichtingen van de inlaatklepgeleiders. Verwijder met gereedschap A.3.0247 de onderste veerzetels en de stelplaatjes. Verwijder de inlaat- en uitlaatkleppen. [p20]
+
+### Kettingspanner demonteren
+
+8. Houd de kettingspanner in zijn zitting vast terwijl je de stelschroef losschroeft. Ontlaad daarna de veer en trek de spanner en veer uit. [p20]
+9. Verwijder de stelschroef en het borgwigje van de spanner. [p20]
+
+### Klepgeleiders en klepzittingen verwijderen (indien nodig)
+
+10. Als dit vereist is: verwijder de inlaat- en uitlaatklepgeleiders met gereedschap A.3.0134 en een pers. Om de klepzittingen te verwijderen gebruik je speciaal gereedschap A.0.0012. [p20]
+
+---
+
+## Checking & inspection — toleranties
+
+### Klepzittingen
+
+Controleer vóór het verwijderen van de klepzittingen en -geleiders of ze in goede staat zijn: [p21]
+
+- Controleer of de klepzittingen geen deuken, scheuren of brandplekken vertonen en goed zijn opgezet.
+- Als de klepzittingen beschadigd zijn: frees ze opnieuw bij met gereedschap A.1.0002. Klepzittingen mogen worden nabewerkt, zolang de minimummaat niet wordt overschreden. [p21]
+
+### Dichtheidstest na vernieuwen klepgeleiders
+
+Na het vernieuwen van de klepgeleiders controleer je de kleppen als volgt op dichtheid: [p21]
+
+1. Leg de cilinderkop — compleet met kleppen en veren — met de verbrandingskamers naar boven op een vlakke ondergrond.
+2. Maak de verbrandingskamervlakken zorgvuldig schoon.
+3. Vul de verbrandingskamers met benzine en controleer op lekkage langs de kleppen.
+
+Als kleppen lekken: controleer of de klepkoppen goed in de zittingen passen en herhaal de test. Als de lekkage aanhoudt: herhaal het inlappen. [p21]
+
+### Klepgeleiders
+
+Controleer op afwezigheid van deuken, vastlopen en onjuiste positionering in de cilinderkop. Vervang de geleiders indien nodig. [p21]
+
+| Maat | Inlaat | Uitlaat |
+|------|--------|---------|
+| **Uitsteek boven kopvlak** | **13,3 – 13,5 mm** | **16,3 – 16,5 mm** |
+
+> De uitsteek wordt automatisch correct ingesteld bij gebruik van gereedschap A.3.0246 (1) voor de inlaatzijde en A.3.0133 (2) voor de uitlaatzijde. [p21]
+
+Na vernieuwen moeten de klepgeleiders worden nageboord tot: [p21]
+
+| | Maat |
+|---|---|
+| **Klepgeleider-boring (na herboring)** | **9,000 – 9,015 mm** |
+
+Controleer deze maat met gereedschap C.1.0028. [p21]
+
+> Wanneer klepgeleiders worden vernieuwd, moeten de klepzittingen opnieuw worden gefreesd om te garanderen dat ze concentrisch zijn en de kleppen goed functioneren. [p21]
+
+### Kopvlak
+
+Als het kopvlak beschadigd of krom is, moet het worden nabewerkt. [p21]
+
+| | Minimummaat |
+|---|---|
+| **Cilinderkophoogte na vlakken** | **111,5 mm** |
+
+### Overige inspectiepunten
+
+- Controleer de klepschotelzittingen op krassen, vastlopen of overmatige slijtage. [p21]
+- Controleer de nokkenaslagertappen en -caps op goede staat. [p21]
+
+## Verband met andere pagina's
+
+- **p29-30** (cilinderkop-revisie.mdx) beschrijft de herbouw: klepzittingen en -geleiders monteren, kleppen inlappen, nokkenassen plaatsen en klepspeling afstellen.
+- De toleranties op deze pagina (p21) zijn de referentiewaarden die in p29-30 worden bedoeld met "Checking and inspection".
+- **p22** (inspectie-kleppen-veren.mdx) geeft de lagerschaal-kleurcodering en overige inspectiematen.
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Dismantling cylinder head on bench | Cilinderkop demonteren op werkbank | Procedure titel |
+| Camshaft | Nokkenas | |
+| Caps | Lagercaps | Nokkenaslagercaps |
+| Chainwheel | Kettingwiel | Nokkenas-aandrijftandwiel |
+| Valve cotters | Klemkegels | Vergrendelen klepsteel in veerzitel |
+| Upper / lower spring seats | Bovenste / onderste veerzetels | |
+| Inner & outer springs | Binnen- en buitenveren | Dubbele klepveerset |
+| Intake valve guide seals | Inlaatklepgeleider-afdichtingen | |
+| Adjusting pads | Stelplaatjes | Voor klepspeling |
+| Chain tensioner | Kettingspanner | |
+| Setscrew | Stelschroef | Kettingspanner borgschroef |
+| Locking wedge | Borgwigje | |
+| Valve seat inserts | Klepzittingen | |
+| Valve guides | Klepgeleiders | |
+| Protrusion | Uitsteek | Uitsteek geleider boven kopvlak |
+| Re-boring | Herboring / nafrezen | Na vernieuwen geleider |
+| Valve cup seats | Klepschotelzittingen | |
+| Checking and inspection | Controle en inspectie | Sectie met toleranties (p21) |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[20, 21]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Cilinderkop revisie — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/cilinderkop-revisie
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Cilinderkop revisie
+
+> **TL;DR** — Verwarm de kop tot 100°C voor het monteren van klepzittingen en klepgeleiders. Lap elke klep in met Sipal Arexon pasta. Nokkenaslagercaps vastzetten op **2 – 2,25 kgm (20-21 Nm)**. Klepspeling: inlaatnokkens 0,475 – 0,500 mm, uitlaatnokkens 0,525 – 0,550 mm. [p29] [p30]
+
+## Voorbereidend werk op motorblok (p29, eerste helft)
+
+Vóór de cilinderkop-revisie worden de volgende onderdelen op het blok afgemonteerd: [p29]
+
+1. Plaats de dynamo op het frontdeksel en het aansluitsnoer. Monteer de aandrijfriem en span deze door de dynamo naar buiten te schuiven. Vergrendel de dynamo. [p29]
+2. Monteer de verdelerkap en sluit de bougiekabels aan. [p29]
+3. Monteer het achterdeksel met afstandsflens. Controleer dat de startmotorkabel-klemmen juist gepositioneerd zijn. [p29]
+4. Sluit de slang aan tussen de waterpomp en de thermostaatklep. [p29]
+5. Sluit de leiding van benzinepomp naar filter aan op de pomp. [p29]
+6. Monteer de carterventilatieleiding. [p29]
+
+## Cilinderkop herbouwen
+
+
+
+### Klepzittingen en geleiders
+
+1. **Verwarm de cilinderkop tot 100°C.** [p29]
+2. Monteer de inlaat- en uitlaatklepzittingen met gereedschap A.3.0461 respectievelijk A.3.0462. [p29]
+3. Monteer de inlaat- en uitlaatklepgeleiders met gereedschap A.3.0246 respectievelijk A.3.0133. [p29]
+4. Plaats de kop op gereedschap A.2.0195 en A.2.0196. [p29]
+
+### Vlakken (indien nodig)
+
+Als de cilinderkop gevlakt moet worden: verwijder de onderste spruitstukbevestigingsbouten en slijp de kop bij, zonder de grenzen uit "Checking and inspection" te overschrijden. [p29]
+
+### Klepgeleiders ruimen
+
+Ruim de klepgeleiders op maat volgens "Checking and inspection" met gereedschap U.6.0009. [p29]
+
+
+
+### Kleppen inlappen
+
+Lap elke klep in zijn zitting met gereedschap G.1.0004 en **Sipal Arexon inslijppasta**. Smeer de klepsteel met motorolie vóór het inlappen. Maak de kop zorgvuldig schoon om elk spoor van slijppoeder te verwijderen. [p30]
+
+### Hermontage
+
+1. Monteer de klepschotels en de onderste veerzetels van de inlaatkleppen. [p30]
+2. Monteer de inlaatklepgeleider-afdichtingen met gereedschap A.3.0244. [p30]
+3. Steek de kleppen in de geleiders. Monteer veren, veerzetels en klemkegels in omgekeerde volgorde van demontage. [p30]
+4. Controleer de kleppen op dichtheid volgens "Checking and inspection". Plaats de stelplaatjes op de klepstelen. [p30]
+5. Smeer de klepschotels met motorolie en monteer ze in de kop. [p30]
+
+### Nokkenassen plaatsen
+
+1. Smeer de nokkenaslagertappen. Monteer de nokkenassen op hun oorspronkelijke posities. [p30]
+2. Monteer de lagercaps volgens de locatienummers. **Oliekanalen moeten naar binnen wijzen.** [p30]
+3. Smeer de bouten en draai de lagercap-moeren aan op **2 – 2,25 kgm (20-21 Nm)**. [p30]
+
+
+
+### Klepspeling controleren
+
+Controleer met meetgereedschap C.6.0168 dat de speling tussen de hiel van de nokkenlob en de bovenkant van de schotel is: [p30]
+
+| | Speling |
+|---|---|
+| **Inlaatnokkens** | 0,475 – 0,500 mm |
+| **Uitlaatnokkens** | 0,525 – 0,550 mm |
+
+Als de speling niet klopt: verander de dikte van het stelplaatje. Gebruik gereedschap C.1.0108 om de stelplaatjesdikte te controleren. [p30]
+
+### Kettingspanner en inlaatspruitstuk
+
+1. Vet de kettingspannerveer in en plaats de veer in de spanner. Plaats de conische borgplaat op de spanner. Monteer het geheel in de zitting in de kop en draai de bevestigingsschroeven vast. [p30]
+2. Monteer de pakking en het inlaatspruitstuk/carburateur-eenheid. Assembleer vooraf: [p30]
+   - Rembekrachtigingsklep (non-return valve) [p30]
+   - Thermostaatklep [p30]
+   - Koelvloeistof-temperatuurzender [p30]
+   - Gasklep-mechaniekbeugel [p30]
+   - Breng afdichtmiddel (Heldite van Diring) aan op de pakkingen van de carburateur-rubberbevestigingen. [p30]
+
+## Let op
+
+- De klepspelingswaarden op p30 (0,475-0,500 mm inlaat / 0,525-0,550 mm uitlaat) zijn de **koude** spelingswaarden, gemeten aan de **hiel** van de nokkenlob. Dit is een andere meting dan de contactpuntenspleet op p35.
+- De torque-waarde **2 – 2,25 kgm (20-21 Nm)** geldt specifiek voor de nokkenaslagercap-moeren, niet voor de cilinderkopbouten.
+- "Checking and inspection" verwijst naar DOC-04 p21-23 voor de toleranties.
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Cylinder head | Cilinderkop | |
+| Valve seat inserts | Klepzittingen | Gemonteerd bij 100°C |
+| Valve guides | Klepgeleiders | |
+| Lapping | Inlappen | Met Sipal Arexon pasta |
+| Valve stem | Klepsteel | |
+| Spring seats | Veerzetels | |
+| Cotters | Klemkegels | |
+| Cups | Klepschotels | Oliegevuld |
+| Adjusting pads | Stelplaatjes | Voor klepspeling |
+| Camshaft journal bearings | Nokkenaslagertappen | |
+| Cap fixing nuts | Lagercap-moeren | 2 – 2,25 kgm |
+| Heel of cam lobe | Hiel van de nokkenlob | Basiscirkel |
+| Chain tensioner | Kettingspanner | |
+| Intake manifold | Inlaatspruitstuk | |
+| Brake servo non-return valve | Rembekrachtigingsklep | |
+| Sealing compound | Afdichtmiddel | Heldite van Diring |
+| Resurfacing / regrinding | Vlakken / bijslijpen | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[29, 30]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Contactpunten afstellen — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/contactpunten-afstellen
+
+
+
+> **Status: validated** (2026-04-12). Inhoudelijk gevalideerd door `/alfettaspecialist` — alle 11 procedure-stappen + meetwaarde 0,4 – 0,5 mm geverifieerd tegen de originele Alfetta Workshop Manual p35 scan. Oorspronkelijke NL-vertaling opgesteld onder `/dev4alfetta` uit OCR-staging.
+
+# Contactpunten afstellen
+
+> **TL;DR** — Controleer de spleet tussen de contactpunten met een voelermaat. Volgens DOC-04 p35 is de specificatie **0,4 – 0,5 mm**. Klopt hij niet, stel bij op de verdeler terwijl de nok en volger de contactpunten maximaal open drukken. [p35]
+
+
+
+## Controle
+
+DOC-04 p35 beschrijft de controle in deze stappen: [p35]
+
+1. Haal de luchtinlaat van de carburateur weg. [p35]
+2. Draai de bevestiging los en haal het beschermkapje van de verdeler af. [p35]
+3. Haal de verdelerkap eraf. [p35]
+4. Haal de verdelerrotor eraf. Bij een Marelli-verdeler draai je eerst de bevestigingsbout van de rotor los. [p35]
+5. Draai de krukas rond totdat de verdeleras de contactpunten volledig open drukt. [p35]
+6. Controleer met een voelermaat of de spleet gelijk is aan de specificatie: **0,4 – 0,5 mm**. [p35]
+
+## Afstellen (alleen als de controle afwijkt)
+
+Als de gemeten spleet niet klopt, beschrijft DOC-04 p35 de afstelling als volgt: [p35]
+
+1. Draai de bevestigingsschroef van het vaste contactpunt los. [p35]
+2. Draai de verdeleras zo dat de nok en volger de contactpunten maximaal open drukken. [p35]
+3. Schuif een voelermaat van de juiste dikte tussen de contactpunten. [p35]
+4. Stel de spleet bij en draai de bevestigingsschroef weer vast. [p35]
+5. Controleer de spleet nog een keer en zet de verdelerrotor terug. [p35]
+
+## Let op
+
+- DOC-04 p35 noemt één expliciete variant-instructie: **bij een Marelli-verdeler** moet je eerst een bevestigingsbout losdraaien voordat je de rotor eraf kunt halen. Voor andere verdeler-types staat er op deze pagina geen afwijkende instructie. [p35]
+- Onder "Ignition timing" beschrijft dezelfde bronpagina de ontstekings-timing procedure. Die valt buiten deze pagina en hoort op een eigen MDX wanneer de content-pipeline er aan toe is.
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Breaker points gap | Spleet tussen de contactpunten | DOC-04 p35 titel |
+| Distributor | (Stroom)verdeler | |
+| Distributor cap | Verdelerkap | |
+| Distributor protection cover | Beschermkapje van de verdeler | |
+| Rotor arm | Verdelerrotor | |
+| Distributor drive shaft | Verdeleras | |
+| Points / breaker points | Contactpunten | |
+| Stationary point | Vaste contactpunt | |
+| Fixing screw | Bevestigingsschroef | |
+| Feeler gauge | Voelermaat | |
+| Cam and follower | Nok en volger | |
+| Crankshaft | Krukas | |
+| Carburetter's air intake | Luchtinlaat van de carburateur | UK-spelling "carburetter" staat zo in de bron |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[35]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Dellorto DHLA 40F carburateur — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/dellorto-carburateur
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Dellorto DHLA 40F carburateur
+
+
+
+> **TL;DR** — Dellorto DHLA 40F variant. Demontage analoog aan Weber/Solex. Hoofdsproeier: **1,45**. Vlotterniveau A: **14,5 – 15 mm** (niet bijstelbaar, vlotter vervangen bij afwijking). Acceleratiepomp-opbrengst: **8 ± 1,5 cc** (standaard) of **5,5 ± 0,5 cc** (geontvergiftigd). Vlottergewicht: **10 g**. Benzinepomp-uitlaatdruk: **0,3 – 0,4 kg/cm²** (FISPA 4033.01 / SAVARA) of **0,3 – 0,45 kg/cm²** (FISPA 4053.01). [p47] [p48]
+
+## Demonteren (stripping)
+
+Was de buitenkant met benzine en droog met perslucht. Demonteer zorgvuldig: [p46]
+
+### Dekseldeel
+
+1. Draai holle bout 42 los, verwijder holle koppeling 38 of 39 (achter/voor) met afdichtingen 37 en 41 en zeef 40. [p46]
+2. Verwijder deksel 19 met pakking 24. [p46]
+3. Draai schroeven van deksel 16 los en verwijder met vlotter 12. Verwijder chokekabel-beugel 90 van achtercarburateur. [p46]
+4. Schuif draaistift 36 uit, maak vlotter los van naaldklep 11 en verwijder vlotter. [p46]
+5. Verwijder pakking 17, naaldklep 11 en afdichting 18. [p46]
+6. Indien nodig: demonteer choke-inrichting door van spindel 32 moer 31, ring 30, bus 29, veer 28 en hendel 35 te verwijderen. [p46]
+7. Draai plug 34 los en verwijder spindel 32 met ring 33. [p46]
+8. Draai plug 13 los en verwijder veer 14 en klep 15. [p46]
+
+### Huis
+
+9. Verwijder emulsiebuizen 7, hoofdsproeiers 3 en luchtsproeiers 9 als eenheid. [p46]
+10. Verwijder stationaire sproeiers 4 met houders 10 en pakkingen 46. [p46]
+11. Verwijder emulsiebuis 8 en chokesproeier 6. [p46]
+12. Verwijder stationaire mengselschroeven 85 met veren 84, ring 58 en afdichtingen 59. [p46]
+13. Verwijder vacuümpoort-pluggen 83. [p46]
+14. Verwijder pluggen 89, acceleratiepomp-sproeiers 5 met afdichtingen 88 en 87. [p46]
+15. Verwijder de acceleratiepomp-uitlaatklep: kogel 45, plug 43 en gewicht 44. [p46]
+16. Verwijder gasklep-koppelschroef 56 met veer 57. Van de voorcarburateur: gasklep-spindelring en ringen. Van de achtercarburateur: gasklep-openingsschroef 86 met veer, ring en ring. [p46]
+
+### Acceleratiepomp
+
+17. Verwijder borgmoer 74 en moer 75 van de bedieningsstang. [p46]
+18. Draai schroeven 72 met ringen 23 los en verwijder pomp 68 met pakking 67. Houd veer 76 en bus 77 apart. [p46]
+19. Verwijder inlaatklep 69 met ring 46 van pomp 68. [p46]
+20. Draai schroeven 73 met ringen 21 los, verwijder deksel 78, membraan 79 met veer 80. [p46]
+21. Haak de gasklep-spindel-retourveer 50 los van zowel spindel als huis. [p46]
+
+> **⚠️ BELANGRIJK:** Verwijder **nooit** de bypass-schroef aan de buitenkant van het carburateurhuis. Verwijder ook **nooit** de venturi's uit het huis. [p46]
+
+## Inspectie en controle
+
+Was sproeiers en kleppen grondig met benzine + perslucht. Gebruik **geen** metalen voorwerpen. [p47]
+
+Controleer het membraan van de acceleratiepomp op beschadiging en de veer(en) op overbelasting. [p47]
+
+### Instelgegevens Dellorto carburateur
+
+| Gegeven | DHLA 40 F (standaard) | DHLA 40 F (geontvergiftigd) |
+|---------|----------------------|----------------------------|
+| Alfa Romeo P.N. | 116.08.04.010.02 / .011.02 | 116.42.04.010.00 / .011.00 e.a. |
+| Venturi | 32 | 32 |
+| Hoofdsproeier | 1,45 | 1,45 |
+| Hoofd-emulsiebuis | 7772.08.28 | 7772.08.28 |
+| Hoofd-luchtdoseersproeier | 2,10 | 2,10 |
+| Stationaire sproeier | 0,55 | 0,52 |
+| Stationaire luchtdoseersproeier | 2,20 | 2,20 |
+| Overgangsopeningen | 5 gaten ø 1,2/1,6/1,6/1,5/1,5 | 5 gaten ø 1,2/1,6/1,6/1,5/1,5 |
+| Chokesproeier | 0,70 | 0,80 |
+| Choke-luchtdoseersproeier | 3,00 | 1,50 |
+| Choke-emulsiebuis | 7482.01.28 | 7482.3 |
+| Acceleratiepomp-sproeier | 0,33 radiaal | 0,33 radiaal |
+| Acc.pomp opbrengst (20 slagen/vat) | 8 ± 1,5 cc | 5,5 ± 0,5 cc |
+| Naaldklep | 1,50 | 1,50 |
+| Vlottergewicht | 10 g | 10 g |
+
+[p47]
+
+## Herbouw
+
+Herbouw in omgekeerde volgorde van demontage. [p48]
+
+### Vlotterniveau
+
+
+
+Meet de afstand tussen vlotter en deksel-vlak (met pakking, deksel verticaal, vlottertong in licht contact met kogel). [p48]
+
+**Afstand A moet 14,5 – 15 mm zijn.** [p48]
+
+Als de afstand niet klopt: **vervang de vlotter** (niet bijbuigen zoals bij Weber). [p48]
+
+### Acceleratiepomp-opbrengst
+
+Test zoals beschreven op pagina 44 (Solex-procedure). Opbrengst moet overeenkomen met de waarde in de instelgegevens-tabel op pagina 47. [p48]
+
+## Benzinepomp
+
+### Uitlaatdruk testen
+
+Deze test wordt uitgevoerd bij diagnose om de oorzaak van carburateur-overstroming te achterhalen (als naaldklepuitsteek en vlotteruitlijning correct zijn). [p48]
+
+1. Sluit een drukmeter met slangen en klep aan tussen pomp en filter. [p48]
+2. Start de motor en controleer de uitlaatdruk: [p48]
+   - **0,3 – 0,4 kg/cm²** voor FISPA pompen P.N. 4033.01 en SAVARA pompen P.N. 2.06.033.00 [p48]
+   - **0,3 – 0,45 kg/cm²** voor FISPA pompen P.N. 4053.01 [p48]
+3. Testcondities: uitlaatklep stroomafwaarts van de meter dicht, motor op **5000-6000 tpm**, meter op pomphoogte. [p48]
+
+Als de uitlaatdruk niet klopt: **vervang de benzinepomp**. [p48]
+
+## Verschil met Weber en Solex
+
+| Kenmerk | Weber 40 DCOE | Solex C 40 DDH-8 | Dellorto DHLA 40F |
+|---------|---------------|------------------|-------------------|
+| Hoofdsproeier | 1,35 | 1,40 | 1,45 |
+| Vlotterniveau | A = 7,5 mm (buigen) | B = 4,4-4,6 mm (vulringen) | A = 14,5-15 mm (vervangen) |
+| Acc.pomp opbrengst | 3,5 – 4,5 cc | 5 – 7 cc | 8 ± 1,5 cc |
+| Vlottergewicht | 26 g | 13,6 g | 10 g |
+| Acc.pomp-sproeier | 0,35 horiz. | 0,35 | 0,33 radiaal |
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| DHLA | — | Dellorto type-aanduiding |
+| Pivot pin | Draaistift | Vlotterbevestiging |
+| Spindle | Spindel | Choke-as |
+| Throttle spindle return spring | Gasklep-spindel-retourveer | |
+| Radial jet | Radiaal sproeier | Acc.pomp type |
+| Petrol pump outlet pressure | Benzinepomp-uitlaatdruk | |
+| FISPA / SAVARA | — | Pompenmerken |
+| Flooding | Overstroming | Carburateur-diagnose |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[44, 45, 46, 47, 48]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Distributieketting & nokkenas instellen — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/distributieketting
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Distributieketting & nokkenas instellen
+
+> **TL;DR** — Hang de ketting op de nokkenasketttingwielen en sluit hem met de verbindingsschakel. Controleer de referentietekens op het vliegwiel (BDP) én op de nokkenassen (merktekens op journals, nokken van cilinder 1 wijzen naar buiten). Klepdeksel-bouten: **1,8–2,0 kgm (17–19 Nm)**. Bougiemoment: **2,5–3,5 kgm (25–34 Nm)**. Gebruik Loctite 241 op bougiedraad. [p27]
+
+## Distributieketting monteren en nokkenassen instellen
+
+
+
+Na het monteren van de cilinderkop ga je verder als volgt: [p27]
+
+1. Smeer de voorste bevestigingsbouten van de cilinderkop in met **CURIL van Diring**. Monteer de bouten en draai ze vast. [p27]
+2. Hang de ketting over de nokkenaskettingwielen en de spanner. [p27]
+3. Draai de inlaatnokkenas **inwaarts** ten opzichte van het referentieteken. [p27]
+4. Sluit de kettinguiteinden met de verbindingsschakel. Span de ketting door de stelschroef van de spanner te draaien. [p27]
+
+### Timing controleren
+
+5. Controleer dat zuiger 1 op BDP staat op de **compressieslag**: het referentieteken op het vliegwiel moet in lijn zijn met de aanwijzer op het motorblok. [p27]
+6. Controleer dat de referentietekens op de nokkenassen zijn uitgelijnd met de tekens op de lagercaps (journals), én dat de nokken van cilinder 1 **naar buiten** wijzen. [p27]
+7. Controleer dat merkteken **P** op de trillingsdemper in lijn is met de aanwijzer op het voordeksel. Stel de aanwijzer op het deksel bij indien nodig. [p27]
+
+### Nokkenastiming bijstellen (indien nodig)
+
+Als de nokkenas-instelling correctie nodig heeft: [p27]
+
+1. Verwijder de borgbout uit de flens en het kettingwiel.
+2. Draai de borgmoer los waarmee het kettingwiel aan de nokkenas is bevestigd.
+3. Draai de nokkenas met gereedschap A.5.0103 totdat de merktekens gelijkstaan.
+4. Monteer de borgbout terug en zet het kettingwiel vast door de moer aan te draaien en de borgplaat om te buigen. [p27]
+
+---
+
+## Afronding motoropbouw
+
+
+
+8. Monteer de oliecarter met pakking. [p27]
+9. Monteer de afdichtingen op de kop en vul **0,415 kg motorolie** in de nokkenashuizen. [p27]
+10. Breng **Heldite van Diring** aan op de klepdekselpakking. [p27]
+11. Monteer het klepdeksel; draai de bevestigingsbouten vast op **1,8–2,0 kgm (17–19 Nm)**. [p27]
+12. Smeer de bougiedraad in met **Molykote A van Iseco** en draai de bougies vast op **2,5–3,5 kgm (25–34 Nm)** met sleutel A.5.0115. [p27]
+
+> **Belangrijk:** Als de cilinderkop vernieuwd is, breng dan referentietekens aan op de voorste caps met gereedschap A.4.0129. [p27]
+
+## Koppelmomenten
+
+| Onderdeel | Koppelmoment |
+|---|---|
+| Klepdeksel-bouten | 1,8–2,0 kgm (17–19 Nm) |
+| Bougies | 2,5–3,5 kgm (25–34 Nm) |
+
+## Verband met andere pagina's
+
+- **p24-26** (krukas-zuigers-herbouwen.mdx) beschrijft de voorafgaande stappen: krukas, zuigers, voordeksel en cilinderkop plaatsen.
+- **p28** (klepspeling-controleren.mdx) beschrijft de klepspeling na de motormontage.
+- **p29-30** (cilinderkop-revisie.mdx) beschrijft de herbouw van de cilinderkop met klepzittingen, inlappen en nokkenassen plaatsen.
+- **p35** (contactpunten-afstellen.mdx) geeft de Bosch-verdeler positie (22° hoek).
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Timing chain | Distributieketting | Nokkenasaandrijving |
+| Camshaft sprocket | Nokkenaskettingwiel | |
+| Tensioner sprocket | Spannerkettingwiel | |
+| Joint link | Verbindingsschakel | Sluit de kettingketting |
+| Tensioner set-screw | Stelschroef van de spanner | |
+| T.D.C. on compression stroke | BDP op compressieslag | |
+| Reference mark | Referentieteken | Op vliegwiel, nokkenassen en demper |
+| Pointer | Aanwijzer | Vast punt op blok of deksel |
+| Vibration damper | Trillingsdemper | Met merkteken P |
+| Locating bolt | Borgbout | Vergrendelt kettingwiel op flens |
+| Camshaft cover | Klepdeksel | |
+| Camshaft housings | Nokkenashuizen | Gevuld met 0,415 kg olie |
+| Sparking plug | Bougie | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[27]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Gasklep-kabel afstellen — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/gasklep-kabel-afstellen
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Gasklep-kabel afstellen
+
+
+
+
+> **TL;DR** — Controleer drie afstanden: speling A (1-2 mm) bij volledig ingetrapt gaspedaal, uitsteek B van de aanslag-schroef (15-22 mm), en speling C (5-6 mm) van de handgas-kabelklem. Controleer het brandstofsysteem op lekkages. [p33]
+
+## Afstelling
+
+1. Controleer dat bij volledig ingetrapt gaspedaal de speling **A** tussen de gasklep-bedieningshendel en de aanslag op de carburateur **1-2 mm** bedraagt. [p33]
+2. Als het pedaal niet tegen de aanslagschroef tot stilstand komt: stel af met stelschroef 1. De uitsteek van de aanslagschroef van het gaspedaal moet **15-22 mm** zijn (maat B). [p33]
+3. Controleer dat bij de handgashendel in ruststand de speling **C** tussen de klem op de handgas-kabel en de pedaalhendel **5-6 mm** bedraagt. [p33]
+4. Controleer het brandstofsysteem op lekkages. [p33]
+
+## Let op
+
+- De maten A, B en C verwijzen naar posities in het bijbehorende figuur op DOC-04 p33. [p33]
+- Deze afstelling hoort bij de hermontage van de motor (sectie "Re-installing the engine"). Voer hem uit nadat de motor teruggeplaatst is en vóór het instellen van het stationair toerental — zie [Stationair toerental & CO-uitstoot](/motor/stationair-toerental-co).
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Accelerator linkage | Gasklep-mechaniek / -kabel | DOC-04 p33 titel |
+| Accelerator pedal | Gaspedaal | |
+| Throttle control lever | Gasklep-bedieningshendel | |
+| Limit stop | Aanslag | Op de carburateur |
+| Limit stop screw | Aanslagschroef | Op het gaspedaal |
+| Adjuster | Stelschroef | Schroef 1 |
+| Hand throttle cable | Handgas-kabel | |
+| Clamp | Klem | Op de handgas-kabel |
+| Pedal lever | Pedaalhendel | |
+| Clearance | Speling | Maat A, B, C |
+| Feed system | Brandstofsysteem | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[33]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Inspectie kleppen, veren & krukas — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/inspectie-kleppen-veren
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Inspectie kleppen, veren & krukas
+
+> **TL;DR** — Visuele inspectie van klepveren (scheuren/vervorming), klepschotels (vastlopen/scoring), kleppen (inbranding), nokkenassen (krassen/oververhitting), krukas (slijtage/scoring), en lagerschalen (kleurcodering bij hermontage). Cilindervoeringen en zuigers: match op kleurcode (A=blauw, B=roze, C=groen). [p22]
+
+## Veren, schotels & kleppen
+
+- Inspecteer de klepveren visueel op scheuren of vervorming. [p22]
+- Controleer de buitendiameter van de klepschotels, het bovenvlak dat tegen de nokken werkt, en de stelplaatjes op tekenen van vastlopen, scoring of overmatige slijtage. [p22]
+- Controleer de kleppen op scoring, inbranding of indrukking in de klepzitting. Vervang indien nodig. [p22]
+
+## Nokkenassen
+
+Inspecteer zorgvuldig de werkoppervlakken van de nokken en de nokkenas-lagertappen op krassen, vastlopen, oververhitting of overmatige slijtage. Vervang indien nodig. [p22]
+
+
+
+## Krukas
+
+Controleer de werkoppervlakken van de krukpennen en hoofdlagertappen op overmatige slijtage, scoring, vastlopen of oververhitting. [p22]
+
+### Oliekanalen reinigen
+
+Verwijder de oliekanaalplugs en alle sporen van eerdere dichtingen. Reinig de oliekanalen met een stalen zwabber, spoel de krukas en kanalen met benzine of een geschikt oplosmiddel en droog met perslucht. [p22]
+
+## Lagerschalen krukas
+
+Controleer de lagerschalen op overmatige slijtage. De werkoppervlakken mogen geen tekenen van krassen of vastlopen vertonen. Bij ongelijkmatige slijtage: **alle schalen vervangen**. [p22]
+
+### Kleurcodering bij hermontage
+
+Op de krukas staan **rode en blauwe kleurmerken** naast de krukpennen en hoofdlagertappen. Op de rand van de lagerschalen staan eveneens rode of blauwe merken. Bij herbouw moeten de schalen **op kleur gematcht** worden met de lagertappen en krukpennen. [p22]
+
+**Let op cilinder 4:** de lagerschalen voor de drijfstang van cilinder 4 moeten gemonteerd worden met de afschuining richting het vliegwiel. [p22]
+
+
+
+## Cilindervoeringen, zuigers & drijfstangen
+
+Voeringen en zuigers moeten gematcht worden volgens de kleurmerken op de zuigerkruin en het buitenoppervlak van de voeringen: [p22]
+
+| Klasse | Kleur |
+|--------|-------|
+| A | Blauw |
+| B | Roze |
+| C | Groen |
+
+Zuigerpennen en zuigers moeten gematcht worden volgens de zwarte of witte stip op het binnenoppervlak van de zuigerpen en de buitenkant van de zuigerbossen. [p22]
+
+Bij herbouw: monteer de drijfstangen met de grote-kop-offset richting de tussenliggende hoofdlagers, en de zuigers met de **pijl op de kruin richting de uitlaatzijde**. [p22]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Valve springs | Klepveren | |
+| Valve cups | Klepschotels | |
+| Adjusting pads | Stelplaatjes | |
+| Scoring | Scoring / groefvorming | Slijtage-indicator |
+| Seizing | Vastlopen | |
+| Camshaft journals | Nokkenas-lagertappen | |
+| Crankpins | Krukpennen | |
+| Main journals | Hoofdlagertappen | |
+| Bearing shells | Lagerschalen | |
+| Oil galleries / oilways | Oliekanalen | |
+| Steel swab | Stalen zwabber | |
+| Liners | Cilindervoeringen | |
+| Gudgeon pin | Zuigerpen | |
+| Piston bosses | Zuigerbossen | |
+| Big end offset | Grote-kop-offset | Drijfstang-oriëntatie |
+| Chamfer | Afschuining | Lagerschaal cilinder 4 |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[19, 22, 25]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Klepspeling controleren (valve timing) — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/klepspeling-controleren
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Klepspeling controleren (valve timing)
+
+> **TL;DR** — Monteer een gradenboog op de krukas (vliegwielzijde), stel TDC van cilinder 4 in met een meetklok, en controleer de open- en sluithoeken van inlaat- en uitlaatkleppen. Inlaat: opening 21°30' – 24°30' voor TDC, sluiting 40°30' – 43°30' na TDC (bij 0,20 mm kleplift). Uitlaat: opening 49°30' – 52°30' voor TDC, sluiting 12°30' – 15°30' na TDC (bij 0,15 mm kleplift). [p28]
+
+
+
+## Voorbereiding
+
+1. Monteer gradenboog C.6.0111 (1) op de motor aan de vliegwielzijde. Bevestig handgreep A.2.0255 (2) en aanwijzer A.2.0254 (3). [p28]
+2. Bij auto's met een vliegwiel met schroefdraadgaten voor de cardanas: gebruik aanwijzer A.2.0289. [p28]
+3. Monteer steun C.6.0122 (4) op de bougiegat-zitting van cilinder 4. [p28]
+
+## TDC instellen
+
+1. Plaats een meetklok op steun 4. Breng de zuiger van cilinder 4 naar TDC (bovenste dode punt) en stel de meetklok op nul. [p28]
+2. Draai het vliegwiel 10° naar rechts en 10° naar links ten opzichte van de nulstand. Lees de meetklok af in beide posities. [p28]
+3. Als beide aflezingen gelijk zijn, staat de gradenboog correct en komt TDC van de zuiger overeen met nul op de schaal. [p28]
+4. Zo niet: stel de gradenboog bij op het carter totdat beide aflezingen overeenkomen en vergrendel de schaal. [p28]
+5. Verwijder de meetklok met steun. [p28]
+
+## Open- en sluithoeken controleren
+
+### Inlaatzijde
+
+1. Plaats gereedschap A.2.0120 op cilinder 1, inlaatzijde. Bevestig een meetklok met verlengstuk voor het meten aan de bovenkant van de klepschotel. [p28]
+2. Draai de krukas **linksom** (gezien vanaf vliegwielzijde) totdat de meetklok een kleplift van **0,20 mm** aangeeft. [p28]
+3. De aflezing op de gradenboog moet **21°30' – 24°30' vóór TDC** zijn (opening). [p28]
+4. Draai de krukas verder linksom totdat de inlaatklep volledig dicht is. Draai dan **rechtsom** voor ongeveer een halve slag. Draai vervolgens weer **linksom** totdat een kleplift van **0,20 mm** wordt aangegeven. [p28]
+5. De aflezing op de gradenboog moet **40°30' – 43°30' ná TDC** zijn (sluiting). [p28]
+
+### Uitlaatzijde
+
+Dezelfde procedure geldt voor de uitlaatzijde, met de volgende afwijkende waarden: [p28]
+
+- Kleplift: **0,15 mm** (i.p.v. 0,20 mm) [p28]
+- Opening: **49°30' – 52°30' vóór TDC** [p28]
+- Sluiting: **12°30' – 15°30' ná TDC** [p28]
+
+## Bijstellen
+
+Als bijstelling nodig is: draai de moer los die het kettingwiel op de nokkenas vastzet en verplaats de positie van de borgpen naar wens. [p28]
+
+## Benzinepomp en oliefilter
+
+Na de klepcontrole op dezelfde pagina: [p28]
+
+- Smeer de stoterstang van de benzinepomp met motorolie. Monteer de stoterstang met afstandsbus en afdichting, en vervolgens de pomp. [p28]
+- Smeer de afdichting van het oliefilter met motorolie. Draai het filter met de hand aan en trek vast met sleutel A.2.0130. [p28]
+
+## Let op
+
+- De draairichting "linksom" is **gezien vanaf de vliegwielzijde** van de motor. [p28]
+- De specifieke gereedschapsnummers (A.2.0120, C.6.0111, C.6.0122) zijn Alfa Romeo speciaalgerdschap. Universele alternatieven zijn mogelijk maar niet in deze bron beschreven.
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Valve timing | Klepspeling / kleptiming | DOC-04 p28 titel |
+| Protractor | Gradenboog | Speciaalgereedschap C.6.0111 |
+| TDC (Top Dead Centre) | BDP (bovenste dode punt) / TDC | Standaardpositie |
+| Dial gauge / dial indicator | Meetklok | |
+| Valve lift | Kleplift | In mm |
+| Valve cup top | Bovenkant klepschotel | |
+| Chainwheel | Kettingwiel | Op nokkenas |
+| Camshaft | Nokkenas | |
+| Locating bolt | Borgpen | |
+| Flywheel | Vliegwiel | |
+| Crankshaft | Krukas | |
+| Anti-clockwise | Linksom / tegen de klok in | Gezien vanaf vliegwielzijde |
+| Push rod | Stoterstang | Benzinepomp-aandrijving |
+| Spacer | Afstandsbus | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[28]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Koelsysteem — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/koelsysteem
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Koelsysteem
+
+> **TL;DR** — Thermostaatklep begint te openen bij **81-85°C**, volledig open bij **96°C** met een klepslag van **7,5 – 10,5 mm**. Radiateur-lektest met perslucht bij **1 – 1,1 kg/cm²** ondergedompeld in water. [p31]
+
+## Voorbereidende montage (begin p31)
+
+Vóór de koelsysteem-procedures beschrijft p31 het afronden van de motorherbouw: [p31]
+
+1. Monteer rubberophanging en aardkabel. [p31]
+2. Monteer de luchtinlaat en carburateurs als eenheid en sluit de bedieningsstang aan. [p31]
+3. Breng vóór het plaatsen van de luchtinlaat-pakking een van deze afdichtmiddelen aan: [p31]
+   - Pluricolla Alpha 75 TRSP van I.C.I.R.
+   - B400 AR van D.E.B.
+   - Carstik 04 van I.C.A.D.
+4. Monteer de cilinderkop op de motor — zie pagina 26. [p31]
+5. Verwijder gereedschap A.2.0256 van de krukas. [p31]
+6. Verwijder de motor van de montagebok met een werkplaatskraan. Monteer het uitlaatspruitstuk, de warmeluchtgeleiding en de motorsteunen. Let erop dat de steun met de markering **N** aan de uitlaatzijde zit. [p31]
+7. Monteer de startmotor. [p31]
+
+## Demontage koelsysteem-componenten (p15)
+
+> Sectie toegevoegd 2026-04-14 op basis van DOC-04 p15 OCR-bron — nog niet door `/alfettaspecialist` inhoudelijk gevalideerd. Volgt dezelfde stappenvolgorde (1 t/m 8) als de bronpagina.
+
+
+
+
+
+1. Draai moeren (1) los waarmee het thermostaat-klepdeksel (2) vastzit; verwijder deksel, pakking en thermostaatklep. [p15]
+
+
+
+
+
+
+
+
+
+
+
+2. Verwijder de coolant temperature sender (3). [p15]
+3. Draai de moeren los die het inlaatspruitstuk (4) aan de cilinderkop bevestigen; haal de hotair-stove bracket weg en verwijder het inlaatspruitstuk. [p15]
+
+
+
+
+
+
+
+
+
+
+
+4. Draai moeren (5) los waarmee de brandstofpomp (6) aan het voordeksel vastzit; verwijder pomp, pakking, afstandsstuk en pushrod. [p15]
+5. Verwijder de oliedruk-schakelaar. [p15]
+
+
+
+
+
+
+
+
+
+
+
+6. Verwijder de coolant temperature telltale switch (7). [p15]
+7. Draai de bouten los die aan de voorkant de nokkenas-afdekplaat op de cilinderkop bevestigen. [p15]
+8. Met spanner A.5.0180 (8) draai je de schroeven los die de nokkenas-afdekplaat aan de cilinderkop bevestigen; verwijder de afdekplaat. [p15]
+
+
+
+
+
+
+
+> **Scope-opmerking**: stappen 3 (inlaatspruitstuk), 4 (brandstofpomp) en 7-8 (nokkenas-afdekplaat) horen inhoudelijk niet bij koelsysteem maar zijn in dezelfde OCR-procedure opgenomen. Zie ISS-011 voor herindeling naar passende MDX zodra `/alfettaspecialist` dit oppakt.
+
+## Thermostaatklep testen
+
+Controleer de klep op juiste werking: [p31]
+
+1. Dompel de klep onder in een bak water. [p31]
+2. Verwarm het water en controleer of de klep begint te openen bij een temperatuur van **81-85°C**. [p31]
+3. Controleer ook dat bij **96°C** de klep volledig open is en dat de kleppenslag **7,5 – 10,5 mm** bedraagt. [p31]
+
+## Radiateur-lektest
+
+Test de radiateur op lekkages: [p31]
+
+1. Sluit de radiateur-uitlaatadapter en de adapter voor de verbinding met de expansietank af met de juiste pluggen. [p31]
+2. Monteer de plug op de radiateur-inlaatadapter en maak aansluitingen met persluchapparatuur. [p31]
+3. Dompel de radiateur onder in een bak water en controleer op luchtlekkage door perslucht toe te voeren tot een druk van **1 – 1,1 kg/cm²**. [p31]
+4. Bij lekkage: maak het te solderen gebied schoon met een staalborstel en breng "gebakken" zoutzuur (zinkchloride) aan. [p31]
+5. Soldeer het lekkende gebied dicht. [p31]
+6. Test de radiateur opnieuw op lekkage en werk af met zwarte synthetische emaillak. [p31]
+
+## Let op
+
+- De thermostaatklep-temperaturen (81-85°C open-begin, 96°C volledig open) komen overeen met de beschrijving op p5 (technische specificaties). [p5] [p31]
+- De radiateur-soldeermethode (schoonmaken met zoutzuur/zinkchloride, daarna solderen) staat letterlijk beschreven in de procedure. [p31]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Thermostatic valve | Thermostaatklep | |
+| Valve poppet | Kleppenslag | Slag in mm |
+| Radiator leak test | Radiateur-lektest | |
+| Header tank | Expansietank | |
+| Compressed air | Perslucht | |
+| Baked chloric acid | Gebakken zoutzuur | Zinkchloride, soldeervloeimiddel |
+| Synthetic enamel | Synthetische emaillak | Afwerking |
+| Shop crane | Werkplaatskraan | |
+| Engine mount | Motorsteun | Markering N = uitlaatzijde |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[5, 15, 31]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Krukas, zuigers & motor herbouwen — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/krukas-zuigers-herbouwen
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Krukas, zuigers & motor herbouwen
+
+> **TL;DR** — Cilinderbus-uitsteek: **0,01 – 0,06 mm**. Starterkrans vernieuwen: verhit tot **120–140°C**. Krukaslagerbout torque: **4,7 – 5,0 kgm (47–49 Nm)**. Vliegwielschroeventorque: **11,2 – 11,5 kgm (110–113 Nm)**. Drijfstanglagerbout torque: **5,0 – 5,3 kgm (49–52 Nm)**. Trillingsdemper-bout torque: **19–20 kgm**. Cilinderkopbouten torque: **7,2 – 7,4 kgm (70–72 Nm)**. [p23] [p24] [p25] [p26]
+
+## Cilinderbussen terugplaatsen
+
+Ga bij het terugplaatsen van de cilinderbussen in het motorblok als volgt te werk: [p23]
+
+1. Vergrendel de cilinderbussen door gereedschap A.2.0117 (2) aan te trekken op **1,0–1,5 kgm**.
+2. Controleer de uitsteek van de cilinderbus met gereedschap C.6.0148 (1).
+
+| | Maat |
+|---|---|
+| **Cilinderbus-uitsteek** (min.) | **0,01 mm** |
+| **Cilinderbus-uitsteek** (max.) | **0,06 mm** |
+
+## Vliegwiel
+
+Controleer of de tanden van de starterkrans niet erg versleten zijn en geen tekenen van vastlopen vertonen. Zo ja, vervang de krans door de nieuwe te verhitten tot **120–140°C**. [p23]
+
+Controleer ook of het tandwiel van de startmotor niet beschadigd is. [p23]
+
+## Oliepomp
+
+Controleer de pompwielen op ongelijkmatige of overmatige slijtage, en de tandwieltanden op deuken en krassen. [p23]
+
+Controleer ook de spil van het aangedreven tandwiel op sporen van vastlopen of krassen. [p23]
+
+Controleer het overdrukventiel van de oliedruk op vastlopen in zijn zitting. Als de veer van het overdrukventiel vloeiing vertoont, moet hij worden vervangen. [p23]
+
+Zorg dat het aangedreven tandwiel goed op de pompspil zit en dat het aandrijvend tandwiel goed is vergrendeld met de borgpen. [p23]
+
+Controleer ten slotte op krassen of sporen van vastlopen op de spil en het deksel, op de nokkenas die de bedieningsstang van de benzinepomp aandrijft, en op de koppelpen van de ontstekingsverdeler. [p23]
+
+## Distributie-tussenwielbussen
+
+Controleer de tussenwielbussen op goede staat. Als de bussen vernieuwd zijn: ruim ze als volgt op maat: [p23]
+
+1. Monteer de krukas en het voordeksel voorlopig terug.
+2. Bevestig gereedschap A.4.0112 (1).
+3. Ruim de bussen met ruwers U.2.0040 en U.2.0041 op een boring van **20,637–20,698 mm**.
+4. Controleer diameter en uitlijning van de bussen met gereedschap C.8.0103.
+
+---
+
+## Motor herbouwen — krukas en hoofdlagers
+
+Monteer de motor in omgekeerde volgorde van de demontage en volg de aanwijzingen voor inspectie, testen en het gebruik van speciaal gereedschap. [p24]
+
+Als de oliekanaalproppen van de krukas zijn verwijderd: controleer vóór het monteren van nieuwe proppen of er geen sporen van de vorige verbreedte zijn. Bevestig nieuwe proppen met gereedschap A.2.0103 en zet ze vast met een geschikt gereedschap. [p24]
+
+### Krukas plaatsen
+
+1. Selecteer de krukasjournaal- en hoofdlagerschalen op basis van de kleurmarkeringen op de krukas en monteer de schalen in de betreffende lagers. [p24]
+2. Smeer de krukasjournaal- en hoofdlagerschalen met motorolie en plaats de krukas op zijn lagers. [p24]
+3. Monteer de bovenste helft van de drukringen op het middellager; zorg dat de oliekanalen naar de krukas-schouders wijzen. [p24]
+4. Monteer de hoofdlagercaps volgens de positienummers die erop staan; zorg dat de borginkepingen van de schalen naar de inlaatzijde wijzen. [p24]
+5. Monteer de onderste helft van de drukringen op de cap vóórdat je de middelste cap plaatst. [p24]
+6. Smeer de tapeinden met motorolie en monteer de sluitringen. [p24]
+7. Monteer de borgplaat op de achtercap; draai de moeren vast op **4,7–5,0 kgm (47–49 Nm)**. Draai daarna de borgmoeren vast en zet ze met de borgplaat. [p24]
+8. Smeer de rubberen afdichtringen in met geschikt vet (50 HB 5100 van UNION CARBIDE CHEMICALS CO. — MILLOIL vet of gelijkwaardig) en druk de afdichtringen in de gaten van het achterste hoofdlager met gereedschap A.3.0113. [p24]
+9. Verwijder het uitstekende deel van de afdichtringen, gelijk met het motorblok-oppervlak. [p24]
+10. Smeer de achterste krukasafdichtring en monteer hem met gereedschap A.3.0178. [p24]
+
+---
+
+## Vliegwiel en zuigers monteren
+
+
+
+### Vliegwiel
+
+1. Monteer de bevestigingsbouten in het vliegwiel zodanig dat ze de krukas niet hinderen. [p25]
+2. Draai de krukas zodat de eerste krukasjournaal op het BDP (Bovenste Dode Punt) staat. [p25]
+3. Breng Loctite 241 aan op de vliegwielbevestigingsbouten. [p25]
+4. Plaats het vliegwiel op de krukas zodat het referentieteken op het vliegwiel overeenkomt met het teken op het achterdeksel. [p25]
+5. Monteer de borgplaten op de bouten; draai de bouten vast op **11,2–11,5 kgm (110–113 Nm)**. Vergrendel de krukas met gereedschap A.2.0145. Monteer gereedschap A.2.0256 op het vliegwiel om de krukas gemakkelijk te draaien. [p25]
+
+### Zuigers en drijfstangen
+
+
+
+6. Monteer de drijfstangen op de zuigers volgens de aanwijzingen in "Checking and inspection", na het smeren van de kleppen, zuigerpinnen, zuigerbosjes en het kleine-eindbus met motorolie. [p25]
+7. Als de zuigerveren verwijderd zijn: monteer ze terug met geschikte veertelzen. Zorg dat de ringen gemarkeerd "TOP" met die kant omhoog worden gemonteerd. [p25]
+8. Monteer de lagerschalen (eerder geselecteerd) in het grote einde van de drijfstangen en in de bijbehorende caps. [p25]
+9. Smeer de buitenkant van de zuigers, de zuigerveren, de lagerschalen van het grote einde en de capbouten met motorolie. [p25]
+10. Verstel de zuigerveer-openingen zo dat ze verspringen. Duw de drijfstang/zuiger-combinatie in de cilinderbus met gereedschap A.3.0252/0800. [p25]
+11. Smeer de cilinderbus-boring en de buitenkant van de bus met motorolie; monteer de afdichtring. [p25]
+12. Monteer de cilinderbussen in het motorblok conform de aanwijzingen in "Checking and inspection". [p25]
+13. Smeer de krukasjournalen en de grote-eindcaps met motorolie. [p25]
+14. Monteer de caps zodanig dat de inkeping voor het inlegstuk aan dezelfde kant zit als de inkeping op de drijfstang. [p25]
+15. Draai de capbouten vast op **5,0–5,3 kgm (49–52 Nm)**. [p25]
+
+---
+
+## Motor herbouwen — voordeksel en cilinderkop
+
+### Voordeksel en aandrijving
+
+1. Monteer het distributie-tussenwiel met ketting op het motorblok. [p26]
+2. Monteer het oliepompaandrijvings-/verdeler-tandwiel op de krukas. [p26]
+3. Monteer de nokkenasketting op het tussenwiel. [p26]
+4. Monteer de oliepomp op het voordeksel; zorg dat de pompspil — zowel tijdens als na het aandraaien van de bevestigingsbouten — vrij kan draaien zonder te blokkeren. [p26]
+5. Monteer de ontstekingsverdeler op het voordeksel zodanig dat het referentieteken voor de ontsteking van cilinder 1 naar de voorzijde van de motor wijst. [p26]
+6. Draai de krukas zodat zuiger 1 op BDP staat. [p26]
+7. Plaats de afdichtring op het deksel en houd hem vast met een beetje vet. Leg de pakking op het deksel en de cilinderblokkpakkingen op het motorblok. [p26]
+8. Draai de oliepomp-spil zodanig dat — wanneer het aandrijftandwiel van de pompspil in het krukastangwiel grijpt — de verdelerarm naar voren wijst, parallel aan de motoraslijn (Marelli-verdelaars). Voor Bosch-verdelaars moet de arm een hoek van 22° hebben zoals aangegeven op p35. [p26]
+9. Monteer het voordeksel op de motor en controleer de positie van de verdelerarm zoals hierboven beschreven; draai de verdeler-borgmoer vast. [p26]
+10. Monteer de waterpomp op het voordeksel. [p26]
+11. Smeer de afdichtlip van de krukasafdichting aan de voorzijde in met Molykote BR2 van ISECO en monteer de afdichting met gereedschap A.3.0146. [p26]
+12. Smeer de zitting van de trillingsdemper, monteer hem op de krukas en draai de borgmoer vast op **19–20 kgm** met sleutel A.5.0126. [p26]
+
+### Cilinderkop monteren
+
+13. Buig de borgplaat-lip om. Controleer dat zuiger 1 op BDP staat. Verwijder de cilinderbusborgergereedschappen. Monteer de cilinderkoppakkingen en plaats de afdichtringen op de oliekanalen. [p26]
+14. Monteer de cilinderkop. Monteer de motorhijsbeugel op de middelste tapeinden. [p26]
+15. Smeer de tapeinden met motorolie; draai de moeren in de juiste volgorde vast op een koppelmoment van **7,2–7,4 kgm (70–72 Nm)**. [p26]
+
+## Koppelmomenten overzicht
+
+| Onderdeel | Koppelmoment |
+|---|---|
+| Cilinderbus borgergereedschap (A.2.0117) | 1,0–1,5 kgm |
+| Hoofdlagercap-moeren | 4,7–5,0 kgm (47–49 Nm) |
+| Vliegwielbouten | 11,2–11,5 kgm (110–113 Nm) |
+| Drijfstangcap-bouten | 5,0–5,3 kgm (49–52 Nm) |
+| Trillingsdemper-bout | 19–20 kgm |
+| Cilinderkopmoeren | 7,2–7,4 kgm (70–72 Nm) |
+
+## Let op
+
+- De kleurcodering voor het selecteren van krukasjournaal- en hoofdlagerschalen staat op **p22** (inspectie-kleppen-veren.mdx).
+- De distributieketting en nokkenas-instelling (na het monteren van de cilinderkop) staan op **p27** (distributieketting.mdx).
+- "Checking and inspection" voor zuigers/drijfstangen verwijst naar p23 en eerder (niet in detail gedekt op p24-26).
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Cylinder liner | Cilinderbus | Natte cilinderbus (los van blok) |
+| Liner protrusion | Cilinderbus-uitsteek | Hoogte boven blok-vlak |
+| Flywheel ring gear | Starterkrans | Tandkrans op vliegwiel voor startmotor |
+| Oil pressure relief valve | Overdrukventiel oliedruk | |
+| Timing idler gear bushes | Distributie-tussenwielbussen | |
+| Main bearing shells | Hoofdlagerschalen | Kleurgemarkeerd |
+| Thrust rings | Drukringen | Axiaal spel krukas |
+| Main bearing caps | Hoofdlagercaps | Locatienummer opgespoten |
+| Rear crankshaft sealing ring | Achterste krukasafdichtring | |
+| Con. rod / connecting rod | Drijfstang | |
+| Gudgeon pin | Zuigerpenbout / kleppen | Verbindt zuiger met drijfstang |
+| Small end bush | Kleine-eindbus | Bus in het kleine oog van de drijfstang |
+| Big end | Groot einde | Krukas-zijde van drijfstang |
+| Piston rings | Zuigerveren | |
+| TOP marking | TOP-markering | Veer moet met deze zijde omhoog |
+| Vibration damper | Trillingsdemper | Op voorzijde krukas |
+| Front crankshaft seal | Krukasafdichting voorzijde | |
+| T.D.C. | BDP — Bovenste Dode Punt | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[23, 24, 25, 26]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Motor demonteren op werkbank — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/motor-demonteren-werkbank
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Motor demonteren op werkbank
+
+> **TL;DR** — Volledige demontage van de motor nadat hij uit de auto is gehaald (zie motor-uitbouwen.mdx voor p7-12). Monteer de motor op standaard R.4.0151 via beugel R.4.0127. Verwijder alle uitwendige onderdelen, dan de cilinderkop, distributieketting, zuigers, voordeksel en krukas in volgorde. [p13] [p14] [p15] [p16] [p17] [p18] [p19]
+
+## Fase 1 — Uitwendige onderdelen en motor op standaard (p13-14)
+
+Met de motor opgehangen aan de takellift ga je als volgt te werk: [p13]
+
+
+
+1. Verwijder de carburateur-ondersteuningsstrip door de bevestigingsdelen los te draaien en te verwijderen. [p13]
+2. Draai de bevestigingsbouten van de startmotorbeugel los en verwijder de startmotor met zijn montageplaat. [p13]
+3. Verwijder de motorsteun aan de inlaatzijde; draai de bevestigingsbouten van de warmteplaat los en verwijder de plaat. [p13]
+4. Draai de moeren los waarmee de uitlaatspruitstukken aan de kop zijn bevestigd en verwijder spruitstukken en pakkingen. [p13]
+5. Draai de borgmoeren los en verwijder de motorsteun aan de uitlaatzijde. [p13]
+6. Monteer in plaats van de verwijderde steunen **beugel R.4.0127** voor het plaatsen van de motor op **standaard R.4.0151**. [p13]
+
+### Achterdeksel en eerste demontagestappen
+
+7. Draai de bevestigingsbouten (2) van het achterdeksel los en verwijder achterdeksel (1) samen met de afstandsflens. [p13]
+8. Monteer gereedschap A.2.0256 (3) op het vliegwiel. [p13]
+
+
+
+9. Maak de bougiekabels los; maak het kabelbundel vrij van de klem. [p13]
+10. Verwijder de verdelerkappen door de bevestigingsveren los te maken. [p13]
+11. Draai de bevestigers los waarmee de verdelerkaphouder aan het verdelerhuis is bevestigd; verwijder de kap samen met de ontsteekdraden. [p13]
+12. Draai moer (4) los waarmee de klem van verdeler (5) aan het voordeksel is bevestigd; verwijder de verdeler. [p13]
+13. Verwijder de bougies met sleutel A.5.0115. [p13]
+
+### Dynamo en overige uitwendige onderdelen
+
+
+
+14. Draai de bevestigingsbouten (1) en (2) los waarmee de dynamo (5) aan het voordeksel en de koppelbeugel (4) is bevestigd; verwijder de aandrijfriem (3). Draai de moer los waarmee koppelbeugel (4) aan het waterpomp-huis is bevestigd. Verwijder de dynamo. [p14]
+15. Maak de klemmen los en ontkoppel de bypass-slang (6) van de thermostaatklep-aansluiting en van de waterpomp-aansluiting. [p14]
+16. Verwijder de oliepeilstok (7). [p14]
+
+
+
+17. Verwijder oliefilter (8) met gereedschap A.2.0130 (9). [p14]
+18. Verwijder de klemmen van de gasklep-koppelstang en ontkoppel de stang van de gasklepbediening. [p14]
+19. Draai de moeren (10) los waarmee de carburateurs aan de rubberen steunen zijn bevestigd; verwijder de carburateurs en de luchtfiltereenheid als geheel. [p14]
+
+---
+
+## Fase 2 — Inlaatspruitstuk, klepdeksel en cilinderkop (p15-16)
+
+
+
+20. Draai de moeren (1) los waarmee thermostaatklep-deksel (2) is bevestigd; verwijder deksel, pakking en de thermostaatklep. [p15]
+21. Verwijder de koelvloeistof-temperatuurzender (3). [p15]
+22. Draai de moeren los waarmee inlaatspruitstuk (4) aan de cilinderkop is bevestigd; verwijder de warmteplaat-beugel en het inlaatspruitstuk. [p15]
+
+
+
+23. Draai de moeren (5) los waarmee benzinepomp (6) aan het voordeksel is bevestigd; verwijder de pomp, de pakking, het afstandstuk en de bedieningsstang. [p15]
+24. Verwijder de oliedrukaanwijzer. [p15]
+25. Verwijder de koelvloeistof-temperatuurschakelaar (7). [p15]
+26. Draai de bouten los waarmee het klepdeksel aan de voorzijde aan de cilinderkop is bevestigd. [p15]
+27. Draai met sleutel A.5.0180 (8) de schroeven los waarmee het klepdeksel aan de kop is bevestigd; verwijder het klepdeksel. [p15]
+
+
+
+### Distributieketting en cilinderkop
+
+28. Draai de krukas totdat de verbindingsschakel (1) op de positie staat zoals aangegeven in het diagram, en de referentietekens op de voorste nokkenaslagertappen en -caps zijn uitgelijnd. [p16]
+29. Draai de kettingspanner-stelschroef (2) los; druk de ketting naar beneden om de spanveer te overwinnen en vergrendel de spanner door stelschroef (2) weer vast te draaien. [p16]
+30. Verwijder de verbindingsschakel, maak de ketting vrij van de nokkenaskettingwielen en trek de ketting eruit. [p16]
+
+
+
+31. Draai de moeren los waarmee de kop aan het motorblok is bevestigd; verwijder de motorhijsbeugel. [p16]
+32. Als de kop vastzit op het blok: gebruik gereedschap A.2.0146 (3) om de kop van het blok en van de cilinderbussen los te maken. [p16]
+
+
+
+33. Verwijder gereedschap A.2.0146; draai de borgmoeren los en verwijder het uitlaatspruitstuk. [p16]
+34. Zet gereedschap A.2.0117 (4) op de cilinderbussen; zet de bussen vast met de cilinderkopbouten. [p16]
+
+---
+
+## Fase 3 — Oliecarter, zuigers en trillingsdemper (p17)
+
+35. Draai alle schroeven en bouten los waarmee de oliecarter aan het blok is bevestigd; verwijder de carter en de pakking. [p17]
+36. Draai de schroeven (1) los waarmee de oliepomp (2) aan het voordeksel is bevestigd; verwijder de pomp en de afdichtring. [p17]
+37. Draai de krukas zodanig dat je toegang krijgt tot de moeren (3) van de drijfstanglager-caps (4); draai de moeren los en verwijder de caps. [p17]
+38. Trek de drijfstang/zuiger-combinaties eruit en bewaar ze in de juiste volgorde voor de hermontage. [p17]
+39. Verwijder de zuigerpenbout-circlips en bewaar ze bij de zuiger voor gemakkelijke hermontage; schuif de zuigerpenbout eruit. [p17]
+40. Verwijder het cilinderbusborgergereedschap en trek de cilinderbussen eruit. [p17]
+41. Verwijder gereedschap A.2.0256 van het vliegwiel. [p17]
+42. Monteer gereedschap A.2.0145 (5) op vliegwiel (6) om rotatie te voorkomen; buig de borgtab omhoog en draai de trillingsdemper-borgmoer los met sleutel A.5.0126 (7); verwijder de trillingsdemper. [p17]
+43. Verwijder het vliegwiel-borggereedschap. [p17]
+
+---
+
+## Fase 4 — Voordeksel en distributie-aandrijving (p18)
+
+
+
+44. Draai de moeren (1) los waarmee de waterpomp (2) aan het voordeksel is bevestigd; verwijder de pomp. [p18]
+45. Draai de moeren (3) los waarmee het voordeksel (4) aan het motorblok is bevestigd; verwijder het voordeksel, de pakkingen en de afdichtring. Verwijder daarna de krukasafdichting (5) van het deksel en de geleiderbus (6) met gereedschap A.3.0210. [p18]
+46. Verwijder de metalen ring, het oliepompaandrijvingstangwiel (7) samen met het tussenwiel (8) en de distributieketting. [p18]
+47. Bewaar de drukring van het tussenwiel. [p18]
+48. Verwijder met gereedschap A.3.0210 (9) de geleiderbus van het tussenwiel uit het motorblok. [p18]
+
+
+
+---
+
+## Fase 5 — Vliegwiel en krukas (p19)
+
+
+
+49. Monteer gereedschap A.2.0145 opnieuw om het vliegwiel te vergrendelen; draai de schroeven los waarmee het vliegwiel aan de krukas is bevestigd; verwijder eerst het gereedschap, dan het vliegwiel. [p19]
+50. Verwijder met een pers en een drijfpen de cardanas-centreringbus uit het vliegwiel. Bij het latere type vliegwiel: verwijder vóór de bus eerst de tapeinden. [p19]
+51. Draai de schroeven (1) los waarmee het achterdeksel is bevestigd; verwijder deksel en pakking. [p19]
+52. Draai de borgmoeren (2) los van de bouten waarmee de hoofdlagercaps (3) zijn bevestigd. [p19]
+53. Buig de borgtabs omhoog bij de moeren van de achterste hoofdlagercap; draai de borgmoeren los en verwijder ze. [p19]
+54. Om de achterste hoofdlagercap te verwijderen: gebruik gereedschap A.3.0139 (4). [p19]
+55. Verwijder de rubberen afdichtringen en de achterste krukasafdichtring. [p19]
+56. Gebruik gereedschap A.3.0182 (5) om de overige hoofdlagercaps te verwijderen. [p19]
+57. Bewaar bij het verwijderen van de middelste hoofdcap de onderste helft van de krukas-drukringen. [p19]
+58. Verwijder de krukas uit het carter. [p19]
+59. Verwijder — in de juiste volgorde voor eenvoudige hermontage — de bovenste helft van de drukringen én de lagerschalen uit zowel de lagers als de caps. [p19]
+60. Verwijder ten slotte, indien vereist, de krukasoliekanaalproppen door ze door te boren. [p19]
+
+
+
+## Volgorde overzicht
+
+| Fase | Onderdelen | Pagina |
+|------|-----------|--------|
+| 1 | Carburateur-strip, startmotor, steunen, spruitstukken, achterdeksel, verdeler, bougies, dynamo, oliefilter, carburateurs | p13-14 |
+| 2 | Thermostaat, inlaatspruitstuk, benzinepomp, klepdeksel, distributieketting, cilinderkop | p15-16 |
+| 3 | Oliecarter, oliepomp, zuigers, cilinderbussen, trillingsdemper | p17 |
+| 4 | Waterpomp, voordeksel, distributie-aandrijving | p18 |
+| 5 | Vliegwiel, achterdeksel, hoofdlagercaps, krukas | p19 |
+
+## Verband met andere pagina's
+
+- **p7-12** (motor-uitbouwen.mdx): het uitbouwen van de motor uit de auto.
+- **p20-21** (cilinderkop-demonteren-toleranties.mdx): de cilinderkop zelf verder demonteren.
+- **p22** (inspectie-kleppen-veren.mdx): inspectie van kleppen, veren en krukas-lagerschalen.
+- **p23-26** (krukas-zuigers-herbouwen.mdx): herbouw — omgekeerde volgorde van deze demontage.
+- **p27** (distributieketting.mdx): distributieketting en nokkenas instellen na herbouw.
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Dismantling on bench | Demonteren op werkbank | Titel van de procedure |
+| Engine stand | Motorstandaard | R.4.0151 |
+| Exhaust manifold | Uitlaatspruitstuk | |
+| Intake manifold | Inlaatspruitstuk | |
+| Hot air stove | Warmteplaat / kacheltje | Carburateur-opwarming |
+| Rear cover | Achterdeksel | |
+| Detachable link | Verbindingsschakel | Ketting-verbindingsschakel |
+| Chain tensioner setscrew | Kettingspanner-stelschroef | |
+| Alternator | Dynamo | Generator / alternator |
+| Bypass hose | Bypass-slang | Koelwater kortsluitslang |
+| Oil sump | Oliecarter | |
+| Con. rod bearing cap | Drijfstanglager-cap | |
+| Gudgeon pin circlip | Zuigerpenbout-circlip | |
+| Vibration damper | Trillingsdemper | Harmonic balancer |
+| Idler gear | Tussenwiel | Distributie-tussenwiel |
+| Thrust rings | Drukringen | Axiaal spel krukas |
+| Oil gallery plugs | Oliekanaalproppen | In de krukas |
+| Prop. shaft centring bushing | Cardanas-centreringbus | In het vliegwiel |
+| Safety tab | Borgtab | Vergrendelt moer/bout |
+| Front cover | Voordeksel | Met waterpomp en verdeler |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[13, 14, 15, 16, 17, 18, 19]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Motor terugplaatsen — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/motor-terugplaatsen
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Motor terugplaatsen
+
+> **TL;DR** — Voer de terugplaatsing in omgekeerde volgorde van het uitbouwen uit. Vet de cardanas-bussen in met **Molykote BR2** (5 cc voor, 7 cc achter). Cardanas-borgbouten torque: **4,1–4,5 kgm (41–44 Nm)** (schroefverbinding) of **3,8–4,2 kgm (38–41 Nm)** (persingpassingbouten). Ruimte achterste motorsteun–cardanas: **6–8 mm**. Koelsysteem vullen: ontvluchtingsschroeven op waterpomp en inlaatspruitstuk losdraaien. [p32]
+
+## Motor terugplaatsen in het motorcompartiment
+
+Voer de terugplaatsing in omgekeerde volgorde van de verwijdering uit en volg de onderstaande aanwijzingen: [p32]
+
+1. Zet de motor in het motorcompartiment. Start de schroeven en moeren van de voorste steunen. Plaats de achterste steun op zijn positie met het afstandstuk en de sluitringen die bij de verwijdering zijn bewaard; draai daarna de schroeven en moeren van de voorste steunen vast. [p32]
+
+### Cardanas monteren
+
+2. Monteer de cardanas nadat je de voor- en achterste bus hebt gesmeerd met respectievelijk **5 cc** en **7 cc Molykote BR2**. [p32]
+3. Zorg bij het monteren van de achterste koppeling op de koppelingsvork dat de rubberen afdichting goed is geplaatst. [p32]
+4. Vergrendel het vliegwiel met gereedschap A.2.0290; draai met verlengstuk A.5.0192 en een momentsleutel met een hefboomarm van 300–400 mm de bevestigingsbouten van de as aan het vliegwiel en de as aan de koppelingsvork vast: [p32]
+
+| Verbindingstype | Koppelmoment |
+|---|---|
+| **As-aan-vliegwiel en as-aan-koppeling** (schroefdraad-passing) | **4,1–4,5 kgm (41–44 Nm)** |
+| **Persingspassingbouten** | **3,8–4,2 kgm (38–41 Nm)** |
+
+### Koppelstaaf
+
+5. Maak de draad van de tapeinden schoon waarmee de koppeling aan de versnellingskogelstang is bevestigd, en draai de moeren vast op **2,0–3,25 kgm (20–31 Nm)**. Dit geldt alleen voor elastische koppelingen. Bij stijve koppelingen ga je als volgt te werk: [p32]
+   - Draai de koppelings-borgmoeren alleen handvast aan.
+   - Zet de versnelling in de vijfde versnelling.
+   - Draai de moeren vast op het bovengenoemde koppelmoment. [p32]
+
+6. Verwijder gereedschap A.2.0290 en monteer daarvoor in de plaats het vliegwieldeksel. [p32]
+7. Monteer de achterste motorsteun aan de carrosserie met de sluitringen die bij de verwijdering zijn bewaard. Stel hiermee de ruimte van **6–8 mm** tussen de cardanas en de bovenkant van de achterste steun opnieuw in. [p32]
+
+---
+
+## Koelsysteem bijvullen
+
+Vul het systeem met koelvloeistof volgens de onderstaande specificaties: [p32]
+
+### Vulprocedure
+
+1. Draai de ontluchtingsschroeven op de **waterpomp** en op het **inlaatspruitstuk** los.
+2. Giet de koelvloeistofmix door de vulopening van het expansievat totdat vloeistof uit de ontluchtingsschroef op de pomp loopt; sluit dan deze schroef en voeg opnieuw koelvloeistof toe totdat het uit de schroef op het spruitstuk loopt.
+3. Start de motor en laat hem een paar seconden draaien om de lucht volledig te ontluchten.
+4. Sluit de ontluchtingsschroef op het spruitstuk en vul bij via de radiateur-vulopening tot het niveau vol is.
+5. Vul ook het expansievat bij tot het **MAX**-niveau is bereikt.
+6. Sluit de doppen op het expansievat en de radiateur-vulopening. [p32]
+
+### Koelvloeistof-specificaties
+
+| Mengsel | Hoeveelheid |
+|---|---|
+| Geconcentreerde antivries (Std nr. 3681-69956) | 3.500 cc |
+| Gedestilleerd water | 4.500 cc |
+| *Bescherming tot −20°C* | |
+| **OF: Gebruiksklare antivries (Std nr. 3681-69958)** | **8.000 cc** |
+
+Het antivries-mengsel kan worden versterkt door de concentratie te verhogen. Tap daarvoor een deel van het mengsel af uit het circuit en vervang het door dezelfde hoeveelheid geconcentreerde antivries. De hoeveelheden antivries die aan radiateur en expansievat moeten worden toegevoegd, afhankelijk van de laagst verwachte temperatuur: [p32]
+
+| Temperatuur | Radiateur (cc) | Expansievat (cc) | Totaal (cc) |
+|---|---|---|---|
+| **−30°C** | 1.000 | 200 | 1.200 |
+| **−40°C** | 2.200 | 450 | 2.650 |
+
+## Koppelmomenten overzicht
+
+| Onderdeel | Koppelmoment |
+|---|---|
+| Cardanas as-aan-vliegwiel (schroefdraad-passing) | 4,1–4,5 kgm (41–44 Nm) |
+| Cardanas persingspassingbouten | 3,8–4,2 kgm (38–41 Nm) |
+| Koppelstaaf moeren (elastische koppeling) | 2,0–3,25 kgm (20–31 Nm) |
+
+## Verband met andere pagina's
+
+- **p7-12** (motor-uitbouwen.mdx): de inverse procedure — motor uitbouwen uit de auto.
+- **p31** (koelsysteem.mdx): thermostaat en radiateur-lektest specificaties.
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Re-installing the engine | Motor terugplaatsen | Inverse van uitbouwen |
+| Front mounts | Voorste motorsteunen | |
+| Rear mount | Achterste motorsteun | |
+| Prop. shaft | Cardanas | Drijfas (propeller shaft) |
+| Front / rear bush | Voorste / achterste bus | In cardanas, gesmeerd met Molykote |
+| Rear coupling | Achterste koppeling | Op koppelingsvork |
+| Clutch yoke | Koppelingsvork | |
+| Interference-fit bolts | Persingspassingbouten | Nauwpassende bouten |
+| Gear selection rod | Versnellingskogelstang | Schakelstang |
+| Elastic-type coupling | Elastische koppeling | Met rubberelement |
+| Rigid-type coupling | Stijve koppeling | |
+| Flywheel cover | Vliegwieldeksel | |
+| Bleed screws | Ontluchtingsschroeven | Op waterpomp en spruitstuk |
+| Coolant | Koelvloeistof / antivries | |
+| Filler port | Vulopening | Radiateur of expansievat |
+| Concentrated antifreeze | Geconcentreerde antivries | Std nr. 3681-69956 |
+| Antifreeze ready for use | Gebruiksklare antivries | Std nr. 3681-69958, 8 liter |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[32]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Motor uitbouwen — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/motor-uitbouwen
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Motor uitbouwen
+
+> **TL;DR** — De motor wordt na het verwijderen van alle aansluitingen (koeling, brandstof, elektra, uitlaat, cardanas) met een werkplaatskraan naar boven uitgetild. Cardanas-speling achter: **7 ± 1 mm** (met vulringen). Koppeling volgt de Alfetta-specifieke transaxle-layout. [p7] [p11]
+
+
+
+## Stap 1 — Motorkap verwijderen
+
+1. Ontkoppel de motorruimteverlichting draad 2 en de ruitensproeierslang 3. [p7]
+2. Draai de schroeven 1 los die de motorkap aan de scharnieren bevestigen en verwijder de kap. [p7]
+3. Bewaar eventuele vulplaatjes tussen motorkap en scharnieren voor het uitlijnen bij hermontage. [p7]
+
+## Stap 2 — Accu en koelvloeistof
+
+1. Ontkoppel de accukabels en verwijder de accu uit de bak. [p7]
+2. Verwijder de aftapplug van de radiateur en plug 4 van het carter. Laat de koelvloeistof aflopen. [p7]
+3. Voor volledige afvoer: verwijder de radiateurvuldop, open de verwarmingsklep en ontkoppel de slang tussen radiateur en expansietank. [p7]
+
+## Stap 3 — Elektra en luchtinlaat
+
+1. Verwijder de luchtinlaat en ontkoppel de draden van de dynamo. [p7]
+2. Verwijder de bescherming en ontkoppel HV- en LV-kabels van de verdelerkap. [p7]
+3. Ontkoppel de bougiekabels. [p7]
+4. Ontkoppel de draden van de oliedrukschakelaar op het carter. [p7]
+
+
+
+## Stap 4 — Radiateur
+
+1. Ontkoppel de draden van de elektrische ventilator-thermostaatschakelaar 5. [p7]
+2. Ontkoppel de slangen van de thermostaathuis- en waterpompadapters op de radiateur. [p7]
+3. Draai de bevestigingsschroeven 1 van de radiateur los. Bewaar de montagekussens met afstandhouders en beugels 2. [p8]
+4. Verwijder de radiateur. [p8]
+
+
+
+## Stap 5 — Luchtfilter en brandstofleidingen
+
+1. Verwijder het luchtfilter: draai de klemmen 3 los, ontkoppel de oliedamp-retourslang 4 en het warmelucht-kanaal 5. [p8]
+2. Ontkoppel de draden van de startmotor. [p8]
+3. Ontkoppel van de benzinepomp: leveringsleiding 6 naar filter en inlaatleiding 7. [p8]
+4. Ontkoppel de verwarmings-retourleiding 8 van de waterpompadapter. [p8]
+
+
+
+## Stap 6 — Carburateurs en spruitstuk
+
+1. Ontkoppel de inlaatleiding 9 van de carburateur. [p8]
+2. Verwijder de borgen en ontkoppel de gasklep-bedieningsstang 10. [p8]
+3. Ontkoppel de choke-bedieningskabel 11 van de hendels 12 op de carburateurs. [p8]
+4. Ontkoppel van de inlaatspruitstuk-adapters: de rembekrachtiging-vacuümslang 13 en de verwarmings-waterslang 14. [p8]
+
+
+
+## Stap 7 — Uitlaatleidingen
+
+1. Ontkoppel de toerenteller-flexibele as 1 van de aandrijving op de waterpomp. [p9]
+2. Ontkoppel draad 2 van thermostaatschakelaar 3 van het koelvloeistof-waarschuwingslampje. [p9]
+3. Draai klem 4 los en ontkoppel het voorste gedeelte 5 van de uitlaatpijp van het achterste gedeelte 6. [p9]
+4. Maak de pijp los van de flexibele ophanging 7 aan de versnellingsbak-dwarsdrager. [p9]
+5. Draai de moer los en verwijder het voorste gedeelte 8 van de uitlaatpijp van de rubberophanging op beugel 9. [p9]
+6. Verwijder de aftapplug van het oliecarter, laat de olie aflopen, maak de plug schoon en monteer terug. [p9]
+7. Draai de bevestigingsmoeren los en verwijder de uitlaatpijpen 1 van het uitlaatspruitstuk. [p10]
+
+
+
+## Stap 8 — Schakelmechaniek en cardanas
+
+1. Verwijder de manchet 2 van de schakelhendelsteun. Draai de schroef met ring 3 los die verbindingsstang 4 met de schakelhendel verbindt. Verwijder de moeren en ringen 5 van het scharnier tussen verbindingsstang en schakelkeuzehendel. [p10]
+2. Draai de cardanas zo dat je telkens toegang hebt tot zowel een cardan-vliegwielbout als een cardan-koppelingsjoekbout. Verwijder het achterste vliegwielschildje. Vergrendel het vliegwiel met gereedschap A.2.0290 op de plek van het vliegwielschildje. [p10]
+3. Draai de cardanas-bevestigingsbouten los met sleutel A.5.0192. [p11]
+4. Draai de moeren los die de cardanas-middensteun aan de bouten bevestigen. [p11]
+5. Verwijder het vliegwiel-vergrendelgereedschap en draai de overige cardan-bevestigingsbouten op dezelfde manier los. [p11]
+
+## Stap 9 — Achterste motorsteun en cardanas verwijderen
+
+1. Draai de bevestigingsmoeren los en verwijder de achterste motorsteun. **Bewaar de vulringen** — deze worden bij hermontage gebruikt om de speling tussen cardanas en achtersteunbovenkant op **7 ± 1 mm** in te stellen. [p11]
+2. Trek de cardanas uit de koppelingsspindel. **Let goed op** dat je de vetafdichting 2 tussen de flexibele koppeling en het koppelingsjoek niet beschadigt. [p11]
+3. Maak de middensteun los van de bouten en schuif de voorbushing uit het vliegwiel samen met de voorste flexibele koppeling. Trek de cardanas naar achteren uit de auto. [p12]
+
+
+
+## Stap 10 — Onderzijde en motor hijsen
+
+Verwijder aan de onderkant: [p12]
+
+1. De aardband 1 van de bout die de achterste motorsteun aan het motorblok bevestigt. [p12]
+2. De onderste voorbescherming (voor betere toegang). [p12]
+3. Het hitteschild van de motorsteun aan de uitlaatzijde. [p12]
+4. De moeren 2 die de onderkant van de motorsteunen aan de carrosserie bevestigen. [p12]
+5. Hijst de motor met een hijsinrichting, ontlast de motorsteunen. [p12]
+
+## Let op
+
+- De Alfetta heeft een **transaxle-layout**: de versnellingsbak zit achterin (bij het differentieel), verbonden met de motor via de cardanas. Dit maakt het uitbouwen van de motor anders dan bij een conventionele layout.
+- De stappen verwijzen naar genummerde onderdelen in de bijbehorende figuren op DOC-04 p7-12 — raadpleeg deze voor de exacte locaties. [p7]
+- Vergeet niet het olieniveau en de koelvloeistof te controleren bij hermontage.
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Bonnet | Motorkap | |
+| Battery housing | Accubak | |
+| Drain plug | Aftapplug | |
+| Header tank | Expansietank | |
+| Heater valve | Verwarmingsklep | |
+| H.V. / L.V. cables | Hoogspannings- / laagspanningskabels | Verdeler |
+| Oil pressure switch | Oliedrukschakelaar | |
+| Thermal switch | Thermostaatschakelaar | Ventilator / waarschuwing |
+| Air cleaner | Luchtfilter | |
+| Oil vapors recirculating hose | Oliedamp-retourslang | Carterventilatie |
+| Brake servo vacuum hose | Rembekrachtiging-vacuümslang | |
+| Propeller shaft (prop. shaft) | Cardanas | |
+| Clutch yoke | Koppelingsjoek | |
+| Flywheel cover | Vliegwielschildje | |
+| Centre support | Middensteun | Cardanas |
+| Grease seal | Vetafdichting | |
+| Flexible coupling | Flexibele koppeling | |
+| Front bushing | Voorbushing | In vliegwiel |
+| Earth strap | Aardband | |
+| Heat shield | Hitteschild | |
+| Gearlever | Schakelhendel | |
+| Link rod | Verbindingsstang | Schakelmechaniek |
+| Gear selector lever | Schakelkeuzehendel | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[7, 8, 9, 10, 11, 12]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Ontstekings-timing & verdeler testen — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/ontstekings-timing
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Ontstekings-timing & verdeler testen
+
+> **TL;DR** — Stel de ontsteking af door het verdelerhuis te draaien (linksom = vooruit, rechtsom = achteruit). Controleer statische en maximale voortijling met een elektronische toerenteller: de aanwijzer op het frontdeksel moet op lijn staan met de merktekens op de krukas-poelie — **F** voor statisch, **M** voor maximaal. [p36]
+
+## Ontstekings-timing afstellen
+
+Als de timing bijgesteld moet worden: [p36]
+
+1. Draai de moer los op de bout die het verdelerhuis vastzet. [p36]
+2. Draai het verdelerhuis **linksom** (tegen de klok in) om de ontsteking te **vervroegen**, of **rechtsom** (met de klok mee) om de ontsteking te **vertragen**. Draai de moer weer vast. [p36]
+3. Verwijder de testlamp en plaats de verdelerkap terug. [p36]
+4. Sluit de draden weer aan. [p36]
+
+
+
+## Statische en maximale voortijling controleren
+
+1. Sluit het ontstekingssysteem aan op de tester. [p36]
+2. Start de motor en controleer met een elektronische toerenteller dat bij het opgegeven toerental de aanwijzer op het frontdeksel op lijn staat met de merktekens op de krukas-poelie: [p36]
+   - **F** = statische voortijling [p36]
+   - **M** = maximale voortijling [p36]
+3. Zet de motor af. [p36]
+
+Als de merktekens en aanwijzer niet uitgelijnd zijn: draai de bevestigingsbout van het verdelerhuis los en draai het huis **rechtsom** om te vertragen of **linksom** om te vervroegen. [p36]
+
+Plaats de beschermkappen terug. [p36]
+
+Als deze afstelling de juiste voortijling niet oplevert, moet de verdeler **vervangen** worden. [p36]
+
+## Verdeler testen op de proefbank
+
+Gereviseerde verdelers of verdelers die niet aan specificatie voldoen moeten op de proefbank getest worden. [p36]
+
+### Vóór de test
+
+1. Controleer met speciaal gereedschap C.5.0114 en een testlamp of de contactdruk volgens specificatie is. [p36]
+2. Controleer de contactpuntenspleet en stel indien nodig bij volgens de procedure op pagina 35 — zie [Contactpunten afstellen](/motor/contactpunten-afstellen). [p36]
+
+### Testprocedure
+
+1. Monteer de verdeler op de proefbank en maak de aansluitingen. [p36]
+2. Stel de vonk op nul bij de gradenverdeling van de schijf op de bank, door de verdeler met de hand of de bankmotor aan te drijven (niet hoger dan 50 tpm). [p36]
+3. Controleer of de sluithoek (dwell angle) volgens specificatie is. Zet de automatische-voortijlingscurve uit. [p36]
+
+## Let op
+
+- De draairichting voor vervroegen/vertragen is **vanuit het perspectief van bovenaf kijkend** op de verdeler. [p36]
+- De contactpuntenspleet (0,4 – 0,5 mm) moet in orde zijn vóór je de timing afstelt — zie [Contactpunten afstellen](/motor/contactpunten-afstellen). [p35]
+- Specifieke voortijlingswaarden (graden en toerental) staan niet op p36 maar in de technische specificaties. Raadpleeg DOC-04 p5-6 of DOC-06 (Inspection Specifications).
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Ignition timing | Ontstekings-timing | DOC-04 p36 |
+| Distributor body | Verdelerhuis | |
+| Advance / retard | Vervroegen / vertragen | Ontstekings-timing |
+| Static advance | Statische voortijling | Merkteken F op poelie |
+| Maximum advance | Maximale voortijling | Merkteken M op poelie |
+| Crankshaft pulley | Krukas-poelie | |
+| Front cover | Frontdeksel | Waar de aanwijzer zit |
+| Pointer | Aanwijzer | |
+| Reference marks | Merktekens | F en M op de poelie |
+| Test lamp | Testlamp | |
+| Contact pressure | Contactdruk | Gemeten met C.5.0114 |
+| Dwell angle | Sluithoek | Gemeten op proefbank |
+| Advance curve | Voortijlingscurve | |
+| Protection covers | Beschermkappen | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[25, 35, 36]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Solex 40 DDH-8 carburateur — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/solex-carburateur
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Solex 40 DDH-8 carburateur
+
+
+
+> **TL;DR** — Solex C 40 DDH-8 variant. Demontage analoog aan Weber, maar met membraanpomp (diafragma-type) en afwijkende sproeierwaarden. Naaldklepuitsteek B: **4,4 – 4,6 mm**. Acceleratiepomp-opbrengst: **5 – 7 cc** per 20 slagen. Hoofdsproeier: **1,40**. Vlottergewicht: **13,6 ± 0,5 g**. [p43] [p44]
+
+## Demonteren (stripping)
+
+Was de buitenkant met benzine en droog met perslucht. Demonteer zorgvuldig: [p42]
+
+### Dekseldeel
+
+1. Draai holle bout 113 los. Verwijder holle koppeling 111 met afdichtingen 630 en 114. [p42]
+2. Verwijder de chokeklep-retourveer 358 van de voorcarburateur. [p42]
+3. Draai de schroeven van de naamplaatjes en het sproeier-inspectiedeksel 84 los van deksel 103. Verwijder het inspectiedeksel met pakking 86. [p42]
+4. Draai de schroeven van deksel 103 los en verwijder het deksel met schroef 65. [p42]
+5. Verwijder de chokeklep, retourveer-beugel 192 van de voorcarburateur. Van de achtercarburateur: verwijder de chokekabel-mantelbeugel 48. [p42]
+6. Verwijder vlotter 62 met pen 110. [p42]
+7. Verwijder naaldklep 116 met afdichting 115 van deksel 103. Verwijder vervolgens inlaatadapter 629 met pakking 628. [p42]
+8. Indien nodig: verwijder borgclip 210, deksel 45, veer 39 en chokeklep 23 van deksel 103. Verwijder vacuümpoort-pluggen 632 met afdichtingen 631. [p42]
+
+### Huis
+
+9. Verwijder hoofd-emulsiebuizen 99, stationaire sproeiers 74. [p42]
+10. Verwijder de acceleratiepomp-uitlaatklep: pluggen 574, afdichtingen 599, gewichten 573 en kogels 154. [p42]
+11. Verwijder acceleratiepomp-sproeiers 338 met afdichtingen 606. [p42]
+12. Verwijder stationaire mengselschroeven 15 met veren 9 en bijbehorende afdichtingen en ringen. [p42]
+13. Verwijder van de voorcarburateur de gasklep-koppelschroef met veer. Van de achtercarburateur: de gasklep-openingsschroef met veer. [p42]
+
+### Acceleratiepomp
+
+14. Verwijder borgmoer 337 en moer 336 van de acceleratiepomp-bedieningsstang 160. [p42]
+15. Draai de schroeven los en verwijder de acceleratiepomp met pakking 167. Houd veren 342 en bussen 344 apart. [p42]
+16. Schroef het deksel 377 los van pomplichaam 374. Houd veer 376 en membraan 371 apart. [p42]
+17. Verwijder klep 591 met pakking 76. [p42]
+18. Verwijder van de onderkant van het huis: hoofdsproeier 70 en chokesproeier 75. [p42]
+
+> **⚠️ BELANGRIJK:** Verwijder **nooit** de bypass-schroef aan de buitenkant van het carburateurhuis. Verwijder ook **nooit** de venturi's uit het huis. [p42]
+
+## Inspectie en controle
+
+Was sproeiers en kleppen grondig met benzine + perslucht. Gebruik **geen** metalen voorwerpen — dit kan de sproeier-diameter veranderen. [p43]
+
+Controleer het membraan van de acceleratiepomp op beschadiging en de veer op overbelasting. Vervang beschadigde onderdelen. [p43]
+
+### Instelgegevens Solex carburateur
+
+| Gegeven | C 40 DDH-8 |
+|---------|-----------|
+| Alfa Romeo onderdeelnummer | 116.08.04.010.04 / 116.08.04.011.04 |
+| Venturi | 32 |
+| Hoofdsproeier | 1,40 |
+| Hoofd-emulsiebuis | 1 gat ø 0,8 / 2 gaten ø 2 |
+| Hoofd-luchtdoseersproeier | 1,59 |
+| Stationaire sproeier | 0,50 |
+| Stationaire emulsiebuis | 1,30 |
+| Chokesproeier | 1,40 |
+| Choke-luchtdoseersproeier | 6,00 (emulsiehulzen ø 1,25) |
+| Acceleratiepomp-sproeier | 0,35 |
+| Acc.pomp opbrengst (20 slagen/vat) | 5 – 7 cc |
+| Naaldklep | 1,60 (fijne spoed) |
+| Ring onder naaldklep | 1,00 |
+| Vlottergewicht | 13,6 ± 0,5 g |
+
+[p43]
+
+**Noot:** waarden met (*) in de bron zijn waarden **vóór modificatie**. [p43]
+
+## Herbouw
+
+Herbouw in omgekeerde volgorde van demontage. [p44]
+
+### Vlotterniveau
+
+Test het vlotterniveau door te controleren of de naaldklepkogel-uitsteek B **4,4 – 4,6 mm** is. Stel bij door het toevoegen of verwijderen van vulringen. Gebruik meetgereedschap C.6.0169 voor beide controles. [p44]
+
+Tweede controle: controleer of de vlotter niet vervormd is. [p44]
+
+### Acceleratiepomp-opbrengst
+
+Test de opbrengst op dezelfde wijze als bij de Weber (zie p40): 20 slagen, rust bij maximale opening en volledig gesloten stand. [p44]
+
+Opbrengst moet **5 – 7 cc** per vat zijn. [p44]
+
+Om de opbrengst bij te stellen: draai de stelmoer in of uit om de stroom te verminderen of te vergroten. Na afstelling: draai moer en borgmoer vast. [p44]
+
+## Verschil met Weber
+
+| Kenmerk | Weber 40 DCOE | Solex C 40 DDH-8 |
+|---------|---------------|------------------|
+| Pomptype | Plunjer | Membraan (diafragma) |
+| Vlotterniveau-check | Afstand A = 7,5 mm | Naaldklepuitsteek B = 4,4-4,6 mm |
+| Acc.pomp opbrengst | 3,5 – 4,5 cc | 5 – 7 cc |
+| Hoofdsproeier | 1,35 | 1,40 |
+| Vlottergewicht | 26 g | 13,6 g |
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| DDH | — | Solex type-aanduiding |
+| Banjo bolt / union | Holle bout / koppeling | Brandstofaansluiting |
+| Choke valve return spring | Chokeklep-retourveer | |
+| Nameplate | Naamplaatje | |
+| Jet inspection cover | Sproeier-inspectiedeksel | |
+| Diaphragm | Membraan / diafragma | Acceleratiepomp |
+| Valve ball protrusion | Naaldklepkogel-uitsteek | Maat B |
+| Shims | Vulringen | Onder naaldklep |
+| Reduced pitch | Fijne spoed | Naaldklep 1,60 |
+| Bypass screw | Bypass-schroef | NOOIT verwijderen |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[41, 42, 43, 44]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Stationair toerental & CO-uitstoot afstellen — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/stationair-toerental-co
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Stationair toerental & CO-uitstoot afstellen
+
+
+
+> **TL;DR** — Stel eerst de gasklep-uitlijning in bij stilstaande motor, start dan de motor en stel het stationair toerental af op **850 ± 50 tpm** met gelijke vacuümwaarden voor en achter. CO-gehalte mag maximaal **4,5%** bedragen. [p34]
+
+## Gasklep-uitlijning en stationair toerental
+
+### Voorbereiding (motor uit)
+
+1. Verwijder de borgclip en maak de bedieningsstang los van gasklePhendel 1. [p34]
+2. Draai de gasklep-openingsschroef 2 volledig los. [p34]
+3. Draai schroef 3 los terwijl je hendel 1 omhoog drukt, totdat de gasklep van zowel de voor- als achtercarburateur volledig dicht is. Houd hendel 1 omhoog gedrukt en draai schroef 3 aan tot deze contact maakt — hiermee lijn je de gasklep van beide carburateurs uit. [p34]
+4. Draai schroef 2 aan tot hij hendel 1 net raakt, en draai dan nog één slag door. [p34]
+5. Draai de mengselschroeven 4 volledig in (zonder kracht), en draai ze vervolgens **vier slagen** terug. [p34]
+6. Sluit de bedieningsstang weer aan op gasklephendel 1. [p34]
+
+### Afstelling (motor warm)
+
+1. Start de motor en laat hem warmdraaien. Zet de motor af. [p34]
+2. Monteer de vacuümmeter C.2.0014 met houder R.4.0139. Sluit de meterslangen aan op de vacuümpoorten van de carburateurs, na het verwijderen van schroeven 5, met behulp van adapters C.2.0015 (of C.2.0031 bij geontvergiftigde carburateurs). [p34]
+3. Start de motor opnieuw en stel de gasklep-koppelschroef 3 af zodat het vacuüm van het 1e en 2e kanaal gelijk is aan dat van het 3e en 4e kanaal, terwijl het stationair toerental op **850 ± 50 tpm** staat (controleer met een nauwkeurige elektronische toerenteller). [p34]
+4. Als de motor onregelmatig loopt: stel mengselschroef 4 bij, zonder het stationair toerental en de vacuüminstelling te verstoren. [p34]
+
+## CO-uitstoot testen
+
+1. Meet het CO-percentage in de uitlaatgassen van een geontvergiftigde motor, aan het uiteinde van de uitlaatpijp of bij de spruitstuk-aftap (indien aanwezig), met een CO-meter. Het CO-percentage mag niet hoger zijn dan **4,5%**. [p34]
+2. Om het CO-percentage bij te stellen: stel de mengselschroeven 4 af. Let erop dat je het stationair toerental en de vacuüminstelling niet verstoort. [p34]
+3. Na het afstellen: zet de motor af, ontkoppel de vacuümmeter en CO-meter, en monteer de pluggen 5 terug. [p34]
+
+## Let op
+
+- Deze procedure gaat uit van een **dubbelcarburateur-opstelling** (voor en achter). De schroeven 3, 4 en 5 verwijzen naar specifieke posities op de carburateur — raadpleeg het bijbehorende figuur op DOC-04 p34. [p34]
+- Het begrip "geontvergiftigde carburateurs" (detoxed carburetters) verwijst naar carburateurs met uitstootregelgeving. De adapter-keuze (C.2.0015 vs C.2.0031) hangt daarvan af. [p34]
+- Stel de contactpunten af **vóór** deze procedure — zie [Contactpunten afstellen](/motor/contactpunten-afstellen). [p35]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Idle speed | Stationair toerental | DOC-04 p34 titel |
+| Throttle alignment | Gasklep-uitlijning | |
+| Throttle lever | Gasklephendel | Hendel 1 in de figuur |
+| Throttle opening adjusting screw | Gasklep-openingsschroef | Schroef 2 |
+| Throttles coupling screw | Gasklep-koppelschroef | Schroef 3 |
+| Mixture screws | Mengselschroeven | Schroef 4 |
+| Vacuum meter | Vacuümmeter | Speciaal gereedschap C.2.0014 |
+| CO tester | CO-meter | |
+| Detoxed carburetters | Geontvergiftigde carburateurs | Met uitstootregelgeving |
+| Exhaust manifold tap | Spruitstuk-aftap | |
+| R.P.M. | tpm (toeren per minuut) | |
+| Circlip | Borgclip | |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[34, 35]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Technische specificaties — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/technische-specificaties
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Technische specificaties — motor
+
+
+
+> **TL;DR** — De Alfetta 2.0 heeft een viertakt viercilinder lijnmotor met lichtmetalen blok, verwisselbare gietijzeren cilindervoeringen en een lichtmetalen cilinderkop met hemisfherische verbrandingskamers. Dubbele bovenliggende nokkenassen, dubbelcarburateur, 12V accu (60 Ah, min op massa). [p5]
+
+## Motorblok & internals
+
+De Alfetta-modellen worden aangedreven door een **viertakt, viercilinder lijnmotor**. Het cilinderblok is van lichtmetaal met speciale verwisselbare **gietijzeren cilindervoeringen**. [p5]
+
+De cilinderkop, van hetzelfde lichtmetaal als het blok, heeft **gietijzeren klepzittingen** en **hemisfherische verbrandingskamers**. [p5]
+
+De krukas van gehard gelegeerd staal heeft **vijf hoofdlagers** en oliekanalen voor smering van de hoofdlagertappen en krukpennen. [p5]
+
+De drijfstangen zijn van gelegeerd staal met een bronzen voetbus. De zuigers zijn van lichtmetaal met een compressiering, olieschraper-ring en oliecontrolering. De zuigerpen maakt een nauwe glijpassing met zowel zuiger als drijfstang. [p5]
+
+De hoofd- en drijfstanglagers zijn dunwandige stalen schalen bekleed met antifrictionmetaal. Het oliecarter is van lichtmetaal. [p5]
+
+## Klepbediening
+
+De klepbediening omvat bovenliggende kleppen, **twee per cilinder**, direct bediend door **twee nokkenassen** die werken via oliegevulde cups. De klepspeling wordt afgesteld met **stelplaatjes** tussen klep en cup. [p5]
+
+## Brandstoftoevoer
+
+Brandstof wordt vanuit de tank naar de carburateur gevoerd via een **membraanpomp** (mechanisch aangedreven door een stoterstang, bediend door een nok op de oliepomp-/verdeleraandrijfas). [p5]
+
+De **dubbele, horizontale carburateurs** zijn voorzien van een acceleratiepomp. [p5]
+
+De luchtinlaat (ramlucht) met droog-element luchtfilter heeft een **handmatig bediende klep** voor toevoer van verse lucht (zomer) of voorverwarmde lucht (winter). [p5]
+
+Een kom-filter zit tussen de benzinepomp en de carburateur. [p5]
+
+## Smering
+
+De motor heeft **druksmering** via een tandwielpomp gemonteerd op het frontdeksel van het carter. De pompas wordt direct door de krukas aangedreven via een tandwielpaar. [p5]
+
+De oliedruk wordt geregeld door een **overdrukklep** in het pomplichaam. [p5]
+
+De motorolie wordt gefilterd door een zeef in de zuigkop en een **volstroom-filter**. Het filter heeft een bypass-klep voor het geval het element verstopt raakt. [p5]
+
+Het nokkenashuisdeksel heeft aansluitingen voor de **carterventilatie**. [p5]
+
+## Koelsysteem
+
+Gedwongen circulatie met een **centrifugaalpomp** (riemaangedreven door de krukas). Een thermostaatklep bij de uitlaat van het spruitstuk laat de motor sneller opwarmen vanuit koude start — de klep opent pas bij een koelvloeistoftemperatuur van circa **81-85°C**. [p5]
+
+Naast ramlucht wordt het koelmiddel in de radiateur gekoeld door een **elektrische ventilator**, aangestuurd door een thermostaatschakelaar in de radiateur. [p5]
+
+Een zender meet de koelvloeistoftemperatuur en bedient de thermometer. Bij overschrijding van de normale bedrijfstemperatuur schakelt een **thermische schakelaar bij de vierde cilinder** een waarschuwingslampje in. [p5]
+
+## Ontsteking
+
+Het ontstekingssysteem is van het **accu-en-spoel-type** met een centrifugale voortijlingsregeling. De **minpool** van de 12 Volt - 60 Ah accu is op massa aangesloten. [p5]
+
+## Figuren
+
+- DOC-04 p6: **doorsnedetekening van de volledige motor** — gedetailleerde technische illustratie die alle hierboven beschreven onderdelen in context toont. [p6]
+
+## Let op
+
+- Deze pagina bevat **beschrijvende** specificaties. Numerieke meetwaarden (boring, slag, compressieverhouding, koppelwaarden) staan in DOC-06 (Inspection Specifications) of op specifieke pagina's verderop in DOC-04.
+- Pagina 6 bevat alleen de doorsnedetekening, geen tekst — de OCR was correct leeg.
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Four stroke cycle | Viertakt | Motortype |
+| In-line cylinder | Lijn-cilinder | Cilinderopstelling |
+| Removable liners | Verwisselbare cilindervoeringen | Gietijzer in lichtmetalen blok |
+| Light alloy | Lichtmetaal | Blok, kop, carter, zuigers |
+| Hemispherical combustion chambers | Hemisfherische verbrandingskamers | Cilinderkop |
+| Valve seat inserts | Klepzittingen | Gietijzer |
+| Main bearings | Hoofdlagers | 5 stuks op krukas |
+| Crankpins | Krukpennen | |
+| Connecting rods | Drijfstangen | |
+| Small end bushing | Voetbus | Brons |
+| Gudgeon pin | Zuigerpen | |
+| Oil scraper ring | Olieschraper-ring | |
+| Oil sump | Oliecarter | |
+| Adjusting pads | Stelplaatjes | Klepspeling |
+| Diaphragm-type pump | Membraanpomp | Benzinepomp |
+| Accelerator pump | Acceleratiepomp | Op de carburateur |
+| Ram air intake | Ramlucht-inlaat | |
+| Dry-element air cleaner | Droog-element luchtfilter | |
+| Gear pump | Tandwielpomp | Oliepomp |
+| Relief valve | Overdrukklep | Oliedrukregeling |
+| Full-flow filter | Volstroom-filter | Oliefilter |
+| Centrifugal pump | Centrifugaalpomp | Waterpomp |
+| Thermostatic valve | Thermostaatklep | Opent bij 81-85°C |
+| Centrifugal advance governor | Centrifugale voortijlingsregeling | Verdeler |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[5, 6]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Weber 40 DCOE carburateur — 2.0L Alfetta motor
+
+Bron: https://alfetta-wiki.vercel.app/motor/weber-carburateur
+
+
+
+> **Status: validated** (2026-04-12). Gevalideerd door `/alfettaspecialist` — visueel gecontroleerd tegen originele Alfetta Workshop Manual scans.
+
+# Weber 40 DCOE carburateur
+
+> **TL;DR** — DOC-04 behandelt de Weber 40 DCOE 72/73 (geontvergiftigd) en 80/81 (standaard). Demonteren, reinigen met benzine + perslucht, sproeiers controleren op stempelwaarden, vlotterniveau instellen op 7,5 mm, acceleratiepomp-opbrengst 3,5 – 4,5 cc per 20 slagen. **Nooit** de bypass-schroeven of venturi's verwijderen. [p38] [p39] [p40]
+
+
+
+## Demonteren (stripping)
+
+Was de buitenkant van de carburateur met benzine en droog met perslucht. Demonteer zorgvuldig in deze volgorde: [p38]
+
+### Dekseldeel
+
+1. Draai holle bout 96 los. Verwijder holle koppelingen 98/98A van de achter-/voorcarburateur met afdichtingen 97 en 99. [p38]
+2. Verwijder inspectiedeksel 1 van stationaire en hoofdsproeier. [p38]
+3. Verwijder zeefplug 102 met ring 101 en trek zeef 100 uit. [p38]
+4. Verwijder schroeven van deksel 5, vlotter 91 en pakking 6. [p38]
+5. Schuif plaat 89 uit de vlotterkamer. [p38]
+6. Schuif pen 92 uit en verwijder vlotter 91. Verwijder pakking 6, naaldklep 8 en afdichting 7. [p38]
+
+### Sproeiers en buizen
+
+7. Verwijder stationaire sproeier 13, houder 11 en afdichting 103. [p38]
+8. Verwijder emulsiebuizen 12 samen met sproeierhouders 9, hoofd-luchtdoseersproeiers 10 en hoofdsproeiers 14. [p38]
+
+### Acceleratiepomp
+
+9. Verwijder de inlaatklep 87 van de acceleratiepomp uit de vlotterkamer. [p38]
+10. Verwijder de acceleratiepomponderdelen: bedieningsstang 69, veerhuis 68, veer 70 en plunjer 71. [p38]
+11. Verwijder plug 84 met ring 83, en trek acceleratiepomp-sproeier 82 uit met ring 81. [p38]
+12. Verwijder pluggen 95, gewichten 94 en kogels 93 (uitlaatkleppen acceleratiepomp). [p38]
+
+### Choke en mengselregeling
+
+13. Verwijder chokesproeiers 90. [p38]
+14. Verwijder het choke-deksel 59. Haal borgclip 66 en veerzitting 67 weg, verwijder chokeklep 64 met veer 65. [p38]
+15. Verwijder van het carburateurhuis: [p38]
+    - Gasklep-openingsschroef 72 met veer 73, veerzitting 74, afdichting 75 en mantelbout 62
+    - Stationaire mengselschroef 76 met veer 77, veerzitting 78 en afdichting 79
+    - Overgangsopening-pluggen 80
+    - Vacuümpoort-pluggen 44
+    - Vlotterkamerbodem 40 met pakking 41, schroeven 2A en ringen 4A
+    - Acceleratiepomp-huisdeksel 47 met pakking 46
+
+16. Indien nodig: verwijder de gasklep-koppelschroef met veer van de voorcarburateur. [p38]
+
+> **⚠️ BELANGRIJK:** Verwijder **nooit** de bypass-schroeven aan de buitenkant van het carburateurhuis. Verwijder ook **nooit** de venturi's uit het huis. [p38]
+
+## Inspectie en controle
+
+Was sproeiers en kleppen grondig met benzine en blaas ze door met perslucht. Spoel en droog het carburateurhuis, kanalen, kom en deksel op dezelfde manier. Gebruik **geen** metalen voorwerpen of sondes voor het reinigen — deze kunnen de sproeier-diameter veranderen. [p39]
+
+Controleer of de stempelwaarden op de sproeiers overeenkomen met onderstaande tabel. Inspecteer alle onderdelen op beschadiging en vervang waar nodig. [p39]
+
+### Instelgegevens Weber carburateur
+
+| Gegeven | 40 DCOE 80/81 | 40 DCOE 72/73 (geontvergiftigd) |
+|---------|---------------|----------------------------------|
+| Alfa Romeo onderdeelnummer | 116.08.04.010.00 / .011.00 | 116.08.04.010.06 / .011.06 |
+| Venturi | 32 | 32 |
+| Hoofdsproeier | 1,35 | 1,35 |
+| Hoofd-emulsiebuis | F 34 | F 34 |
+| Hoofd-luchtdoseersproeier | 2,10 | 2,10 |
+| Stationaire sproeier | 0,55 | 0,55 |
+| Stationaire luchtdoseersproeier | F 17 | F 17 |
+| Overgangsopeningen | 1,20 / 1,60 / 1,60 / 1,50 | 1,20 / 1,60 / 1,60 / 1,50 |
+| Chokesproeier | 0,65 F 5 | 0,65 F 5 |
+| Choke-luchtdoseersproeier | 2,00 | 2,00 |
+| Hoekbus voor mengselregeling | 1,00 | 1,00 |
+| Acceleratiepomp-sproeier | 0,35 horiz. | 0,35 horiz. |
+| Lekverlies inlaatklep acc.pomp | 0,60 | 0,60 |
+| Acc.pomp opbrengst (20 slagen/vat) | 3,5 – 4,5 cc | 3,5 – 4,5 cc |
+| Acc.pomp slag | 18 mm | 18 mm |
+| Bedieningsstang lengte | 63 mm | 63 mm |
+| Naaldklep | 1,50 | 1,50 |
+| Vlottergewicht | 26 g | 26 g |
+
+[p39]
+
+**Noot:** waarden tussen haakjes in de bron (bijv. "16 mm", "61 mm") zijn waarden **vóór modificatie**. De bovenstaande waarden zijn de huidige specificatie. [p39]
+
+## Herbouw
+
+Herbouw in omgekeerde volgorde van demontage, met de volgende instel-procedures: [p40]
+
+### Vlotterniveau
+
+
+
+Meet de afstand tussen vlotter en deksel-vlak (met pakking gemonteerd), het deksel verticaal en de vlottertong in licht contact met de kogel (zoals afgebeeld). [p40]
+
+**Afstand "A" moet 7,5 mm zijn.** [p40]
+
+Als de afstand niet klopt: buig de vlottertong licht bij. Controleer na afstelling dat de vlotterslag overeenkomt met de waarde gestempeld op de naaldklep (in millimeters). Stel de tong bij indien nodig. [p40]
+
+Om de vlotterslag te controleren: draai het deksel van verticaal naar horizontaal. [p40]
+
+### Acceleratiepomp-opbrengst
+
+1. Plaats de carburateur op gereedschap C.4.0101. [p40]
+2. Sluit de brandstoflijn aan op de adapter op het carburateurdeksel. [p40]
+3. Vul de carburateur en plaats de maatcilinders C.4.0105 onder de carburateurs. [p40]
+4. Bedien de gasklephendel meerdere keren volledig om de leidingen te vullen. [p40]
+5. Maak de maatcilinders leeg en controleer dat er geen benzine in de kanalen achterblijft. [p40]
+6. Bedien de gasklephendel **twintig slagen**, met een korte pauze bij maximale opening en volledig gesloten stand. [p40]
+7. Controleer of de opbrengst **3,5 – 4,5 cc** per vat is. [p40]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| Carburetter (UK spelling) | Carburateur | DOC-04 gebruikt consequent "carburetter" |
+| DCOE | Doppio Corpo Orizzontale E | Weber type-aanduiding |
+| Banjo bolt / banjo union | Holle bout / holle koppeling | Brandstofaansluiting |
+| Main jet | Hoofdsproeier | |
+| Idle jet | Stationaire sproeier | |
+| Emulsion tube | Emulsiebuis | |
+| Main air metering jet | Hoofd-luchtdoseersproeier | |
+| Choke jet | Chokesproeier | |
+| Float / float chamber | Vlotter / vlotterkamer | |
+| Needle valve | Naaldklep | |
+| Accelerator pump plunger | Acceleratiepomp-plunjer | |
+| Progression holes | Overgangsopeningen | |
+| Venturi | Venturi | Niet vertalen |
+| Strainer | Zeef | Brandstoffilter in carburateur |
+| Detoxed | Geontvergiftigd | Met uitstootregelgeving |
+| Bypass screws | Bypass-schroeven | NOOIT verwijderen |
+| Throttle lever | Gasklephendel | |
+| Control rod | Bedieningsstang | |
+| Float tongue | Vlottertong | Voor niveauinstelling |
+
+<SourceRef
+  doc="DOC-04"
+  title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
+  pages={[37, 38, 39, 40]}
+  pdf="/docs/DOC-04-engine.pdf"
+  archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
+  language="en"
+/>
+
+---
+
+
+# Motor-specificaties — Alfetta 2000 (016.23/016.55)
+
+Bron: https://alfetta-wiki.vercel.app/specificaties/motor-specificaties-2000
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd uit DOC-06 staging p30 — Group 01 Engine Assembly.
+
+# Motor-specificaties — Alfetta 2000
+
+> **TL;DR** — 2.0L viercilinder lijnmotor, 84×88,5 mm boring/slag, 1962 cc, compressieverhouding 9:1. Maximaal vermogen 130 HP / 96 kW DIN bij 5400 rpm. Maximaal koppel 18,1 kgm (178 Nm) bij 4400 rpm. [p30]
+
+## Motorgegevens vergelijking
+
+DOC-06 geeft specificaties voor alle 2.0L motorvarianten: [p30]
+
+| Gegeven | 016.78 | 016.23 | 016.55 |
+|---------|--------|--------|--------|
+| Cyclus | Otto, 4-takt | Otto, 4-takt | Otto, 4-takt |
+| Aantal cilinders | 4 in lijn | 4 in lijn | 4 in lijn |
+| Cilinderindeling | 1–2–3–4 | 1–2–3–4 | 1–2–3–4 |
+| Boring × slag (mm) | 84 × 88,5 | 84 × 88,5 | 84 × 88,5 |
+| Cilinderinhoud (cc) | 1962 | 1962 | 1962 |
+| Verbrandingskamer (cc) | 61,3 | 61,3 | 61,3 |
+| Compressieverhouding | 9 | 9 | 9 |
+| Max. vermogen HP/kW DIN | 120 (88,2) | 130 (96) | 130 (96) |
+| Max. vermogen bij | 5300 rpm | 5400 rpm | 5400 rpm |
+| Max. koppel (kgm/Nm) DIN | 17,9 (176) | 18,1 (178) | 18,1 (178) |
+| Max. koppel bij | 4400 rpm | 4400 rpm | 4400 rpm |
+| Gemiddelde zuigersnelheid (1) | 15,6 m/s | 15,93 m/s | 15,93 m/s |
+
+(1) Bij maximaal vermogenstoerental. [p30]
+
+> **Voor Serge's auto (Tipo 116.55, motor 016.23)**: 130 HP / 96 kW bij 5400 rpm — maximaal koppel 18,1 kgm (178 Nm) bij 4400 rpm.
+
+## Motortype-identificatie
+
+| Motorcode | Uitvoering |
+|-----------|------------|
+| 016.23 | 2000 cc — geen anti-pollutie apparatuur of EEC 70/220 |
+| 016.55 | 2000 cc — EEC 70/220 strenger (anti-pollutie) |
+| 016.78 | 1800 cc variant |
+
+Motoren worden onderscheiden door verschillende serienummers (letters + cijfers). Zie Group 00 voor type-identificatie. [p30]
+
+## Vergelijking met 1800 cc motoren
+
+| Gegeven | 1800 cc (016.08/016.78) |
+|---------|------------------------|
+| Boring × slag (mm) | 80 × 88,5 |
+| Cilinderinhoud (cc) | 1779 |
+| Compressieverhouding | 9,5 |
+| Max. vermogen HP/kW DIN | 122 (89,7) |
+| Max. vermogen bij | 5300 rpm |
+| Max. koppel (kgm/Nm) DIN | 17 (167) |
+| Max. koppel bij | 4400 rpm |
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|------------|---------|
+| Cycle Otto, 4 stroke | Otto-cyclus, 4-takt | Motortype |
+| No. of cylinders, in-line | Aantal cilinders, in lijn | Cilinderopstelling |
+| Bore - stroke | Boring - slag | Kernmaten motor |
+| Cylinder capacity | Cilinderinhoud | cc of cm³ |
+| Volume of combustion chamber | Verbrandingskamerinhoud | Cilinderkop-maat |
+| Compression ratio | Compressieverhouding | |
+| Maximum power output HP/KW DIN | Maximaal vermogen HP/kW DIN | |
+| Max. torque (kgm/Nm) DIN | Maximaal koppel (kgm/Nm) DIN | |
+| Mean effective piston speed | Gemiddelde zuigersnelheid | m/s bij max-toerentaal |
+
+<SourceRef
+  doc="DOC-06"
+  title="Alfetta Inspection Specifications — Berlina & Coupé"
+  pages={[30]}
+  pdf="/docs/DOC-06-inspection-specs.pdf"
+  archive_url="https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view"
+  language="en"
+/>
+
+---
+
+
+# Oliedruk & motortemperaturen — specificaties
+
+Bron: https://alfetta-wiki.vercel.app/specificaties/oliedruk-motortemperaturen
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd uit DOC-06 staging p40 — Group 01 Engine Assembly.
+
+# Oliedruk & motortemperaturen
+
+> **TL;DR** — Warm stationair (800–900 rpm): oliedruk **0,5–1 kg/cm²**. Op toeren (5500 rpm): **3,5–5 kg/cm²**. Inbouwtemperatuur klepzittingen 100°C, starterstandring 120–140°C. [p40]
+
+## Oliedruk — warm motorrijden
+
+| Conditie | RPM | Oliedruk |
+|----------|-----|----------|
+| Warm stationair | 800–900 rpm | 0,5–1 kg/cm² |
+| Op toeren | 5500 rpm | 3,5–5 kg/cm² |
+
+[p40]
+
+> **Let op**: waarden zijn geldig na volledige motoropwarming. Bij koude motor zijn de waarden tijdelijk hoger.
+
+## Temperaturen bij inbouw
+
+Bij assemblage gelden de volgende temperaturen: [p40]
+
+| Component | Inbouwtemperatuur |
+|-----------|-------------------|
+| Cilinderkop — inbouwen klepzittingen | 100°C |
+| Starterstandring (ring gear) — krimpen | 120–140°C |
+
+## Afdichtmiddelen (Group 01)
+
+De volgende producten zijn voorgeschreven: [p40]
+
+- **Bouten distributiedeksel naar cilinderkop** — DIRING Curil Part. No. 3522-00017
+  - *Voor het verwijderen van resten oud afdichtmiddel of pakking: gebruik butylacetaat of methylethylketon.*
+- **Nokkendekkels (joint face)** — DIRING: Heldite of DOW CORNING: Hermetite
+- **Bouten vliegwiel aan krukas** — LOCTITE 270 (groen) Part. No. 3524-00009
+  - *Voor gebruik: verwijder alle resten oud Loctite met borstel en perslucht. Ontvetten met trichloorethyleen of chlorotheen.*
+- **Afdichtmiddel algemeen** — Part. No. 3522-00015
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|------------|---------|
+| Oil pressure after warm-up | Oliedruk na opwarmen | Meetconditie |
+| R.P.M. | tpm (toeren per minuut) | Motortoerental |
+| Cylinder head temperature | Cilinderkoptemperatuur | Assemblage-waarde |
+| Valve seat installation | Klepzitting inbouwen | Door krimping montage |
+| Starter ring gear | Starterstandring | Vliegwielrandring |
+| Shrinking temperature | Krimptemperatuur | Inbouw door opwarmen |
+| Jointing compound | Afdichtmiddel / pakking-compound | |
+| Loctite 270 (green) | Loctite 270 (groen) | Bevestiging vliegwiel |
+
+<SourceRef
+  doc="DOC-06"
+  title="Alfetta Inspection Specifications — Berlina & Coupé"
+  pages={[40]}
+  pdf="/docs/DOC-06-inspection-specs.pdf"
+  archive_url="https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view"
+  language="en"
+/>
+
+---
+
+
+# Ontsteking-componenten & timing — Alfetta 2000
+
+Bron: https://alfetta-wiki.vercel.app/specificaties/ontsteking-componenten
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd uit DOC-06 staging pp 67–69 — Group 05 Ignition, Starter, Charging.
+
+# Ontsteking-componenten & timing
+
+> **TL;DR** — Alfetta 2.0 (016.23): statisch **7°±1° BTDC** bij 850±50 rpm. Maximum **38°±0,5° BTDC** bij 5100 rpm. Bougie torque **2,5–3,5 kgm** (25–34 Nm). [p67]
+
+## Ontstekingstiming — Alfetta 2.0 (016.23)
+
+[p67]
+
+| Parameter | Waarde |
+|-----------|--------|
+| Statisch (F) | **7°±1° BTDC** bij **850±50 rpm** |
+| Maximum (M) | **38°±0,5° BTDC** bij **5100 rpm** |
+
+> Maximum-afstelling: aanwijzer uitgelijnd met keep **M** op verdeler. Vacuum-slang losgekoppeld tijdens meten.
+
+## Ontstekings-componenten — Alfetta 2.0 (motor 016.23)
+
+DOC-06 geeft de volgende component-aanduidingen per fabrikant: [p67]
+
+**Bobijn (Ignition coil):**
+- 116.55.65.079.00 — BOSCH 0.221.119.044
+- 116.33.65.079.00 — MARELLI BZR202B
+- 116.55.65.079.01 — BOSCH 0.221.119.044
+
+**Verdeler (Distributor):**
+- 116.36.05.011.01 — BOSCH 0.231.178.0013
+- 116.36.05.011.00 — MARELLI S 145 CX
+
+**Bougie (Spark plug):**
+- 105.14.05.106.01 — LODGE 2HL
+
+**Dynamo/Alternator:**
+- 116.10.05.060.03 — BOSCH K1-14V45A22
+- 116.10.05.060.01 — PARIS-RHONE A13R121
+- 116.10.05.060.18 — SEV MARCHAL A14/55A
+- 116.10.05.060.08 (1) — BOSCH K1-14V55A20
+- 116.10.05.060.12 (1) — PARIS-RHONE A13R192
+- 116.55.05.060.00 (1) — MARELLI
+
+(1) Met geïntegreerde elektronische spanningsregelaar [p67]
+
+**Regelaar (Regulator):**
+- 105.36.65.028.00 — BOSCH-AD1
+- 116.10.65.028.01 — PARIS-RHONE AYC2112
+- 116.10.65.028.05 — SEV MARCHAL (blauwe markering)
+
+**Startmotor (Starter):**
+- 105.12.05.030.03 — BOSCH GF-12V-1.1PS
+- 116.55.05.030.00 — PARIS-RHONE D10E70
+- 116.55.05.030.01 — MARELLI E100-1.3-12
+
+## Bougie-koppelwaarden
+
+[p69]
+
+| Component | Koppel |
+|-----------|--------|
+| Bougie (met smeervet op schroefdraad per item 1) | **2,5–3,5 kgm** (25–34 Nm) |
+
+**Smeermiddel bougiedraad**: ISECO Molykote A — Part. No. 4500-18304 [p69]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|------------|---------|
+| Ignition coil | Bobijn | |
+| Distributor | Verdeler | |
+| Spark plug | Bougie | |
+| Alternator | Dynamo / Alternator | |
+| Regulator | Spanningsregelaar | |
+| Starter | Startmotor | |
+| BTDC | Voor BDP (Bovenste Dood Punt) | Ontstekingstijdstip |
+| Static advance (F) | Statische voorontsteking | |
+| Max. advance (M) | Maximale voortijling | Aanwijzer op keep M |
+| Integral electronic voltage regulator | Geïntegreerde elektronische spanningsregelaar | |
+
+<SourceRef
+  doc="DOC-06"
+  title="Alfetta Inspection Specifications — Berlina & Coupé"
+  pages={[67, 68, 69]}
+  pdf="/docs/DOC-06-inspection-specs.pdf"
+  archive_url="https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view"
+  language="en"
+/>
+
+---
+
+
+# Stationair toerental, CO & brandstof — specificaties
+
+Bron: https://alfetta-wiki.vercel.app/specificaties/stationair-brandstof-specificaties
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd uit DOC-06 staging pp 61, 170 — Group 04 Fuel System.
+
+# Stationair toerental, CO & brandstof
+
+> **TL;DR** — Stationair warm: **850–1000 rpm** (verzegelde stilstandschroef), **750–950 rpm** (onverzegeld). CO ≤ 4,5% (EEC 70/220 / 74/290). Brandstofpomp-uitlaatdruk 0,30–0,45 kg/cm² bij 5000–6000 rpm. Tankinhoud Coupé **56 liter**, Berlina 49 liter, reserve 8 liter. [p61]
+
+## Stationair toerental (motor warm)
+
+Motor warm, versnellingsbak in neutraal, koppeling ingedrukt: [p61]
+
+| Uitvoering | Stationair toerental |
+|------------|----------------------|
+| Motor met **onverzegelde** stilstandregeleerschroef | 750–950 rpm |
+| Motor met **verzegelde** stilstandregeleerschroef | 850–1000 rpm |
+
+> Late model met seizoencode '83 (1800/2000): laag stationair **850–1000 rpm**, hoog stationair 1400–2000 rpm. [p170]
+
+## CO-emissie bij stationair
+
+Motor warm, versnellingsbak neutraal, koppeling ingedrukt: [p61]
+
+- **EEC 70/220** (anti-pollutie) en **EEC 74/290** (strenger): CO ≤ **4,5% vol.**
+
+Voor seizoencode '83 (1800/2000) geldt: [p170]
+
+| Meetpunt | CO-waarde |
+|----------|-----------|
+| Uitlaatpijp eindstuk | 0,5–2% |
+| Uitlaatspruitstuk cilinder 1 | ~0,5% |
+| Uitlaatspruitstuk cilinder 2–4 | 1,5–2% |
+
+## Brandstofpomp-uitlaatdruk
+
+Conditie: nultoevoer, motortoerental 5000–6000 rpm, drukmeter op gelijke hoogte als brandstofpomp: [p61]
+
+| Waarde |
+|--------|
+| **0,30–0,45 kg/cm²** |
+
+## Gasklep-kabel afstellingsmaten
+
+Voor voertuigen met **handbak** (LHD): [p61]
+
+| Maat | Waarde |
+|------|--------|
+| Maat **A** — speling tussen gasklephefboom en eindstop (gaspedaal volledig ingedrukt) | 1–2 mm |
+| Maat **B** — hoogte gaspedaalaanslag boven vloer (LHD) | 15–22 mm |
+| Maat **C** — speling tussen klem handgaskabel en pedaalhefboom (ruststand) | 5–6 mm |
+
+> Stel maat A af via gaspedaalaanslag. Controleer maat B — indien buiten bereik, pas lengte horizontele bedieningsstang aan.
+
+Voor voertuigen met **automaat** (LHD): [p61]
+
+| Maat | Waarde |
+|------|--------|
+| Maat **D** — kogellager-afstand horizontele stang (ruststand, LHD) | 295 mm |
+| Maat **E** — speling kabel/pedaalhefboom (ruststand) | 5–6 mm |
+
+## Tankinhoud
+
+[p61]
+
+| Variant | Capaciteit |
+|---------|------------|
+| Berlina — vol | 49 liter |
+| Coupé — vol | 56 liter |
+| Reserve (beide) | 8 liter |
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|------------|---------|
+| Engine idle RPM | Stationair toerental | |
+| Idle speed adjusting screw unsealed/sealed | Stilstandregeleerschroef onverzegeld/verzegeld | Carburateur-afstelling |
+| CO emissions | CO-emissie | Uitlaatgas-meting |
+| Fuel pump delivery pressure | Brandstofpomp-uitlaatdruk | |
+| Zero delivery | Nultoevoer | Meetconditie |
+| Clearance A / Height B / Clearance C | Maat A / Hoogte B / Speling C | Gasklep-kabel afstellingswaarden |
+| LHD / RHD | Links gestuurd / Rechts gestuurd | |
+| Full capacity / Reserve | Vol / Reserve | Tankinhoud |
+
+<SourceRef
+  doc="DOC-06"
+  title="Alfetta Inspection Specifications — Berlina & Coupé"
+  pages={[61, 170]}
+  pdf="/docs/DOC-06-inspection-specs.pdf"
+  archive_url="https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view"
+  language="en"
+/>
+
+---
+
+
+# Voertuig-identificatie — Alfetta 2.0 (Tipo 116.55)
+
+Bron: https://alfetta-wiki.vercel.app/specificaties/voertuig-identificatie-2000
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd uit DOC-06 staging p11 — Group 00 Complete Car.
+
+# Voertuig-identificatie — Alfetta 2.0
+
+> **TL;DR** — Alfetta 2.0 heeft voertuigtype **116.55** (LHD) of **116.56** (RHD). Motor **016.23** (2000 cc). Inrijvoorschrift: eerste 500 km max. 3500 rpm, 501–1500 km max. 4500 rpm. [p11]
+
+## Identificatiegegevens Alfetta 2.0
+
+[p11]
+
+| Gegeven | LHD | RHD |
+|---------|-----|-----|
+| Voertuigtype-nummer — op typeplaatje | 116.55 | 116.56 |
+| Voertuigtype-nummer — op schutbord | 116.55 | 116.56 |
+| Voertuigtype-nummer — op identificatieplaat | 116.55 | — |
+| Chassis-serienummer — op schutbord | vanaf 0001001 | — |
+| Motortype en serienummer — LH achterzijde cilinderblok | 016.23 vanaf \*000001\* | — |
+| Smering | Zie "Vloeistoffen & Smeermiddelen" per Group | |
+| Verf en lak | Vermeld op bijbehorend plaatje — geeft originele lak-product aan | |
+
+## Inrijinstructies
+
+Op het plaatje bij de passagiers-zonneblende: [p11]
+
+| Periode | Maximaal motortoerental |
+|---------|------------------------|
+| Eerste 500 km (300 mijl) | **3500 rpm** |
+| 501–1500 km (301–1000 mijl) | **4500 rpm** |
+
+## Chassis-nummering (uitleg)
+
+DOC-06 p2 legt het nummersysteem uit: [p11]
+
+- **Typenummer** (5 cijfers): bestaat uit basistype (116 = Alfetta-modellenlijn) + typevariant (116.55 = Alfetta 2.0 LHD, 116.56 = Alfetta 2.0 RHD, 116.36 = Alfetta GTV 2000)
+- **Serienummer**: progressief door productie toegewezen
+
+## Motornummering
+
+- **Typenummer**: 016.23 = Alfetta 2000 motor
+- **Serienummer**: progressief door productie toegewezen, op linker achterzijde cilinderblok
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|------------|---------|
+| Car type number | Voertuigtype-nummer | Op type-goedkeuringsplaatje |
+| On type approval plate | Op type-goedkeuringsplaatje | |
+| On scuttle | Op schutbord | Scuttle = brandwand/motorruimtescheiding |
+| On identification plate | Op identificatieplaat | |
+| Progressive chassis serial No. | Voortschrijdend chassis-serienummer | |
+| LH rear of cylinder block | Linker achterzijde cilinderblok | Locatie motornummer |
+| Running-in instructions | Inrijinstructies | |
+| LHD / RHD | Links gestuurd / Rechts gestuurd | |
+
+<SourceRef
+  doc="DOC-06"
+  title="Alfetta Inspection Specifications — Berlina & Coupé"
+  pages={[11]}
+  pdf="/docs/DOC-06-inspection-specs.pdf"
+  archive_url="https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view"
+  language="en"
+/>
+
+---
+
+
+# Differentieel technische specificaties — hypoid 10/41, totaaloverbrengingen
+
+Bron: https://alfetta-wiki.vercel.app/transmissie/differentieel-specificaties
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — overbrengingsverhoudingen visueel gecontroleerd tegen originele PDF-scan p60.
+
+# Differentieel technische specificaties
+
+> **TL;DR** — Hypoid tandkrans/nok-tandwiel, reductieverhouding **10/41**. Totale overbrengingen per versnelling: 1e 1:13,53 ... 5e 1:3,40. Tandharkspeling op montage: **0,13 tot 0,18 mm**. Differentieel-draaiweerstand: **10 tot 20 Kgcm**. Tandkrans-bouten aandraaien op **6,8 tot 7,5 Kgm** (geoliede toestand). [p60] [p81]
+
+## Technische gegevens differentieel
+
+| Kenmerk | Waarde |
+|---------|--------|
+| Type tandkrans/nok-tandwiel | Hypoid |
+| Reductieverhouding | **10/41** |
+| Differentieel-draaglagers | 2 conische rollagers (taper roller) |
+| Differentieel-lager voorbespanning | Via afstandsringen (shims) |
+| Draaiweerstand differentieel-lagers | **10 tot 20 Kgcm** |
+| Binnenste halfas-lagers | 2 kogellagers |
+| Afstand nok-tandwiel tot tandkrans-as | **56,500 mm** |
+| Afstand nok-tandwiel tot buitenste oppervlak stelpen (C.6.0164) | **66,500 mm** |
+| Tandharkspeling tandkrans/nok-tandwiel op montage | **0,13 tot 0,18 mm** |
+| Speling zonnewiel/planeetwieltanden op montage | **0 tot 0,05 mm** |
+| Speling remblokken/remschijven op montage | **0,1 mm** per zijde |
+| Dikte remblokken (nieuw) | **15 mm** |
+
+## Totale overbrengingsverhoudingen (versnellingsbak + differentieel)
+
+| Versnelling | Totale overbrenging |
+|------------|---------------------|
+| 1e | **1 : 13,53** |
+| 2e | **1 : 8,20** |
+| 3e | **1 : 5,62** |
+| 4e | **1 : 4,26** |
+| 5e | **1 : 3,40** |
+| Achteruit | **1 : 11,73** |
+
+## Bouw differentieel
+
+De tandkrans en het nok-tandwiel zijn van het hypoid-type. De buitenste halfassen van het differentieel zijn van het scharnierende type met constantesnelheidskruisgewrichten aan elk einde. [p60]
+
+## Aandraaimomenten differentieel
+
+| Verbinding | Moment | Toestand |
+|-----------|--------|---------|
+| Bouten, tandkrans aan differentieel-drager | **6,8 tot 7,5 Kgm** | Geoliede toestand |
+| Nok-as-moer | **11,4 tot 12,6 Kgm** | Droog |
+| Moeren, afstandsstukken A.2.0234 en tussenflens aan versnellingsbak-differentieel-huis | **1,7 tot 2,4 Kgm** | Droog |
+| Moeren, differentieel-deksel en zijdeksel aan versnellingsbak-differentieel-huis | **1,9 tot 2,3 Kgm** | Droog |
+| Moeren, remklaauwen aan differentieel-huis | **4,7 tot 5,4 Kgm** | Droog |
+| Bouten, remschijven en afstandsstukken aan differentieel-halfassen | **5,1 tot 5,7 Kgm** | Droog |
+| Hydraulische rem-pijp-koppelingen | **0,9 tot 1 Kgm** | Droog |
+
+## Smeermiddelen differentieel
+
+| Toepassing | Middel |
+|-----------|--------|
+| Buitenste oppervlakken oliedichtingen binnenste halfassen | AGIP F1 ROTRA MP SAE 85W/90 of Shell Spirax 90 HD |
+| Aanligvlakken tussenflens (reinigen met methylated spirit / trichloorethaan) | LOWAC PERFECT SEAL |
+| Aanligvlakken binnenstehals-deksels met differentieel-huis | LOWAC PERFECT SEAL |
+| Lippen oliedichtingen en werkoppervlakken binnenste halfassen | ISECO MOLYKOTE BR 2 |
+
+## Let op
+
+- De tandkrans en het nok-tandwiel worden als **gekoppeld paar** geleverd. Het is niet mogelijk slechts één van de twee tandwielen te vervangen. [p65]
+- Montagevolgorde bij herbouw: afstand nok-tandwiel instellen → voorbespanning differentieel-draaglagers instellen → tandharkspeling instellen. Zie staging p67-72 voor uitgebreide uitlijnprocedure (Blok B in SELECTIE.md). [p67]
+- Kortste halfas aan de linkerkant monteren. [p74]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Crownwheel | Tandkrans | Groot hypoid-tandwiel differentieel |
+| Pinion | Nok-tandwiel | Klein hypoid-tandwiel op versnellingsbak-as |
+| Hypoid | Hypoid | Type tandwielgeometrie — assen snijden niet |
+| Reduction ratio | Reductieverhouding | Van motor naar achteras |
+| Differential carrier | Differentieel-drager | Kuipenframe met planeetwielen |
+| Differential carrier bearings | Differentieel-draaglagers | Conische rollagers |
+| Taper roller bearing | Conisch rollager | Lagertype differentieel-drager |
+| Preload | Voorbespanning | Axiale voorspanning lagers via shims |
+| Shims | Afstandsringen | Afstelplaatjes voor voorbespanning en positie |
+| Backlash | Tandharkspeling | Speling tussen tandkrans en nok-tandwiel |
+| Sun wheel | Zonnewiel | Binnenzijde differentieel |
+| Planetary gear | Planeetwiel | Rondom zonnewiel in differentieel |
+| Inner half-shaft | Binnenste halfas | Verbindt differentieel met De Dion-as |
+| Outer half-shaft | Buitenste halfas | Verbindt De Dion-as met wiel |
+| Constant velocity universal joint | Constantesnelheidskruisgewricht | CV-gewricht aan beide uiteinden buitenste halfas |
+| Side cover | Zijdeksel | Afdekking binnenste halfas-lagerpositie |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[60, 81]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
+
+---
+
+
+# Hydraulisch ontluchten — remmen, koppeling en vullen versnellingsbak
+
+Bron: https://alfetta-wiki.vercel.app/transmissie/hydraulisch-ontluchten
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele DOC-05 scans.
+
+# Hydraulisch ontluchten
+
+> **TL;DR** — Ontlucht remmen en koppeling met de juiste vloeistof (Alfa Romeo std. 3681-69903). Slaafcilinder-slaglengte moet **10,5 tot 12 mm** zijn bij volledig doorgedrukte koppelingspedaal; hoofdcilinder-slaglengte **22 tot 25 mm**. Versnellingsbak-olie: **2,57 Kg / 2,79 liter** SAE 85W/90; aftapplug aandraaien op **1,5 tot 1,8 Kgm**. [p16] [p17]
+
+## Ontluchten remmen
+
+1. Vul indien nodig de reservoirs bij met de voorgeschreven vloeistof — gebruik uitsluitend vloeistof uit **nieuwe, verzegelde blikken** die pas worden geopend op het moment van gebruik. Zorg dat tijdens het ontluchten de vloeistof het minimumniveau niet onderschrijdt. [p16]
+2. Verwijder de stofkapjes en bevestig een transparante slang op de ontluchtschroef 3 van één voorste remklauw én op de ontluchtschroeven 4 van één achterste remklauw (de twee rechter- of de twee linkerwielen). Dompel de uiteinden van de slangen in transparante potten die al deels zijn gevuld met de voorgeschreven remvloeistof. [p16]
+3. Draai de ontluchtschroeven van de voor- en achterste remklauw gelijktijdig los. Druk de rempedaal meerdere malen in en laat hem elke keer langzaam terugkomen. Wacht enkele seconden vóór het volgende indrukken. [p16]
+4. Herhaal de handeling totdat vloeistof zonder luchtbellen uitkomt. [p16]
+5. Houd de rempedaal volledig ingedrukt en draai de ontluchtschroeven dicht. Verwijder de slangen en vervang de stofkapjes. [p16]
+6. Herhaal de procedure voor het andere wiel-paar. Vul daarna het vloeistofniveau in de reservoirs bij. [p16]
+
+> **Kwaliteitscontrole:** Als het ontluchten goed is uitgevoerd, voelt de rempedaal direct na de vrijgang hard aan zonder sponginess. Is dit niet het geval, herhaal dan de ontluchtprocedure. [p16]
+
+## Ontluchten koppeling
+
+1. Ga op dezelfde manier te werk als bij het ontluchten van de remmen: bevestig de transparante slang op de ontluchtschroef op de verbindingsleiding 1 van de koppeling-slaafcilinder. [p17]
+
+## Afstellen handrem
+
+1. Stel de handrem af door de borgmoer en stelmoer op de Bowdenkabel te draaien. Zet de handrem volledig aan en controleer of de achterwielen zijn geblokkeerd bij de helft van de totale remhendel-beweging. [p17]
+
+## Koppeling-slaafcilinder controleren en afstellen
+
+1. Controleer indien nodig of de slaafcilinder-spindel 2 in cilinder 3 correct werkt door de koppelingspedaal volledig in te drukken: de slaglengte moet **10,5 tot 12 mm** bedragen. [p17]
+2. Om de slaglengte af te stellen: draai de borgmoer 4 op de drukstang-vork van de hoofdcilinder los. [p17]
+3. Draai de drukstang 5 in of uit totdat de slaglengte van de slaafcilinder-spindel 2 tussen de opgegeven waarden ligt. [p17]
+4. Onder deze omstandigheden moet de slaglengte van de hoofdcilinder-drukstang 5 tussen **22 en 25 mm** liggen. [p17]
+
+## Versnellingsbak-olie vullen
+
+1. Draai de aftapplug vast op het voorgeschreven moment van **1,5 tot 1,8 Kgm**. [p17]
+2. Vul de versnellingsbak-differentieel met nieuwe olie van de voorgeschreven kwaliteit en hoeveelheid (zie [Transmissievloeistoffen](/transmissie/transmissie-vloeistoffen)). [p17]
+3. Het oliepeil moet tot aan de onderkant van het vulgat komen. Draai de vulplug aan op **1,5 tot 1,8 Kgm**. [p17]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Bleed screw | Ontluchtschroef | Op remklauw / koppelingsleiding |
+| Slave cylinder spindle stroke | Slaafcilinder-slaglengte | Maat bij volledig doorgedrukte koppeling |
+| Master cylinder push rod stroke | Hoofdcilinder-drukstang-slaglengte | |
+| Clevis / push rod clevis | Drukstang-vork | Verstelbaar eindstuk drukstang |
+| Drain plug | Aftapplug | Onderaan versnellingsbak |
+| Filler hole / plug | Vulgat / vulplug | Zijkant versnellingsbak |
+| Bowden cable | Bowdenkabel | Handrem-kabel |
+| Spongy pedal | Sponsige pedaalwerking | Gevolg van lucht in hydraulisch systeem |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[16, 17]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
+
+---
+
+
+# Koppeling revisie — demonteren, inspectie en hermontage
+
+Bron: https://alfetta-wiki.vercel.app/transmissie/koppeling-revisie
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele DOC-05 scans.
+
+# Koppeling revisie
+
+> **TL;DR** — Koppeling demonteren op werkbankstandaard. Vliegwiel + drukplaat als balanceerde eenheid behandelen — markeer referentietekens vóór demontage. Slijtagegrens koppelingschijf: min. **6 mm**. Speling schijf/hoofdas: **0,07 tot 0,13 mm**. Vliegwielmoer aandraaien op **9,5 tot 10,5 Kgm**; drukplaat-bouten op **1,3 tot 1,6 Kgm** kruisgewijs. [p24] [p27] [p33]
+
+## Koppeling demonteren
+
+### Monteren op werkbankstandaard
+
+1. Bevestig de transaxle op de standaard 1 (gereedschap R.4.0151 met klemmen R.4.0154) en zet hem vast met de wieg 2 (R.4.0150). [p24]
+2. Draai de moer en ring 3 los en verwijder de achterste schakelkeuzehendel van de eenheid. [p24]
+3. Verwijder stofkap 4 van de koppeling-slaafcilinder. [p24]
+4. Draai de bouten 5 los die de koppelingseenheid aan de versnellingsbak-behuizing bevestigen. [p24]
+5. Schuif de koppelingseenheid van de hoofdas. [p24]
+
+### Koppelingseenheid demonteren
+
+1. Verwijder de koppeling-slaafcilinder 6 door bout 7 los te draaien. [p24]
+2. Verwijder indien nodig stofmantel 8 en het plastic geleide-busje 9 van de schakelspindel. [p24]
+
+### Vliegwiel en drukplaat
+
+> **Let op:** Vliegwiel en drukplaat zijn als balanceerde set geleverd. Als de referentietekens 1 voor assemblage van vliegwiel 2 en drukplaat 3 ontbreken: markeer de twee onderdelen vóór demontage. [p25]
+
+1. Draai de bouten en ringen 4 los die de drukplaat aan het vliegwiel bevestigen. Verwijder de drukplaat en de koppelingschijf 5. [p25]
+2. Druk met een pers de as 8 met het vliegwiel uit de behuizing 9. Verwijder het kruisstuk-joek 6 en het spatlap 7. [p25]
+3. Draai de moer los die joek 6 (verbinding naar cardanas) borgt. [p25]
+4. Extraheer indien nodig het achterste koppelingsas-lager met geschikt gereedschap. [p25]
+5. Extraheer indien nodig het centeerbusje 10 (voor centrering hoofdas) uit de koppelingsas met gereedschap 11 (A.3.0402). [p25]
+
+> **Waarschuwing:** Als het nodig blijkt het vliegwiel, de drukplaat of de koppelingsas te vervangen of te bewerken, **vervang dan de volledige koppelingseenheid als complete set** om balancering niet te verstoren. [p25]
+
+1. Verwijder het borgringetje 1 met borgring-tang en tik het voorste lager uit de koppelingsbehuizing met gereedschap 2 (A.3.0401). [p26]
+2. Verwijder uit de koppeling-versnellingsbak-behuizing: het ontgrendelingslager 3 van de geleidebus 4; stofafdekking 5 van het ontgrendelingshendel-huis; de ontgrendelingshendel 6 door hem los te koppelen van de kogelbout en het stofdichtsel 7 te verwijderen; verwijder dan de geleidebus. [p26]
+
+## Inspectie
+
+### Koppelingschijf
+
+Controleer de slijtage en let op: [p26]
+
+- De bekleding is niet verbrand of vettig
+- De slijtage is gelijkmatig, niet vlekkerig
+- Dikte koppelingschijf bij nieuwe bekleding, belast op 480 Kg: **8,7 tot 9,1 mm**. Minimale dikte bij maximale slijtage: **6 mm**
+- De naaf is in goede staat en de werkoppervlakken zijn stevig bevestigd
+- Er is geen overmatig speling of stijve plekken tussen schijf en hoofdas-vertanding. De speling 'G' moet **0,07 tot 0,13 mm** zijn
+
+### Ontgrendelingslager
+
+Controleer of het ontgrendelingslager 3 in goede staat is, niet luidruchtig is, geen overmatige speling heeft en vrij glijdt op de geleidebus. [p26]
+
+### Centeerbusje
+
+Controleer op tekenen van vastzetten, hamerslagen of overmatige slijtage in het centeerbusje in de koppelingsas (voor centrering van de hoofdas). Vervang het busje indien nodig. [p26]
+
+## Hermontage koppeling
+
+### Lagers en busje plaatsen
+
+1. Druk het centeerbusje 2 in de vliegwiel-koppelingsas met gereedschap 1 (A.3.0405) na inweking in hete olie. [p27]
+2. Plaats in de koppelingsbehuizing: het voorste lager met borgringetje 5 met gereedschap 3 (A.3.0401) en het achterste lager 6 met gereedschap 4 (A.3.0404). [p27]
+3. Breng het voorgeschreven Loctite/borglak aan op drie punten rondom de achterste lager-zitting, monteer dan het vliegwiel met as in de koppelingsbehuizing. [p27]
+
+### Joek en vliegwiel
+
+1. Monteer het spatlap 7 en het kruisstuk-joek 6 na aanbrengen van borglak op de vertanding. Draai de joekvergrendelmoer aan op **9,5 tot 10,5 Kgm**. [p27]
+2. Monteer de koppelingschijf en drukplaat 7 op het vliegwiel — zorg dat de referentietekens 8 (aangebracht bij demontage) overeenkomen. [p27]
+3. Centreer de koppelingschijf met gereedschap 9 (A.4.0139). Draai de bouten 10 die de drukplaat aan het vliegwiel bevestigen kruisgewijs aan op **1,3 tot 1,6 Kgm**. [p27]
+4. Monteer de slaafcilinder 6 en bevestig hem met bout 7. Plaats het plastic geleide-busje 9 van de schakelspindel en stofmantel 8 indien eerder verwijderd. [p27]
+
+### Koppelingseenheid terugplaatsen op transaxle
+
+1. Monteer indien eerder verwijderd het stofdopje 7 op de kogelbout; vul de ruimte met het voorgeschreven vet. [p28]
+2. Vet de kogelspindel op de koppeling-slaafcilinder in met het voorgeschreven vet. [p28]
+3. Monteer de geleidebus 1 voor het ontgrendelingslager. [p28]
+4. Monteer de ontgrendelingshendel 2 voor lager 3 met stofafdekking 4; monteer daarna het ontgrendelingslager zelf na invulling van de glijdende component met het voorgeschreven vet. [p28]
+5. Vet het centeerbusje 2 van de vliegwiel-koppelingsas in met het voorgeschreven vet. [p28]
+6. Koppel de koppelingseenheid weer aan de koppeling-versnellingsbak-behuizing in omgekeerde volgorde van demontage. Draai moer 3 voor de achterste schakelaandrijfhendel aan op **2,9 tot 3,6 Kgm**. [p28]
+7. Sluit indien eerder losgekoppeld de flexibele pijp van het koppelingshydraulisch systeem aan op de slaafcilinder. Draai de moer aan op **0,8 tot 1 Kgm**. [p28]
+
+## Aandraaimomenten koppeling
+
+| Verbinding | Moment | Toestand |
+|-----------|--------|---------|
+| Moer, joek aan vliegwiel-koppelingsas | **9,5 tot 10,5 Kgm** | Droog |
+| Bouten, drukplaat aan vliegwiel | **1,3 tot 1,6 Kgm** | Droog |
+| Moer, achterste schakelaar-hendel | **2,9 tot 3,8 Kgm** | Droog |
+| Hydraulische koppeling, flexibele slang aan slaafcilinder | **0,86 tot 1 Kgm** | Droog |
+
+## Smeermiddelen koppeling
+
+| Toepassing | Middel |
+|-----------|--------|
+| Kogelbout, koppelingsbediening-scharnierpunt, ontgrendelingslager | AGIP F1 GREASE 33 FD of Shell Retinax AX |
+| Kogelspindel slaafcilinder | AGIP F1 GREASE 33 FD of Shell Retinax AX |
+| Centeerbusje vliegwiel-koppelingsas | AGIP F1 GREASE 33 FD of Shell Retinax AX |
+| Achterste lager, vliegwiel-koppelingsas (borgvloeistof) | STA-LOK 1000 / Loctite A-A |
+| Vertanding, instelvorkvergrendeling koppeling | STA-LOK 400 / Loctite Nut-Lock |
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Flywheel | Vliegwiel | Onderdeel koppelingsas |
+| Pressure plate | Drukplaat | Bevestigd aan vliegwiel |
+| Clutch plate | Koppelingschijf | Met frictiebekleding |
+| Release bearing | Ontgrendelingslager | Continu in contact met membraanveer |
+| Release lever | Ontgrendelingshendel | Bedient ontgrendelingslager |
+| Guide sleeve / guide bush | Geleidebus | Voor ontgrendelingslager |
+| Centering bush | Centeerbusje | Centreert hoofdas in koppelingsas |
+| Splash shield | Spatlap | Beschermt koppelingsbehuizing |
+| Reference marks | Referentietekens | Balanceringstekens vliegwiel/drukplaat |
+| Locking fluid | Borglak / Loctite | Zekeringsmedium voor lagers en vertanding |
+| Ball stud | Kogelbout | Scharnierpunt ontgrendelingshendel |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[24, 25, 26, 27, 28, 33]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
+
+---
+
+
+# Koppeling technische specificaties — droge éénschijfskoppeling ø216 mm
+
+Bron: https://alfetta-wiki.vercel.app/transmissie/koppeling-specificaties
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele DOC-05 scans.
+
+# Koppeling technische specificaties
+
+> **TL;DR** — Droge éénschijfskoppeling, hydraulisch bediend met automatische slijtagecorrectie. Schijfdiameter **ø216 mm**. Dikte nieuw: **8,7 tot 9,1 mm** (bij 480 Kg belasting); minimale dikte bij maximale slijtage: **6 mm**. Slaafcilinder-slag volledig doorgedrukt: **10,5 tot 12 mm**; hoofdcilinder-slag: **22 tot 25 mm**. [p22]
+
+## Technische gegevens koppeling
+
+| Kenmerk | Waarde |
+|---------|--------|
+| Type | Droge éénschijfskoppeling |
+| Bediening | Hydraulisch, met automatische slijtage-compensatie |
+| Aan- en ontkoppeling | Via membraanveer (diaphragm spring) |
+| Koppelingschijf | Voorzien van frictiebekleding |
+| Koppelingschijf-diameter | **ø 216 mm** |
+| Dikte koppelingschijf bij 480 Kg belasting (nieuw) | **8,7 tot 9,1 mm** |
+| Minimale dikte bij maximale slijtage | **6 mm** |
+| Slaglengte slaafcilinder-spindel bij volledig doorgedrukte pedaal | **10,5 tot 12 mm** |
+| Slaglengte hoofdcilinder-drukstang | **22 tot 25 mm** |
+
+## Werking
+
+De koppeling wordt hydraulisch bediend en de speling wordt automatisch bijgesteld. De koppelingspedaal bedient een hoofdcilinder die wordt gevoed door een reservoir. Bij indrukken van de pedaal beweegt de vloeistofdruk de slaafcilinder-zuiger, die op zijn beurt de ontgrendelingshendel bedient. [p22]
+
+De ontgrendelingslager staat continu in contact met de membraanveer. Hierdoor is er geen speling tussen de ontgrendelingslager en de koppeling en wordt de slijtage automatisch gecompenseerd. **Periodieke afstelling van de speling is niet nodig.** [p22]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Dry single plate | Droge éénschijfskoppeling | Type koppeling |
+| Hydraulic, with automatic wear take-up | Hydraulisch met automatische slijtage-compensatie | Bediening + functie |
+| Diaphragm spring | Membraanveer | Aan/ontkoppeling |
+| Friction lining | Frictiebekleding | Beleg op koppelingschijf |
+| Slave cylinder spindle stroke | Slaafcilinder-slaglengte | Maat bij volledig doorgedrukte pedaal |
+| Master cylinder spindle stroke | Hoofdcilinder-slaglengte | |
+| Release bearing | Ontgrendelingslager | Staat continu in contact met membraanveer |
+| Release lever | Ontgrendelingshendel | Bedient ontgrendelingslager |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[22]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
+
+---
+
+
+# Koppeling verwijderen (zonder volledige transaxle demontage)
+
+Bron: https://alfetta-wiki.vercel.app/transmissie/koppeling-verwijderen
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele DOC-05 scans.
+
+# Koppeling verwijderen
+
+> **TL;DR** — Als alleen de koppeling gereviseerd hoeft te worden, kan de koppelingseenheid worden verwijderd zonder de volledige transaxle uit de auto te halen. De eenheid wordt op een wieg gesteld, de transaxle losgemaakt van de flexibele steunen, en de koppelingseenheid wordt via de ruimte tussen carrosserie en achteras-kruisdrager verwijderd. [p12]
+
+## Wanneer deze procedure
+
+Gebruik deze kortere procedure als **alleen de koppeling** gereviseerd moet worden. Voor volledige transaxle-demontage: zie [Transaxle verwijderen](/transmissie/transaxle-verwijderen).
+
+## Voorbereiding
+
+1. Zet het voertuig op de hefinrichting. [p12]
+
+## Stap 1 — Uitlaatpijp demonteren
+
+Demonteer de uitlaatpijp zoals beschreven voor de volledige transaxle-demontage (zie p7-8). [p12]
+
+## Stap 2 — Schakelstang en cardanas losmaken
+
+1. Draai de bouten en ringen 10 van de flexibele koppeling van de verbindingsstang naar de achterste schakelkeuzehendel op de koppelingsbehuizing los en verwijder ze. [p12]
+2. Ontkoppel de cardanas 1 van het joek op de koppelingsas door bouten en ringen 2 los te draaien met sleutel A.5.0192. [p12]
+
+## Stap 3 — Hydraulisch systeem losmaken
+
+1. Draai verbinding 6 los op de slang van het hydraulisch koppelingsysteem. Draai moer en ring 7 los die de slang aan de carrosserie-beugel bevestigt. [p12]
+
+## Stap 4 — De Dion-as kantelen
+
+1. Draai bouten 5 los die de voorste steunbeugel van de De Dion-as aan de carrosserie bevestigen. [p12]
+2. Verwijder de stofkap 3 van de koppeling-slaafcilinder. [p12]
+3. Til de as 7 met een hydraulische krik 6 omhoog zodat de voorkant voldoende omlaag kantelt om bouten 8 los te draaien die de transaxle aan de flexibele steunen op de kruisdrager bevestigen. [p12]
+
+> **Tip:** Bevestig afstandsstuk 9 (gereedschap A.2.0268) tussen de De Dion-as-arm en de carrosserie; verwijder daarna de krik van de as. [p12]
+
+## Stap 5 — Koppeling eruit halen
+
+1. Ondersteun de volledige transaxle met de speciale wieg 1 (gereedschap R.4.0150) en een hydraulische krik 2 (R.7.0010). Verwijder de eerder losgedraaide bouten die de eenheid aan de flexibele steunen 3 bevestigen. [p12]
+2. Draai de borgmoer en ring 4 van de achterste schakelkeuzehendel 5 los en verwijder de hendel. [p12]
+3. Til de eenheid met de krik omhoog zodat de koppelingseenheid verwijderd kan worden via de ruimte tussen de carrosserie en de kruisdrager van het asframe. Draai dan bouten 6 los die de koppeling aan de koppeling-versnellingsbakbehuizing bevestigen. [p12]
+4. Schuif de koppelingseenheid 7 van de hoofdas en verwijder hem via de ruimte tussen de carrosserie en de voorste steunbeugel 8 van het asframe. [p12]
+
+## Let op
+
+- Na revisie: vet het centeerbusje van de cardanas op de koppelingsas in met het voorgeschreven vet voor herinstallatie.
+- Verbindingsstang-koppelingsmoer aandraaien op **2,9 tot 3,6 Kgm**. [p14]
+- Hydraulische koppelingsverbinding aandraaien op **0,8 tot 1 Kgm**. [p14]
+- Na herinstallatie: ontlucht het koppelingshydraulisch systeem. Zie [Hydraulisch ontluchten](/transmissie/hydraulisch-ontluchten).
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Clutch unit | Koppelingseenheid | Koppeling + vliegwiel + behuizing |
+| Operating rod flexible coupling | Schakelstang-flexibele koppeling | Verbinding schakelstang met keuzehendel |
+| Rear gear selector lever | Achterste schakelkeuzehendel | Op koppelingsbehuizing |
+| Main shaft | Hoofdas | Versnellingsbak-as waar koppeling op schuift |
+| Front support cross-member | Voorste steunbeugel / kruisdrager | Carrosserie-component bij achteras |
+| Clutch slave cylinder | Koppeling-slaafcilinder | |
+| Dirt cover | Stofkap | Op slaafcilinder |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[12]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
+
+---
+
+
+# Transaxle terugplaatsen — koppelwaarden en cardanas-controle
+
+Bron: https://alfetta-wiki.vercel.app/transmissie/transaxle-terugplaatsen
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele DOC-05 scans.
+
+# Transaxle terugplaatsen
+
+> **TL;DR** — Terugplaatsen is de omgekeerde volgorde van demonteren. Let vooral op de vet-smering van het centeerbusje, de kritieke aandraaimomenten voor aandrijfassen (2,8-3 Kgm), hydraulische koppelingen (0,8-1 Kgm) en cardan-bouten (4,1-4,5 Kgm), en ontlucht daarna het hydraulisch systeem. [p14] [p15]
+
+## Kritieke aandraaimomenten (overzicht)
+
+| Verbinding | Moment | Toestand |
+|-----------|--------|---------|
+| Aandrijfas-bouten (aan remschijf-afstandsstukken) | **2,8 tot 3 Kgm** | Gevet (schroefdraad) |
+| Hydraulische koppelingen rem + koppeling | **0,8 tot 1 Kgm** | Droog |
+| Achteruitrijlicht-schakelaar | **4 tot 4,9 Kgm** | Droog |
+| Achterste schakelkeuzehendel-borgmoer | **2,9 tot 3,6 Kgm** | Droog |
+| Koppelingsas-kruisstuk-joek-bouten | Zie p19 tabel | Met sleutel A.5.0192 |
+| Cardan-bouten (alle kruisgewrichten) | **4,1 tot 4,5 Kgm** | Droog |
+
+## Terugplaatsen van de volledige transaxle-eenheid
+
+1. Vet het centeerbusje voor de cardanas op de koppelingsas in met het voorgeschreven vet. [p14]
+2. Vet de schroefdraad van de bouten die de aandrijfassen aan de remschijf-afstandsstukken verbinden in. Draai de bouten aan op een moment van **2,8 tot 3 Kgm**. [p14]
+3. Draai de hydraulische verbinding naar de slang van het koppelingsysteem aan op **0,8 tot 1 Kgm**. Idem voor de hydraulische verbinding van het remsysteem. [p14]
+4. Draai de achteruitrijlicht-schakelaar aan op **4 tot 4,9 Kgm**. [p14]
+5. Draai de bouten van het koppelingsas-kruisstuk-joek aan op het voorgeschreven moment (zie pagina 19) met sleutel A.5.0192 en momentsleutel. [p14]
+6. Controleer het aandraaimoment van de cardanas-kruisstuk-bouten zoals beschreven op pagina 14-15. [p14]
+7. Ontlucht het hydraulisch rem- en koppelingsysteem (zie [Hydraulisch ontluchten](/transmissie/hydraulisch-ontluchten)). [p14]
+8. Controleer en vul het oliepeil van de versnellingsbak-differentieel aan (zie [Transmissievloeistoffen](/transmissie/transmissie-vloeistoffen)). [p14]
+
+## Terugplaatsen van alleen de versnellingsbak
+
+1. Reinig de aanligvlakken van de tussenflens en de versnellingsbak-differentieel-behuizing én de koppeling-versnellingsbak-behuizing met de voorgeschreven vloeistof. Breng de voorgeschreven afdichtmiddel aan. [p14]
+2. Draai de moeren van de koppeling-versnellingsbak-behuizing naar de tussenflens diagonaalsgewijs aan op **1,2 tot 1,4 Kgm**. [p14]
+3. Vet het centeerbusje van de cardanas op de koppelingsas in. [p14]
+4. Draai de achterste schakelkeuzehendel-borgmoer aan op **2,9 tot 3,6 Kgm**. [p14]
+5. Draai de koppelingsverbinding aan op **0,8 tot 1 Kgm**. Idem achteruitrijlicht-schakelaar op **4 tot 4,9 Kgm**. [p14]
+6. Ontlucht het koppelingsysteem en vul olie bij. [p14]
+
+## Terugplaatsen van alleen de koppeling
+
+1. Vet het centeerbusje van de cardanas op de koppelingsas in. [p14]
+2. Draai de achterste schakelkeuzehendel-borgmoer aan op **2,9 tot 3,6 Kgm**. [p14]
+
+## Aandraaimoment cardanas-bouten controleren
+
+Na montage: controleer of alle bouten in alle kruisstukken van de cardanas het correcte moment hebben van **4,1 tot 4,5 Kgm**. Gebruik de juiste sleutels: [p15]
+
+- **Achterste kruisstuk-bouten:** sleutel 1 (A.5.0192) + momentsleutel
+- **Middelste kruisstuk — voorzijde bouten:** sleutel 2 (A.5.0190) + momentsleutel
+- **Middelste kruisstuk — achterzijde bouten:** sleutel 3 (A.5.0191) + momentsleutel
+
+## Let op
+
+- Na herinstallatie altijd het hydraulisch systeem ontluchten — luchtbellen in het koppelingsysteem geven een "sponsig" gevoel bij de koppelingspedaal.
+- Afdichtmiddel (LOWAC PERFECT SEAL) aanbrengen op de aanligvlakken van de tussenflens na reiniging met methylated spirit of trichloorethaan. [p14]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Universal joint yoke bolt | Kruisstuk-joek-bout | Cardanas naar koppelingsas |
+| Drive shaft bolt | Aandrijfas-bout | Aandrijfas naar remschijf-afstandsstuk |
+| Pipe connection / coupling | Hydraulische verbinding / koppeling | Rem/koppeling slangverbinding |
+| Intermediate flange | Tussenflens | Centrale verbinding versnellingsbak-huizen |
+| Joint face / contact face | Aanligvlak | Vlak van afdichting tussen huizen |
+| Sealant | Afdichtmiddel | LOWAC PERFECT SEAL voor tussenflens |
+| Propeller shaft | Cardanas | |
+| Centering bush | Centeerbusje | Centreeringen cardanas in koppelingsas |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[14, 15]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
+
+---
+
+
+# Transaxle verwijderen — koppeling/versnellingsbak/differentieel eenheid
+
+Bron: https://alfetta-wiki.vercel.app/transmissie/transaxle-verwijderen
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele DOC-05 scans.
+
+# Transaxle verwijderen
+
+> **TL;DR** — De koppeling-versnellingsbak-differentieel eenheid (transaxle) wordt als complete unit uit de achteras verwijderd. De De Dion-as wordt gekanteld met een hydraulische krik, de eenheid wordt op een speciale wieg (R.4.0150) ondersteund en naar beneden neergelaten. [p8] [p11]
+
+## Voorbereiding
+
+1. Zet het voertuig op een lift en tap de olie af uit de versnellingsbak-differentieel door de tapplug te verwijderen. [p8]
+
+## Stap 1 — Uitlaatpijp demonteren
+
+1. Draai de flensbouten 4 van de uitlaatpijp 5 bij het uitlaatspruitstuk los en verwijder ze. [p8]
+2. Draai de steunbout 6 van de uitlaatpijp los van de beugel op het achterste motorsteun. [p8]
+3. Verwijder de uitlaatpijp door hem uit de eindpijp te schuiven. [p8]
+4. Maak klem 2 los die de voorste pijp met de eindpijp verbindt. [p8]
+5. Haak de rubberringen 3 van de achteras los. [p8]
+
+## Stap 2 — Schakelstang demonteren
+
+1. Verwijder de manchet 7 van de schakelhendelbeugelhouder. [p8]
+2. Draai de schroef met ring 8 los die verbindingsstang 9 met de schakelhendel verbindt. Verwijder de moeren en ringen 10 van de flexibele koppeling van de verbindingsstang naar de achterste schakelkeuzehendel op de koppeling. Verwijder de verbindingsstang zelf. [p8]
+
+## Stap 3 — Losse onderdelen ontkoppelen
+
+1. Ontkoppel de cardanas 1 van het koppelingsas-kruisstuk-joek door de bouten en ringen 2 los te draaien en te verwijderen met sleutel A.5.0192. [p9]
+2. Ontkoppel de tachometer-flexibele as 3 van de aandrijfspindel door borgschroef 4 los te draaien. [p9]
+3. Ontkoppel de elektrische kabels van de achteruitrijlicht-schakelaar 5. [p9]
+4. Draai verbinding 6 los op de slang van de koppeling-slaafcilinder. Draai moer en ring 7 los die de slang aan de carrosserie-beugel bevestigt. [p9]
+5. Draai verbinding 8 los op de slang van het hydraulisch remsysteem. Verwijder moer en ring 9 van de steunbeugel. [p9]
+6. Ontkoppel de handrem-Bowdenkabel 10 van de hefboompjes op de remklaauwen door borgmoer en stelmoer 11 los te draaien. [p9]
+
+## Stap 4 — Aandrijfassen losmaken en De Dion-as kantelen
+
+1. Ontkoppel de aandrijfassen 1 van de remschijf-afstandsflensen door de bouten en ringen 2 los te draaien en te verwijderen. [p10]
+2. Til de aandrijfassen op zodat ze vrijkomen van de remschijf-afstandsstukken. Bind ze vast met touw 3 aan de stabilisatorstang 4. [p10]
+3. Draai schroeven 5 los die de voorste beugel van de De Dion-as aan de carrosserie bevestigen. [p10]
+4. Til de as 7 met een hydraulische krik 6 omhoog zodat de voorkant voldoende omlaag kantelt om bouten 8 los te kunnen draaien die de transaxle-eenheid aan de flexibele steunen op de voorkruisdrager bevestigen. [p10]
+
+> **Tip:** Ter vergemakkelijking: bevestig afstandsstuk 9 (gereedschap A.2.0268) tussen de arm van de De Dion-as en de carrosserie; verwijder dan de hydraulische krik van de as. [p10]
+
+## Stap 5 — Eenheid ondersteunen en verwijderen
+
+1. Ondersteun de eenheid met het speciale gereedschap 1 (R.4.0150) en een krik 2 (R.7.0010). Verwijder de bouten 8 die eerder zijn losgedraaid (zie p9). [p11]
+2. Til de eenheid op zodat de achterste rubberbushing ontlast wordt. Draai dan de bevestigingsbout 3 los en verwijder hem. [p11]
+3. Kantel de eenheid naar voren. [p11]
+4. Laat de eenheid neer en verwijder hem onder de as 4 uit. [p11]
+
+## Let op
+
+- De Alfetta heeft een **transaxle-layout**: koppeling, versnellingsbak en differentieel zijn één eenheid achter in het voertuig, verbonden met de motor via de cardanas.
+- Bij terugplaatsen: vet het centeerbusje van de cardanas op de koppelingsas in met het voorgeschreven vet. Draai de aandrijfas-bouten aan tot **2,8 tot 3 Kgm**. [p14]
+- Hydraulische koppelingen rem en koppeling aandraaien op **0,8 tot 1 Kgm**. [p14]
+- Na herinstallatie: ontlucht het hydraulisch rem- en koppelingsysteem (zie hydraulisch-ontluchten.mdx).
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Clutch-gearbox-differential unit | Transaxle / koppeling-versnellingsbak-differentieel eenheid | Achterste aandrijfeenheid Alfetta |
+| Propeller shaft | Cardanas | Verbindt motor met transaxle |
+| De Dion axle | De Dion-as | Achterste ophangingstype Alfetta |
+| Drive shaft | Aandrijfas | Verbindt differentieel met wiel |
+| Disc brake distance piece / flange | Remschijf-afstandsstuk / -flens | Koppeling aandrijfas aan remschijf |
+| Anti-vibration mounting / flexible mounting | Flexibele steun / trillingsdemper | Montagepunt transaxle op carrosserie |
+| Clutch slave cylinder | Koppeling-slaafcilinder | Hydraulische koppelingsbediening |
+| Universal joint yoke | Kruisstuk-joek | Cardanas-koppeling |
+| Gear selector lever (rear) | Schakelkeuzehendel (achterste) | Op koppelingsbehuizing |
+| Operating rod | Verbindingsstang | Schakelmechaniek |
+| Speedometer flexible shaft | Tachometer-flexibele as | |
+| Reverse light switch | Achteruitrijlicht-schakelaar | |
+| Hand brake Bowden cable | Handrem-Bowdenkabel | |
+| Intermediate flange | Tussenflens | Centrale verbinding tussen de drie huizen |
+| Cradle | Wieg | Ondersteuningsgereedschap R.4.0150 |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[8, 9, 10, 11]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
+
+---
+
+
+# Transmissievloeistoffen — versnellingsbak, remvloeistof en smeermiddelen
+
+Bron: https://alfetta-wiki.vercel.app/transmissie/transmissie-vloeistoffen
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — visueel gecontroleerd tegen originele DOC-05 scans.
+
+# Transmissievloeistoffen
+
+> **TL;DR** — Versnellingsbak-differentieel: **2,57 Kg / 2,79 liter** SAE 85W/90 (AGIP F1 ROTRA MP of Shell Spirax 90 HD). Rem- en koppelingsysteem: uitsluitend **Alfa Romeo std. 3681-69903** (of equivalenten). Afdichtvlak tussenflens: **LOWAC PERFECT SEAL** na reiniging met methylated spirit. [p21]
+
+## Vloeistoffen en smeermiddelen
+
+| Component | Product | Hoeveelheid / Merk |
+|-----------|---------|---------------------|
+| Versnellingsbak-differentieel | SAE 85W/90 hypoid-olie | **2,57 Kg (2,79 liter)** — AGIP F1 ROTRA MP SAE 85W/90 of Shell Spirax 90 HD |
+| Rem- en koppelingsysteem | Hydraulische vloeistof | Uitsluitend Alfa Romeo std. **3681-69903** — AGIP F1 BRAKE FLUID SUPER HD of ATE "BLAU S" |
+| Afdichtvlak tussenflens (versnellingsbak/differentieel-huis) | Afdichtmiddel | **LOWAC PERFECT SEAL** — vlak eerst reinigen met methylated spirit of trichloorethaan |
+| Schroefdraad aandrijfas-bouten (aan remschijf-afstandsstukken) | Vet | ISECO MOLYKOTE BR 2 |
+| Centeerbusje cardanas op koppelingsas (2 cc) | Vet | ISECO MOLYKOTE BR 2 |
+
+## Versnellingsbak-olie vullen
+
+De aftapplug en vulplug worden aangedraaid op **1,5 tot 1,8 Kgm**. Het oliepeil moet tot aan de onderkant van het vulgat komen. [p17]
+
+## Remvloeistof — Belangrijk
+
+Gebruik uitsluitend vloeistof uit **nieuwe, verzegelde blikken**. Open blikken pas op het moment van gebruik. Rem- en koppelingsysteem gebruiken dezelfde vloeistof. [p16]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Gearbox-differential | Versnellingsbak-differentieel | Gecombineerde achteras-eenheid |
+| Brake and clutch system fluid | Rem- en koppelingsysteem-vloeistof | Dezelfde vloeistof voor beide systemen |
+| Sealant | Afdichtmiddel | Voor aanligvlakken tussenflens |
+| Intermediate flange | Tussenflens | Centrale verbinding tussen de drie huizen |
+| Drive shaft bolts threads | Schroefdraad aandrijfas-bouten | Invetten voor montage |
+| Centering bush | Centeerbusje | Cardanas in koppelingsas |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[21]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
+
+---
+
+
+# Versnellingsbak technische specificaties — 5-versnellingen met synchromesh
+
+Bron: https://alfetta-wiki.vercel.app/transmissie/versnellingsbak-specificaties
+
+
+
+> **Status: validated** (2026-04-13). Gevalideerd door `/dev4alfetta` — overbrengingsverhoudingen visueel gecontroleerd tegen originele PDF-scan (OCR was gedeeltelijk onleesbaar).
+
+# Versnellingsbak technische specificaties
+
+> **TL;DR** — 5-versnellingen versnellingsbak met synchromesh op alle versnellingen, achteruit via schuiftandwiel. Overbrengingen: 1e 1:3,3 ... 5e 1:0,83. Hoofdas-moer aandraaien op **8,1 tot 8,9 Kgm**; koppeling-versnellingsbak-huis naar tussenflens op **1,2 tot 1,4 Kgm**. Olie: AGIP F1 ROTRA MP SAE 85W/90. [p34] [p58]
+
+## Technische gegevens versnellingsbak
+
+| Kenmerk | Waarde |
+|---------|--------|
+| Aantal versnellingen | 5 voorwaarts + achteruit |
+| Type voorwaartse tanden | Schuinvertanding (helical teeth) — constant mesh |
+| Type achteruitanden | Rechte vertanding (straight teeth) |
+| Aantal lagers hoofdas | 3 (één kogellager + twee rollagers) |
+| Schakelbediening | Via middenconsole-hendel, verbindingsstang en achterste keuzehendel |
+
+## Overbrengingsverhoudingen versnellingsbak
+
+| Versnelling | Overbrenging |
+|------------|-------------|
+| 1e | **1 : 3,3** |
+| 2e | **1 : 2** |
+| 3e | **1 : 1,37** |
+| 4e | **1 : 1,04** |
+| 5e | **1 : 0,83** |
+| Achteruit | **1 : 2,...** |
+
+> **Noot:** Overbrengingsverhoudingen visueel geverifieerd tegen PDF-scan p34. OCR-output was gedeeltelijk onleesbaar.
+
+## Bouw versnellingsbak
+
+De versnellingsbak bestaat uit drie onderdelen: [p34]
+
+- **Voorste huis** — bevat koppeling, ontgrendelingslager en schakelkeuzehendel; ondersteunt uiteinden van hoofdas en nok-as
+- **Tussenflens** — bevat de tandwielassen gemonteerd en in langsrichting geborgd met selectiespindels en -vorken; vormt een compacte eenheid die als geheel uit het achterste huis kan worden getrokken
+- **Achterste huis** — ondersteunt ook de tandwielassen én fungeert als differentieel-huis
+
+## Aandraaimomenten versnellingsbak
+
+| Verbinding | Moment | Toestand |
+|-----------|--------|---------|
+| Nok-as-moer (pinion shaft nut) — zonder speciale sleutel | **9,5 tot 10,5 Kgm** | Droog |
+| Nok-as-moer — met sleutel A.5.0181 | **8,1 tot 8,9 Kgm** | Droog |
+| Selectorspindel-positionerings-balhouder | **1,4 tot 1,6 Kgm** | Droog |
+| Moeren koppeling-versnellingsbak-huis + tussenflens aan versnellingsbak-differentieel-huis | **1,9 tot 2,3 Kgm** | Met LOWAC PERFECT SEAL |
+| Achteruitrijlicht-schakelaar | **4 tot 4,9 Kgm** | Droog |
+
+## Smeermiddelen versnellingsbak
+
+| Toepassing | Middel |
+|-----------|--------|
+| Buitenste oppervlakken hoofdas- en nok-as-oliedichtingen | AGIP F1 ROTRA MP SAE 85W/90 of Shell Spirax 90 HD |
+| Aanligvlakken tussenflens (na reiniging met methylated spirit of trichloorethaan) | LOWAC PERFECT SEAL |
+| Aanligvlak achteruitbeveiligings-steunplaat | LOWAC PERFECT SEAL |
+| 5e-versnelling rollagerkooi en rollen | AGIP F1 GREASE 33 FD of Shell Retinax AX |
+| Selectorspindel-positioneringsballen | AGIP F1 GREASE 33 FD of Shell Retinax AX |
+| Hoofdas- en nok-as-voorste rollagers | AGIP F1 GREASE 33 FD of Shell Retinax AX |
+| Oliedichtinglippen (hoofdas en nok-as) | ISECO MOLYKOTE BR 2 |
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|-----------|---------|
+| Mainshaft | Hoofdas | Versnellingsbak-ingaande as |
+| Pinion shaft | Nok-as | Versnellingsbak-uitgaande as; draagt tandkrans-nok van differentieel |
+| Intermediate flange | Tussenflens | Centrale verbinding tussen de drie huizen |
+| Gear selector fork | Schakelkeuzevork | Beweegt synchronisator-mof |
+| Gear selector shaft / spindle | Selectorspindel | As waarop schakelkeuzevork zit |
+| Synchromesh / synchronizer | Synchromesh / gelijkloopinrichting | |
+| Helical teeth | Schuinvertanding | Stil lopende voorwaartse versnellingen |
+| Straight teeth | Rechte vertanding | Achteruit |
+| Detent ball | Positioneringsbal | Borgt selectorspindel in positie |
+| Constant mesh | Constant in-greppend | Tandwielen draaien altijd mee |
+| Reverse idler gear | Achteruit-schuiftandwiel | Omkeert rotatie voor achteruit |
+
+<SourceRef
+  doc="DOC-05"
+  title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
+  pages={[34, 58]}
+  pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
+  archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
+  language="en"
+/>
+
+---
+

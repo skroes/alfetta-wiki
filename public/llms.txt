@@ -8,47 +8,48 @@
 
 ## Motor
 
-- [Technische specificaties](https://alfetta-wiki.vercel.app/motor/technische-specificaties)
-- [Motor uitbouwen](https://alfetta-wiki.vercel.app/motor/motor-uitbouwen)
-- [Motor demonteren op werkbank](https://alfetta-wiki.vercel.app/motor/motor-demonteren-werkbank)
-- [Cilinderkop demonteren & toleranties](https://alfetta-wiki.vercel.app/motor/cilinderkop-demonteren-toleranties)
-- [Inspectie kleppen, veren & krukas](https://alfetta-wiki.vercel.app/motor/inspectie-kleppen-veren)
-- [Krukas, zuigers & motor herbouwen](https://alfetta-wiki.vercel.app/motor/krukas-zuigers-herbouwen)
-- [Distributieketting & nokkenas instellen](https://alfetta-wiki.vercel.app/motor/distributieketting)
-- [Klepspeling controleren](https://alfetta-wiki.vercel.app/motor/klepspeling-controleren)
-- [Cilinderkop revisie](https://alfetta-wiki.vercel.app/motor/cilinderkop-revisie)
+- [Technische specificaties](https://alfetta-wiki.vercel.app/motor/technische-specificaties): Volledige technische specificaties van de 2.0L Alfetta motor: viertakt viercilinder, dubbele bovenliggende nokkenas, lichtmetalen blok. Bron: DOC-04.
+- [Motor uitbouwen](https://alfetta-wiki.vercel.app/motor/motor-uitbouwen): Stappenplan motor uitbouwen 1977 Alfetta 2.0: alle aansluitingen los, motor met werkplaatskraan uittillen. Cardanas-speling 7 ± 1 mm. DOC-04 p7-12.
+- [Motor demonteren op werkbank](https://alfetta-wiki.vercel.app/motor/motor-demonteren-werkbank): Volledige motor-demontage op werkbank na uitbouwen: standaard R.4.0151, demontage cilinderkop, distributieketting, zuigers, krukas. Alfetta 2.0 DOC-04.
+- [Cilinderkop demonteren & toleranties](https://alfetta-wiki.vercel.app/motor/cilinderkop-demonteren-toleranties): Cilinderkop demonteren Alfetta 2.0 met toleranties: klepgeleider-uitsteek 13,3–13,5 mm inlaat, 16,3–16,5 mm uitlaat. Min koppe-hoogte 111,5 mm. DOC-04.
+- [Inspectie kleppen, veren & krukas](https://alfetta-wiki.vercel.app/motor/inspectie-kleppen-veren): Visuele inspectie kleppen, veren, krukas en lagers Alfetta 2.0 motor: kleurcoderingen voor cilindervoeringen en zuigers. Bron DOC-04 p22.
+- [Krukas, zuigers & motor herbouwen](https://alfetta-wiki.vercel.app/motor/krukas-zuigers-herbouwen): Alfetta 2.0 krukas, zuigers en motor herbouwen: cilinderbus-uitsteek 0,01–0,06 mm, krukaslagerbout 4,7–5,0 kgm, vliegwiel 11,2–11,5 kgm. DOC-04.
+- [Distributieketting & nokkenas instellen](https://alfetta-wiki.vercel.app/motor/distributieketting): Distributieketting en nokkenas instellen op 1977 Alfetta 2.0: referentietekens vliegwiel BDP, klepdeksel 1,8–2,0 kgm, bougie 2,5–3,5 kgm. DOC-04 p27.
+- [Klepspeling controleren](https://alfetta-wiki.vercel.app/motor/klepspeling-controleren): Klepspeling controleren Alfetta 2.0 met gradenboog: inlaat opening 21°30'–24°30' VDP, uitlaat 49°30'–52°30' VDP. Workshop Manual p28.
+- [Cilinderkop revisie](https://alfetta-wiki.vercel.app/motor/cilinderkop-revisie): Cilinderkop revisie Alfetta 2.0: klepzittingen monteren bij 100°C, kleppen lappen, nokkenaslagercaps 2–2,25 kgm. Klepspeling 0,475–0,550 mm. DOC-04 p29-30.
 - [Koelsysteem](https://alfetta-wiki.vercel.app/motor/koelsysteem)
-- [Motor terugplaatsen](https://alfetta-wiki.vercel.app/motor/motor-terugplaatsen)
-- [Gasklep-kabel afstellen](https://alfetta-wiki.vercel.app/motor/gasklep-kabel-afstellen)
-- [Stationair toerental & CO](https://alfetta-wiki.vercel.app/motor/stationair-toerental-co)
-- [Contactpunten afstellen](https://alfetta-wiki.vercel.app/motor/contactpunten-afstellen)
-- [Ontstekings-timing](https://alfetta-wiki.vercel.app/motor/ontstekings-timing)
-- [Weber 40 DCOE carburateur](https://alfetta-wiki.vercel.app/motor/weber-carburateur)
-- [Solex C 40 DDH-8 carburateur](https://alfetta-wiki.vercel.app/motor/solex-carburateur)
-- [Dellorto DHLA 40F carburateur](https://alfetta-wiki.vercel.app/motor/dellorto-carburateur)
+- [Motor terugplaatsen](https://alfetta-wiki.vercel.app/motor/motor-terugplaatsen): Motor terugplaatsen Alfetta 2.0: cardanas-bussen smeren met Molykote BR2, cardanas-bouten 4,1–4,5 kgm, koelsysteem ontluchten. Workshop Manual p32.
+- [Gasklep-kabel afstellen](https://alfetta-wiki.vercel.app/motor/gasklep-kabel-afstellen): Gasklep-kabel afstellen Alfetta 2.0: speling A 1-2 mm, uitsteek B 15-22 mm, speling C 5-6 mm. Plus check brandstofsysteem op lekkages. DOC-04 p33.
+- [Stationair toerental & CO](https://alfetta-wiki.vercel.app/motor/stationair-toerental-co): Stationair toerental Alfetta 2.0 afstellen op 850 ± 50 tpm met gelijke vacuümwaarden. CO maximaal 4,5%. Procedure uit Workshop Manual p34.
+- [Contactpunten afstellen](https://alfetta-wiki.vercel.app/motor/contactpunten-afstellen): Contactpunten afstellen op de 1977 Alfetta 2.0: spleet 0,4–0,5 mm meten met voelermaat. 11 stappen uit de originele Alfa Workshop Manual.
+- [Ontstekings-timing](https://alfetta-wiki.vercel.app/motor/ontstekings-timing): Ontstekings-timing 1977 Alfetta 2.0 instellen: verdelerhuis draaien, statische F en maximale M voortijling op krukas-poelie afstemmen. DOC-04 p36.
+- [Weber 40 DCOE carburateur](https://alfetta-wiki.vercel.app/motor/weber-carburateur): Weber 40 DCOE 72/73/80/81 carburateur Alfetta 2.0: demontage, sproeiers controleren, vlotterniveau 7,5 mm, acceleratiepomp 3,5–4,5 cc. DOC-04 p38-40.
+- [Solex C 40 DDH-8 carburateur](https://alfetta-wiki.vercel.app/motor/solex-carburateur): Solex C 40 DDH-8 carburateur Alfetta 2.0: membraanpomp, naaldklepuitsteek 4,4–4,6 mm, hoofdsproeier 1,40, vlotter 13,6 ± 0,5 g. DOC-04 p43-44.
+- [Dellorto DHLA 40F carburateur](https://alfetta-wiki.vercel.app/motor/dellorto-carburateur): Dellorto DHLA 40F carburateur Alfetta 2.0: hoofdsproeier 1,45, vlotterniveau A 14,5–15 mm, acceleratiepomp 8 ± 1,5 cc. Workshop Manual p47-48.
 
 ## Transmissie
 
-- [Transaxle verwijderen](https://alfetta-wiki.vercel.app/transmissie/transaxle-verwijderen)
-- [Koppeling verwijderen](https://alfetta-wiki.vercel.app/transmissie/koppeling-verwijderen)
-- [Transaxle terugplaatsen](https://alfetta-wiki.vercel.app/transmissie/transaxle-terugplaatsen)
-- [Hydraulisch ontluchten](https://alfetta-wiki.vercel.app/transmissie/hydraulisch-ontluchten)
-- [Transmissievloeistoffen](https://alfetta-wiki.vercel.app/transmissie/transmissie-vloeistoffen)
-- [Koppeling specificaties](https://alfetta-wiki.vercel.app/transmissie/koppeling-specificaties)
-- [Koppeling revisie](https://alfetta-wiki.vercel.app/transmissie/koppeling-revisie)
-- [Versnellingsbak specificaties](https://alfetta-wiki.vercel.app/transmissie/versnellingsbak-specificaties)
-- [Differentieel specificaties](https://alfetta-wiki.vercel.app/transmissie/differentieel-specificaties)
+- [Transaxle verwijderen](https://alfetta-wiki.vercel.app/transmissie/transaxle-verwijderen): Transaxle (koppeling-versnellingsbak-differentieel) als unit verwijderen uit Alfetta 2.0: De Dion-as kantelen, wieg R.4.0150, neerlaten. DOC-05 p8-11.
+- [Koppeling verwijderen](https://alfetta-wiki.vercel.app/transmissie/koppeling-verwijderen): Koppeling verwijderen Alfetta 2.0 zonder volledige transaxle uit te bouwen: eenheid op wieg, transaxle losmaken, koppeling via achteras-ruimte. DOC-05 p12.
+- [Transaxle terugplaatsen](https://alfetta-wiki.vercel.app/transmissie/transaxle-terugplaatsen): Transaxle terugplaatsen Alfetta 2.0: aandrijfas-bouten 2,8–3 Kgm, hydraulische koppeling 0,8–1 Kgm, cardan 4,1–4,5 Kgm, daarna ontluchten. DOC-05.
+- [Hydraulisch ontluchten](https://alfetta-wiki.vercel.app/transmissie/hydraulisch-ontluchten): Remmen en koppeling Alfetta 2.0 ontluchten met Alfa Romeo std. 3681-69903. Slaafcilinder-slag 10,5–12 mm, hoofdcilinder 22–25 mm. DOC-05 p16-17.
+- [Transmissievloeistoffen](https://alfetta-wiki.vercel.app/transmissie/transmissie-vloeistoffen): Transmissievloeistoffen Alfetta 2.0: versnellingsbak 2,79 liter SAE 85W/90, rem/koppeling Alfa Romeo std. 3681-69903, afdichtvlak Lowac Perfect Seal.
+- [Koppeling specificaties](https://alfetta-wiki.vercel.app/transmissie/koppeling-specificaties): Koppeling-specificaties Alfetta 2.0: droge éénschijf ø216 mm, dikte nieuw 8,7–9,1 mm, slijtagegrens 6 mm, slaglengtes hoofd-/slaafcilinder. DOC-05 p22.
+- [Koppeling revisie](https://alfetta-wiki.vercel.app/transmissie/koppeling-revisie): Koppeling-revisie Alfetta 2.0 op werkbankstandaard: vliegwielmoer 9,5–10,5 Kgm, drukplaat 1,3–1,6 Kgm kruisgewijs, schijfslijtagegrens 6 mm. DOC-05.
+- [Versnellingsbak specificaties](https://alfetta-wiki.vercel.app/transmissie/versnellingsbak-specificaties): Versnellingsbak-specificaties Alfetta 2.0: 5 versnellingen synchromesh, overbrengingen 1e 1:3,3 t/m 5e 1:0,83, hoofdas-moer 8,1–8,9 Kgm. DOC-05.
+- [Differentieel specificaties](https://alfetta-wiki.vercel.app/transmissie/differentieel-specificaties): Differentieel-specificaties Alfetta 2.0: hypoid 10/41, tandharkspeling 0,13–0,18 mm, draaiweerstand 10–20 Kgcm, tandkrans-bouten 6,8–7,5 Kgm. DOC-05.
 
 ## Specificaties
 
-- [Motor-specificaties 2000](https://alfetta-wiki.vercel.app/specificaties/motor-specificaties-2000)
-- [Voertuig-identificatie 2000](https://alfetta-wiki.vercel.app/specificaties/voertuig-identificatie-2000)
-- [Oliedruk & motortemperaturen](https://alfetta-wiki.vercel.app/specificaties/oliedruk-motortemperaturen)
-- [Stationair toerental & brandstof](https://alfetta-wiki.vercel.app/specificaties/stationair-brandstof-specificaties)
-- [Ontsteking-componenten & timing](https://alfetta-wiki.vercel.app/specificaties/ontsteking-componenten)
+- [Motor-specificaties 2000](https://alfetta-wiki.vercel.app/specificaties/motor-specificaties-2000): Motor-specificaties Alfetta 2.0L: 1962 cc viercilinder, boring/slag 84×88,5 mm, compressie 9:1, 130 HP / 96 kW DIN bij 5400 rpm, 178 Nm bij 4400 rpm.
+- [Voertuig-identificatie 2000](https://alfetta-wiki.vercel.app/specificaties/voertuig-identificatie-2000): Voertuig-identificatie Alfetta 2.0: type 116.55 LHD of 116.56 RHD, motor 016.23. Inrijvoorschrift en rpm-limieten eerste 1500 km. DOC-04.
+- [Oliedruk & motortemperaturen](https://alfetta-wiki.vercel.app/specificaties/oliedruk-motortemperaturen): Oliedruk en motortemperaturen Alfetta 2.0: warm stationair 0,5–1 kg/cm², op 5500 rpm 3,5–5 kg/cm². Inbouwtemperatuur klepzittingen 100°C. DOC-04 p40.
+- [Stationair toerental & brandstof](https://alfetta-wiki.vercel.app/specificaties/stationair-brandstof-specificaties): Stationair en brandstof Alfetta 2.0: 850–1000 rpm verzegeld, CO ≤ 4,5%, brandstofpomp 0,30–0,45 kg/cm², tankinhoud Coupé 56 l / Berlina 49 l.
+- [Ontsteking-componenten & timing](https://alfetta-wiki.vercel.app/specificaties/ontsteking-componenten): Ontsteking-componenten en timing Alfetta 2.0 (016.23): statisch 7°±1° BTDC bij 850±50 rpm, max 38°±0,5° BTDC bij 5100 rpm, bougie 2,5–3,5 kgm.
 
 ## Eigenaar
 
+- [Deze Auto](https://alfetta-wiki.vercel.app/eigenaar/deze-alfetta): Deze Alfa Romeo Alfetta 2.0 Berlina uit 1977 — type 116, RDW-bronfeiten, eigenaarsgeschiedenis en huidige staat van Serge Kroes' archief-auto.
 - [Het Verhaal](https://alfetta-wiki.vercel.app/eigenaar/het-verhaal)
 - [Bedieningsoverzicht](https://alfetta-wiki.vercel.app/eigenaar/bedieningsoverzicht)
 
@@ -56,3 +57,8 @@
 
 - [Bronregel](https://alfetta-wiki.vercel.app/governance/bronregel): Hoe we met bronnen omgaan in het Alfetta archief
 - [Methode](https://alfetta-wiki.vercel.app/governance/methode): Technische documentatie van de bewezen keten: PDF → OCR → staging → NL vertaling → MDX → figuren → wiki
+
+## Resources
+
+- [llms-full.txt](https://alfetta-wiki.vercel.app/llms-full.txt): Volledige content-dump van alle gevalideerde pagina's, geconcateneerd in sitemap-volgorde — direct geschikt voor LLM-context.
+- [sitemap.xml](https://alfetta-wiki.vercel.app/sitemap.xml): XML-sitemap met alle URL's, lastmod en priority — voor crawlers en RAG-pipelines.
