@@ -8,6 +8,8 @@ module.exports = {
   // /docs/ bevat alleen PDFs — niet relevant voor html-sitemap
   exclude: ['/docs/*'],
   // Default changefreq + priority per pad-groep.
+  // Content is historisch (1977 workshop manuals) — yearly is realistisch.
+  // Index-pagina's kunnen uitbreiden met nieuwe items → monthly.
   transform: async (config, path) => {
     const priority =
       path === '/' ? 1.0 :
@@ -18,9 +20,13 @@ module.exports = {
       path.startsWith('/governance') ? 0.3 :
       0.5
 
+    const changefreq =
+      path === '/' || path === '/bronnen' || path === '/figuren' ? 'monthly' :
+      'yearly'
+
     return {
       loc: path,
-      changefreq: 'weekly',
+      changefreq,
       priority,
       lastmod: new Date().toISOString(),
       alternateRefs: [],
