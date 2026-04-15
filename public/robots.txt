@@ -1,5 +1,51 @@
-User-agent: *
+# Alfetta Archief — robots policy
+# Beleid: maximale reach. Zoekmachines + AI browse + AI training: Allow.
+# /docs/ blijft Disallow (PDFs alleen voor directe links).
+# Noindex meta-tag staat momenteel nog op alle pagina's; deze robots.txt
+# staat klaar voor zodra noindex eraf gaat.
+
+Sitemap: https://alfetta-wiki.vercel.app/sitemap.xml
+
+# --- Zoekmachines ----------------------------------------------------------
+
+User-agent: Googlebot
 Disallow: /docs/
 
-# PDFs zijn alleen voor directe links, niet voor crawlers
-# Wiki content is OK om te crawlen (noindex staat in meta tags)
+User-agent: Bingbot
+Disallow: /docs/
+
+User-agent: DuckDuckBot
+Disallow: /docs/
+
+# --- AI training-data crawlers (Allow per Blok D: max reach) ---------------
+
+User-agent: GPTBot
+Disallow: /docs/
+
+User-agent: Google-Extended
+Disallow: /docs/
+
+User-agent: CCBot
+Disallow: /docs/
+
+User-agent: cohere-ai
+Disallow: /docs/
+
+# --- AI browse / RAG-tijd crawlers -----------------------------------------
+
+User-agent: Claude-Web
+Disallow: /docs/
+
+User-agent: ClaudeBot
+Disallow: /docs/
+
+User-agent: anthropic-ai
+Disallow: /docs/
+
+User-agent: PerplexityBot
+Disallow: /docs/
+
+# --- Catch-all -------------------------------------------------------------
+
+User-agent: *
+Disallow: /docs/
