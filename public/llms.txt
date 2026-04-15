@@ -2,6 +2,8 @@
 
 > Privé archief voor Serge's 1977 Alfa Romeo Alfetta 2.0 Serie 2. Alle inhoud letterlijk uit door Serge aangeleverde bronnen — geen training-data, geen AI-hallucinatie. Elke claim heeft een DOC-code en pagina-referentie.
 
+Nederlandstalige wiki gebaseerd op originele Alfa Romeo fabriek-workshop-handboeken (DOC-04 Engine, DOC-05 Transmissie, DOC-06 Inspection Specs), aangevuld met RDW-registergegevens en eigen documentatie. Gestart april 2026. De wiki volgt een strikte bronregel: elke inhoudelijke claim verwijst naar een pagina in een van de DOC-PDFs. Voor volledige content zie `/llms-full.txt`.
+
 ## Start
 
 - [Alfetta Archief](https://alfetta-wiki.vercel.app/): Privé archief voor Serge's 1977 Alfa Romeo Alfetta 2.0 Serie 2
@@ -17,7 +19,7 @@
 - [Distributieketting & nokkenas instellen](https://alfetta-wiki.vercel.app/motor/distributieketting): Distributieketting en nokkenas instellen op 1977 Alfetta 2.0: referentietekens vliegwiel BDP, klepdeksel 1,8–2,0 kgm, bougie 2,5–3,5 kgm. DOC-04 p27.
 - [Klepspeling controleren](https://alfetta-wiki.vercel.app/motor/klepspeling-controleren): Klepspeling controleren Alfetta 2.0 met gradenboog: inlaat opening 21°30'–24°30' VDP, uitlaat 49°30'–52°30' VDP. Workshop Manual p28.
 - [Cilinderkop revisie](https://alfetta-wiki.vercel.app/motor/cilinderkop-revisie): Cilinderkop revisie Alfetta 2.0: klepzittingen monteren bij 100°C, kleppen lappen, nokkenaslagercaps 2–2,25 kgm. Klepspeling 0,475–0,550 mm. DOC-04 p29-30.
-- [Koelsysteem](https://alfetta-wiki.vercel.app/motor/koelsysteem)
+- [Koelsysteem](https://alfetta-wiki.vercel.app/motor/koelsysteem): Koelsysteem Alfetta 2.0: thermostaatklep 81-85°C / 96°C open, radiateur-lektest bij 1-1,1 kg/cm², demontage van koelsysteem-componenten (p15) en montagevolgorde.
 - [Motor terugplaatsen](https://alfetta-wiki.vercel.app/motor/motor-terugplaatsen): Motor terugplaatsen Alfetta 2.0: cardanas-bussen smeren met Molykote BR2, cardanas-bouten 4,1–4,5 kgm, koelsysteem ontluchten. Workshop Manual p32.
 - [Gasklep-kabel afstellen](https://alfetta-wiki.vercel.app/motor/gasklep-kabel-afstellen): Gasklep-kabel afstellen Alfetta 2.0: speling A 1-2 mm, uitsteek B 15-22 mm, speling C 5-6 mm. Plus check brandstofsysteem op lekkages. DOC-04 p33.
 - [Stationair toerental & CO](https://alfetta-wiki.vercel.app/motor/stationair-toerental-co): Stationair toerental Alfetta 2.0 afstellen op 850 ± 50 tpm met gelijke vacuümwaarden. CO maximaal 4,5%. Procedure uit Workshop Manual p34.
@@ -50,15 +52,15 @@
 ## Eigenaar
 
 - [Deze Auto](https://alfetta-wiki.vercel.app/eigenaar/deze-alfetta): Deze Alfa Romeo Alfetta 2.0 Berlina uit 1977 — type 116, RDW-bronfeiten, eigenaarsgeschiedenis en huidige staat van Serge Kroes' archief-auto.
-- [Het Verhaal](https://alfetta-wiki.vercel.app/eigenaar/het-verhaal)
-- [Bedieningsoverzicht](https://alfetta-wiki.vercel.app/eigenaar/bedieningsoverzicht)
+- [Het Verhaal](https://alfetta-wiki.vercel.app/eigenaar/het-verhaal): Het verhaal van de Alfetta 2000 uit 1977: presentatie op Genève, rechthoekige koplampen, aluminium dashboardstrip met '2000'-markering — één jaar later vervangen door kunststof houtlook.
+- [Bedieningsoverzicht](https://alfetta-wiki.vercel.app/eigenaar/bedieningsoverzicht): Cockpit- en instrumentenoverzicht Alfetta 2000 uit 1977: dashboard met aluminium '2000'-strip, tumbler-klokken, verlichting, schakelaars, stuur- en pedaalopstelling.
 
 ## Governance
 
 - [Bronregel](https://alfetta-wiki.vercel.app/governance/bronregel): Hoe we met bronnen omgaan in het Alfetta archief
 - [Methode](https://alfetta-wiki.vercel.app/governance/methode): Technische documentatie van de bewezen keten: PDF → OCR → staging → NL vertaling → MDX → figuren → wiki
 
-## Resources
+## Optional
 
 - [llms-full.txt](https://alfetta-wiki.vercel.app/llms-full.txt): Volledige content-dump van alle gevalideerde pagina's, geconcateneerd in sitemap-volgorde — direct geschikt voor LLM-context.
 - [sitemap.xml](https://alfetta-wiki.vercel.app/sitemap.xml): XML-sitemap met alle URL's, lastmod en priority — voor crawlers en RAG-pipelines.

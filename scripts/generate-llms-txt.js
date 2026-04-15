@@ -145,6 +145,10 @@ function generateLlmsTxt() {
   lines.push('')
   lines.push(`> ${SITE_DESCRIPTION}`)
   lines.push('')
+  lines.push(
+    'Nederlandstalige wiki gebaseerd op originele Alfa Romeo fabriek-workshop-handboeken (DOC-04 Engine, DOC-05 Transmissie, DOC-06 Inspection Specs), aangevuld met RDW-registergegevens en eigen documentatie. Gestart april 2026. De wiki volgt een strikte bronregel: elke inhoudelijke claim verwijst naar een pagina in een van de DOC-PDFs. Voor volledige content zie `/llms-full.txt`.'
+  )
+  lines.push('')
 
   // Start pagina
   const indexPath = path.join(PAGES_DIR, 'index.mdx')
@@ -187,8 +191,9 @@ function generateLlmsTxt() {
     lines.push('')
   }
 
-  // Pointers naar machine-readable resources voor LLM-clients
-  lines.push('## Resources')
+  // Pointers naar machine-readable resources voor LLM-clients.
+  // Conform llmstxt.org: "Optional" voor secundaire links die overgeslagen mogen worden.
+  lines.push('## Optional')
   lines.push('')
   lines.push(
     `- [llms-full.txt](${BASE_URL}/llms-full.txt): Volledige content-dump van alle gevalideerde pagina's, geconcateneerd in sitemap-volgorde — direct geschikt voor LLM-context.`
