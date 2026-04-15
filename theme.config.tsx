@@ -23,6 +23,7 @@ const config: DocsThemeConfig = {
         content="Privé archief voor Serge's 1977 Alfa Romeo Alfetta 2.0 Serie 2"
       />
       <meta name="robots" content="noindex, nofollow" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     </>
   ),
   sidebar: {
