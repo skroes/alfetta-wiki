@@ -3,7 +3,7 @@
 # één tekst-dump in public/llms-full.txt voor LLM-consumptie.
 #
 # Aanpak:
-#   1. Lees URL-volgorde uit public/sitemap-0.xml (gegenereerd door next-sitemap).
+#   1. Lees URL-volgorde uit public/sitemap.xml (gegenereerd door next-sitemap).
 #   2. Voor elke URL: map terug naar pages/<path>.mdx.
 #   3. Lees frontmatter (title) + body, strip JSX-imports/components.
 #   4. Skip files zonder `status: validated` in frontmatter.
@@ -16,7 +16,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 PAGES_DIR="$ROOT/pages"
-SITEMAP="$ROOT/public/sitemap-0.xml"
+SITEMAP="$ROOT/public/sitemap.xml"
 OUT="$ROOT/public/llms-full.txt"
 SITE_URL="https://alfetta-wiki.vercel.app"
 

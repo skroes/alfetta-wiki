@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: process.env.SITE_URL || 'https://alfetta-wiki.vercel.app',
   generateRobotsTxt: false, // we beheren public/robots.txt handmatig
-  generateIndexSitemap: true,
+  generateIndexSitemap: false, // 40 URLs past in één sitemap.xml — geen index nodig
   autoLastmod: true,
   outDir: './public',
   // /docs/ bevat alleen PDFs — niet relevant voor html-sitemap
