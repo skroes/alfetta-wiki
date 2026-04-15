@@ -2,15 +2,24 @@
 title: "Deze Alfetta — Serge's 1977 Alfetta 2000"
 status: validated
 type: eigen
-tags: [eigenaar, auto, 1977, alfetta-2000]
+tags: [eigenaar, auto, 1977, alfetta-2000, identificatie, tipo, hub]
+source:
+  doc: DOC-06
+  title: "Alfetta Inspection Specifications — Berlina & Coupé"
+  pages: [11]
+  pdf: /docs/DOC-06-inspection-specs.pdf
+  archive_url: https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view
+  language: en
 drafted_on: 2026-04-14
 drafted_by: "/dev4alfetta (uit RDW kentekencheck + INDEX.md auto-identiteit)"
-validated_date: 2026-04-14
-validated_by: "RDW register + archief-auto-identiteit"
-validated_note: "Alle feiten direct uit RDW kentekencheck (24 mei 2026 geraadpleegd) of uit INDEX.md auto-identiteit. Kleurcode fabriek nog aan te vullen. Internal/private info staat niet op deze publieke pagina."
+validated_date: 2026-04-15
+validated_by: "/alfettaspecialist (PRD271 uitvoering)"
+validated_note: "Code-uitleg (116.55 / 016.23) toegevoegd uit DOC-06 p.11 met <Cite>/<SourceRef>. RDW-data ongewijzigd. Uitsluitingen-sectie (wat deze auto niet is) toegevoegd. Internal/private info staat niet op deze publieke pagina."
 ---
 
-> **Status: validated** — feiten uit RDW kentekenregister en INDEX.md. Internal/private data (kenteken, aankoopdatum, eigenaar-aantal) staat alleen in het archief, niet op deze pagina.
+import { SourceRef, Cite } from '../../components/SourceRef'
+
+> **Status: validated** — feiten uit RDW kentekenregister, INDEX.md, en DOC-06 p.11. Internal/private data (kenteken, aankoopdatum, eigenaar-aantal) staat alleen in het archief, niet op deze pagina.
 
 # Deze Alfetta
 
@@ -50,7 +59,49 @@ Bron: RDW kentekencheck.
 - De Dion achteras
 - Emissieklasse: EURO 0
 
+## Tipo & Motor — wat de codes betekenen
+
+Deze auto is officieel **Tipo 116.55**, motor **016.23**. Beide codes zijn opgebouwd volgens een vast patroon uit de fabriek-documentatie.
+
+### 116.55 — voertuigtype (`basistype.typevariant`)
+
+- **116** = basistype → de hele Alfetta-modellenlijn (alles op het Alfetta-platform). <Cite p="11" />
+- **.55** = typevariant → Alfetta 2.0 Berlina LHD. <Cite p="11" />
+
+Verwante codes in dezelfde familie: <Cite p="11" />
+
+| Code | Betekenis |
+|------|-----------|
+| **116.55** | Alfetta 2.0 Berlina LHD — *deze auto* |
+| 116.56 | Alfetta 2.0 Berlina RHD |
+| 116.36 | Alfetta GTV 2000 (coupé) |
+
+Het typenummer staat op het typeplaatje, op het schutbord en op de identificatieplaat. <Cite p="11" />
+
+### 016.23 — motortype (`motorfamilie.uitvoering`)
+
+- **016** = motorfamilie → 2-liter DOHC (Alfetta/GTV klasse). <Cite p="11" />
+- **.23** = Alfetta 2000-uitvoering. <Cite p="11" />
+
+Het nummer staat op de linker achterzijde van het cilinderblok, gevolgd door een doorlopend serienummer vanaf `*000001*`. <Cite p="11" />
+
+## Wat deze auto niet is
+
+- **Geen Alfetta 2000 L (Lusso)** — die verscheen pas in 1978 met 130 pk en een kunststof houtlook-dashboardstrip. Deze auto is uit 1977, eerste bouwjaar met aluminium "2000"-strip.
+- **Geen `116.55C`** — die code staat niet in DOC-06 p.11 en komt niet voor in het archief. Vermoedelijk een parts-catalogus-suffix of typo; niet gebruiken voor identificatie.
+- **Geen GTV 2000** — dat is de coupé-variant `116.36`, niet deze sedan.
+- **Geen Serie 1** — zie [Het verhaal](/eigenaar/het-verhaal) voor de Serie 1 vs Serie 2 verschillen (exterieur, interieur, achterlichten, dashboard).
+
 ## Aan te vullen
 
 - Fabrieks-kleurcode (AR-code) — zie fabrieksplaatje onder motorkap of origineel instructieboek
 - Foto's van de auto (via `fotos/` pipeline, privacy-tier `internal`)
+
+<SourceRef
+  doc="DOC-06"
+  title="Alfetta Inspection Specifications — Berlina & Coupé"
+  pages={[11]}
+  pdf="/docs/DOC-06-inspection-specs.pdf"
+  archive_url="https://drive.google.com/file/d/1euVCvKZGoftYzRVQU2Y9YFY4SOizCu2j/view"
+  language="en"
+/>
