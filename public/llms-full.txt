@@ -1,7 +1,7 @@
 # Alfetta Archief — volledige content-dump
 
 > Bron: https://alfetta-wiki.vercel.app
-> Gegenereerd: 2026-04-15T07:33:31Z
+> Gegenereerd: 2026-04-15T07:35:44Z
 > Bevat alleen pagina's met frontmatter status: validated.
 > Voor structuur zie https://alfetta-wiki.vercel.app/llms.txt en https://alfetta-wiki.vercel.app/sitemap.xml
 
@@ -178,6 +178,8 @@ Controleer op afwezigheid van deuken, vastlopen en onjuiste positionering in de 
 
 > De uitsteek wordt automatisch correct ingesteld bij gebruik van gereedschap A.3.0246 (1) voor de inlaatzijde en A.3.0133 (2) voor de uitlaatzijde. [p21]
 
+
+
 Na vernieuwen moeten de klepgeleiders worden nageboord tot: [p21]
 
 | | Maat |
@@ -287,6 +289,8 @@ Ruim de klepgeleiders op maat volgens "Checking and inspection" met gereedschap 
 
 
 ### Kleppen inlappen
+
+
 
 Lap elke klep in zijn zitting met gereedschap G.1.0004 en **Sipal Arexon inslijppasta**. Smeer de klepsteel met motorolie vóór het inlappen. Maak de kop zorgvuldig schoon om elk spoor van slijppoeder te verwijderen. [p30]
 
@@ -944,6 +948,12 @@ Vóór de koelsysteem-procedures beschrijft p31 het afronden van de motorherbouw
 6. Verwijder de motor van de montagebok met een werkplaatskraan. Monteer het uitlaatspruitstuk, de warmeluchtgeleiding en de motorsteunen. Let erop dat de steun met de markering **N** aan de uitlaatzijde zit. [p31]
 7. Monteer de startmotor. [p31]
 
+## Bypass-slang thermostaat ↔ waterpomp (p14)
+
+
+
+Bij motor-demontage op de werkbank wordt de bypass-slang als volgt losgenomen: maak de klemmen los en ontkoppel de bypass-slang (6) van de thermostaatklep-aansluiting en van de waterpomp-aansluiting. [p14]
+
 ## Demontage koelsysteem-componenten (p15)
 
 > Sectie toegevoegd 2026-04-14 op basis van DOC-04 p15 OCR-bron — nog niet door `/alfettaspecialist` inhoudelijk gevalideerd. Volgt dezelfde stappenvolgorde (1 t/m 8) als de bronpagina.
@@ -1281,6 +1291,8 @@ Met de motor opgehangen aan de takellift ga je als volgt te werk: [p13]
 17. Verwijder oliefilter (8) met gereedschap A.2.0130 (9). [p14]
 18. Verwijder de klemmen van de gasklep-koppelstang en ontkoppel de stang van de gasklepbediening. [p14]
 19. Draai de moeren (10) los waarmee de carburateurs aan de rubberen steunen zijn bevestigd; verwijder de carburateurs en de luchtfiltereenheid als geheel. [p14]
+
+
 
 ---
 
