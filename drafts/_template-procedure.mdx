@@ -1,0 +1,62 @@
+---
+title: "[Onderwerp] — [Systeem] Alfetta 2.0"
+description: "[1 zin met concrete getallen + DOC-referentie]"
+status: draft
+source:
+  doc: DOC-XX
+  title: "[Volledige titel] (publ. XXXX, [maand] XXXX)"
+  pages: [NN]
+  pdf: /docs/DOC-XX-[slug].pdf
+  archive_url: https://drive.google.com/file/d/XXXXXX/view
+  language: en
+tags: [systeem, sub-onderwerp, bewerking]
+drafted_on: YYYY-MM-DD
+drafted_by: "draft-agent (staging/DOC-XX/pages/NNN.md)"
+validated_date: null
+validated_by: null
+---
+
+import { SourceRef, Cite } from '../../components/SourceRef'
+import Figure from '../../components/Figure'
+
+> **Status: draft** — {/* TE VALIDEREN */} nog niet visueel gecontroleerd tegen originele scans.
+
+# [H1: Titel van de procedure]
+
+> **TL;DR** — [Kernactie in 1-2 zinnen met concrete getallen.] <Cite p="NN" />
+
+{/* Optioneel: openingsfiguur
+<Figure src="docXX-pNN-figYY-[slug]" caption="[Beschrijving]" page={NN} size="md" />
+*/}
+
+## Voorbereiding
+
+1. [Stap 1 uit bron] <Cite p="NN" />
+2. [Stap 2 uit bron] <Cite p="NN" />
+
+## [Hoofd-procedure]
+
+1. [Stap met exacte waarden uit bron] <Cite p="NN" />
+2. [Volgende stap] <Cite p="NN" />
+
+{/* Elke claim die een getal, methode of richting bevat krijgt een <Cite />. */}
+
+## Let op
+
+- [Waarschuwing direct uit bron] <Cite p="NN" />
+- [Richting-kritische noot, bijv. "linksom gezien vanaf vliegwielzijde"]
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|--------|------------|---------|
+| [term] | [vertaling] | [waar dit voorkomt in de procedure] |
+
+<SourceRef
+  doc="DOC-XX"
+  title="[Volledige brontitel]"
+  pages={[NN]}
+  pdf="/docs/DOC-XX-[slug].pdf"
+  archive_url="https://drive.google.com/file/d/XXXXXX/view"
+  language="en"
+/>

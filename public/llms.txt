@@ -41,6 +41,13 @@ Nederlandstalige wiki gebaseerd op originele Alfa Romeo fabriek-workshop-handboe
 - [Versnellingsbak specificaties](https://alfetta-wiki.vercel.app/transmissie/versnellingsbak-specificaties): Versnellingsbak-specificaties Alfetta 2.0: 5 versnellingen synchromesh, overbrengingen 1e 1:3,3 t/m 5e 1:0,83, hoofdas-moer 8,1–8,9 Kgm. DOC-05.
 - [Differentieel specificaties](https://alfetta-wiki.vercel.app/transmissie/differentieel-specificaties): Differentieel-specificaties Alfetta 2.0: hypoid 10/41, tandharkspeling 0,13–0,18 mm, draaiweerstand 10–20 Kgcm, tandkrans-bouten 6,8–7,5 Kgm. DOC-05.
 
+## Onderstel
+
+- [Voorwielophanging verwijderen](https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-verwijderen): Voorwielophanging Alfetta 2.0 verwijderen: torsiestaaf, schokbrekers, draagarmen. Gereedschap A.2.0265, A.2.0069, A.3.0377, A.3.0374, jack R.7.0010. DOC-03 p26-27.
+- [Voorwielophanging demonteren](https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-demonteren): Voorwielophanging Alfetta 2.0 demonteren op werkbank: wielnaaf en fusee, lagers, rubbers, draagarm-bussen, kogelgewricht en schokbrekers controleren. DOC-03 p28-30.
+- [Voorwielophanging hermonteren](https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-hermonteren): Voorwielophanging Alfetta 2.0 hermonteren: stabilisatorstang, wielnaaf met lagers (55 g vet), naaf op fusee met klem-procedure 2-2,5 → 0,5-1 kgm → 90° slacken. DOC-03 p31-32.
+- [Voorwielophanging terugplaatsen](https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-terugplaatsen): Voorwielophanging Alfetta 2.0 terugplaatsen: bovenste draagarm, achterste dwarsbalk (8,2–9,2 kgm), torsiestaven L/R-identificatie (blauw/geel, D-R / S-L), onderste draagarm en fusee. Koppels 4–4,5 / 8,2–9,2 / 1,5–2 kgm. DOC-03 p33.
+
 ## Specificaties
 
 - [Motor-specificaties 2000](https://alfetta-wiki.vercel.app/specificaties/motor-specificaties-2000): Motor-specificaties Alfetta 2.0L: 1962 cc viercilinder, boring/slag 84×88,5 mm, compressie 9:1, 130 HP / 96 kW DIN bij 5400 rpm, 178 Nm bij 4400 rpm.

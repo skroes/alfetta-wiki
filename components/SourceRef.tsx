@@ -15,7 +15,10 @@ type SourceProps = {
 
 /** Korte display-naam: "DOC-04" → "Alfetta Workshop Manual" */
 const DOC_DISPLAY: Record<string, string> = {
+  'DOC-03': 'Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes',
   'DOC-04': 'Alfetta Workshop Manual — Engine',
+  'DOC-05': 'Alfetta Workshop Manual — Clutch/Gearbox/Differential',
+  'DOC-06': 'Alfetta Inspection Specifications — Berlina & Coupé',
 }
 
 export function SourceRef(props: SourceProps) {
