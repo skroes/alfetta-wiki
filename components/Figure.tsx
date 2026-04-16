@@ -204,7 +204,12 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
             </div>
           )}
           <div className="fig-lightbox-body">
-            <img src={view.src} alt={view.alt} className="fig-lightbox-img" />
+            <img
+              src={view.src}
+              alt={view.alt}
+              className="fig-lightbox-img"
+              onClick={e => e.stopPropagation()}
+            />
           </div>
           <div className="fig-lightbox-foot" onClick={e => e.stopPropagation()}>
             <span className="fig-lightbox-filename">

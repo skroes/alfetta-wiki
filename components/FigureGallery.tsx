@@ -393,7 +393,12 @@ export default function FigureGallery() {
               <div className="fig-lightbox-subline">{selected.doc} p.{selected.page}</div>
             </div>
             <div className="fig-lightbox-body">
-              <img src={selected.public_path} alt={selected.label} className="fig-lightbox-img" />
+              <img
+                src={selected.public_path}
+                alt={selected.label}
+                className="fig-lightbox-img"
+                onClick={e => e.stopPropagation()}
+              />
               {selected.used_in && selected.used_in.length > 0 && (
                 <div className="fig-lightbox-wiki-links" onClick={e => e.stopPropagation()}>
                   <span style={{ opacity: 0.65, marginRight: '0.4rem' }}>

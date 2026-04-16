@@ -32,22 +32,6 @@
   background: #374151;
   color: #d1d5db;
 }
-.fig-lightbox-panel {
-  background: #ffffff;
-  color: #111827;
-}
-:is(html[class~="dark"]) .fig-lightbox-panel {
-  background: #1a1a2e;
-  color: #e5e7eb;
-}
-.fig-lightbox-panel img {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-}
-:is(html[class~="dark"]) .fig-lightbox-panel img {
-  background: #111827;
-  border: 1px solid #374151;
-}
 .fig-link {
   color: #2563eb;
 }
@@ -75,12 +59,5 @@
   .fig-filters select {
     width: 100% !important;
     flex: unset !important;
-  }
-  .fig-lightbox-overlay {
-    padding: 0.75rem !important;
-  }
-  .fig-lightbox-panel {
-    padding: 1rem !important;
-    border-radius: 0.5rem !important;
   }
 }
