@@ -3,6 +3,7 @@ export default {
   motor: 'Motor',
   transmissie: 'Transmissie',
   onderstel: 'Onderstel',
+  besturing: 'Besturing',
   specificaties: 'Specificaties',
   eigenaar: 'Eigenaar',
   bronnen: 'Bronnen',

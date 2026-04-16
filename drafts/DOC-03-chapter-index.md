@@ -39,14 +39,11 @@ Pagina-nummers verwijzen naar **staging-pagina's** (scan-volgorde), niet naar pr
 | **4. Vehicle height & geometry** | 60-68 | 2 wiki-pagina's | ✅ Live |
 | &nbsp;&nbsp;• Rijhoogte controleren + afstellen | 60-63 | `onderstel/rijhoogte` | ✅ Live |
 | &nbsp;&nbsp;• Geometrie controleren | 64-68 | `onderstel/wieluitlijning` | ✅ Live |
-| **5. Steering gear** | 69-85 | 5-6 wiki-pagina's | ⏳ |
-| &nbsp;&nbsp;• ZF stuurhuis verwijderen | 70-71 | `besturing/stuurhuis-verwijderen` | ⏳ |
-| &nbsp;&nbsp;• Stuurhuis demonteren | 71-72 | `besturing/stuurhuis-demonteren` | ⏳ |
-| &nbsp;&nbsp;• Stuurhuis hermonteren | 72-75 | `besturing/stuurhuis-hermonteren` | ⏳ |
-| &nbsp;&nbsp;• Stuurhuis terugplaatsen | 75 | `besturing/stuurhuis-terugplaatsen` | ⏳ |
-| &nbsp;&nbsp;• Stuurkolom | 75-77 | `besturing/stuurkolom` | ⏳ |
-| &nbsp;&nbsp;• Partial operations | 78-82 | `besturing/stuurhuis-deelbewerkingen` | ⏳ |
-| &nbsp;&nbsp;• Tools + torques + lubricants | 82-85 | `besturing/stuurhuis-specificaties` | ⏳ specs |
+| **5. Steering gear** | 69-85 | 4 wiki-pagina's | ✅ Live |
+| &nbsp;&nbsp;• ZF stuurhuis verwijderen + demonteren | 69-72 | `besturing/stuurhuis-verwijderen-demonteren` | ✅ Live |
+| &nbsp;&nbsp;• Stuurhuis hermonteren + terugplaatsen | 72-75 | `besturing/stuurhuis-hermonteren-terugplaatsen` | ✅ Live |
+| &nbsp;&nbsp;• Stuurkolom + deelbewerkingen | 75-82 | `besturing/stuurkolom-en-deelbewerkingen` | ✅ Live |
+| &nbsp;&nbsp;• Tools + torques + lubricants | 82-85 | `besturing/specificaties` | ✅ Live |
 | **6. Braking system** | 87-109 | 7-9 wiki-pagina's | ⏳ |
 | &nbsp;&nbsp;• Voorremmen demonteren | 88 | `remmen/voorremmen-demonteren` | ⏳ |
 | &nbsp;&nbsp;• Voorremmen tests | 89 | `remmen/voorremmen-tests` | ⏳ |

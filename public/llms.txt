@@ -57,6 +57,13 @@ Nederlandstalige wiki gebaseerd op originele Alfa Romeo fabriek-workshop-handboe
 - [Rijhoogte controleren en afstellen](https://alfetta-wiki.vercel.app/onderstel/rijhoogte): Rijhoogte Alfetta 2.0 controleren en afstellen: voorzijde A−B = 39–49 mm (of 44–54 mm na torsiestaaf-vervanging), achterzijde F = 39–49 mm, beide zijden identiek; voorzijde via torsiestaaf-splines (1 spline ≈ 1,5 mm), achterzijde via spacers 7/14/21 mm. DOC-03 p60-63.
 - [Wieluitlijning controleren](https://alfetta-wiki.vercel.app/onderstel/wieluitlijning): Wieluitlijning Alfetta 2.0 controleren: caster 4°30' ± 30', voor-camber 0°20' ± 30', voor-toe-out 0°9' (1 mm per wiel), achter-toe-in type A 0°30' ± 15' / type B 0° ± 10', achter-camber 0° ± 30' (niet afstelbaar), max stuurinslag buitenwiel 30°. DOC-03 p64-68.
 
+## Besturing
+
+- [Stuurhuis verwijderen + demonteren](https://alfetta-wiki.vercel.app/besturing/stuurhuis-verwijderen-demonteren): ZF tandheugel-stuurhuis uit auto verwijderen (stuurkolom ontkoppelen, stuurstangen scheiden met A.3.0376, rack door valance trekken) en op werkbank demonteren (kogelgewrichten, pressure bush, tandwiel-cover, lagers extraheren met A.2.0239 + A.3.0353, A.3.0455, A.3.0291). DOC-03 p69-72.
+- [Stuurhuis hermonteren + terugplaatsen](https://alfetta-wiki.vercel.app/besturing/stuurhuis-hermonteren-terugplaatsen): ZF-stuurhuis Alfetta 2.0 hermonteren op werkbank (Loctite 601 op geleidebus, 90 g BP Energrease HT-EP-OO, CURIL K 2 op deksels, circlip-speling ≤ 0,05 mm, deksel-bouten 1,5 kgm, spoorstangen 4,2 kgm) en terugplaatsen in auto (spaken symmetrisch, Molykote G op bovenste steun, SIGIFLEX FR op flexibele koppeling). DOC-03 p72-75.
+- [Stuurkolom + deelbewerkingen](https://alfetta-wiki.vercel.app/besturing/stuurkolom-en-deelbewerkingen): Demontage, revisie en hermontage van de Alfetta 2.0 stuurkolom (inclusief stuurkolom-tube, bussen, universele koppeling, stuurkolomslot) plus deelbewerkingen aan stuurhuis en stuurstangen (flexibele koppeling, tie rod kogelgewrichten, stofhoezen, tie rods losmaken) met A.3.0451, A.3.0402, A.3.0501/A.3.0492, A.3.0383, A.3.0493, A.5.0202. DOC-03 p75-82.
+- [Besturing specificaties](https://alfetta-wiki.vercel.app/besturing/specificaties): Speciaal gereedschap, aandraaimomenten en smeermiddelen voor de ZF-stuurinrichting van de Alfetta 2.0: bevestigingsbouten speling-instelplaat en pignon-speling 1,5 kgm, moer stuurstang aan tandheugel 4,2 kgm, vet voor ZF-stuurhuis BP ENERGREASE HT-EP-00 90 g. DOC-03 p82-85.
+
 ## Specificaties
 
 - [Motor-specificaties 2000](https://alfetta-wiki.vercel.app/specificaties/motor-specificaties-2000): Motor-specificaties Alfetta 2.0L: 1962 cc viercilinder, boring/slag 84×88,5 mm, compressie 9:1, 130 HP / 96 kW DIN bij 5400 rpm, 178 Nm bij 4400 rpm.
