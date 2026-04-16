@@ -28,14 +28,12 @@ Pagina-nummers verwijzen naar **staging-pagina's** (scan-volgorde), niet naar pr
 | &nbsp;&nbsp;• Demonteren | 28-30 | `onderstel/voorwielophanging-demonteren` | ✅ Live |
 | &nbsp;&nbsp;• Hermonteren (re-building) | 31-32 | `onderstel/voorwielophanging-hermonteren` | ✅ Live |
 | &nbsp;&nbsp;• Terugplaatsen | 33 | `onderstel/voorwielophanging-terugplaatsen` | ✅ Live |
-| &nbsp;&nbsp;• Partial operations | 34-39 | `onderstel/voorwielophanging-deelbewerkingen` | ⏳ |
-| &nbsp;&nbsp;• Tools | 40 | Inline | ⏭️ |
-| &nbsp;&nbsp;• Tightening torques + lubricants | 41 | `onderstel/voorwielophanging-specificaties` | ⏳ specs |
-| **3. Rear suspension** | 43-59 | 5-7 wiki-pagina's | ⏳ |
-| &nbsp;&nbsp;• Verwijderen | 44 | `onderstel/achterwielophanging-verwijderen` | ⏳ |
-| &nbsp;&nbsp;• Demonteren | 45-46 | `onderstel/achterwielophanging-demonteren` | ⏳ |
-| &nbsp;&nbsp;• Hermonteren | 47-48 | `onderstel/achterwielophanging-hermonteren` | ⏳ |
-| &nbsp;&nbsp;• Terugplaatsen | 49-50 | `onderstel/achterwielophanging-terugplaatsen` | ⏳ |
+| &nbsp;&nbsp;• Partial operations | 34-39 | `onderstel/voorwielophanging-deelbewerkingen` | ✅ Live |
+| &nbsp;&nbsp;• Tools + Tightening torques + Lubricants | 39-42 | `onderstel/voorwielophanging-specificaties` | ✅ Live |
+| **3. Rear suspension** | 43-59 | 3-5 wiki-pagina's | 🟡 in progress |
+| &nbsp;&nbsp;• Verwijderen (uit auto) | 44-46 | `onderstel/achterwielophanging-verwijderen` | ✅ Live |
+| &nbsp;&nbsp;• Demonteren (werkbank) | 47-48 | `onderstel/achterwielophanging-demonteren` | ✅ Live |
+| &nbsp;&nbsp;• Hermonteren + terugplaatsen | 49-50 | `onderstel/achterwielophanging-hermonteren` | ✅ Live |
 | &nbsp;&nbsp;• Partial operations | 51-53 | `onderstel/achterwielophanging-deelbewerkingen` | ⏳ |
 | &nbsp;&nbsp;• Schokbreker-kalibratie tabel | 54 | `onderstel/schokbrekers-kalibratie` | ⏳ specs |
 | &nbsp;&nbsp;• Tools + torques + lubricants | 56-59 | `onderstel/achterwielophanging-specificaties` | ⏳ specs |
