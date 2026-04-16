@@ -48,7 +48,14 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
   const [view, setView] = useState<LightboxView | null>(null)
   const open = view !== null
 
+  // Zoom-cyclus: 0 (100%) → 1 (120%) → 2 (140%) → 0. Transform-origin volgt
+  // de muispositie voor "pan" gevoel zonder drag. Reset bij navigatie/sluiten.
+  const [zoomLevel, setZoomLevel] = useState(0)
+  const [zoomOrigin, setZoomOrigin] = useState('50% 50%')
+  const resetZoom = () => { setZoomLevel(0); setZoomOrigin('50% 50%') }
+
   const openLightbox = () => {
+    resetZoom()
     const anchors = Array.from(
       document.querySelectorAll<HTMLAnchorElement>('a.fig-inline-thumb')
     )
@@ -93,6 +100,7 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
       idx: nextIdx,
       total: anchors.length,
     })
+    resetZoom()
     return true
   }
 
@@ -166,9 +174,16 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
             className="fig-lightbox-toolbar"
             onClick={e => e.stopPropagation()}
           >
-            {/* Linker zone — counter "N / totaal" */}
-            <div style={{ flex: 1, color: 'white', opacity: 0.65, fontSize: '0.85rem', fontVariantNumeric: 'tabular-nums' }}>
-              {view.idx + 1} / {view.total}
+            {/* Linker zone — counter + DOC-XX p.N naast elkaar */}
+            <div style={{ flex: 1, display: 'flex', alignItems: 'baseline', gap: '0.75rem', color: 'white', fontSize: '0.85rem' }}>
+              <span style={{ opacity: 0.65, fontVariantNumeric: 'tabular-nums' }}>
+                {view.idx + 1} / {view.total}
+              </span>
+              {view.page && (
+                <span style={{ opacity: 0.55 }}>
+                  {view.docLabel} p.{view.page}
+                </span>
+              )}
             </div>
             {/* Centrale zone — pijltjes */}
             <div style={{ display: 'flex', gap: '0.5rem' }}>
@@ -197,24 +212,44 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
               >✕</button>
             </div>
           </div>
-          {(view.caption || view.page) && (
-            <div className="fig-lightbox-head" onClick={e => e.stopPropagation()}>
-              {view.caption && <div className="fig-lightbox-title">{view.caption}</div>}
-              {view.page && <div className="fig-lightbox-subline">{view.docLabel} p.{view.page}</div>}
-            </div>
-          )}
           <div className="fig-lightbox-body">
+            {view.caption && (
+              <div className="fig-lightbox-title" onClick={e => e.stopPropagation()}>
+                {view.caption}
+              </div>
+            )}
             <img
               src={view.src}
               alt={view.alt}
               className="fig-lightbox-img"
-              onClick={e => e.stopPropagation()}
+              onClick={e => {
+                e.stopPropagation()
+                setZoomLevel(lvl => (lvl + 1) % 3)
+              }}
+              onMouseMove={e => {
+                if (zoomLevel === 0) return
+                const rect = e.currentTarget.getBoundingClientRect()
+                const x = ((e.clientX - rect.left) / rect.width) * 100
+                const y = ((e.clientY - rect.top) / rect.height) * 100
+                setZoomOrigin(`${x}% ${y}%`)
+              }}
+              style={{
+                transform: `scale(${1 + zoomLevel * 0.2})`,
+                transformOrigin: zoomOrigin,
+                transition: 'transform 0.25s ease',
+                cursor: zoomLevel === 2 ? 'zoom-out' : 'zoom-in',
+              }}
             />
           </div>
           <div className="fig-lightbox-foot" onClick={e => e.stopPropagation()}>
-            <span className="fig-lightbox-filename">
+            <a
+              href={view.src}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fig-lightbox-filename"
+            >
               {view.src.split('/').pop()}
-            </span>
+            </a>
           </div>
         </div>
       )}
