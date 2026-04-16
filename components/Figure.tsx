@@ -140,73 +140,46 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
         )}
       </figure>
 
-      {/* Lightbox — ArrowLeft/Right of topbar-knoppen navigeren door alle inline
-          figures op deze pagina, Escape sluit. Klik op achtergrond sluit ook. */}
+      {/* Lightbox — toolbar als eigen header bovenin, body met image daaronder,
+          optioneel caption-strook onderin. ArrowLeft/Right of topbar-knoppen
+          navigeren door alle inline figures op deze pagina, Escape sluit.
+          Klik op achtergrond (buiten toolbar/body/caption) sluit ook. */}
       {view && (
         <div className="fig-lightbox-bg" onClick={() => setView(null)}>
           <div
             className="fig-lightbox-toolbar"
             onClick={e => e.stopPropagation()}
-            style={{
-              position: 'fixed',
-              top: 0, left: 0, right: 0,
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              padding: '0.75rem 1rem',
-              background: 'rgba(0,0,0,0.45)',
-              zIndex: 10,
-            }}
           >
-            <button
-              type="button"
-              aria-label="Vorige figuur"
-              onClick={() => navigate('prev')}
-              className="fig-lightbox-nav"
-              style={{
-                background: 'none',
-                border: 'none',
-                color: 'white',
-                fontSize: '1.5rem',
-                cursor: 'pointer',
-                padding: '0.25rem 0.75rem',
-                lineHeight: 1,
-              }}
-            >←</button>
-            <div style={{ display: 'flex', gap: '0.25rem' }}>
+            {/* Linker zone — leeg, spacer zodat ← → centraal uitkomen */}
+            <div style={{ flex: 1 }} />
+            {/* Centrale zone — pijltjes */}
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <button
+                type="button"
+                aria-label="Vorige figuur"
+                onClick={() => navigate('prev')}
+                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer', padding: '0.25rem 0.75rem', lineHeight: 1 }}
+              >←</button>
               <button
                 type="button"
                 aria-label="Volgende figuur"
                 onClick={() => navigate('next')}
-                className="fig-lightbox-nav"
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  color: 'white',
-                  fontSize: '1.5rem',
-                  cursor: 'pointer',
-                  padding: '0.25rem 0.75rem',
-                  lineHeight: 1,
-                }}
+                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer', padding: '0.25rem 0.75rem', lineHeight: 1 }}
               >→</button>
+            </div>
+            {/* Rechter zone — ✕ */}
+            <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
               <button
                 type="button"
                 aria-label="Sluiten"
                 onClick={() => setView(null)}
-                className="fig-lightbox-nav"
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  color: 'white',
-                  fontSize: '1.5rem',
-                  cursor: 'pointer',
-                  padding: '0.25rem 0.75rem',
-                  lineHeight: 1,
-                }}
+                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer', padding: '0.25rem 0.75rem', lineHeight: 1 }}
               >✕</button>
             </div>
           </div>
-          <img src={view.src} alt={view.alt} className="fig-lightbox-img" />
+          <div className="fig-lightbox-body">
+            <img src={view.src} alt={view.alt} className="fig-lightbox-img" />
+          </div>
           {view.caption && (
             <div className="fig-lightbox-caption">
               {view.caption}{view.page ? ` — ${view.docLabel} p.${view.page}` : ''}

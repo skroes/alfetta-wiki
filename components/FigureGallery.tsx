@@ -367,40 +367,47 @@ export default function FigureGallery() {
               const hasPrev = idx > 0
               const hasNext = idx >= 0 && idx < filtered.length - 1
               const navBtn: React.CSSProperties = {
-                background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer',
-                lineHeight: 1, color: 'inherit', padding: '0.25rem 0.5rem',
+                background: 'none', border: 'none', fontSize: '1.5rem',
+                lineHeight: 1, color: 'inherit', padding: '0.25rem 0.75rem',
               }
               return (
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', gap: '0.5rem' }}>
-                  <button
-                    type="button"
-                    aria-label="Vorige figuur"
-                    onClick={() => { if (hasPrev) setSelected(filtered[idx - 1]) }}
-                    disabled={!hasPrev}
-                    style={{ ...navBtn, opacity: hasPrev ? 0.85 : 0.25, cursor: hasPrev ? 'pointer' : 'default' }}
-                  >←</button>
-                  <h3 style={{ margin: 0, fontSize: '1.05rem', textAlign: 'center', flex: 1, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                    {selected.label}
-                    <span style={{ opacity: 0.5, fontWeight: 400, marginLeft: '0.5rem', fontSize: '0.85rem' }}>
-                      {idx + 1} / {filtered.length}
-                    </span>
-                  </h3>
-                  <div style={{ display: 'flex', gap: '0.1rem' }}>
-                    <button
-                      type="button"
-                      aria-label="Volgende figuur"
-                      onClick={() => { if (hasNext) setSelected(filtered[idx + 1]) }}
-                      disabled={!hasNext}
-                      style={{ ...navBtn, opacity: hasNext ? 0.85 : 0.25, cursor: hasNext ? 'pointer' : 'default' }}
-                    >→</button>
-                    <button
-                      type="button"
-                      aria-label="Sluiten"
-                      onClick={() => setSelected(null)}
-                      style={{ ...navBtn, opacity: 0.6 }}
-                    >&times;</button>
+                <>
+                  {/* Topbar: linker spacer / ← counter → centraal / ✕ rechts */}
+                  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.75rem' }}>
+                    <div style={{ flex: 1 }} />
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <button
+                        type="button"
+                        aria-label="Vorige figuur"
+                        onClick={() => { if (hasPrev) setSelected(filtered[idx - 1]) }}
+                        disabled={!hasPrev}
+                        style={{ ...navBtn, opacity: hasPrev ? 0.85 : 0.25, cursor: hasPrev ? 'pointer' : 'default' }}
+                      >←</button>
+                      <span style={{ opacity: 0.55, fontSize: '0.85rem', fontVariantNumeric: 'tabular-nums' }}>
+                        {idx + 1} / {filtered.length}
+                      </span>
+                      <button
+                        type="button"
+                        aria-label="Volgende figuur"
+                        onClick={() => { if (hasNext) setSelected(filtered[idx + 1]) }}
+                        disabled={!hasNext}
+                        style={{ ...navBtn, opacity: hasNext ? 0.85 : 0.25, cursor: hasNext ? 'pointer' : 'default' }}
+                      >→</button>
+                    </div>
+                    <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+                      <button
+                        type="button"
+                        aria-label="Sluiten"
+                        onClick={() => setSelected(null)}
+                        style={{ ...navBtn, opacity: 0.6, cursor: 'pointer' }}
+                      >&times;</button>
+                    </div>
                   </div>
-                </div>
+                  {/* Titel onder de topbar — mag wrappen, niet in de weg */}
+                  <h3 style={{ margin: '0 0 1rem 0', fontSize: '1.05rem', lineHeight: 1.3 }}>
+                    {selected.label}
+                  </h3>
+                </>
               )
             })()}
             <img
