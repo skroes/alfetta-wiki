@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import figuresData from '../public/figures/doc-04/figures-index.json'
+import doc04Data from '../public/figures/doc-04/figures-index.json'
+import doc03Data from '../public/figures/doc-03/figures-index.json'
 
 // Canonical schema (zie alfetta-project/content/{doc}/figures.json, gesynct door
 // alfetta-wiki/scripts/generate-figures-json.sh). Discriminator: `kind`.
@@ -31,7 +32,8 @@ type FiguresFile = {
   figures: Figure[]
 }
 
-const data = figuresData as unknown as FiguresFile
+const allDataSources = [doc04Data, doc03Data] as unknown as FiguresFile[]
+const mergedFigures: Figure[] = allDataSources.flatMap(d => d.figures || [])
 
 // Labels voor `used_in` relatieve paden → leesbare wiki-pagina naam.
 // Gebruikt voor het tonen van gerelateerde wiki-pagina's in de lightbox.
@@ -54,6 +56,32 @@ const PAGE_LABELS: Record<string, string> = {
   '/motor/motor-demonteren-werkbank': 'Motor demonteren (werkbank)',
   '/motor/motor-terugplaatsen': 'Motor terugplaatsen',
   '/motor/krukas-zuigers-herbouwen': 'Krukas & zuigers herbouwen',
+  // DOC-03 — Transmission/Suspension/Steering/Brakes
+  '/transmissie/cardanas-revisie': 'Cardanas revisie',
+  '/transmissie/aandrijfassen-revisie': 'Aandrijfassen revisie',
+  '/transmissie/aandrijflijn-specificaties': 'Aandrijflijn specificaties (DOC-03)',
+  '/onderstel/voorwielophanging-verwijderen': 'Voorwielophanging verwijderen',
+  '/onderstel/voorwielophanging-demonteren': 'Voorwielophanging demonteren',
+  '/onderstel/voorwielophanging-hermonteren': 'Voorwielophanging hermonteren',
+  '/onderstel/voorwielophanging-terugplaatsen': 'Voorwielophanging terugplaatsen',
+  '/onderstel/voorwielophanging-deelbewerkingen': 'Voorwielophanging deelbewerkingen',
+  '/onderstel/voorwielophanging-specificaties': 'Voorwielophanging specificaties',
+  '/onderstel/achterwielophanging-verwijderen': 'Achterwielophanging verwijderen',
+  '/onderstel/achterwielophanging-demonteren': 'Achterwielophanging demonteren',
+  '/onderstel/achterwielophanging-hermonteren': 'Achterwielophanging hermonteren',
+  '/onderstel/achterwielophanging-deelbewerkingen': 'Achterwielophanging deelbewerkingen',
+  '/onderstel/achterwielophanging-specificaties': 'Achterwielophanging specificaties',
+  '/onderstel/rijhoogte': 'Rijhoogte',
+  '/onderstel/wieluitlijning': 'Wieluitlijning',
+  '/besturing/stuurhuis-verwijderen-demonteren': 'Stuurhuis verwijderen en demonteren',
+  '/besturing/stuurhuis-hermonteren-terugplaatsen': 'Stuurhuis hermonteren en terugplaatsen',
+  '/besturing/stuurkolom-en-deelbewerkingen': 'Stuurkolom en deelbewerkingen',
+  '/besturing/specificaties': 'Besturing specificaties',
+  '/remmen/voorremmen': 'Voorremmen',
+  '/remmen/achterremmen': 'Achterremmen',
+  '/remmen/bediening-hydraulisch': 'Rembekrachtiger en hydraulisch circuit',
+  '/remmen/handrem': 'Handrem revisie',
+  '/remmen/specificaties': 'Remmen specificaties',
 }
 
 // used_in levert relatieve paden als "alfetta-wiki/pages/motor/foo.mdx".
@@ -75,6 +103,7 @@ function fuzzyMatch(text: string, query: string): boolean {
 // afleiden uit canonical JSON metadata. Fallback: alleen de DOC-code.
 const DOC_LABELS: Record<string, string> = {
   'DOC-04': 'Alfetta Workshop Manual: Engine',
+  'DOC-03': 'Alfetta Workshop Manual: Transmission/Suspension/Steering/Brakes',
 }
 
 type ViewMode = 'grouped' | 'flat'
@@ -135,7 +164,7 @@ export default function FigureGallery() {
   // /figuren toont uitsluitend begeleidende illustraties (figure-crops), geen
   // full-page scans. Page-scans blijven bereikbaar via <SourceRef> deeplinks en
   // directe /pages/DOC-XX/NNN.jpg URLs, maar horen niet in de visuele index.
-  const figures = (data.figures || []).filter(f => f.kind === 'figure-crop')
+  const figures = mergedFigures.filter(f => f.kind === 'figure-crop')
 
   const allTags = useMemo(() => {
     const s = new Set<string>()
