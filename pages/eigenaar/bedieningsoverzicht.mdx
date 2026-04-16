@@ -12,7 +12,9 @@ drafted_by: "Serge (eigen samenstelling)"
 
 # Bedieningsoverzicht
 
-> Alfa Romeo Alfetta 2000 — Tipo 116 — Bouwjaar 1977
+> Alfa Romeo Alfetta 2000 — Tipo 116.55 — Serie 2 — Bouwjaar 1977 — Berlina/Saloon
+
+> **Scope:** cockpit-bedieningen zoals gemonteerd in **Alfetta 2.0 Serie 2 Berlina/Saloon 1977**. Varianten (1.6/1.8, GTV Coupé, Serie 1 '72–'75) kunnen andere schakelaars, klokken of lay-out hebben. Zie [Deze Auto](/eigenaar/deze-alfetta) voor de volledige variant-identificatie.
 
 ## I — Dashboard links — naast stuur
 
@@ -79,3 +81,47 @@ drafted_by: "Serge (eigen samenstelling)"
 | Alle cockpit-beschrijvingen (secties I-V) | Geen bron in archief (ISS-002) | ⚠️ |
 
 **Score: 6 van 13+ claims gevalideerd (~45%).** DOC-06 is nu gestaged en levert oliedruk + brandstof-reserve waarden. Resterende ongevalideerde claims vereisen het eigenaar-handboek (ISS-002) dat niet in het archief zit. De toerenteller rode zone staat niet in DOC-06 (specificaties-manual — geen instrument-specs).
+
+Haynes (DOC-01) helpt hier niet — die is werkplaatshandleiding, geen owner-manual, en beschrijft geen cockpit-bedieningen. Checked in `staging/DOC-01/pages/011-014.md` (Tools, Lubricants, Jacking): alleen algemene do-it-yourself intro.
+
+## Verwante technische pagina's
+
+Dit is cockpit-bediening (wat de bestuurder ziet en aanraakt). Voor de **technische bedienings-systemen** achter de knoppen:
+
+- [Rembekrachtiger en hydraulisch circuit](/remmen/bediening-hydraulisch) — rempedaal → remcilinders
+- [Handrem revisie](/remmen/handrem) — mechanisme onder de handremhendel
+- [Koppeling verwijderen](/transmissie/koppeling-verwijderen) + [Koppeling revisie](/transmissie/koppeling-revisie) — koppelingspedaal → koppelingsplaat
+- [Transmissie vloeistoffen](/transmissie/transmissie-vloeistoffen) — koppelingsvloeistof voor het hydraulisch circuit
+- [Stuurhuis verwijderen en demonteren](/besturing/stuurhuis-verwijderen-demonteren) — stuur → wielen
+- [Stuurkolom en deelbewerkingen](/besturing/stuurkolom-en-deelbewerkingen) — stuurkolom-hendels zitten hieraan
+- [Gasklep-kabel afstellen](/motor/gasklep-kabel-afstellen) — gaspedaal → carburateurs
+- [Stationair toerental & CO](/motor/stationair-toerental-co) — hoe toerenteller hoort te staan
+
+## Opvolg-plan — naar `validated`
+
+Validatie van deze pagina vereist bronnen die nu ontbreken. Fasering:
+
+### Fase 1 — Eigen observatie (Serge, geen externe bron nodig)
+
+- [ ] Foto-sessie: dashboard complete, instrumentencluster close-up, stuurkolom (links/rechts), middenconsole, pedalen, knoppen-detail. Via `fotos/` pipeline — privacy-tier `internal` of `public` per foto.
+- [ ] Per claim met ⚠️: uitvoeren en vergelijken met beschrijving op deze pagina. Pas tekst aan waar waarneming afwijkt. Plak `✅ eigen observatie 2026-XX-XX` bij de geverifieerde regels.
+- [ ] Contactslot standen: probeer sleutel in LOCK/ACC/MAR/AVV — noteer wat elke stand doet (alleen stroom? ontsteking? starten?).
+- [ ] Schakelaar-layout: foto van tuimelschakelaars bij linker dashboard, lichtschakelaar-fases documenteren.
+- [ ] Tumbler-klokken: foto van instrumentencluster en bevestig richting van naalden (snelheidsmeter + toerenteller tegengesteld).
+
+### Fase 2 — Eigenaar-handboek vinden (ISS-002 blocker)
+
+Bronnen die mogelijk dienst doen — nog te valideren:
+
+- [ ] [AlfaWiki.nl Owner's Manual](https://alfawiki.nl/manual) — aparte link van de workshop-sectie. Nog niet bezocht. INDEX.md markeert als `pending`.
+- [ ] [Docplayer.nl Nederlands instructieboekje](https://docplayer.nl/44062069-Nederlands-instructieboekje-alfa-services.html) — Nederlandstalig. URL nog te verifiëren.
+- [ ] [Manualzz Alfetta User Manual](https://manualzz.com/manual/en/Alfa%2BRomeo/Alfetta/User%2Bmanual) — 5 gratis manuals, mogelijk owner+workshop.
+- [ ] TMB Bookshop / Autolit.eu — commercieel, voor fysieke exemplaren.
+
+Zodra gevonden: PDF via `scripts/sync-pdfs.sh` in archief → `stage-pdf.sh` → eigen DOC-XX nummer → validatie-traject.
+
+### Fase 3 — Volledig gevalideerd
+
+- [ ] Alle ⚠️ claims hebben een bron (eigen observatie + foto, of eigenaar-handboek)
+- [ ] Score naar 100% in validatie-overzicht tabel
+- [ ] Frontmatter `status: in-review` → `status: validated` + `validated_date` + `validated_by`

@@ -1,0 +1,153 @@
+---
+title: "Service-schema & onderhoudsintervallen — Alfetta 2.0"
+description: "Haynes routine maintenance schema vertaald naar het Nederlands: wekelijkse checks, service-intervallen op 8.000 / 16.000 / 24.000 km en tweejaarlijkse taken. Plus de aanbevolen smeermiddelen en vloeistoffen per systeem. Uit Haynes (aftermarket)."
+status: draft
+source:
+  doc: DOC-01
+  title: "Haynes Alfa Romeo Alfetta Owners Workshop Manual (Strasman, 1982)"
+  pages: [15, 17, 18]
+  archive_url: https://drive.google.com/file/d/1LCAu1zxJIC5Fig0MHnkrS_eAycXV_kG6/view
+  language: en
+  type: aftermarket
+tags: [onderhoud, service, onderhoudsschema]
+drafted_on: 2026-04-16
+drafted_by: "walking-skeleton DOC-01 (staging/DOC-01/pages/017-018.md)"
+---
+
+import { SourceRef, Cite } from '../../components/SourceRef'
+import PageScan from '../../components/PageScan'
+import Figure from '../../components/Figure'
+
+# Service-schema & onderhoudsintervallen
+
+> **TL;DR** — Haynes werkt met een gelaagd schema: **wekelijks of voor een lange rit** (vloeistoffen, banden, verlichting), **elke 8.000 km / 6 maanden** (olie + filter, bougies, contactpunten, remblokken), **elke 16.000 km / jaarlijks** (brandstoffilter, koelsysteem-inspectie, scharnieren, stuur- en ophangingsbouten), **elke 24.000 km / 18 maanden** (versnellingsbakolie, klepspeling, cilinderkopmoeren) en **elke 2 jaar** (rem- en koppelingsvloeistof, koelvloeistof). Welke waarde je het eerst bereikt — kilometers of tijd — telt. <Cite p="17" />
+
+Onderhoud is essentieel voor zowel veiligheid als prestatie en zuinigheid. Haynes baseert dit schema op de fabrikantenaanbeveling, aangevuld met checks die de auteur toevoegt voor extra betrouwbaarheid. Bij lage jaarkilometers geldt **tijd boven kilometers**: voer de taken uit op basis van verstreken maanden, niet van afgelegde afstand. <Cite p="17" />
+
+## Aanbevolen smeermiddelen en vloeistoffen
+
+Haynes geeft vier basispunten voor de Alfetta: motor, transmissie, koelsysteem en hydraulische systemen (rem + koppeling). <Cite p="15" />
+
+| # | Component / systeem | Specificatie | Castrol-equivalent |
+|---|---|---|---|
+| 1 | **Motor** | Multigrade-motorolie SAE 10W/50 | GTX |
+| 2 | **Transmissie** (versnellingsbak + differentieel) | Hypoid-transmissieolie EP 85W/90 | Hypoy B |
+| 3 | **Koelsysteem** | Antivries volgens BS 3151 of BS 3152 | Anti-freeze |
+| 4 | **Rem- en koppelingshydrauliek** | Remvloeistof DOT SAE J1703e of FMVSS 116 DOT 3 | Universal Brake and Clutch Fluid |
+
+> De Castrol-productnamen zijn tijdsgebonden (boek uit 1982). De **specificaties** (SAE 10W/50, EP 85W/90, DOT 3, BS 3151) gelden nog steeds — elk merk dat deze norm voert is bruikbaar. Voor Alfetta 2000-specifieke hoeveelheden en actuele keuzes zie [motor/technische-specificaties](/motor/technische-specificaties) en [transmissie/transmissie-vloeistoffen](/transmissie/transmissie-vloeistoffen).
+
+<PageScan doc="DOC-01" page={15} size="md" caption="DOC-01 p15 — Recommended lubricants and fluids + smeerpunt-overzicht Alfetta" />
+
+## Wekelijks of vóór een lange rit
+
+Visuele checks vóór gebruik — duurt enkele minuten, voorkomt strandingen. <Cite p="17" />
+
+- Motoroliepeil controleren en zo nodig bijvullen
+- Koelvloeistofniveau controleren en zo nodig bijvullen
+- Accu-elektrolytniveau controleren en zo nodig bijvullen
+- Ruitensproeier-reservoir controleren en zo nodig bijvullen
+- Remvloeistof-reservoir controleren, zo nodig bijvullen **en onderzoeken op lekkage**
+- Koppelingsvloeistof-reservoir controleren en zo nodig bijvullen
+- Bandenspanning controleren
+- Werking van alle verlichting controleren — in het bijzonder richtingaanwijzers en stoplichten
+
+> **Motorolie bijvullen**: om het peil van **MIN naar MAX** op de peilstok te brengen is ongeveer **2 liter** (4 pints) nodig. <Cite p="17" />
+
+## Eerste 1.000 km (alleen nieuwe auto's)
+
+Gratis dealer-servicebeurt benutten. <Cite p="17" /> *Niet meer van toepassing op jouw 1977 Berlina — historisch vermeld.*
+
+## Elke 8.000 km of 6 maanden
+
+Welke eerst optreedt. Dit is de reguliere kleine beurt. <Cite p="17" />
+
+- **Motorolie verversen en oliefilter vernieuwen**
+- Remblokken controleren op slijtage, vervangen indien nodig
+- Distributieketting-spanning afstellen
+- Banden inspecteren op slijtage en beschadiging
+- Luchtpomp-filter reinigen (emissie-systemen — *vooral voor US-specificatie; EU-Berlina meestal n.v.t.*)
+- Luchtfilter-elementen reinigen
+- Bougies reinigen — zie [bougies inspecteren](/onderhoud/bougies-inspecteren)
+- Contactpunten van verdeler controleren, vernieuwen bij aangebrand; daarna sluithoek en ontstekingstijdstip controleren — zie [contactpunten afstellen](/motor/contactpunten-afstellen) en [ontstekings-timing](/motor/ontstekings-timing)
+- Flexibele remslangen en leidingen controleren op lekkage of beschadiging
+
+## Elke 16.000 km of jaarlijks
+
+*Bovenop de taken van het vorige interval.* <Cite p="17" /> <Cite p="18" />
+
+- Brandstoffilter-elementen vernieuwen
+- Koelsysteem controleren op lekkage en conditie van slangen — zie [koelsysteem](/motor/koelsysteem)
+- Scharnieren en bedieningsorganen smeren
+- Vastzitten van cardanas-bouten controleren
+- Vastzitten van alle stuur- en ophangingsbouten en -moeren controleren
+- Conditie van stuurhuis-balgen controleren
+- Conditie van kogelscharnier-rubbers controleren, kogelgewrichten op speling controleren
+- Voorwielnaaf-afstelling controleren
+- Stationair-toerental en mengsel controleren en afstellen — zie [stationair-toerental & CO](/motor/stationair-toerental-co)
+
+> **Niet van toepassing op Berlina 1977 carb-versie**: *Change injection pump oil filter* en *clean throttle throats* gelden alleen voor de SPICA-injectie-uitvoering (USA). Ook *clean crankcase ventilation system components* en *check effectiveness of fuel filler cap seal / evaporative control system* zijn emissie-taken voor US-specificatie. <Cite p="18" />
+
+## Elke 24.000 km of 18 maanden
+
+*Bovenop de taken van de vorige intervallen.* <Cite p="18" />
+
+- **Versnellingsbakolie verversen** (zie [transmissie/transmissie-vloeistoffen](/transmissie/transmissie-vloeistoffen))
+- Spanning en conditie van dynamo-/alternator-aandrijfriem controleren
+- Vastzitten van cilinderkopmoeren controleren
+- Klepspeling controleren — zie [klepspeling controleren](/motor/klepspeling-controleren)
+- Bougies vernieuwen
+- Contactpunten vernieuwen en sluithoek controleren — zie [contactpunten afstellen](/motor/contactpunten-afstellen)
+- Ontstekingstijdstip controleren en afstellen — zie [ontstekings-timing](/motor/ontstekings-timing)
+- Stationair-toerental en uitlaat-emissieniveau controleren en afstellen — zie [stationair-toerental & CO](/motor/stationair-toerental-co)
+- Carburateur-sproeiers reinigen — zie [Solex-carburateur](/motor/solex-carburateur) of [Dellorto-carburateur](/motor/dellorto-carburateur) afhankelijk van uitvoering
+
+## Elke 2 jaar (ongeacht kilometerstand)
+
+<Cite p="18" />
+
+- **Rem- en koppelingsvloeistof vernieuwen** (DOT 3 is hygroscopisch — water trekt erin en verlaagt het kookpunt)
+- **Motorkoelvloeistof vernieuwen** (bij voorkeur in het najaar, vóór het vriesseizoen)
+
+<PageScan doc="DOC-01" page={17} size="md" caption="DOC-01 p15 (PDF p17) — Routine maintenance: wekelijks / 8.000 / 16.000 km schema + fotos motoroliepeil, accu bijvullen, remvloeistof, bandenspanning" />
+
+<PageScan doc="DOC-01" page={18} size="md" caption="DOC-01 p16 (PDF p18) — Vervolg routine maintenance: 24.000 km interval + tweejaarlijks + fotos versnellingsbak drain/filler, oliepeilstok, carterdopje" />
+
+## Cross-referentie naar fabrieksbronnen
+
+Haynes geeft de **intervallen en taken**, maar Alfetta 2000-specifieke **waarden, capaciteiten en torques** staan in de fabrieksdocumentatie:
+
+- **Motorolie-capaciteit, olietype, oliedrukwaarden** — [motor/technische-specificaties](/motor/technische-specificaties) (DOC-04) en [specificaties/oliedruk-motortemperaturen](/specificaties/oliedruk-motortemperaturen) (DOC-04)
+- **Koelvloeistof-capaciteit, thermostaattemperaturen, radiateurdruk** — [motor/koelsysteem](/motor/koelsysteem) (DOC-04)
+- **Versnellingsbak- en differentieelolie — type en vulhoeveelheid** — [transmissie/transmissie-vloeistoffen](/transmissie/transmissie-vloeistoffen) (DOC-03)
+- **Klepspeling-tolerantie koud/warm** — [motor/klepspeling-controleren](/motor/klepspeling-controleren) (DOC-04)
+- **Ontstekingstijdstip, sluithoek, bougie-gap** — [motor/ontstekings-timing](/motor/ontstekings-timing) (DOC-04)
+- **Stationair-toerental en CO-waarde** — [specificaties/stationair-brandstof-specificaties](/specificaties/stationair-brandstof-specificaties) (DOC-04)
+- **Aandraaimomenten per subsysteem** — zie de `*-specificaties`-pagina's per systeem ([remmen](/remmen/specificaties), [besturing](/besturing/specificaties), [voorwielophanging](/onderstel/voorwielophanging-specificaties), [achterwielophanging](/onderstel/achterwielophanging-specificaties), [aandrijflijn](/transmissie/aandrijflijn-specificaties))
+
+Het schema op deze pagina is het **raamwerk**; de getalsmatige invulling komt uit de fabrieksbronnen.
+
+<div style={{
+  marginTop: '2rem',
+  marginBottom: '0.5rem',
+  padding: '0.65rem 0.9rem',
+  background: 'rgba(202,138,4,0.09)',
+  borderLeft: '3px solid #ca8a04',
+  borderRadius: '4px',
+  fontSize: '0.88rem',
+}}>
+  <strong>Aftermarket bron.</strong> Deze pagina komt uit de <em>Haynes Owners Workshop Manual</em> —
+  een naslagboek van derden, geen fabriekshandleiding. Het schema is de combinatie van
+  Alfa Romeo's aanbeveling + aanvullingen van de Haynes-auteur. Sommige taken (emissie-systemen,
+  brandstofinjectie) horen bij US-spec varianten en niet bij de Europese carb-Berlina 1977.
+  Variantspecifieke waarden en capaciteiten staan in de fabrieksdocumentatie —
+  zie de cross-referenties hierboven.
+</div>
+
+<SourceRef
+  doc="DOC-01"
+  title="Haynes Alfa Romeo Alfetta Owners Workshop Manual (Strasman, 1982)"
+  pages={[15, 17, 18]}
+  archive_url="https://drive.google.com/file/d/1LCAu1zxJIC5Fig0MHnkrS_eAycXV_kG6/view"
+  language="en"
+/>

@@ -1,0 +1,252 @@
+---
+title: "Fout-diagnose — Haynes symptoom-oorzaak tabellen"
+description: "Fault diagnosis uit Haynes: motor start niet, motor draait maar start niet, motor valt uit, motor overhit, lage oliedruk, motorgeluiden. Symptoom → mogelijke oorzaak → check. Aftermarket — gebruik samen met fabrieks-procedures."
+status: draft
+source:
+  doc: DOC-01
+  title: "Haynes Alfa Romeo Alfetta Owners Workshop Manual (Strasman, 1982)"
+  pages: [19, 20, 21, 22]
+  archive_url: https://drive.google.com/file/d/1LCAu1zxJIC5Fig0MHnkrS_eAycXV_kG6/view
+  language: en
+  type: aftermarket
+tags: [onderhoud, fout-diagnose, troubleshooting]
+drafted_on: 2026-04-16
+drafted_by: "walking-skeleton DOC-01 (staging/DOC-01/pages/019-022.md)"
+---
+
+import { SourceRef, Cite } from '../../components/SourceRef'
+import PageScan from '../../components/PageScan'
+import Figure from '../../components/Figure'
+
+# Fout-diagnose — symptoom naar oorzaak
+
+> **TL;DR** — Systematische fault-tree voor storingen op de weg of bij het starten. Werk altijd van symptoom naar oorzaak, niet omgekeerd. Haynes stelt vier principes: (1) verifieer de storing — weet zeker wat het symptoom is; (2) vergeet het voor-de-hand-liggende niet (zit er brandstof in de tank? zitten draden los?); (3) behandel de oorzaak, niet het symptoom (een lege accu vervangen zonder de laadfout te vinden herhaalt het probleem); (4) neem niets voor zoet aan — ook een nieuwe component kan defect zijn. <Cite p="19" />
+
+Deze pagina is bedoeld voor hulp bij **startweigering** of **panne onderweg**. Per hoofdstuk staat elders in het boek een eigen Fault Diagnosis sectie voor subsysteem-specifieke problemen (koppeling, versnellingsbak, remmen, elektra) — zie de Haynes hoofdstukverwijzingen in de tabellen hieronder.
+
+De Haynes-tabellen zijn **symptoom → mogelijke oorzaken** (geen harde stap-volgorde). Begin bovenaan de lijst — meest voorkomende en goedkoopste check eerst — en werk omlaag. Bij elke oorzaak hoort een check of remedie; verwijzingen naar `Chapter X` zijn naar de Haynes-hoofdstukken.
+
+## Motor start niet — startmotor draait niet
+
+<div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(220px, 260px)', gap: '1.5rem', alignItems: 'start', marginBottom: '1.25rem' }}>
+
+<div>
+
+Als je de sleutel omdraait en de startmotor doet niets — of de startmotor draait de motor te traag rond — ligt het probleem vrijwel altijd in het **elektrische circuit** tussen accu, startmotor en massa. <Cite p="20" />
+
+| Symptoom | Mogelijke oorzaak | Check / remedie |
+|---|---|---|
+| Startmotor draait niet bij sleutel-draaien | Lege accu | Opladen, startkabels, of aanduwen |
+| " | Accupolen los of gecorrodeerd | Polen schoonmaken, vastzetten |
+| " | Massa accu → carrosserie defect | Massakabel controleren |
+| " | Motor-massastrap los of gebroken | Flexibele massastrap naar carrosserie/subframe checken |
+| " | Bedrading startmotor/solenoïde los of gebroken | Visueel inspecteren |
+| " | Contact-/startslot defect | Via Hoofdstuk 9 (elektra) |
+| " | Grote mechanische storing (vastloper) of lange stilstand (zuigerveren vastgeroest in cilinders) | Handmatig rondslingeren via krukas, anders motor openleggen |
+| " | Interne fout startmotor/solenoïde | Zie Hoofdstuk 9 |
+| Startmotor draait de motor **langzaam** rond | Deels ontladen accu | Opladen, startkabels, aanduwen |
+| " | Accupolen los/gecorrodeerd | Polen schoonmaken |
+| " | Massa accu → carrosserie defect | Massakabel checken |
+| " | Motor-massastrap los | Visueel inspecteren |
+| " | Bedrading startmotor/solenoïde los | Bedrading nalopen |
+| " | Interne fout startmotor | Zie Hoofdstuk 9 |
+| Startmotor draait **zonder** dat de motor meedraait | Vliegwielkrans beschadigd of versleten | Vliegwiel inspecteren |
+| " | Montagebouten startmotor los | Bouten aandraaien |
+
+<Cite p="20" /> <Cite p="21" />
+
+</div>
+
+<PageScan doc="DOC-01" page={20} size="md" />
+
+</div>
+
+## Motor draait normaal rond maar start niet
+
+<div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(220px, 260px)', gap: '1.5rem', alignItems: 'start', marginBottom: '1.25rem' }}>
+
+<div>
+
+Startmotor draait normaal maar de motor pakt niet aan. Denk aan **vonk en brandstof** — de twee basis-ingrediënten naast compressie. Controleer eerst of er vonk is (bougiekabel uit cilinderkop houden, krukas laten draaien met geïsoleerd gereedschap) en of er brandstof wordt aangevoerd bij de carburateur. <Cite p="21" />
+
+| Symptoom | Mogelijke oorzaak | Check / remedie |
+|---|---|---|
+| Motor draait maar start niet | Vochtige of vuile HT-kabels en verdelerkap | Motor aanslingeren en op vonk controleren |
+| " | Vuile of verkeerd afgestelde contactpunten | Zie [contactpunten afstellen](/motor/contactpunten-afstellen) |
+| " | Geen brandstof in tank | Brandstofaanvoer bij carburateur controleren |
+| " | Te veel choke (warme motor) of te weinig choke (koude motor) | Choke-bediening checken |
+| " | Vervuilde of verkeerd gegapte bougies | Bougies eruit, reinigen, gap afstellen — zie [bougies inspecteren](/onderhoud/bougies-inspecteren) |
+| " | Andere ontstekingsfout | Zie Hoofdstuk 4 (ontsteking) |
+| " | Andere brandstofsysteem-fout | Zie Hoofdstuk 3 (brandstof) |
+| " | Slechte compressie | Zie Hoofdstuk 1 (motor) |
+| " | Grote mechanische storing (bv. nokkenas-aandrijving gebroken) | Werkplaats |
+| Motor pakt aan maar **blijft niet draaien** | Te weinig choke (koude motor) | Choke aftrekken |
+| " | Luchtlekken bij carburateur of inlaatspruitstuk | Pakkingen, slangklemmen controleren |
+| " | Brandstofuitval | Zie Hoofdstuk 3 |
+| " | Ballast-weerstand defect of andere ontstekingsfout | Zie Hoofdstuk 4 |
+
+<Cite p="21" />
+
+</div>
+
+<PageScan doc="DOC-01" page={21} size="md" />
+
+</div>
+
+## Motor valt uit en start niet opnieuw
+
+Onderscheid twee scenario's: **abrupte uitval** (meestal ontsteking) vs. **uitval na stotteren** (meestal brandstof). <Cite p="21" />
+
+| Symptoom | Mogelijke oorzaak | Check / remedie |
+|---|---|---|
+| **Plotselinge uitval — ontstekingsfout** | Losse of afgeschakelde LT-draden | Bedrading bobine nalopen |
+| " | Natte HT-kabels of verdelerkap (na waterplas) | Drogen, waterafstotende spray |
+| " | Bobine- of condensatorfout | Op vonk controleren |
+| " | Andere ontstekingsfout | Zie Hoofdstuk 4 |
+| **Stotteren vóór uitval — brandstoffout** | Tank leeg | Tanken |
+| " | Brandstofpomp defect of filter verstopt | Brandstofaanvoer bij carburateur controleren |
+| " | Tankdop-ontluchting verstopt (je hoort "zuigen" bij openen) | Tankdop reinigen/vervangen |
+| " | Carburateur-naaldventiel plakt | Carburateur openleggen |
+| " | Sproeiers verstopt (verontreinigde brandstof) | Sproeiers reinigen — zie [Weber 40 DCOE](/motor/weber-carburateur), [Solex C 40 DDH-8](/motor/solex-carburateur), [Dellorto DHLA 40F](/motor/dellorto-carburateur) |
+| **Andere oorzaken uitval** | Ernstige oververhitting | Zie sectie hieronder |
+| " | Grote mechanische storing (bv. nokkenas-aandrijving) | Werkplaats |
+
+<Cite p="21" />
+
+## Motor overhit
+
+<div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(220px, 260px)', gap: '1.5rem', alignItems: 'start', marginBottom: '1.25rem' }}>
+
+<div>
+
+Splits op basis van het **laadlampje** (geen-laden waarschuwingslampje). Brandt het lampje tijdens oververhitting, dan is er een drivebelt-probleem dat tegelijk de laadspanning én de waterpomp-aandrijving raakt. Brandt het niet, dan ligt het probleem in het koelsysteem zelf. <Cite p="21" />
+
+> **Waarschuwing** — voeg **geen koud water toe** aan een oververhitte motor. De thermische schok kan cilinderkop of blok doen barsten. <Cite p="22" />
+
+| Symptoom | Mogelijke oorzaak | Check / remedie |
+|---|---|---|
+| Oververhitting **mét** laadlampje aan | Slappe of gebroken drivebelt | Opspannen of vervangen — Hoofdstuk 2 |
+| Oververhitting **zonder** laadlampje | Koelvloeistofverlies intern of extern | Zie [koelsysteem](/motor/koelsysteem) en Hoofdstuk 2 |
+| " | Thermostaat defect | Thermostaat testen — zie [koelsysteem](/motor/koelsysteem) |
+| " | Te laag oliepeil | Bijvullen |
+| " | Remmen lopen aan | Remklauwen/trommels controleren |
+| " | Radiateur extern of intern verstopt | Radiateur doorspoelen of vervangen |
+| " | Elektrische koelventilator werkt niet correct | Ventilator-circuit checken |
+| " | Motor-waterkanalen verstopt | Blok doorspoelen |
+| " | Ontstekings-timing verkeerd of vacuümvervroeging defect | Zie [ontstekings-timing](/motor/ontstekings-timing) |
+| " | Mengsel te zwak | Zie [stationair-toerental & CO](/motor/stationair-toerental-co) |
+
+<Cite p="21" /> <Cite p="22" />
+
+</div>
+
+<PageScan doc="DOC-01" page={22} size="md" />
+
+</div>
+
+## Lage oliedruk
+
+Oliedruk-meter leest laag of het waarschuwingslampje brandt terwijl de motor draait. Eerst meetfout uitsluiten vóór je de motor veroordeelt. <Cite p="22" />
+
+| Symptoom | Mogelijke oorzaak | Check / remedie |
+|---|---|---|
+| Lage oliedruk bij draaiende motor | Oliepeil te laag of verkeerde viscositeit | Peilstok, juiste viscositeit |
+| " | Defecte meter of sender-unit | Sender vervangen vóór motor te demonteren |
+| " | Draad naar sender-unit naar massa (aardsluiting) | Bedrading nalopen |
+| " | Motor oververhit | Zie oververhittings-sectie |
+| " | Oliefilter verstopt of bypass-klep defect | Filter vervangen |
+| " | Oliedruk-overdrukventiel defect | Ventiel reinigen/vervangen |
+| " | Oliepomp-zeefje verstopt | Pomp demonteren, zeef reinigen |
+| " | Oliepomp versleten of pompbevestiging los | Pomp reviseren/vervangen |
+| " | Hoofd- of drijfstanglagers versleten | Motor-overhaul |
+
+<Cite p="22" />
+
+> **Nota bene** — lage oliedruk bij een motor met veel kilometers op stationair is niet per se een ramp. **Plotseling drukverlies bij toeren** is veel ernstiger. Controleer altijd eerst meter/sender voordat je het blok veroordeelt. <Cite p="22" />
+
+## Motorgeluiden
+
+Geluiden zijn vaak het eerste waarneembare signaal van slijtage. Lokaliseer met een stethoscoop of lange schroevendraaier op het blok. <Cite p="22" />
+
+| Geluid | Mogelijke oorzaak |
+|---|---|
+| **Pinking (detonatie) bij versnellen** | Verkeerd octaangetal brandstof |
+| " | Ontstekings-timing verkeerd — zie [ontstekings-timing](/motor/ontstekings-timing) |
+| " | Verdeler defect of versleten |
+| " | Carburateur versleten of slecht afgesteld — zie [stationair-toerental & CO](/motor/stationair-toerental-co) |
+| " | Overmatige koolafzetting in motor |
+| **Fluiten of sissen** | Lekkende vacuümslang |
+| " | Lekkende carburateur- of spruitstuk-pakking |
+| " | Doorblazende koppakking |
+| **Tikken of ratelen** | Verkeerde klepspeling — zie [klepspeling controleren](/motor/klepspeling-controleren) |
+| " | Versleten klepbediening |
+| " | Versleten distributieketting — zie [distributieketting](/motor/distributieketting) |
+| " | Gebroken zuigerveer (tikkend geluid) |
+| **Kloppen of bonken** | Onbedoeld mechanisch contact |
+| " | Versleten drivebelt |
+| " | Randcomponent-storing (dynamo, waterpomp, enz.) |
+| " | Versleten drijfstanglagers (zwaar kloppen, vaak minder onder belasting) |
+| " | Versleten hoofdlagers (rommelig kloppen, erger onder belasting) |
+| " | Zuiger-slag (meest hoorbaar bij koude motor) |
+
+<Cite p="22" />
+
+## Elektrische fouten — principe
+
+<div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(220px, 260px)', gap: '1.5rem', alignItems: 'start', marginBottom: '1.25rem' }}>
+
+<div>
+
+Elektrische fouten lijken raadselachtig maar zijn net zo goed logisch te analyseren. Auto-bedrading zit in een zware omgeving — hitte, trillingen, chemische aanslag — en de meeste fouten zijn **losse of gecorrodeerde verbindingen** of **gebroken/geschuurde draden**, vooral waar draden door carrosseriegaten lopen of aan trillingen blootstaan. <Cite p="19" />
+
+De negatieve accupool is aan de carrosserie geaard. Componenten — motoren, lampvoetjes — zijn ook geaard, via draad of direct door hun bevestiging. Stroom loopt via de carrosserie terug naar de accu. **Losse of gecorrodeerde bevestiging = onderbroken circuit = storing.** Motor en versnellingsbak zijn met flexibele massastraps aan carrosserie/subframe gekoppeld; losse of ontbrekende straps geven startmotor-, dynamo- en ontstekingsproblemen. <Cite p="19" />
+
+**Open-circuit** (gebroken draad) test je door de verdachte draad tijdelijk te overbruggen met een stuk draad met krokodilleklemmen, of met een 12V testlamp langs de draad. **Kortsluiting** (kale draad tegen carrosserie) doet een zekering springen — niet persistent overbruggen met zilverfolie of draad; dat geeft brandgevaar. <Cite p="19" />
+
+</div>
+
+<PageScan doc="DOC-01" page={19} size="md" />
+
+</div>
+
+## Cross-referentie naar fabrieksbronnen
+
+De Haynes-tabellen zijn indicatief. Voor afstel-waarden, specificaties en procedures altijd de fabriekshandleiding volgen:
+
+- **Stationair-toerental en CO** — [motor/stationair-toerental-co](/motor/stationair-toerental-co) (DOC-05/03)
+- **Ontstekings-timing** — [motor/ontstekings-timing](/motor/ontstekings-timing) (DOC-04)
+- **Contactpunten afstellen** — [motor/contactpunten-afstellen](/motor/contactpunten-afstellen) (DOC-04)
+- **Bougies inspecteren en gap** — [onderhoud/bougies-inspecteren](/onderhoud/bougies-inspecteren) (DOC-01)
+- **Klepspeling controleren** — [motor/klepspeling-controleren](/motor/klepspeling-controleren)
+- **Distributieketting** — [motor/distributieketting](/motor/distributieketting)
+- **Koelsysteem** (thermostaat, radiateur) — [motor/koelsysteem](/motor/koelsysteem) (DOC-04)
+- **Koppeling / transmissie ontluchten** — [transmissie/hydraulisch-ontluchten](/transmissie/hydraulisch-ontluchten)
+- **Remmen — hydraulische bediening** — [remmen/bediening-hydraulisch](/remmen/bediening-hydraulisch)
+- **Weber 40 DCOE** — [motor/weber-carburateur](/motor/weber-carburateur)
+- **Solex C 40 DDH-8** — [motor/solex-carburateur](/motor/solex-carburateur)
+- **Dellorto DHLA 40F** — [motor/dellorto-carburateur](/motor/dellorto-carburateur)
+
+<div style={{
+  marginTop: '2rem',
+  marginBottom: '0.5rem',
+  padding: '0.65rem 0.9rem',
+  background: 'rgba(202,138,4,0.09)',
+  borderLeft: '3px solid #ca8a04',
+  borderRadius: '4px',
+  fontSize: '0.88rem',
+}}>
+  <strong>Aftermarket bron.</strong> Deze fault-diagnose-tabellen komen uit de <em>Haynes Owners Workshop Manual</em> —
+  een naslagboek van derden, geen fabriekshandleiding. De tabellen zijn een <strong>indicatieve fault-tree</strong>,
+  bedoeld om snel een richting te kiezen bij pech-onderweg of startweigering. <strong>Gebruik ze altijd samen met de fabrieks-procedures</strong> voor
+  afstel-waarden, specificaties en demontage — de Haynes beschrijft generieke oorzaken, niet de Alfetta-specifieke toleranties.
+  Verwijzingen naar "Hoofdstuk X" verwijzen naar Haynes-hoofdstukken met subsysteem-specifieke fault diagnosis
+  (Chapter 1 motor, 2 koeling, 3 brandstof, 4 ontsteking, 6 koppeling, 7 transmissie, 8 remmen, 9 elektra).
+</div>
+
+<SourceRef
+  doc="DOC-01"
+  title="Haynes Alfa Romeo Alfetta Owners Workshop Manual (Strasman, 1982)"
+  pages={[19, 20, 21, 22]}
+  archive_url="https://drive.google.com/file/d/1LCAu1zxJIC5Fig0MHnkrS_eAycXV_kG6/view"
+  language="en"
+/>
