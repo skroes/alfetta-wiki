@@ -7,5 +7,9 @@ export default {
   'voorwielophanging-specificaties': 'Voorwielophanging specificaties',
   'achterwielophanging-verwijderen': 'Achterwielophanging verwijderen',
   'achterwielophanging-demonteren': 'Achterwielophanging demonteren',
-  'achterwielophanging-hermonteren': 'Achterwielophanging hermonteren'
+  'achterwielophanging-hermonteren': 'Achterwielophanging hermonteren',
+  'achterwielophanging-deelbewerkingen': 'Achterwielophanging deelbewerkingen',
+  'achterwielophanging-specificaties': 'Achterwielophanging specificaties',
+  'rijhoogte': 'Rijhoogte controleren en afstellen',
+  'wieluitlijning': 'Wieluitlijning controleren'
 }

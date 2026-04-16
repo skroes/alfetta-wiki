@@ -34,13 +34,11 @@ Pagina-nummers verwijzen naar **staging-pagina's** (scan-volgorde), niet naar pr
 | &nbsp;&nbsp;• Verwijderen (uit auto) | 44-46 | `onderstel/achterwielophanging-verwijderen` | ✅ Live |
 | &nbsp;&nbsp;• Demonteren (werkbank) | 47-48 | `onderstel/achterwielophanging-demonteren` | ✅ Live |
 | &nbsp;&nbsp;• Hermonteren + terugplaatsen | 49-50 | `onderstel/achterwielophanging-hermonteren` | ✅ Live |
-| &nbsp;&nbsp;• Partial operations | 51-53 | `onderstel/achterwielophanging-deelbewerkingen` | ⏳ |
-| &nbsp;&nbsp;• Schokbreker-kalibratie tabel | 54 | `onderstel/schokbrekers-kalibratie` | ⏳ specs |
-| &nbsp;&nbsp;• Tools + torques + lubricants | 56-59 | `onderstel/achterwielophanging-specificaties` | ⏳ specs |
-| **4. Vehicle height & geometry** | 60-68 | 3 wiki-pagina's | ⏳ |
-| &nbsp;&nbsp;• Rijhoogte controleren | 60-61 | `onderstel/rijhoogte-controleren` | ⏳ |
-| &nbsp;&nbsp;• Rijhoogte afstellen | 62-63 | `onderstel/rijhoogte-afstellen` | ⏳ |
-| &nbsp;&nbsp;• Geometrie controleren | 64-68 | `onderstel/wieluitlijning-controleren` | ⏳ |
+| &nbsp;&nbsp;• Partial operations | 51-53 | `onderstel/achterwielophanging-deelbewerkingen` | ✅ Live |
+| &nbsp;&nbsp;• Schokbreker-kalibratie + tools + torques + lubes | 54, 56-59 | `onderstel/achterwielophanging-specificaties` | ✅ Live |
+| **4. Vehicle height & geometry** | 60-68 | 2 wiki-pagina's | ✅ Live |
+| &nbsp;&nbsp;• Rijhoogte controleren + afstellen | 60-63 | `onderstel/rijhoogte` | ✅ Live |
+| &nbsp;&nbsp;• Geometrie controleren | 64-68 | `onderstel/wieluitlijning` | ✅ Live |
 | **5. Steering gear** | 69-85 | 5-6 wiki-pagina's | ⏳ |
 | &nbsp;&nbsp;• ZF stuurhuis verwijderen | 70-71 | `besturing/stuurhuis-verwijderen` | ⏳ |
 | &nbsp;&nbsp;• Stuurhuis demonteren | 71-72 | `besturing/stuurhuis-demonteren` | ⏳ |
