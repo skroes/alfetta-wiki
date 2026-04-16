@@ -388,49 +388,48 @@ export default function FigureGallery() {
                 >&times;</button>
               </div>
             </div>
+            <div className="fig-lightbox-head" onClick={e => e.stopPropagation()}>
+              <div className="fig-lightbox-title">{selected.label}</div>
+              <div className="fig-lightbox-subline">{selected.doc} p.{selected.page}</div>
+            </div>
             <div className="fig-lightbox-body">
               <img src={selected.public_path} alt={selected.label} className="fig-lightbox-img" />
+              {selected.used_in && selected.used_in.length > 0 && (
+                <div className="fig-lightbox-wiki-links" onClick={e => e.stopPropagation()}>
+                  <span style={{ opacity: 0.65, marginRight: '0.4rem' }}>
+                    Op wiki{selected.used_in.length > 1 ? '-pagina\u2019s' : '-pagina'}:
+                  </span>
+                  {selected.used_in.map((u, i) => {
+                    const route = usedInToRoute(u)
+                    if (!route) return null
+                    return (
+                      <span key={u}>
+                        {i > 0 && ', '}
+                        <Link href={route} className="fig-link" onClick={() => setSelected(null)}>
+                          {PAGE_LABELS[route] || route}
+                        </Link>
+                      </span>
+                    )
+                  })}
+                </div>
+              )}
             </div>
-            <div className="fig-lightbox-caption" onClick={e => e.stopPropagation()} style={{ textAlign: 'left' }}>
-              <div style={{ fontWeight: 600, marginBottom: '0.35rem', fontSize: '0.9rem' }}>
-                {selected.label}
-                <span style={{ fontWeight: 400, opacity: 0.7, marginLeft: '0.5rem' }}>
-                  — {selected.doc} p.{selected.page}
+            <div className="fig-lightbox-foot" onClick={e => e.stopPropagation()}>
+              <span className="fig-lightbox-filename">
+                {selected.public_path.split('/').pop()}
+              </span>
+              {selected.tags && selected.tags.length > 0 && (
+                <span style={{ marginLeft: '1rem' }}>
+                  {selected.tags.map(t => (
+                    <span
+                      key={t}
+                      className="fig-tag"
+                      onClick={(e) => { e.stopPropagation(); setTagFilter(t); setSelected(null) }}
+                      style={{ display: 'inline-block', borderRadius: '0.25rem', padding: '0.1rem 0.4rem', marginRight: '0.3rem', fontSize: '0.7rem', cursor: 'pointer' }}
+                    >{t}</span>
+                  ))}
                 </span>
-              </div>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem 1.5rem', fontSize: '0.8rem', opacity: 0.85 }}>
-                <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', opacity: 0.7 }}>{selected.id}</span>
-                {(selected.tags && selected.tags.length > 0) && (
-                  <span>
-                    <span style={{ opacity: 0.7, marginRight: '0.35rem' }}>Tags:</span>
-                    {selected.tags.map(t => (
-                      <span
-                        key={t}
-                        className="fig-tag"
-                        onClick={(e) => { e.stopPropagation(); setTagFilter(t); setSelected(null) }}
-                        style={{ display: 'inline-block', borderRadius: '0.25rem', padding: '0.1rem 0.4rem', marginRight: '0.3rem', fontSize: '0.75rem', cursor: 'pointer' }}
-                      >{t}</span>
-                    ))}
-                  </span>
-                )}
-                {(selected.used_in && selected.used_in.length > 0) && (
-                  <span>
-                    <span style={{ opacity: 0.7, marginRight: '0.35rem' }}>Wiki-pagina:</span>
-                    {selected.used_in.map((u, i) => {
-                      const route = usedInToRoute(u)
-                      if (!route) return null
-                      return (
-                        <span key={u}>
-                          {i > 0 && ', '}
-                          <Link href={route} className="fig-link" onClick={() => setSelected(null)}>
-                            {PAGE_LABELS[route] || route}
-                          </Link>
-                        </span>
-                      )
-                    })}
-                  </span>
-                )}
-              </div>
+              )}
             </div>
           </div>
         )

@@ -197,14 +197,20 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
               >✕</button>
             </div>
           </div>
+          {(view.caption || view.page) && (
+            <div className="fig-lightbox-head" onClick={e => e.stopPropagation()}>
+              {view.caption && <div className="fig-lightbox-title">{view.caption}</div>}
+              {view.page && <div className="fig-lightbox-subline">{view.docLabel} p.{view.page}</div>}
+            </div>
+          )}
           <div className="fig-lightbox-body">
             <img src={view.src} alt={view.alt} className="fig-lightbox-img" />
           </div>
-          {view.caption && (
-            <div className="fig-lightbox-caption">
-              {view.caption}{view.page ? ` — ${view.docLabel} p.${view.page}` : ''}
-            </div>
-          )}
+          <div className="fig-lightbox-foot" onClick={e => e.stopPropagation()}>
+            <span className="fig-lightbox-filename">
+              {view.src.split('/').pop()}
+            </span>
+          </div>
         </div>
       )}
     </>
