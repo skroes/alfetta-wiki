@@ -64,6 +64,14 @@ Nederlandstalige wiki gebaseerd op originele Alfa Romeo fabriek-workshop-handboe
 - [Stuurkolom + deelbewerkingen](https://alfetta-wiki.vercel.app/besturing/stuurkolom-en-deelbewerkingen): Demontage, revisie en hermontage van de Alfetta 2.0 stuurkolom (inclusief stuurkolom-tube, bussen, universele koppeling, stuurkolomslot) plus deelbewerkingen aan stuurhuis en stuurstangen (flexibele koppeling, tie rod kogelgewrichten, stofhoezen, tie rods losmaken) met A.3.0451, A.3.0402, A.3.0501/A.3.0492, A.3.0383, A.3.0493, A.5.0202. DOC-03 p75-82.
 - [Besturing specificaties](https://alfetta-wiki.vercel.app/besturing/specificaties): Speciaal gereedschap, aandraaimomenten en smeermiddelen voor de ZF-stuurinrichting van de Alfetta 2.0: bevestigingsbouten speling-instelplaat en pignon-speling 1,5 kgm, moer stuurstang aan tandheugel 4,2 kgm, vet voor ZF-stuurhuis BP ENERGREASE HT-EP-00 90 g. DOC-03 p82-85.
 
+## Remmen
+
+- [Voorremmen](https://alfetta-wiki.vercel.app/remmen/voorremmen): Voorremmen Alfetta 2.0: schijfremmen met zelf-afstellende klauwen, remblokken nieuw 15 mm / minimum 7 mm, schijf na bewerking minimaal 10 mm, klauwbouten 7,5–8,5 kg·m, toevoerleiding 0,8–1,0 kg·m. Gereedschap A.2.0147, A.2.0149, A.2.0355. DOC-03 p87–90.
+- [Achterremmen](https://alfetta-wiki.vercel.app/remmen/achterremmen): Achterremmen Alfetta 2.0: remblokken eruit via borgveren, schijf-minimum 9 mm na draaien (nieuw 15 mm, versleten 7 mm), end-float 0,1-0,15 mm met tools A.5.0194 en A.5.0201. DOC-03 p91-94.
+- [Rembekrachtiger + leidingen + ontluchten](https://alfetta-wiki.vercel.app/remmen/bediening-hydraulisch): Hydraulisch remsysteem Alfetta 2.0: rembekrachtiger en pedaalbok demonteren/hermonteren (schroef 1,2–1,5 kg.m, push-rod 99,5 mm, slave-slag 10,6–12,2 mm), remleidingen voor/achter vervangen (unions 0,8–1 kg.m, De Dion-dwarsbalk 4–4,5 kg.m) en conventioneel/R.2.0105 ontluchten met ALFA ROMEO Standard 3881-69905. DOC-03 p95-102.
+- [Handrem revisie](https://alfetta-wiki.vercel.app/remmen/handrem): Handrem-samenstel reviseren op de Alfetta 2.0: kabel losmaken van achterremklauwen, uitlaat-voorstuk demonteren voor toegang, handremhendel uitbouwen via console, en hermonteren met kabelafstelling volgens p92. DOC-03 p103-107.
+- [Remmen specificaties](https://alfetta-wiki.vercel.app/remmen/specificaties): Speciaal gereedschap voor het remsysteem van de Alfetta 2.0 uit de divider-pagina 'Tools / Tightening Torques / Lubricants Fluids and Sealants': expander, tangen, meetgereedschap, sleutels en ontluchtingspomp R.2.0105. DOC-03 p108-109.
+
 ## Specificaties
 
 - [Motor-specificaties 2000](https://alfetta-wiki.vercel.app/specificaties/motor-specificaties-2000): Motor-specificaties Alfetta 2.0L: 1962 cc viercilinder, boring/slag 84×88,5 mm, compressie 9:1, 130 HP / 96 kW DIN bij 5400 rpm, 178 Nm bij 4400 rpm.

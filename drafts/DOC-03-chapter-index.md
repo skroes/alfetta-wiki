@@ -44,18 +44,12 @@ Pagina-nummers verwijzen naar **staging-pagina's** (scan-volgorde), niet naar pr
 | &nbsp;&nbsp;• Stuurhuis hermonteren + terugplaatsen | 72-75 | `besturing/stuurhuis-hermonteren-terugplaatsen` | ✅ Live |
 | &nbsp;&nbsp;• Stuurkolom + deelbewerkingen | 75-82 | `besturing/stuurkolom-en-deelbewerkingen` | ✅ Live |
 | &nbsp;&nbsp;• Tools + torques + lubricants | 82-85 | `besturing/specificaties` | ✅ Live |
-| **6. Braking system** | 87-109 | 7-9 wiki-pagina's | ⏳ |
-| &nbsp;&nbsp;• Voorremmen demonteren | 88 | `remmen/voorremmen-demonteren` | ⏳ |
-| &nbsp;&nbsp;• Voorremmen tests | 89 | `remmen/voorremmen-tests` | ⏳ |
-| &nbsp;&nbsp;• Voorremmen monteren | 90 | `remmen/voorremmen-monteren` | ⏳ |
-| &nbsp;&nbsp;• Achterremmen demonteren | 91 | `remmen/achterremmen-demonteren` | ⏳ |
-| &nbsp;&nbsp;• Achterremmen tests | 92 | `remmen/achterremmen-tests` | ⏳ |
-| &nbsp;&nbsp;• Achterremmen monteren | 93-94 | `remmen/achterremmen-monteren` | ⏳ |
-| &nbsp;&nbsp;• Rembekrachtiger (servo) | 95-97 | `remmen/rembekrachtiger` | ⏳ |
-| &nbsp;&nbsp;• Remleidingen | 98-101 | `remmen/remleidingen` | ⏳ |
-| &nbsp;&nbsp;• Remsysteem ontluchten | 102 | `remmen/remsysteem-ontluchten` | ⏳ |
-| &nbsp;&nbsp;• Handrem revisie | 103-107 | `remmen/handrem-revisie` | ⏳ |
-| &nbsp;&nbsp;• Tools + torques + lubricants | 108-109 | `remmen/rem-specificaties` | ⏳ specs |
+| **6. Braking system** | 87-109 | 5 wiki-pagina's | ✅ Live |
+| &nbsp;&nbsp;• Voorremmen demonteren + tests + monteren | 87-90 | `remmen/voorremmen` | ✅ Live |
+| &nbsp;&nbsp;• Achterremmen demonteren + tests + monteren | 91-94 | `remmen/achterremmen` | ✅ Live |
+| &nbsp;&nbsp;• Rembekrachtiger + leidingen + ontluchten | 95-102 | `remmen/bediening-hydraulisch` | ✅ Live |
+| &nbsp;&nbsp;• Handrem revisie | 103-107 | `remmen/handrem` | ✅ Live |
+| &nbsp;&nbsp;• Tools + torques + lubricants | 108-109 | `remmen/specificaties` | ✅ Live (torques/lubes OCR-incompleet) |
 
 **Totaal geschat:** 30-38 wiki-pagina's uit DOC-03.
 

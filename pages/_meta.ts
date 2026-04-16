@@ -4,6 +4,7 @@ export default {
   transmissie: 'Transmissie',
   onderstel: 'Onderstel',
   besturing: 'Besturing',
+  remmen: 'Remmen',
   specificaties: 'Specificaties',
   eigenaar: 'Eigenaar',
   bronnen: 'Bronnen',
