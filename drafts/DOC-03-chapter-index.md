@@ -13,15 +13,10 @@ Pagina-nummers verwijzen naar **staging-pagina's** (scan-volgorde), niet naar pr
 | Hoofdstuk | Staging p. | Beoogde wiki-pagina's | Status |
 |-----------|------------|------------------------|--------|
 | **0. Workshop standards** | 3-5 | Geen wiki-pagina (generieke intro) | ⏭️ Skip |
-| **1. Transmission** | 4-21 | 5-6 wiki-pagina's | ⏳ |
-| &nbsp;&nbsp;• Propeller shaft verwijderen | 6-7 | `transmissie/cardanas-verwijderen` | ⏳ |
-| &nbsp;&nbsp;• Propeller shaft demonteren | 8-11 | `transmissie/cardanas-demonteren` | ⏳ |
-| &nbsp;&nbsp;• Propeller shaft hermonteren | 12 | `transmissie/cardanas-hermonteren` | ⏳ |
-| &nbsp;&nbsp;• Propeller shaft terugplaatsen | 13-14 | `transmissie/cardanas-terugplaatsen` | ⏳ |
-| &nbsp;&nbsp;• Half shafts revisie | 15-17 | `transmissie/aandrijfassen-revisie` | ⏳ |
-| &nbsp;&nbsp;• Tools (transmissie) | 18-20 | Niet apart — inline in procedures | ⏭️ |
-| &nbsp;&nbsp;• Tightening torques | 21-23 | `transmissie/aandraaimomenten-transmissie` | ⏳ specs |
-| &nbsp;&nbsp;• Lubricants & sealants | 23-24 | `transmissie/smeermiddelen-transmissie` | ⏳ specs |
+| **1. Transmission (aandrijflijn)** | 4-24 | 3 wiki-pagina's | ✅ Live |
+| &nbsp;&nbsp;• Cardanas revisie (verwijderen + demonteren + hermonteren + terugplaatsen + koppel-controle) | 6-16 | `transmissie/cardanas-revisie` | ✅ Live |
+| &nbsp;&nbsp;• Aandrijfassen revisie (CV-joint hoezen) | 17-18 | `transmissie/aandrijfassen-revisie` | ✅ Live |
+| &nbsp;&nbsp;• Aandrijflijn specificaties (tools + torques + smeer) | 18-24 | `transmissie/aandrijflijn-specificaties` | ✅ Live |
 | **2. Front suspension** | 25-41 | 5-7 wiki-pagina's | ⏳ |
 | &nbsp;&nbsp;• Overview (overhaul componenten) | 25 | `onderstel/voorwielophanging-overview` | ⏳ |
 | &nbsp;&nbsp;• Verwijderen | 26-27 | `onderstel/voorwielophanging-verwijderen` | ✅ Live |
