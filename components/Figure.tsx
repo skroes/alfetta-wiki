@@ -212,9 +212,9 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
               >✕</button>
             </div>
           </div>
-          <div className="fig-lightbox-body">
+          <div className="fig-lightbox-body" onClick={e => e.stopPropagation()}>
             {view.caption && (
-              <div className="fig-lightbox-title" onClick={e => e.stopPropagation()}>
+              <div className="fig-lightbox-title">
                 {view.caption}
               </div>
             )}
@@ -224,6 +224,10 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
               className="fig-lightbox-img"
               onClick={e => {
                 e.stopPropagation()
+                const rect = e.currentTarget.getBoundingClientRect()
+                const x = ((e.clientX - rect.left) / rect.width) * 100
+                const y = ((e.clientY - rect.top) / rect.height) * 100
+                setZoomOrigin(`${x}% ${y}%`)
                 setZoomLevel(lvl => (lvl + 1) % 3)
               }}
               onMouseMove={e => {

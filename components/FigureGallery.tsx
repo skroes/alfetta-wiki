@@ -403,8 +403,8 @@ export default function FigureGallery() {
                 >&times;</button>
               </div>
             </div>
-            <div className="fig-lightbox-body">
-              <div className="fig-lightbox-title" onClick={e => e.stopPropagation()}>
+            <div className="fig-lightbox-body" onClick={e => e.stopPropagation()}>
+              <div className="fig-lightbox-title">
                 {selected.label}
               </div>
               <img
@@ -413,6 +413,10 @@ export default function FigureGallery() {
                 className="fig-lightbox-img"
                 onClick={e => {
                   e.stopPropagation()
+                  const rect = e.currentTarget.getBoundingClientRect()
+                  const x = ((e.clientX - rect.left) / rect.width) * 100
+                  const y = ((e.clientY - rect.top) / rect.height) * 100
+                  setZoomOrigin(`${x}% ${y}%`)
                   setZoomLevel(lvl => (lvl + 1) % 3)
                 }}
                 onMouseMove={e => {
