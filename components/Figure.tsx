@@ -31,6 +31,8 @@ type LightboxView = {
   page?: number
   docLabel: string
   alt: string
+  idx: number
+  total: number
 }
 
 export default function Figure({ src, caption, alt, page, doc, float, size = 'md' }: FigureProps) {
@@ -47,7 +49,19 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
   const open = view !== null
 
   const openLightbox = () => {
-    setView({ src: imgSrc, caption: caption || '', page, docLabel, alt: displayAlt })
+    const anchors = Array.from(
+      document.querySelectorAll<HTMLAnchorElement>('a.fig-inline-thumb')
+    )
+    const idx = anchors.findIndex(a => a.getAttribute('href') === imgSrc)
+    setView({
+      src: imgSrc,
+      caption: caption || '',
+      page,
+      docLabel,
+      alt: displayAlt,
+      idx: idx >= 0 ? idx : 0,
+      total: anchors.length || 1,
+    })
   }
 
   // Navigeer naar prev/next inline-figure in DOM-volgorde. Gebruikt door zowel
@@ -76,6 +90,8 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
       page: Number.isFinite(nextPage) ? nextPage : undefined,
       docLabel: nextDoc,
       alt: nextAlt,
+      idx: nextIdx,
+      total: anchors.length,
     })
     return true
   }
@@ -150,21 +166,25 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
             className="fig-lightbox-toolbar"
             onClick={e => e.stopPropagation()}
           >
-            {/* Linker zone — leeg, spacer zodat ← → centraal uitkomen */}
-            <div style={{ flex: 1 }} />
+            {/* Linker zone — counter "N / totaal" */}
+            <div style={{ flex: 1, color: 'white', opacity: 0.65, fontSize: '0.85rem', fontVariantNumeric: 'tabular-nums' }}>
+              {view.idx + 1} / {view.total}
+            </div>
             {/* Centrale zone — pijltjes */}
             <div style={{ display: 'flex', gap: '0.5rem' }}>
               <button
                 type="button"
                 aria-label="Vorige figuur"
                 onClick={() => navigate('prev')}
-                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer', padding: '0.25rem 0.75rem', lineHeight: 1 }}
+                disabled={view.idx === 0}
+                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: view.idx === 0 ? 'default' : 'pointer', padding: '0.25rem 0.75rem', lineHeight: 1, opacity: view.idx === 0 ? 0.3 : 0.9 }}
               >←</button>
               <button
                 type="button"
                 aria-label="Volgende figuur"
                 onClick={() => navigate('next')}
-                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer', padding: '0.25rem 0.75rem', lineHeight: 1 }}
+                disabled={view.idx >= view.total - 1}
+                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: view.idx >= view.total - 1 ? 'default' : 'pointer', padding: '0.25rem 0.75rem', lineHeight: 1, opacity: view.idx >= view.total - 1 ? 0.3 : 0.9 }}
               >→</button>
             </div>
             {/* Rechter zone — ✕ */}
@@ -173,7 +193,7 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
                 type="button"
                 aria-label="Sluiten"
                 onClick={() => setView(null)}
-                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer', padding: '0.25rem 0.75rem', lineHeight: 1 }}
+                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer', padding: '0.25rem 0.75rem', lineHeight: 1, opacity: 0.7 }}
               >✕</button>
             </div>
           </div>

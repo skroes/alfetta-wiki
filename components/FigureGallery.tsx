@@ -342,117 +342,99 @@ export default function FigureGallery() {
         </div>
       )}
 
-      {/* Lightbox */}
-      {selected && (
-        <div
-          onClick={() => setSelected(null)}
-          className="fig-lightbox-overlay"
-          style={{
-            position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.75)', zIndex: 50,
-            display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem',
-          }}
-        >
-          <div
-            className="fig-lightbox-panel"
-            onClick={e => e.stopPropagation()}
-            style={{
-              borderRadius: '0.75rem',
-              maxWidth: '800px', width: '100%', maxHeight: '90vh', overflow: 'auto',
-              padding: '1.5rem',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
-            }}
-          >
-            {(() => {
-              const idx = filtered.findIndex(f => f.id === selected.id)
-              const hasPrev = idx > 0
-              const hasNext = idx >= 0 && idx < filtered.length - 1
-              const navBtn: React.CSSProperties = {
-                background: 'none', border: 'none', fontSize: '1.5rem',
-                lineHeight: 1, color: 'inherit', padding: '0.25rem 0.75rem',
-              }
-              return (
-                <>
-                  {/* Topbar: linker spacer / ← counter → centraal / ✕ rechts */}
-                  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0.75rem' }}>
-                    <div style={{ flex: 1 }} />
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <button
-                        type="button"
-                        aria-label="Vorige figuur"
-                        onClick={() => { if (hasPrev) setSelected(filtered[idx - 1]) }}
-                        disabled={!hasPrev}
-                        style={{ ...navBtn, opacity: hasPrev ? 0.85 : 0.25, cursor: hasPrev ? 'pointer' : 'default' }}
-                      >←</button>
-                      <span style={{ opacity: 0.55, fontSize: '0.85rem', fontVariantNumeric: 'tabular-nums' }}>
-                        {idx + 1} / {filtered.length}
-                      </span>
-                      <button
-                        type="button"
-                        aria-label="Volgende figuur"
-                        onClick={() => { if (hasNext) setSelected(filtered[idx + 1]) }}
-                        disabled={!hasNext}
-                        style={{ ...navBtn, opacity: hasNext ? 0.85 : 0.25, cursor: hasNext ? 'pointer' : 'default' }}
-                      >→</button>
-                    </div>
-                    <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
-                      <button
-                        type="button"
-                        aria-label="Sluiten"
-                        onClick={() => setSelected(null)}
-                        style={{ ...navBtn, opacity: 0.6, cursor: 'pointer' }}
-                      >&times;</button>
-                    </div>
-                  </div>
-                  {/* Titel onder de topbar — mag wrappen, niet in de weg */}
-                  <h3 style={{ margin: '0 0 1rem 0', fontSize: '1.05rem', lineHeight: 1.3 }}>
-                    {selected.label}
-                  </h3>
-                </>
-              )
-            })()}
-            <img
-              src={selected.public_path}
-              alt={selected.label}
-              style={{ width: '100%', borderRadius: '0.375rem', marginBottom: '1rem' }}
-            />
-            <table style={{ fontSize: '0.85rem', width: '100%', borderCollapse: 'collapse' }}>
-              <tbody>
-                <tr>
-                  <td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>Bron</td>
-                  <td>{selected.doc} &mdash; pagina {selected.page}</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>ID</td>
-                  <td style={{ fontFamily: 'monospace', fontSize: '0.8rem' }}>{selected.id}</td>
-                </tr>
+      {/* Lightbox — fullscreen: toolbar (← counter → ✕) bovenin, image in body,
+          meta-footer onderin. Zelfde layout-patroon als inline Figure-lightbox
+          voor visuele consistentie. Klik op bg sluit, klik op toolbar/body/footer
+          niet (stopPropagation) behalve op expliciete sluit-triggers. */}
+      {selected && (() => {
+        const idx = filtered.findIndex(f => f.id === selected.id)
+        const hasPrev = idx > 0
+        const hasNext = idx >= 0 && idx < filtered.length - 1
+        const navBtn: React.CSSProperties = {
+          background: 'none', border: 'none', fontSize: '1.5rem',
+          lineHeight: 1, color: 'white', padding: '0.25rem 0.75rem',
+        }
+        return (
+          <div className="fig-lightbox-bg" onClick={() => setSelected(null)}>
+            <div className="fig-lightbox-toolbar" onClick={e => e.stopPropagation()}>
+              {/* Linker zone — counter "N / totaal" */}
+              <div style={{ flex: 1, color: 'white', opacity: 0.65, fontSize: '0.85rem', fontVariantNumeric: 'tabular-nums' }}>
+                {idx + 1} / {filtered.length}
+              </div>
+              {/* Centrale zone — pijltjes */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <button
+                  type="button"
+                  aria-label="Vorige figuur"
+                  onClick={() => { if (hasPrev) setSelected(filtered[idx - 1]) }}
+                  disabled={!hasPrev}
+                  style={{ ...navBtn, opacity: hasPrev ? 0.9 : 0.3, cursor: hasPrev ? 'pointer' : 'default' }}
+                >←</button>
+                <button
+                  type="button"
+                  aria-label="Volgende figuur"
+                  onClick={() => { if (hasNext) setSelected(filtered[idx + 1]) }}
+                  disabled={!hasNext}
+                  style={{ ...navBtn, opacity: hasNext ? 0.9 : 0.3, cursor: hasNext ? 'pointer' : 'default' }}
+                >→</button>
+              </div>
+              {/* Rechter zone — ✕ */}
+              <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+                <button
+                  type="button"
+                  aria-label="Sluiten"
+                  onClick={() => setSelected(null)}
+                  style={{ ...navBtn, opacity: 0.7, cursor: 'pointer' }}
+                >&times;</button>
+              </div>
+            </div>
+            <div className="fig-lightbox-body">
+              <img src={selected.public_path} alt={selected.label} className="fig-lightbox-img" />
+            </div>
+            <div className="fig-lightbox-caption" onClick={e => e.stopPropagation()} style={{ textAlign: 'left' }}>
+              <div style={{ fontWeight: 600, marginBottom: '0.35rem', fontSize: '0.9rem' }}>
+                {selected.label}
+                <span style={{ fontWeight: 400, opacity: 0.7, marginLeft: '0.5rem' }}>
+                  — {selected.doc} p.{selected.page}
+                </span>
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem 1.5rem', fontSize: '0.8rem', opacity: 0.85 }}>
+                <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', opacity: 0.7 }}>{selected.id}</span>
                 {(selected.tags && selected.tags.length > 0) && (
-                  <tr>
-                    <td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>Tags</td>
-                    <td>{selected.tags.map(t => <span key={t} className="fig-tag" onClick={(e) => { e.stopPropagation(); setTagFilter(t); setSelected(null) }} style={{ display: 'inline-block', borderRadius: '0.25rem', padding: '0.1rem 0.4rem', marginRight: '0.3rem', fontSize: '0.75rem', cursor: 'pointer' }}>{t}</span>)}</td>
-                  </tr>
+                  <span>
+                    <span style={{ opacity: 0.7, marginRight: '0.35rem' }}>Tags:</span>
+                    {selected.tags.map(t => (
+                      <span
+                        key={t}
+                        className="fig-tag"
+                        onClick={(e) => { e.stopPropagation(); setTagFilter(t); setSelected(null) }}
+                        style={{ display: 'inline-block', borderRadius: '0.25rem', padding: '0.1rem 0.4rem', marginRight: '0.3rem', fontSize: '0.75rem', cursor: 'pointer' }}
+                      >{t}</span>
+                    ))}
+                  </span>
                 )}
                 {(selected.used_in && selected.used_in.length > 0) && (
-                  <tr>
-                    <td style={{ padding: '0.25rem 0.5rem 0.25rem 0', fontWeight: 600, whiteSpace: 'nowrap' }}>Wiki-pagina</td>
-                    <td>
-                      {selected.used_in.map((u, i) => {
-                        const route = usedInToRoute(u)
-                        if (!route) return null
-                        return (
-                          <span key={u}>
-                            {i > 0 && ', '}
-                            <Link href={route} className="fig-link" onClick={() => setSelected(null)}>{PAGE_LABELS[route] || route}</Link>
-                          </span>
-                        )
-                      })}
-                    </td>
-                  </tr>
+                  <span>
+                    <span style={{ opacity: 0.7, marginRight: '0.35rem' }}>Wiki-pagina:</span>
+                    {selected.used_in.map((u, i) => {
+                      const route = usedInToRoute(u)
+                      if (!route) return null
+                      return (
+                        <span key={u}>
+                          {i > 0 && ', '}
+                          <Link href={route} className="fig-link" onClick={() => setSelected(null)}>
+                            {PAGE_LABELS[route] || route}
+                          </Link>
+                        </span>
+                      )
+                    })}
+                  </span>
                 )}
-              </tbody>
-            </table>
+              </div>
+            </div>
           </div>
-        </div>
-      )}
+        )
+      })()}
     </div>
   )
 }
