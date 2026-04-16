@@ -50,6 +50,36 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
     setView({ src: imgSrc, caption: caption || '', page, docLabel, alt: displayAlt })
   }
 
+  // Navigeer naar prev/next inline-figure in DOM-volgorde. Gebruikt door zowel
+  // keyboard-handler als topbar-knoppen. Geeft boolean terug of navigatie lukte.
+  const navigate = (dir: 'prev' | 'next'): boolean => {
+    if (!view) return false
+    const anchors = Array.from(
+      document.querySelectorAll<HTMLAnchorElement>('a.fig-inline-thumb')
+    )
+    if (!anchors.length) return false
+    const idx = anchors.findIndex(a => a.getAttribute('href') === view.src)
+    if (idx < 0) return false
+    const nextIdx = dir === 'next'
+      ? Math.min(idx + 1, anchors.length - 1)
+      : Math.max(idx - 1, 0)
+    if (nextIdx === idx) return false
+    const a = anchors[nextIdx]
+    const nextSrc = a.getAttribute('href') || ''
+    const nextCaption = a.getAttribute('data-caption') || ''
+    const nextPage = parseInt(a.getAttribute('data-page') || '', 10)
+    const nextDoc = a.getAttribute('data-doc') || docLabel
+    const nextAlt = a.getAttribute('data-alt') || nextCaption || nextSrc
+    setView({
+      src: nextSrc,
+      caption: nextCaption,
+      page: Number.isFinite(nextPage) ? nextPage : undefined,
+      docLabel: nextDoc,
+      alt: nextAlt,
+    })
+    return true
+  }
+
   useEffect(() => {
     if (!view) return
     const handler = (e: KeyboardEvent) => {
@@ -57,36 +87,15 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
         setView(null)
         return
       }
-      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return
-      // Alle inline-figures op de huidige pagina in DOM-volgorde.
-      const anchors = Array.from(
-        document.querySelectorAll<HTMLAnchorElement>('a.fig-inline-thumb')
-      )
-      if (!anchors.length) return
-      const currentHref = view.src
-      const idx = anchors.findIndex(a => a.getAttribute('href') === currentHref)
-      if (idx < 0) return
-      const nextIdx = e.key === 'ArrowRight'
-        ? Math.min(idx + 1, anchors.length - 1)
-        : Math.max(idx - 1, 0)
-      if (nextIdx === idx) return
-      const a = anchors[nextIdx]
-      const nextSrc = a.getAttribute('href') || ''
-      const nextCaption = a.getAttribute('data-caption') || ''
-      const nextPage = parseInt(a.getAttribute('data-page') || '', 10)
-      const nextDoc = a.getAttribute('data-doc') || docLabel
-      const nextAlt = a.getAttribute('data-alt') || nextCaption || nextSrc
-      setView({
-        src: nextSrc,
-        caption: nextCaption,
-        page: Number.isFinite(nextPage) ? nextPage : undefined,
-        docLabel: nextDoc,
-        alt: nextAlt,
-      })
-      e.preventDefault()
+      if (e.key === 'ArrowLeft') {
+        if (navigate('prev')) e.preventDefault()
+      } else if (e.key === 'ArrowRight') {
+        if (navigate('next')) e.preventDefault()
+      }
     }
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [view, docLabel])
 
   const floatStyle = float ? {
@@ -131,9 +140,72 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
         )}
       </figure>
 
-      {/* Lightbox — ArrowLeft/Right navigeert door alle inline figures op deze pagina, Escape sluit */}
+      {/* Lightbox — ArrowLeft/Right of topbar-knoppen navigeren door alle inline
+          figures op deze pagina, Escape sluit. Klik op achtergrond sluit ook. */}
       {view && (
         <div className="fig-lightbox-bg" onClick={() => setView(null)}>
+          <div
+            className="fig-lightbox-toolbar"
+            onClick={e => e.stopPropagation()}
+            style={{
+              position: 'fixed',
+              top: 0, left: 0, right: 0,
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              padding: '0.75rem 1rem',
+              background: 'rgba(0,0,0,0.45)',
+              zIndex: 10,
+            }}
+          >
+            <button
+              type="button"
+              aria-label="Vorige figuur"
+              onClick={() => navigate('prev')}
+              className="fig-lightbox-nav"
+              style={{
+                background: 'none',
+                border: 'none',
+                color: 'white',
+                fontSize: '1.5rem',
+                cursor: 'pointer',
+                padding: '0.25rem 0.75rem',
+                lineHeight: 1,
+              }}
+            >←</button>
+            <div style={{ display: 'flex', gap: '0.25rem' }}>
+              <button
+                type="button"
+                aria-label="Volgende figuur"
+                onClick={() => navigate('next')}
+                className="fig-lightbox-nav"
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'white',
+                  fontSize: '1.5rem',
+                  cursor: 'pointer',
+                  padding: '0.25rem 0.75rem',
+                  lineHeight: 1,
+                }}
+              >→</button>
+              <button
+                type="button"
+                aria-label="Sluiten"
+                onClick={() => setView(null)}
+                className="fig-lightbox-nav"
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'white',
+                  fontSize: '1.5rem',
+                  cursor: 'pointer',
+                  padding: '0.25rem 0.75rem',
+                  lineHeight: 1,
+                }}
+              >✕</button>
+            </div>
+          </div>
           <img src={view.src} alt={view.alt} className="fig-lightbox-img" />
           {view.caption && (
             <div className="fig-lightbox-caption">
