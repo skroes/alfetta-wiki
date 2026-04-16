@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import Link from 'next/link'
 import doc04Data from '../public/figures/doc-04/figures-index.json'
 import doc03Data from '../public/figures/doc-03/figures-index.json'
@@ -201,6 +201,31 @@ export default function FigureGallery() {
       return true
     })
   }, [figures, search, tagFilter, pageFilter])
+
+  // Keyboard-navigatie in de lightbox: ArrowLeft/Right bladert door `filtered`,
+  // Escape sluit. Respecteert de actueel-gefilterde lijst — dus als een gebruiker
+  // op een tag of pagina gefilterd heeft, bladert hij alleen binnen die subset.
+  useEffect(() => {
+    if (!selected) return
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setSelected(null)
+        return
+      }
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return
+      const idx = filtered.findIndex(f => f.id === selected.id)
+      if (idx < 0) return
+      const nextIdx = e.key === 'ArrowRight'
+        ? Math.min(idx + 1, filtered.length - 1)
+        : Math.max(idx - 1, 0)
+      if (nextIdx !== idx) {
+        setSelected(filtered[nextIdx])
+        e.preventDefault()
+      }
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [selected, filtered])
 
   const inputStyle = {
     padding: '0.5rem 0.75rem',
