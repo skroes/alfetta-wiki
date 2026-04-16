@@ -1,0 +1,97 @@
+---
+title: "Bougies inspecteren & diagnostiek — Alfetta 2.0"
+description: "Bougies aflezen als diagnostisch venster op de motor: 6 condities (normaal, carbon fouling, oil fouling, oververhitting, electrode-schade, split core nose) met oorzaak en remedie. Plus gap meten en afstellen. Uit Haynes (aftermarket)."
+status: draft
+source:
+  doc: DOC-01
+  title: "Haynes Alfa Romeo Alfetta Owners Workshop Manual (Strasman, 1982)"
+  pages: [80, 81]
+  archive_url: https://drive.google.com/file/d/1LCAu1zxJIC5Fig0MHnkrS_eAycXV_kG6/view
+  language: en
+  type: aftermarket
+tags: [onderhoud, bougies, ontsteking, diagnostiek]
+drafted_on: 2026-04-16
+drafted_by: "walking-skeleton DOC-01 (staging/DOC-01/pages/080-081.md)"
+---
+
+import { SourceRef, Cite } from '../../components/SourceRef'
+import PageScan from '../../components/PageScan'
+import Figure from '../../components/Figure'
+
+# Bougies inspecteren & diagnostiek
+
+> **TL;DR** — Je bougies zijn een diagnostisch venster op de motor. Haal ze eruit en bekijk de kleur en afzetting: **normaal** (grijsbruin) = motor gezond. **Carbon fouling** (droog zwart roet) = te rijk mengsel → check carburateur. **Oil fouling** (natte olie) = versleten cilinderwand/zuigerveren of klepgeleiders. **Oververhitting** (wit geglazuurd) = verkeerde bougie-waarde of timing. **Electrode-schade** (elektroden weggebrand) = pre-ignition — direct stoppen vóór zuigerschade. **Split core nose** (gebarsten isolator) = pre-ignition of verkeerde gap-techniek. <Cite p="81" />
+
+Bougies schroef je er eenvoudig uit en vertellen je meer over de conditie van je motor dan een compressietest in veel gevallen. Routineer dit bij elke service: eruit, kleur aflezen, gap meten, eventueel schoonmaken en afstellen, en terug.
+
+## Bougie-gap meten en afstellen
+
+<div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(220px, 260px)', gap: '1.5rem', alignItems: 'start', marginBottom: '1.25rem' }}>
+
+<div>
+
+**Meten** — Gebruik een voelermaat van de voorgeschreven dikte (zie [ontstekings-timing](/motor/ontstekings-timing) voor de Alfetta 2000-waarde). Schuif de bladmaat tussen middenelektrode en aarde-elektrode: je moet een *lichte weerstand* voelen. Geen weerstand = gap te wijd. Te veel weerstand = gap te nauw. <Cite p="81" />
+
+**Afstellen** — Buig de aarde-elektrode naar binnen of buiten tot de juiste afstand. Gebruik een bougie-setter of een specifieke buigtang. **Niet** de middenelektrode buigen — die breekt. <Cite p="81" />
+
+</div>
+
+<PageScan doc="DOC-01" page={81} size="md" />
+
+</div>
+
+## De zes condities herkennen
+
+| Conditie | Visueel | Oorzaak | Check / remedie |
+|---|---|---|---|
+| **Normaal** | Grijsbruine afzetting, licht bedekt core-nose | Gap neemt toe met ~0,025 mm per 1000 km. Motor is gezond | Gap meten, zo nodig afstellen. Bougie herbruikbaar |
+| **Carbon fouling** | Droge, zwarte, roetachtige afzetting | Te rijk mengsel → zwakke vonk, misfire | Carburateur-afstelling, vlotterniveau + sproeiers, choke-werking, luchtfilter reinigen. Bougie herbruikbaar na schoonmaken |
+| **Oil fouling** | Natte, olieachtige afzetting | Versleten cilinderwand/zuigerveren of klepgeleiders. Soms tijdelijk tijdens inlopen | Compressietest. Bougie herbruikbaar na grondige reiniging |
+| **Oververhitting** | Zeer witte core-nose, geglazuurde elektroden, weinig afzetting | Bougie-warmtebereik te heet voor gebruik, verkeerde timing, octaan te laag of mengsel te zwak | Plug-waarde controleren, timing, octaan, carburateur. Bougie **weggooien** — oorzaak direct verhelpen |
+| **Electrode-schade** | Elektroden opgebrand, core-nose verbrand en geglazuurd | Pre-ignition (zelfontsteking) | Zie oververhitting, maar ernstiger. **Direct stoppen** — stop vóór zuiger-/klepschade |
+| **Split core nose** | Gebarsten isolator (soms pas na reiniging zichtbaar) | Pre-ignition OF verkeerde gap-afstel-techniek | Timing, koelsysteem, octaan, mengsel. Bougie weggooien + fout verhelpen |
+
+<Cite p="81" />
+
+## Werkwijze
+
+1. Laat de motor **afkoelen** (bougies zijn gloeiend na rijden — je verbrandt je vingers en kunt draad beschadigen).
+2. Trek de bougiekabels één voor één los. Markeer cilindernummer 1–4 zodat je volgorde niet verwisselt bij terugplaatsen.
+3. Draai de bougies los met een bougiesleutel (21 mm of 16 mm afhankelijk van type — zie [technische specificaties](/motor/technische-specificaties)).
+4. Leg de bougies in volgorde 1–2–3–4. Zo zie je of één cilinder afwijkt van de andere drie (= lokaal probleem: injectie, klep, compressie) of dat alle vier gelijk afwijken (= systeem-probleem: mengsel, timing, kwaliteit brandstof).
+5. Lees elke bougie af tegen de conditie-tabel hierboven.
+6. Meet de gap met een voelermaat. Stel af of vervang.
+7. Breng bij terugplaatsen een **druppel anti-seize** op het schroefdraad — voorkomt vastbakken in de aluminium cilinderkop.
+8. Draai handvast, daarna met momentsleutel aan op **specificatie uit fabrieksdocumentatie** (zie `/motor/technische-specificaties`).
+
+## Cross-referentie naar fabrieksbronnen
+
+- **Bougie-type, gap, torque** voor Alfetta 2000 — [motor/technische-specificaties](/motor/technische-specificaties) (DOC-04)
+- **Ontstekings-timing** — [motor/ontstekings-timing](/motor/ontstekings-timing) (DOC-04)
+- **Contactpunten afstellen** — [motor/contactpunten-afstellen](/motor/contactpunten-afstellen) (DOC-04)
+
+De conditie-tabel hierboven is model-neutraal (Champion supplied voor alle Haynes-boeken). De Alfetta-specifieke bougie-waarden staan uitsluitend in de fabriekshandleidingen.
+
+<div style={{
+  marginTop: '2rem',
+  marginBottom: '0.5rem',
+  padding: '0.65rem 0.9rem',
+  background: 'rgba(202,138,4,0.09)',
+  borderLeft: '3px solid #ca8a04',
+  borderRadius: '4px',
+  fontSize: '0.88rem',
+}}>
+  <strong>Aftermarket bron.</strong> Deze pagina komt uit de <em>Haynes Owners Workshop Manual</em> —
+  een naslagboek van derden, geen fabriekshandleiding. De 6 bougie-condities zijn
+  door Champion Sparking Plug Company aangeleverd en gelden universeel voor benzinemotoren.
+  Alfetta-specifieke bougie-typen, gap en torque staan in de fabrieksdocumentatie —
+  zie [technische specificaties](/motor/technische-specificaties) (DOC-04).
+</div>
+
+<SourceRef
+  doc="DOC-01"
+  title="Haynes Alfa Romeo Alfetta Owners Workshop Manual (Strasman, 1982)"
+  pages={[80, 81]}
+  archive_url="https://drive.google.com/file/d/1LCAu1zxJIC5Fig0MHnkrS_eAycXV_kG6/view"
+  language="en"
+/>

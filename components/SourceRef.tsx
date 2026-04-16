@@ -15,6 +15,7 @@ type SourceProps = {
 
 /** Korte display-naam: "DOC-04" → "Alfetta Workshop Manual" */
 const DOC_DISPLAY: Record<string, string> = {
+  'DOC-01': 'Haynes Alfa Romeo Alfetta Owners Workshop Manual (aftermarket)',
   'DOC-03': 'Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes',
   'DOC-04': 'Alfetta Workshop Manual — Engine',
   'DOC-05': 'Alfetta Workshop Manual — Clutch/Gearbox/Differential',

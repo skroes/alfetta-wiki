@@ -6,6 +6,7 @@ export default {
   besturing: 'Besturing',
   remmen: 'Remmen',
   specificaties: 'Specificaties',
+  onderhoud: 'Onderhoud',
   eigenaar: 'Eigenaar',
   bronnen: 'Bronnen',
   figuren: 'Figuren',
