@@ -1,7 +1,7 @@
 ---
 title: "Fout-diagnose — Haynes symptoom-oorzaak tabellen"
 description: "Fault diagnosis uit Haynes: motor start niet, motor draait maar start niet, motor valt uit, motor overhit, lage oliedruk, motorgeluiden. Symptoom → mogelijke oorzaak → check. Aftermarket — gebruik samen met fabrieks-procedures."
-status: draft
+status: validated
 source:
   doc: DOC-01
   title: "Haynes Alfa Romeo Alfetta Owners Workshop Manual (Strasman, 1982)"
@@ -12,6 +12,9 @@ source:
 tags: [onderhoud, fout-diagnose, troubleshooting]
 drafted_on: 2026-04-16
 drafted_by: "walking-skeleton DOC-01 (staging/DOC-01/pages/019-022.md)"
+validated_date: 2026-04-17
+validated_by: "/alfettaspecialist"
+validated_note: "7 subsystemen letterlijk gevalideerd tegen p19-22. Fuel-injection items weggelaten (onze auto = carburateur-Berlina 1977). Chapter-nummer bron-typo p21 'Chapter 6' gecorrigeerd naar 'Chapter 4' (Ignition = Ch. 4 per TOC p5). Cross-ref stationair-toerental-co DOC-05/03 → DOC-04 gefixt."
 ---
 
 import { SourceRef, Cite } from '../../components/SourceRef'
@@ -225,6 +228,51 @@ De Haynes-tabellen zijn indicatief. Voor afstel-waarden, specificaties en proced
 - **Weber 40 DCOE** — [motor/weber-carburateur](/motor/weber-carburateur)
 - **Solex C 40 DDH-8** — [motor/solex-carburateur](/motor/solex-carburateur)
 - **Dellorto DHLA 40F** — [motor/dellorto-carburateur](/motor/dellorto-carburateur)
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| fault diagnosis | fout-diagnose / pech-onderweg | symptoom→oorzaak-analyse |
+| flat battery | lege accu | volledig ontladen |
+| jump leads | startkabels | hulp-startkabels tussen 2 accu's |
+| push start | aanduwen | motor aanslingeren door auto te duwen |
+| battery terminal | accupool | + en − aansluiting |
+| earth / ground | massa / aarde | retourcircuit naar accu-min |
+| engine earth strap | motor-massastrap | flexibele koperstrip motor→carrosserie |
+| starter motor | startmotor | 12V DC startmotor |
+| solenoid | magneetschakelaar | schakelt hoofdstroom naar startmotor |
+| flywheel gear teeth | vliegwielkrans / tandkrans | tanden waarop startpignon grijpt |
+| HT leads | hoogspanningskabels | bobine→verdeler + verdeler→bougies |
+| LT wires | laagspanningsdraden | primaire circuit bobine + contactpunten |
+| distributor cap | verdelerkap | bakeliet deksel met HT-uitgangen |
+| contact breaker points | contactpunten | mechanisch onderbrekersysteem |
+| ballast resistor | ballast-weerstand | reduceert bobine-primair bij draaiende motor |
+| coil (ignition) | bobine | transformator primair 12V → HT |
+| condenser | condensator | parallel aan contactpunten, vonkt-dempen |
+| carburettor jets | carburateur-sproeiers | doseren brandstof in inlaatlucht |
+| needle valve | naaldventiel | brandstoftoevoer in vlotterkamer |
+| fuel tank filler vent | tankdop-ontluchting | voorkomt vacuüm in tank |
+| no-charge warning light | laadlampje | rood, geeft dynamo-uitval of slappe riem aan |
+| thermostat | thermostaat | opent bij 81-85°C (Alfetta) |
+| electric cooling fan | elektrische koelventilator | voor radiateur |
+| pinking / pre-ignition | detonatie / zelfontsteking | mengsel klopt of ontsteekt te vroeg |
+| octane rating | octaangetal | RON-waarde brandstof |
+| vacuum hose | vacuümslang | naar rembekrachtiger, verdeler-advance |
+| head gasket | koppakking | tussen blok en cilinderkop |
+| valve clearances | klepspeling | |
+| timing chain | distributieketting | nokkenasaandrijving |
+| piston ring | zuigerveer | compressie- en olie-veren |
+| big-end bearings | drijfstanglagers | krukaszijde drijfstang |
+| main bearings | hoofdlagers | krukas-draagelementen in blok |
+| piston slap | zuiger-slag | klappergeluid koude cilinderwand |
+| oil pressure | oliedruk | |
+| sender unit | druksensor / sender-unit | elektrische sensor voor meter of lampje |
+| oil pick-up strainer | oliepomp-zeefje | filter vóór oliepomp |
+| oil pressure relief valve | oliedruk-overdrukventiel | begrenst maximum druk |
+| short-circuit | kortsluiting | draad naar massa → zekering springt |
+| open-circuit | onderbroken circuit | gebroken of losse draad |
+| test lamp | testlamp | 12V lampje voor spanning-check |
 
 <div style={{
   marginTop: '2rem',

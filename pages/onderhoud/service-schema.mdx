@@ -1,7 +1,7 @@
 ---
 title: "Service-schema & onderhoudsintervallen — Alfetta 2.0"
 description: "Haynes routine maintenance schema vertaald naar het Nederlands: wekelijkse checks, service-intervallen op 8.000 / 16.000 / 24.000 km en tweejaarlijkse taken. Plus de aanbevolen smeermiddelen en vloeistoffen per systeem. Uit Haynes (aftermarket)."
-status: draft
+status: validated
 source:
   doc: DOC-01
   title: "Haynes Alfa Romeo Alfetta Owners Workshop Manual (Strasman, 1982)"
@@ -12,6 +12,9 @@ source:
 tags: [onderhoud, service, onderhoudsschema]
 drafted_on: 2026-04-16
 drafted_by: "walking-skeleton DOC-01 (staging/DOC-01/pages/017-018.md)"
+validated_date: 2026-04-17
+validated_by: "/alfettaspecialist"
+validated_note: "Schema gevalideerd tegen p17-18 na visuele p18-scan check (dubbele kolom). 16k/24k interval-verdeling gecorrigeerd: bougies, luchtfilter, contactpunten, ontsteking, stationair+emissie, carburateur-sproeiers verplaatst van 24k naar 16k (waar ze in bron horen). 24k heeft nu correct 4 items. 'Eerste 1.000 km' → '1.600 km / 1.000 mijl' (unit-conversie). OCR-correctie FMV55 → FMVSS 116 genoteerd. US-spec/SPICA-injectie items expliciet uitgesloten voor EU carb-Berlina 1977."
 ---
 
 import { SourceRef, Cite } from '../../components/SourceRef'
@@ -138,6 +141,36 @@ Haynes geeft de **intervallen en taken**, maar Alfetta 2000-specifieke **waarden
 - **Aandraaimomenten per subsysteem** — zie de `*-specificaties`-pagina's per systeem ([remmen](/remmen/specificaties), [besturing](/besturing/specificaties), [voorwielophanging](/onderstel/voorwielophanging-specificaties), [achterwielophanging](/onderstel/achterwielophanging-specificaties), [aandrijflijn](/transmissie/aandrijflijn-specificaties))
 
 Het schema op deze pagina is het **raamwerk**; de getalsmatige invulling komt uit de fabrieksbronnen.
+
+## Jargon (EN → NL)
+
+| Engels | Nederlands | Context |
+|---|---|---|
+| routine maintenance | routine-onderhoud | reguliere service-checks |
+| hypoid gear oil | hypoid-tandwielolie | voor transaxle + differentieel |
+| multigrade engine oil | multigrade-motorolie | SAE 10W/50 bereik |
+| antifreeze | antivries / koelvloeistof-concentraat | |
+| brake fluid | remvloeistof | DOT 3 = hygroscopisch |
+| DOT | DOT-classificatie | Department of Transportation, VS-norm |
+| FMVSS | FMVSS-norm | Federal Motor Vehicle Safety Standard |
+| BS | BS-norm | British Standard (BS 3151/3152 voor antivries) |
+| dipstick | peilstok | voor motor- of versnellingsbakolie |
+| hinges | scharnieren | deuren, kap, kofferbak |
+| propeller shaft | cardanas | tweedelige aandrijfas |
+| steering rack bellows | stuurhuis-balgen | rubberen beschermhoes stuurhuis |
+| balljoint gaiters | kogelscharnier-rubbers | fusee- en ophangings-kogels |
+| front hub adjustment | voorwielnaaf-afstelling | voorwiellager-speling |
+| idle speed | stationair-toerental | onbelast toerental |
+| dwell angle | sluithoek | hoek waarin contactpunten gesloten zijn |
+| contact breaker points | contactpunten / onderbrekerpunten | in verdeler, mechanische ontsteking |
+| crankcase ventilation | carter-ontluchting | PCV-systeem |
+| fuel filler cap seal | tankdop-afdichting | onderdeel evaporative emission control |
+| throttle throat | gasklep-keel | binnenzijde carburateur/gasklephuis |
+| emission control system | emissie-systeem | US-spec, niet op EU-Berlina |
+| SPICA injection | SPICA-injectie | US-spec mechanische brandstofinjectie |
+| valve clearances | klepspeling | speling tussen nokkenasnok en klep |
+| cylinder head nuts | cilinderkopmoeren | natrekken na inlopen of revisie |
+| alternator drivebelt | dynamo-aandrijfriem | V-snaar bij wisselstroom-dynamo |
 
 <div style={{
   marginTop: '2rem',
