@@ -83,6 +83,12 @@ Nederlandstalige wiki gebaseerd op originele Alfa Romeo fabriek-workshop-handboe
 - [Stationair toerental & brandstof](https://alfetta-wiki.vercel.app/specificaties/stationair-brandstof-specificaties): Stationair en brandstof Alfetta 2.0: 850–1000 rpm verzegeld, CO ≤ 4,5%, brandstofpomp 0,30–0,45 kg/cm², tankinhoud Coupé 56 l / Berlina 49 l.
 - [Ontsteking-componenten & timing](https://alfetta-wiki.vercel.app/specificaties/ontsteking-componenten): Ontsteking-componenten en timing Alfetta 2.0 (016.23): statisch 7°±1° BTDC bij 850±50 rpm, max 38°±0,5° BTDC bij 5100 rpm, bougie 2,5–3,5 kgm.
 
+## Onderhoud
+
+- [Service-schema](https://alfetta-wiki.vercel.app/onderhoud/service-schema): Haynes routine maintenance schema vertaald naar het Nederlands: wekelijkse checks, service-intervallen op 8.000 / 16.000 / 24.000 km en tweejaarlijkse taken. Plus de aanbevolen smeermiddelen en vloeistoffen per systeem. Uit Haynes (aftermarket).
+- [Fout-diagnose](https://alfetta-wiki.vercel.app/onderhoud/fout-diagnose): Fault diagnosis uit Haynes: motor start niet, motor draait maar start niet, motor valt uit, motor overhit, lage oliedruk, motorgeluiden. Symptoom → mogelijke oorzaak → check. Aftermarket — gebruik samen met fabrieks-procedures.
+- [Bougies inspecteren & diagnostiek](https://alfetta-wiki.vercel.app/onderhoud/bougies-inspecteren): Bougies aflezen als diagnostisch venster op de motor: 6 condities (normaal, carbon fouling, oil fouling, oververhitting, electrode-schade, split core nose) met oorzaak en remedie. Plus gap meten en afstellen. Uit Haynes (aftermarket).
+
 ## Eigenaar
 
 - [Deze Auto](https://alfetta-wiki.vercel.app/eigenaar/deze-alfetta): Deze Alfa Romeo Alfetta 2.0 Berlina uit 1977 — type 116, RDW-bronfeiten, eigenaarsgeschiedenis en huidige staat van Serge Kroes' archief-auto.

@@ -128,3 +128,104 @@
     max-width: 100% !important;
   }
 }
+
+/* MDX-layout patterns voor tekst-figuur combinaties.
+ * Vervangt inline grid-styles zodat @media werkt (inline styles ondersteunen
+ * geen media queries). Gebruikt in koelsysteem, cardanas-revisie, onderhoud/*.
+ */
+
+/* Procedure-tekst links, ondersteunende figuur rechts.
+ * Desktop: 2 kolommen (tekst | figure).
+ * Mobiel (<640px): figuur BOVEN tekst (column-reverse van HTML-volgorde
+ * "tekst eerst, figure tweede" → visueel "figure boven, tekst onder"), minder
+ * visuele ruis wanneer schermbreedte krap is.
+ */
+.text-figure-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 260px);
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .text-figure-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.75rem;
+  }
+}
+
+/* Twee figuren naast elkaar in één rij zonder tekst-kolom. */
+.figure-pair-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 260px) minmax(220px, 260px);
+  gap: 1.5rem;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .figure-pair-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+/* Twee figuren gestapeld in rechter cel van text-figure-grid. */
+.figure-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Jargon-tabel (EN → NL vertaaltabel) op mobiel compact weergeven.
+ * Desktop: standaard 3-koloms tabel (Engels | Nederlands | Context).
+ * Mobiel: per rij "engels → nederlands" op één regel, context eronder
+ * cursief ingesprongen. Headers verborgen op mobiel.
+ */
+@media (max-width: 640px) {
+  .jargon-table-wrapper table {
+    display: block;
+    width: 100%;
+  }
+  .jargon-table-wrapper thead {
+    display: none;
+  }
+  .jargon-table-wrapper tbody {
+    display: block;
+  }
+  .jargon-table-wrapper tr {
+    display: block;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+  .jargon-table-wrapper td {
+    display: inline;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+  .jargon-table-wrapper td:nth-child(1) {
+    font-weight: 600;
+  }
+  .jargon-table-wrapper td:nth-child(1)::after {
+    content: " → ";
+    opacity: 0.5;
+    font-weight: normal;
+  }
+  .jargon-table-wrapper td:nth-child(3) {
+    display: block;
+    font-size: 0.88em;
+    opacity: 0.75;
+    font-style: italic;
+    margin-top: 0.15rem;
+    padding-left: 0.75rem;
+  }
+  .jargon-table-wrapper td:nth-child(3):empty {
+    display: none;
+  }
+}

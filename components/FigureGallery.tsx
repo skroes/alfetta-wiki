@@ -417,7 +417,7 @@ export default function FigureGallery() {
                   const x = ((e.clientX - rect.left) / rect.width) * 100
                   const y = ((e.clientY - rect.top) / rect.height) * 100
                   setZoomOrigin(`${x}% ${y}%`)
-                  setZoomLevel(lvl => (lvl + 1) % 3)
+                  setZoomLevel(lvl => (lvl + 1) % 4)
                 }}
                 onMouseMove={e => {
                   if (zoomLevel === 0) return
@@ -427,10 +427,10 @@ export default function FigureGallery() {
                   setZoomOrigin(`${x}% ${y}%`)
                 }}
                 style={{
-                  transform: `scale(${1 + zoomLevel * 0.2})`,
+                  transform: `scale(${1 + zoomLevel * 0.3})`,
                   transformOrigin: zoomOrigin,
                   transition: 'transform 0.25s ease',
-                  cursor: zoomLevel === 2 ? 'zoom-out' : 'zoom-in',
+                  cursor: zoomLevel === 3 ? 'zoom-out' : 'zoom-in',
                 }}
               />
               {selected.used_in && selected.used_in.length > 0 && (
