@@ -403,8 +403,8 @@ export default function FigureGallery() {
                 >&times;</button>
               </div>
             </div>
-            <div className="fig-lightbox-body" onClick={e => e.stopPropagation()}>
-              <div className="fig-lightbox-title">
+            <div className="fig-lightbox-body">
+              <div className="fig-lightbox-title" onClick={e => e.stopPropagation()}>
                 {selected.label}
               </div>
               <img

@@ -212,9 +212,9 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
               >✕</button>
             </div>
           </div>
-          <div className="fig-lightbox-body" onClick={e => e.stopPropagation()}>
+          <div className="fig-lightbox-body">
             {view.caption && (
-              <div className="fig-lightbox-title">
+              <div className="fig-lightbox-title" onClick={e => e.stopPropagation()}>
                 {view.caption}
               </div>
             )}
