@@ -1,7 +1,7 @@
 # Alfetta Archief — volledige content-dump
 
 > Bron: https://alfetta-wiki.vercel.app
-> Gegenereerd: 2026-04-17T07:03:31Z
+> Gegenereerd: 2026-04-17T07:14:14Z
 > Bevat alleen pagina's met frontmatter status: validated.
 > Voor structuur zie https://alfetta-wiki.vercel.app/llms.txt en https://alfetta-wiki.vercel.app/sitemap.xml
 

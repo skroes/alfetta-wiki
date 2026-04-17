@@ -167,7 +167,10 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
       {/* Lightbox — toolbar als eigen header bovenin, body met image daaronder,
           optioneel caption-strook onderin. ArrowLeft/Right of topbar-knoppen
           navigeren door alle inline figures op deze pagina, Escape sluit.
-          Klik op achtergrond (buiten toolbar/body/caption) sluit ook. */}
+          Sluiten via klik: backdrop (.fig-lightbox-bg), lege body-ruimte rond
+          image (body heeft geen stopPropagation — bubbelt door naar backdrop),
+          of ✕ knop. Klik op image (zoom), caption (niks), footer (filename/tags)
+          of toolbar (navigatie) sluit niet. */}
       {view && (
         <div className="fig-lightbox-bg" onClick={() => setView(null)}>
           <div

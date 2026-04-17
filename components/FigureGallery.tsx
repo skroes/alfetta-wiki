@@ -354,8 +354,10 @@ export default function FigureGallery() {
 
       {/* Lightbox — fullscreen: toolbar (← counter → ✕) bovenin, image in body,
           meta-footer onderin. Zelfde layout-patroon als inline Figure-lightbox
-          voor visuele consistentie. Klik op bg sluit, klik op toolbar/body/footer
-          niet (stopPropagation) behalve op expliciete sluit-triggers. */}
+          voor visuele consistentie. Sluiten via klik: backdrop, lege body-ruimte
+          rond image (body heeft geen stopPropagation — bubbelt door), of ✕ knop.
+          Klik op image (zoom), caption (niks), footer of toolbar (navigatie/
+          tags/links) sluit niet dankzij gerichte stopPropagation op die elementen. */}
       {selected && (() => {
         const idx = filtered.findIndex(f => f.id === selected.id)
         const hasPrev = idx > 0
