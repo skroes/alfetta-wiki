@@ -169,7 +169,7 @@ export default function Figure({ src, caption, alt, page, doc, float, size = 'md
           navigeren door alle inline figures op deze pagina, Escape sluit.
           Sluiten via klik: backdrop (.fig-lightbox-bg), lege body-ruimte rond
           image (body heeft geen stopPropagation — bubbelt door naar backdrop),
-          of ✕ knop. Klik op image (zoom), caption (niks), footer (filename/tags)
+          of ✕ knop. Klik op image (zoom), caption (niks), footer (filename link)
           of toolbar (navigatie) sluit niet. */}
       {view && (
         <div className="fig-lightbox-bg" onClick={() => setView(null)}>
