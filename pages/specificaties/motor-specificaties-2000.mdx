@@ -1,6 +1,6 @@
 ---
 title: "Motor-specificaties — Alfetta 2000 (016.23/016.55)"
-description: "Motor-specificaties Alfetta 2.0L: 1962 cc viercilinder, boring/slag 84×88,5 mm, compressie 9:1, 130 HP / 96 kW DIN bij 5400 rpm, 178 Nm bij 4400 rpm."
+description: "Motor-specificaties Alfetta 2.0L per motorcode: 016.23 = 120 HP DIN @ 5300 rpm (1977), 016.55 = 130 HP DIN @ 5400 rpm (vanaf juli 1978, 2000 L). Beide 1962 cc, 84×88,5 mm. Inclusief 1800cc-referentie 016.78."
 status: validated
 source:
   doc: DOC-06
@@ -13,47 +13,49 @@ tags: [motor, specificaties, vermogen, referentie]
 drafted_on: 2026-04-13
 drafted_by: "/dev4alfetta (machine-vertaling uit staging/DOC-06/pages/030.md)"
 validated_date: 2026-04-13
+revised_on: 2026-04-26
+revised_by: "/dev4alfetta (PRD278 WI-0 — wiki-brede vermogensfout hersteld)"
 validated_by: "/dev4alfetta (visuele vergelijking met DOC-06 staging)"
 ---
 
 import { SourceRef, Cite } from '../../components/SourceRef'
 
-> **Status: validated** (2026-04-13). Gevalideerd uit DOC-06 staging p30 — Group 01 Engine Assembly.
+> **Status: validated** (2026-04-13, gecorrigeerd 2026-04-26 — PRD278 WI-0). Gevalideerd uit DOC-06 staging p30 — Group 01 Engine Assembly.
 
 # Motor-specificaties — Alfetta 2000
 
-> **TL;DR** — 2.0L viercilinder lijnmotor, 84×88,5 mm boring/slag, 1962 cc, compressieverhouding 9:1. Maximaal vermogen 130 HP / 96 kW DIN bij 5400 rpm. Maximaal koppel 18,1 kgm (178 Nm) bij 4400 rpm. <Cite p="30" />
+> **TL;DR** — Twee 2000cc-motorvarianten in de Alfetta: **016.23** (1977 t/m vroeg 1978) levert **120 HP DIN bij 5300 rpm**; **016.55** (vanaf juli 1978, 2000 L "Lusso") levert **130 HP DIN bij 5400 rpm**. Beide hebben dezelfde 84×88,5 mm boring/slag, 1962 cc en compressieverhouding 9. De 1800cc-motor **016.78** (122 HP DIN bij 5300 rpm, 80×88,5 mm, 1779 cc) staat in dezelfde tabel als referentie maar is geen 2000-variant. <Cite p="30" />
 
 ## Motorgegevens vergelijking
 
-DOC-06 geeft specificaties voor alle 2.0L motorvarianten: <Cite p="30" />
+DOC-06 p30 toont de drie motoren naast elkaar onder de gemeenschappelijke header **"1800 cc. ENGINES | 2000 cc. ENGINES"** — de 016.78-kolom is de 1800cc-referentie, de 016.23 en 016.55 zijn de twee 2000cc-uitvoeringen. <Cite p="30" />
 
-| Gegeven | 016.78 | 016.23 | 016.55 |
-|---------|--------|--------|--------|
+| Gegeven | 016.78 (1800cc) | 016.23 (2000cc) | 016.55 (2000cc) |
+|---------|-----------------|-----------------|-----------------|
 | Cyclus | Otto, 4-takt | Otto, 4-takt | Otto, 4-takt |
 | Aantal cilinders | 4 in lijn | 4 in lijn | 4 in lijn |
 | Cilinderindeling | 1–2–3–4 | 1–2–3–4 | 1–2–3–4 |
-| Boring × slag (mm) | 84 × 88,5 | 84 × 88,5 | 84 × 88,5 |
-| Cilinderinhoud (cc) | 1962 | 1962 | 1962 |
-| Verbrandingskamer (cc) | 61,3 | 61,3 | 61,3 |
-| Compressieverhouding | 9 | 9 | 9 |
-| Max. vermogen HP/kW DIN | 120 (88,2) | 130 (96) | 130 (96) |
-| Max. vermogen bij | 5300 rpm | 5400 rpm | 5400 rpm |
-| Max. koppel (kgm/Nm) DIN | 17,9 (176) | 18,1 (178) | 18,1 (178) |
+| Boring × slag (mm) | 80 × 88,5 | 84 × 88,5 | 84 × 88,5 |
+| Cilinderinhoud (cc) | 1779 | 1962 | 1962 |
+| Verbrandingskamer (cc) | 52 | 61,3 | 61,3 |
+| Compressieverhouding | 9,5 | 9 | 9 |
+| Max. vermogen HP/kW DIN | 122 (89,7) | 120 (88,2) | 130 (96) |
+| Max. vermogen bij | 5300 rpm | 5300 rpm | 5400 rpm |
+| Max. koppel (kgm/Nm) DIN | 17,0 (167) | 17,9 (176) | 18,1 (178) |
 | Max. koppel bij | 4400 rpm | 4400 rpm | 4400 rpm |
-| Gemiddelde zuigersnelheid (1) | 15,6 m/s | 15,93 m/s | 15,93 m/s |
+| Gemiddelde zuigersnelheid (1) | 15,6 m/s | 15,6 m/s | 15,93 m/s |
 
 (1) Bij maximaal vermogenstoerental. <Cite p="30" />
 
-> **Voor Serge's auto (Tipo 116.55, motor 016.23)**: 130 HP / 96 kW bij 5400 rpm — maximaal koppel 18,1 kgm (178 Nm) bij 4400 rpm.
+> ⚠️ **Voor [Serge's auto](/eigenaar/deze-alfetta) — identificatie in revisie**: huidige paginatekst gaf 130 HP @ 5400 rpm met motorcode 016.23, maar dat is intern inconsistent (016.23 = 120 HP @ 5300 per DOC-06 p30, 016.55 = 130 HP @ 5400). De juiste motorcode + bijpassend vermogen wordt vastgelegd zodra het motorstempel fysiek is afgelezen (zie staging/DOC-06 p11/12 voor stempellocatie). Tot die controle staan beide opties open: **016.23 → 120 HP DIN @ 5300 rpm, koppel 17,9 kgm / 176 Nm @ 4400 rpm**, óf **016.55 → 130 HP DIN @ 5400 rpm, koppel 18,1 kgm / 178 Nm @ 4400 rpm**.
 
 ## Motortype-identificatie
 
-| Motorcode | Uitvoering |
-|-----------|------------|
-| 016.23 | 2000 cc — geen anti-pollutie apparatuur of EEC 70/220 |
-| 016.55 | 2000 cc — EEC 70/220 strenger (anti-pollutie) |
-| 016.78 | 1800 cc variant |
+| Motorcode | Cilinderinhoud | Uitvoering |
+|-----------|----------------|------------|
+| 016.23 | 2000 cc (1962) | Geen anti-pollutie apparatuur of EEC 70/220 — 1977 t/m vroeg 1978 |
+| 016.55 | 2000 cc (1962) | EEC 70/220 strenger (anti-pollutie) — vanaf juli 1978, 2000 L (Lusso) |
+| 016.78 | **1800 cc** (1779) | Referentie-kolom op DOC-06 p30 — geen 2000-variant, gedeeld blok 1800cc-motoren |
 
 Motoren worden onderscheiden door verschillende serienummers (letters + cijfers). Zie Group 00 voor type-identificatie. <Cite p="30" />
 

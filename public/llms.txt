@@ -77,7 +77,7 @@ Nederlandstalige wiki gebaseerd op originele Alfa Romeo fabriek-workshop-handboe
 
 ## Specificaties
 
-- [Motor-specificaties 2000](https://alfetta-wiki.vercel.app/specificaties/motor-specificaties-2000): Motor-specificaties Alfetta 2.0L: 1962 cc viercilinder, boring/slag 84×88,5 mm, compressie 9:1, 130 HP / 96 kW DIN bij 5400 rpm, 178 Nm bij 4400 rpm.
+- [Motor-specificaties 2000](https://alfetta-wiki.vercel.app/specificaties/motor-specificaties-2000): Motor-specificaties Alfetta 2.0L per motorcode: 016.23 = 120 HP DIN @ 5300 rpm (1977), 016.55 = 130 HP DIN @ 5400 rpm (vanaf juli 1978, 2000 L). Beide 1962 cc, 84×88,5 mm. Inclusief 1800cc-referentie 016.78.
 - [Voertuig-identificatie 2000](https://alfetta-wiki.vercel.app/specificaties/voertuig-identificatie-2000): Voertuig-identificatie Alfetta 2.0: type 116.55 LHD of 116.56 RHD, motor 016.23. Inrijvoorschrift en rpm-limieten eerste 1500 km. DOC-04.
 - [Oliedruk & motortemperaturen](https://alfetta-wiki.vercel.app/specificaties/oliedruk-motortemperaturen): Oliedruk en motortemperaturen Alfetta 2.0: warm stationair 0,5–1 kg/cm², op 5500 rpm 3,5–5 kg/cm². Inbouwtemperatuur klepzittingen 100°C. DOC-04 p40.
 - [Stationair toerental & brandstof](https://alfetta-wiki.vercel.app/specificaties/stationair-brandstof-specificaties): Stationair en brandstof Alfetta 2.0: 850–1000 rpm verzegeld, CO ≤ 4,5%, brandstofpomp 0,30–0,45 kg/cm², tankinhoud Coupé 56 l / Berlina 49 l.
@@ -92,8 +92,8 @@ Nederlandstalige wiki gebaseerd op originele Alfa Romeo fabriek-workshop-handboe
 ## Eigenaar
 
 - [Deze Auto](https://alfetta-wiki.vercel.app/eigenaar/deze-alfetta): Deze Alfa Romeo Alfetta 2.0 Berlina uit 1977 — type 116, RDW-bronfeiten, eigenaarsgeschiedenis en huidige staat van Serge Kroes' archief-auto.
-- [Het Verhaal](https://alfetta-wiki.vercel.app/eigenaar/het-verhaal): Het verhaal van de Alfetta 2000 uit 1977: presentatie op Genève, rechthoekige koplampen, aluminium dashboardstrip met '2000'-markering — één jaar later vervangen door kunststof houtlook.
-- [Bedieningsoverzicht](https://alfetta-wiki.vercel.app/eigenaar/bedieningsoverzicht): Cockpit- en instrumentenoverzicht Alfetta 2000 uit 1977: dashboard met aluminium '2000'-strip, tumbler-klokken, verlichting, schakelaars, stuur- en pedaalopstelling.
+- [Het Verhaal](https://alfetta-wiki.vercel.app/eigenaar/het-verhaal): Het verhaal van de Alfetta 2000 uit 1977: voorjaar 1977-introductie, motor 016.23 met 120 HP DIN @ 5300 rpm (Lusso 016.55 = 130 HP @ 5400), aluminium dashboardstrip die juli 1978 plaatsmaakt voor kunststof houtlook.
+- [Bedieningsoverzicht](https://alfetta-wiki.vercel.app/eigenaar/bedieningsoverzicht): Cockpit- en instrumentenoverzicht Alfetta 2000 uit 1977: dashboard met horizontale aluminium/metallic strip (juli 1978 vervangen door kunststof houtlook-inzet), tumbler-klokken, verlichting, schakelaars, stuur- en pedaalopstelling.
 
 ## Governance
 
