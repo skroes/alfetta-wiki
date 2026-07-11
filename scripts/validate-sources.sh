@@ -20,6 +20,9 @@ green() { printf '\033[0;32m%s\033[0m\n' "$1"; }
 
 # Zoek alle .mdx bestanden (skip _meta.ts, _app.tsx, governance/)
 while IFS= read -r file; do
+    # Here-string levert bij lege find-output één lege regel
+    [ -z "$file" ] && continue
+
     rel="${file#$PAGES_DIR/}"
 
     # Skip governance pagina's en index
@@ -82,7 +85,8 @@ while IFS= read -r file; do
         ERRORS=$((ERRORS + file_errors))
     fi
 
-done < <(find "$PAGES_DIR" -name '*.mdx' -not -path '*/_*' | sort)
+# Here-string i.p.v. process substitution: Vercel's build-container mist /dev/fd
+done <<< "$(find "$PAGES_DIR" -name '*.mdx' -not -path '*/_*' | sort)"
 
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

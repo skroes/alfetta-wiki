@@ -25,11 +25,14 @@ if [ ! -f "$SITEMAP" ]; then
   exit 1
 fi
 
-# Verzamel alle URLs uit sitemap in volgorde (compat met bash 3.2 op macOS)
+# Verzamel alle URLs uit sitemap in volgorde. Here-string i.p.v. process
+# substitution: Vercel's build-container mist /dev/fd (compat blijft ook
+# met bash 3.2 op macOS).
 URLS=()
 while IFS= read -r line; do
+  [ -z "$line" ] && continue
   URLS+=("$line")
-done < <(grep -oE '<loc>[^<]+</loc>' "$SITEMAP" | sed -E 's|</?loc>||g')
+done <<< "$(grep -oE '<loc>[^<]+</loc>' "$SITEMAP" | sed -E 's|</?loc>||g')"
 
 # Output-header
 {
