@@ -1,0 +1,33 @@
+name: build
+
+# PR-gate: draait hetzelfde als de Vercel-deploy (install + prebuild-validator
+# + next build + postbuild) zodat breuk zichtbaar is vóór er iets live gaat.
+# Node en pnpm zijn gepind zodat CI en Vercel dezelfde omgeving bouwen.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Leest de pnpm-versie uit het packageManager-veld in package.json
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install (frozen lockfile, zoals Vercel)
+        run: pnpm install --frozen-lockfile
+
+      - name: Build (prebuild bronregel-validator + next build + sitemap/llms)
+        run: pnpm build
+
+      - name: Lint
+        run: pnpm lint
