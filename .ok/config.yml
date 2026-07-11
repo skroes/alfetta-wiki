@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://unpkg.com/@inkeep/open-knowledge@latest/dist/schemas/v0/config.project.schema.json
+# yaml-language-server: $schema=https://unpkg.com/@inkeep/open-knowledge@0.27.0/dist/schemas/v0/config.project.schema.json
 # OpenKnowledge — project configuration (alfetta-wiki)
 #
 # Model: internal-docs setup (2026-07-09), aangepast aan de alfetta-wiki
@@ -23,10 +23,13 @@ content:
 
 
 # --- Sync ------------------------------------------------------------------
-# auto-sync: UIT (built-in default; hier niet overriden). Publicatie loopt
-# uitsluitend via git — commit + push, Vercel bouwt. De OK-editor mag NOOIT
-# zelf syncen; nieuwe of hernoemde pagina's vereisen bovendien een handmatige
-# _meta.ts-update in dezelfde commit (OK doet dat niet).
+# auto-sync: expliciet UIT. De 0.27.0 built-in default is `null` (onboarding
+# vraagt dan alsnog een keuze) — daarom hier hard op false gepind. Publicatie
+# loopt uitsluitend via git — commit + push, Vercel bouwt. De OK-editor mag
+# NOOIT zelf syncen; nieuwe of hernoemde pagina's vereisen bovendien een
+# handmatige _meta.ts-update in dezelfde commit (OK doet dat niet).
+autoSync:
+  default: false
 
 
 # --- Server ----------------------------------------------------------------

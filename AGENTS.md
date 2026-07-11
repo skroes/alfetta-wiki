@@ -2,7 +2,7 @@
 
 > Review-regels voor Codex (lokale T2 + GitHub cloud PR-reviews).
 > Live: https://alfetta-wiki.vercel.app (noindex private wiki).
-> Werkinstructies voor AI-agents staan in CLAUDE.md / README.md.
+> Werkinstructies voor AI-agents staan in README.md en VALIDATIE.md (deze repo heeft geen CLAUDE.md).
 
 ## Scope / wanneer actief
 
