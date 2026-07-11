@@ -1,0 +1,149 @@
+/* ============================================================
+   Alfetta Archief — thema "Officina"
+
+   Volgt het kroescontrol-docs theming-patroon (Nextra primary-hue
+   override, accent-koppen, licht/donker parity) maar met eigen
+   identiteit: Alfa-rosso i.p.v. navy/royal-blue, klassieke
+   handboek-serif voor artikelkoppen, en warme papier-tinten
+   i.p.v. koel grijs. Geen externe fonts — system serif-stack.
+   ============================================================ */
+
+/* --- 1. Kleur-fundament ------------------------------------- */
+
+:root {
+  /* Nextra v3 primary → Alfa Rosso. Kleurt links, actieve
+     sidebar-items, search-highlights en focus-ringen site-breed. */
+  --nextra-primary-hue: 357deg;
+  --nextra-primary-saturation: 71%;
+  --nextra-primary-lightness: 40%;
+
+  --af-rosso: hsl(357deg 71% 40%);          /* ≈ #af1d2c — basis-accent */
+  --af-rosso-heading: hsl(357deg 62% 33%);  /* dieper, voor koppen op wit */
+  --af-paper: #faf8f4;                      /* warme papier-tint */
+  --af-paper-deep: #f1ece4;                 /* tabel-headers, zebra */
+  --af-line: #e6dfd4;                       /* warme hairline-border */
+  --af-amber: #b45309;                      /* aftermarket-accent (Haynes) */
+  --af-amber-bg: rgba(180, 83, 9, 0.08);
+}
+
+html[class~="dark"] {
+  /* Lichter + iets warmer rood zodat het op donker leesbaar blijft */
+  --nextra-primary-hue: 4deg;
+  --nextra-primary-saturation: 60%;
+  --nextra-primary-lightness: 63%;
+
+  --af-rosso: hsl(4deg 60% 63%);            /* terracotta */
+  --af-rosso-heading: hsl(4deg 62% 70%);
+  --af-paper: #1e1b18;                      /* warm antraciet, geen blauwzwart */
+  --af-paper-deep: #2a2622;
+  --af-line: #3d3833;
+  --af-amber: #d98324;
+  --af-amber-bg: rgba(217, 131, 36, 0.1);
+}
+
+/* --- 2. Typografie — werkplaatshandboek-serif ---------------- */
+
+/* Alleen artikelkoppen + logo; nav/sidebar/UI blijven sans. */
+article h1,
+article h2,
+article h3,
+article h4 {
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua',
+    Palatino, Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.008em;
+}
+
+/* H1 blijft ink (rust bovenaan de pagina), H2–H4 dragen het accent —
+   zelfde patroon als internal-docs, andere kleur en letter. */
+article h2,
+article h3,
+article h4 {
+  color: var(--af-rosso-heading) !important;
+}
+
+/* Warme hairline onder h2 i.p.v. koel neutraal-grijs */
+article h2 {
+  border-bottom-color: var(--af-line) !important;
+}
+
+/* --- 3. Tabellen — spec-tabellen als drukwerk ---------------- */
+
+article table th {
+  background: var(--af-paper-deep) !important;
+  border-color: var(--af-line) !important;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+article table td {
+  border-color: var(--af-line) !important;
+}
+
+article table tr {
+  border-color: var(--af-line) !important;
+}
+
+/* Zebra in warme papier-tint i.p.v. koel gray-100 */
+article tbody tr:nth-child(2n),
+article table tr:nth-child(2n) {
+  background: var(--af-paper) !important;
+}
+
+/* --- 4. Blockquotes (TL;DR + status) — archief-kaart ---------- */
+
+article blockquote {
+  border-left: 3px solid var(--af-rosso) !important;
+  background: var(--af-paper);
+  border-radius: 0 6px 6px 0;
+  padding: 0.15rem 1.1rem;
+  font-style: normal !important;
+}
+
+/* --- 5. Callouts -------------------------------------------- */
+
+/* Aftermarket-bron (Haynes) — amber, gedeelde klasse i.p.v.
+   per-pagina inline styles (Fase 4 harmonisatie). */
+.callout-aftermarket {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--af-amber-bg);
+  border-left: 3px solid var(--af-amber);
+  border-radius: 4px;
+  font-size: 0.88rem;
+}
+
+/* --- 6. Logo ------------------------------------------------- */
+
+.af-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua',
+    Palatino, Georgia, serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+}
+
+.af-logo img {
+  border-radius: 5px;
+  display: block;
+}
+
+.af-logo-accent {
+  color: var(--af-rosso);
+}
+
+/* --- 7. Detail-parity licht/donker ---------------------------- */
+
+/* Tekst-selectie in rosso-tint */
+article ::selection {
+  background: hsl(357deg 71% 40% / 0.18);
+}
+
+html[class~="dark"] article ::selection {
+  background: hsl(4deg 60% 63% / 0.3);
+}

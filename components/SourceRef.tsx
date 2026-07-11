@@ -13,6 +13,18 @@ type SourceProps = {
   language?: SourceLanguage
 }
 
+/** Herkenbaar label voor de archief-link (ISS-008) i.p.v. kale URL */
+function archiveLabel(url: string): string {
+  try {
+    const host = new URL(url).hostname
+    if (host.includes('drive.google')) return 'Google Drive'
+    if (host.includes('docs.google')) return 'Google Docs'
+    return host.replace(/^www\./, '')
+  } catch {
+    return 'archief'
+  }
+}
+
 /** Korte display-naam: "DOC-04" → "Alfetta Workshop Manual" */
 const DOC_DISPLAY: Record<string, string> = {
   'DOC-01': 'Haynes Alfa Romeo Alfetta Owners Workshop Manual (aftermarket)',
@@ -36,10 +48,10 @@ export function SourceRef(props: SourceProps) {
       style={{
         marginTop: '2rem',
         padding: '1rem 1.25rem',
-        borderLeft: '4px solid #cc0000',
-        background: 'rgba(204,0,0,0.06)',
+        borderLeft: '4px solid var(--af-rosso, #cc0000)',
+        background: 'var(--af-paper, rgba(204,0,0,0.06))',
         fontSize: '0.95rem',
-        borderRadius: '4px',
+        borderRadius: '0 6px 6px 0',
       }}
     >
       <div>
@@ -78,9 +90,16 @@ export function SourceRef(props: SourceProps) {
       </div>
 
       {archive_url && (
-        <div style={{ marginTop: '0.3rem', fontSize: '0.85em', opacity: 0.75 }}>
+        <div style={{ marginTop: '0.3rem', fontSize: '0.85em', opacity: 0.85 }}>
           Archief-locatie:{' '}
-          <span>{archive_url.replace(/^https?:\/\//, '').replace(/\/+$/, '')}</span>
+          <a
+            href={archive_url}
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: 'underline' }}
+          >
+            {archiveLabel(archive_url)} ↗
+          </a>
         </div>
       )}
     </aside>

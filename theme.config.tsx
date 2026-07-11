@@ -10,7 +10,14 @@ const DEFAULT_DESCRIPTION =
 const DEFAULT_OG_IMAGE = `${SITE_URL}/favicon.svg`
 
 const config: DocsThemeConfig = {
-  logo: <span style={{ fontWeight: 600 }}>Alfetta Archief</span>,
+  logo: (
+    <span className="af-logo">
+      <img src="/favicon.svg" alt="" width={22} height={22} />
+      <span>
+        Alfetta <span className="af-logo-accent">Archief</span>
+      </span>
+    </span>
+  ),
   project: {
     link: 'https://github.com/skroes/alfetta-wiki'
   },
