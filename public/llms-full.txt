@@ -1,7 +1,7 @@
 # Alfetta Archief — volledige content-dump
 
 > Bron: https://alfetta-wiki.vercel.app
-> Gegenereerd: 2026-07-11T10:50:47Z
+> Gegenereerd: 2026-07-11T20:30:49Z
 > Bevat alleen pagina's met frontmatter status: validated.
 > Voor structuur zie https://alfetta-wiki.vercel.app/llms.txt en https://alfetta-wiki.vercel.app/sitemap.xml
 
@@ -90,8 +90,6 @@ Productnamen letterlijk overgenomen uit "LUBRICANTS AND SEALANTS". Hoeveelheid a
 | Contactvlakken van bovendeksel en dashboard (contact faces of top cover and dash) | Afdichtmiddel | ICIR SIGIFLEX FR | Voldoende hoeveelheid [p85] |
 | Pignon-instelkappen (pinion adjusting covers); tandheugel-instelkap (steering rack adjusting cover) — de bron groepeert beide items onder CURIL K2 [OCR onduidelijk — check scan: tabelkoppeling tussen meerdere items en productnaam] | Afdichtmiddel | CURIL K2 | Voldoende hoeveelheid [p85] |
 
-
-
 ## Jargon (EN → NL)
 
 | Engels | Nederlands | Context |
@@ -164,8 +162,6 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurhuis-hermonteren-terugplaat
 
 
 
-
-
 ## Naaldlager en afdichtring in huis
 
 1. Monteer het naaldrollager in het huis met gereedschap **A.3.0456**. [p73]
@@ -173,14 +169,10 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurhuis-hermonteren-terugplaat
 
 
 
-
-
 ## Smeren van heugel en loopvlakken
 
 1. Bereid circa **90 g BP Energrease HT-EP-OO** vet voor. [p73]
 2. Smeer hiermee de heugel, de heugel-pinion, de lagers en alle loopvlakken. [p73]
-
-
 
 ## Heugel plaatsen en pinion monteren
 
@@ -190,8 +182,6 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurhuis-hermonteren-terugplaat
 4. Controleer of de eerder verwijderde shim voldoende is om de gemeten afstand te compenseren. Monteer de shim. [p74]
 5. Wanneer deze voorwaarde niet vervuld is: vervang de shim (diverse diktes verkrijgbaar via de Onderdelenafdeling). [p74]
 6. Breng **CURIL K 2** kit aan op het draagvlak van het deksel en monteer het deksel. Draai de bevestigingsbouten aan op **1,5 kgm**. [p74]
-
-
 
 
 
@@ -209,14 +199,10 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurhuis-hermonteren-terugplaat
 6. Monteer de afdichtring op de bus. [p74]
 7. Plaats de bus, de veer en de afstandsbussen terug. Breng **CURIL K 2** aan op het deksel en monteer. Draai de bevestigingsbouten aan op **1,5 kgm**. [p74]
 
-
-
 ## Spoorstangen monteren
 
 1. Monteer de stuur-spoorstangen en draai deze aan op **4,2 kgm**, met sleutel **A.5.0202** in combinatie met een momentsleutel van **300 tot 400 mm**. [p74]
 2. Borg met de borgplaat. [p74]
-
-
 
 ## Stofbalgen en kogelgewrichten
 
@@ -225,8 +211,6 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurhuis-hermonteren-terugplaat
 3. Monteer de kogelgewrichten. Positioneer de contramoeren op de maat zoals in de bron-illustratie getoond. [p74]
 
 **Waarschuwing:** borg de contramoeren van de kogelgewrichten **pas** nadat het toespoor gecontroleerd is én de heugel gemonteerd is. [p74]
-
-
 
 
 
@@ -249,12 +233,6 @@ Plaats het stuurhuis terug in omgekeerde volgorde van verwijderen, met de volgen
 - **Kogelgewricht-contramoeren** niet borgen vóór toespoor-controle — anders moet alles opnieuw los. [p74]
 - **Stuurwielspaken symmetrisch** vóór pinion-koppeling: verkeerde fasering = scheef stuur bij rechtuit. [p75]
 - **CURIL K 2 op beide dekselvlakken** (pinion-deksel én drukbus-deksel) — zonder kit lekt olie/vet. [p74]
-
-
-
-
-
-
 
 ## Speciaal gereedschap
 
@@ -350,8 +328,6 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurhuis-verwijderen-demonteren
 
 1. Plaats de auto op een hefbrug. Voer de onderstaande handelingen uit **vóór** het opheffen. [p70]
 
-
-
 ## Stuurkolom ontkoppelen
 
 1. Verwijder de **onderste helft van de shroud** (mantelafdekking) van de stuurkolom-buis door de bevestigingsbouten los te draaien. [p70]
@@ -363,15 +339,11 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurhuis-verwijderen-demonteren
 
 
 
-
-
 ## Beschermpaneel en stuurstangen
 
 1. Open de motorkap en verwijder het beschermpaneel van het stuurhuis door de bevestigingsbouten los te draaien. [p70]
 2. Hef de auto op en ontkoppel de stuurstangen **5** van de fusees: trek de kogelgewrichten uit met gereedschap **A.3.0376** (6). [p70]
 3. Verwijder bout **7** die de onderste stuurkolom met het tandwiel (pinion) verbindt. [p70]
-
-
 
 
 
@@ -416,8 +388,6 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurhuis-verwijderen-demonteren
 
 
 
-
-
 ## Inspectie en controle
 
 Maak alle gedemonteerde delen zorgvuldig schoon en controleer dat: [p72]
@@ -427,8 +397,6 @@ Maak alle gedemonteerde delen zorgvuldig schoon en controleer dat: [p72]
 - De kogelgewrichten **niet vastgelopen** zijn. [p72]
 - De pressure bush en de rack-geleidingsbus geen tekenen van excessieve slijtage of vastzitten op hun werkoppervlakken vertonen. [p72]
 
-
-
 ## Let op
 
 - Deze procedure geldt **uitsluitend** voor het ZF-stuurhuis — niet voor BURMAN (SPICA). [p70]
@@ -437,12 +405,6 @@ Maak alle gedemonteerde delen zorgvuldig schoon en controleer dat: [p72]
 - Bescherm de rack met iets zachts in de tang-bekken — beschadiging op de tandheugel-lopervlakken is onherstelbaar. [p71]
 - Gebruik bij het uitdrijven van het tandwiel **alleen** een plastic of loden hamer — geen stalen hamer, om de tandwiel-oppervlakken niet te beschadigen. [p72]
 - Deze pagina bevat **geen hermontage**-stappen. De passage "TO REASSEMBLE" op p72 (Loctite 601, geleidingsbus inzetten met A.3.0346, kogellager op tandwiel met pers en basisgereedschap A.3.0397) hoort bij de hermontage-procedure en valt buiten deze scope. [p72]
-
-
-
-
-
-
 
 
 
@@ -462,8 +424,6 @@ Maak alle gedemonteerde delen zorgvuldig schoon en controleer dat: [p72]
 | Smeermiddel | Toepassing |
 |-------------|-----------|
 | (geen) | Het ZF tandheugel-stuurhuis en de kogelgewrichten vereisen geen smering. [p69] |
-
-
 
 ## Aandraaimomenten (uit deze procedure)
 
@@ -560,16 +520,12 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurkolom-en-deelbewerkingen
 
 
 
-
-
 ## Stuurkolom-tube demonteren en reviseren
 
 1. Klem de stuurkolom-tube in een bankschroef. [p76]
 2. Drijf de stuurkolom uit de tube met een loden of kunststof hamer, zoals afgebeeld. [p76]
 3. Trek de bussen en de afdekking uit de uiteinden van de tube met gereedschap **A.3.0402**. [p76]
 4. Trek de rubber-bus uit de onderste lug met gereedschap **A.3.0501**, basis **A.3.0492** en een pers. [p76]
-
-
 
 
 
@@ -592,8 +548,6 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurkolom-en-deelbewerkingen
 
 
 
-
-
 ## Stuurkolom-tube opnieuw opbouwen
 
 1. Plaats de rubber-bus in de onderste lug met een pers, gereedschap **A.3.0501** en basis **A.3.0492**. [p77]
@@ -602,8 +556,6 @@ Bron: https://alfetta-wiki.vercel.app/besturing/stuurkolom-en-deelbewerkingen
    - **SFERUL B2 AR** (REINACH) [p77]
 3. Klem de stuurkolom-tube in een bankschroef en plaats één kooi in de onderste zitting van de tube met gereedschap **A.3.0383**. [p77]
 4. Steek de stuurkolom in de tube en plaats de tweede bus in de bovenste zitting van de tube met gereedschap **A.3.0493** zonder de onderste cup. [p77]
-
-
 
 ## Stuurkolom hermonteren in de auto
 
@@ -627,8 +579,6 @@ Als de Vulcollan sluitringen tussen universele koppeling en stuurkolom-tube ontb
 
 
 
-
-
 ## Deelbewerkingen — overzicht
 
 Bij reparaties is het mogelijk om aan het stuurhuis en aan de stuurassemblage te werken zonder de betreffende eenheden volledig te demonteren. Uitvoerbare deelbewerkingen zijn: [p78]
@@ -641,8 +591,6 @@ Bij reparaties is het mogelijk om aan het stuurhuis en aan de stuurassemblage te
 - Verwijderen van de hoezen (gaiters) op de onderste stuurkolom-as, na verwijdering van die as. [p78]
 
 Montage van de verwijderde delen gebeurt in principe in omgekeerde volgorde. [p78]
-
-
 
 ## Flexibele koppeling op de onderste stuurkolom vervangen
 
@@ -659,21 +607,15 @@ Op auto's met een onderste stuurkolom die een flexibele koppeling bevat, kan dez
 
 
 
-
-
 ## Tie rod kogelgewrichten vervangen
 
 1. Koppel de kogelgewrichten los van de fusee (stub axle) zoals beschreven op p68. [p79]
 2. Draai de contramoeren los. Gebruik zo nodig een steeksleutel op de platte kanten van de tie rods. [p79]
 
-
-
 ## Boots (stofhoezen) op tie rods vervangen
 
 1. Verwijder de kogelgewrichten van de fusee om de boots op de tie rods te kunnen vervangen. [p79]
 2. Trek de boots weg na het verwijderen van de borgklemmen (retaining clips). [p79]
-
-
 
 ## Tie rods loskoppelen
 
@@ -684,13 +626,9 @@ Op auto's met een onderste stuurkolom die een flexibele koppeling bevat, kan dez
 
 
 
-
-
 ## Hermonteren
 
 Voor het terugplaatsen van delen die tijdens de bovenstaande deelbewerkingen zijn losgemaakt: ga in omgekeerde volgorde te werk. [p78]
-
-
 
 ## Let op
 
@@ -701,14 +639,6 @@ Voor het terugplaatsen van delen die tijdens de bovenstaande deelbewerkingen zij
 - **Molykote G op bovenste beugel** — bij hermontage de bovenste stuurkolom-bevestigingsbeugel met **Molykote G** insmeren. [p75]
 - **SIGIFLEX FR bij stuurhuis-afdekkap en flex-koppeling** — breng **SIGIFLEX FR** kit (ICIR) aan op de afdekkap van het stuurhuis bij hermontage en bij werk aan de flexibele koppeling. [p75] [p78] [p79]
 - **Rubber-bussen vervangen door roller-bussen** — bij revisie van de stuurkolom-bussen vervang elastische type bussen door roller-type bussen uit de Onderdelenafdeling. [p77]
-
-
-
-
-
-
-
-
 
 ## Speciaal gereedschap
 
@@ -730,14 +660,6 @@ Voor het terugplaatsen van delen die tijdens de bovenstaande deelbewerkingen zij
 
 
 
-
-
-
-
-
-
-
-
 ## Smeermiddelen en kitten
 
 | Product | Leverancier | Toepassing |
@@ -747,19 +669,9 @@ Voor het terugplaatsen van delen die tijdens de bovenstaande deelbewerkingen zij
 | ERGON RUBBER GREASE NO. 3 | ISECO | Vet voor zittingen van roller-kooien in stuurkolom-tube [p77] |
 | SFERUL B2 AR | REINACH | Alternatief vet voor zittingen van roller-kooien in stuurkolom-tube [p77] |
 
-
-
-
-
-
-
-
-
 ## Aandraaimomenten (uit deze procedure)
 
 [OCR onduidelijk — check scan] — p80 is blanco, p81 bevat alleen de sectie-koppen **TOOLS / TIGHTENING TORQUES / LUBRICANTS AND SEALANTS** zonder tabelinhoud, en p82 bevat alleen een tools-lijst. Concrete aandraaimomenten voor stuurkolom/stuurhuis vallen buiten p75-82 en horen op een aparte specs-pagina. [p80] [p81] [p82]
-
-
 
 
 
@@ -871,7 +783,7 @@ Bron: RDW kentekencheck.
 
 ## Tipo & Motor — wat de codes betekenen
 
-Deze auto is officieel **Tipo 116.55**, motor **016.23**. Beide codes zijn opgebouwd volgens een vast patroon uit de fabriek-documentatie.
+Deze auto is officieel **Tipo 116.55**. De bij dit type en bouwjaar (1977) horende motorcode is **016.23**, maar de fysieke verificatie via het motornummer-stempel op het cilinderblok staat nog open — het kan ook **016.55** zijn (zie [Wat deze auto niet is](#wat-deze-auto-niet-is)). Beide codes zijn opgebouwd volgens een vast patroon uit de fabriek-documentatie.
 
 ### 116.55 — voertuigtype (`basistype.typevariant`)
 
@@ -3667,16 +3579,12 @@ Dit blok op p51 (boven de kop "REAR SUSPENSION / PARTIAL OPERATIONS") is het sta
 6. Controleer de correcte voertuig-/ophangingshoogte. [p51]
 7. Controleer de achterwielgeometrie. [p51]
 
-
-
 ## Achterschokbrekers losmaken
 
 1. Plaats de auto op een hefbrug. [p51]
 2. Verwijder de achterbank. Maak de rugleuning (squab) los door de bouten los te draaien die hem aan de wielkast bevestigen en door de vleugelmoeren los te draaien die bereikbaar zijn via de kofferbak. [p51]
 3. Koppel de schokbrekers los van hun bevestigingspunten op de carrosserie door de contramoeren en retaining nuts los te draaien en deze samen met de rubber bussen en cup washers (komvormige sluitringen) te verwijderen. (Zie illustraties op p44 en p45.) [p51]
 4. Hef de auto en koppel de schokbrekers los van de De Dion-as door de contramoeren en retaining nuts los te draaien en de rubber bussen **1** en cup washers **2** te verwijderen. [p51]
-
-
 
 
 
@@ -3696,8 +3604,6 @@ Dit blok op p51 (boven de kop "REAR SUSPENSION / PARTIAL OPERATIONS") is het sta
 
 
 
-
-
 ## Watts-linkage rubber-mountings vervangen
 
 1. Plaats de auto op een hefbrug. [p52]
@@ -3708,8 +3614,6 @@ Dit blok op p51 (boven de kop "REAR SUSPENSION / PARTIAL OPERATIONS") is het sta
 6. Monteer de Watts-linkage weer door de linkage aan de balance lever te koppelen en de retaining bolts in te brengen, zonder deze aan te draaien. Monteer de onderste bout van de **RH** (rechter) linkage met de kop naar de achteras toe gericht, om te voorkomen dat de bout tegen de achteras aanloopt. [p52]
 7. Verbind de Watts-linkage met de achteras door de bouten in te brengen die de linkage aan de carrosserie bevestigen en door de moer aan te brengen die de balance lever op de pivot-bout borgt, plus alle overige bouten. **Draai de bevestigingen in dit stadium niet vast.** [p52]
 8. Zet de auto in zijn normale-hoogte-positie. Draai de linkage-bevestigingsbouten vast. Draai de moer waarmee de balance lever aan de achteras is bevestigd vast, en stuik deze. [p52]
-
-
 
 ## Stub shaft, naaf en lager vervangen
 
@@ -3724,13 +3628,9 @@ Dit blok op p51 (boven de kop "REAR SUSPENSION / PARTIAL OPERATIONS") is het sta
 
 
 
-
-
 ## Schroefveren en stuitrubber verwijderen
 
 De bewerkingen voor het verwijderen van de schroefveren (road springs) en de stuitrubbers (bump rubbers) zijn beschreven op p42 en p43. Deze bewerking kan nodig zijn voor een eventuele correctie van de voertuighoogte, die bereikt kan worden door de veren te shimmen (vulringen plaatsen). [p53]
-
-
 
 ## Let op
 
@@ -3743,12 +3643,6 @@ De bewerkingen voor het verwijderen van de schroefveren (road springs) en de stu
 - Anti-roll bar uittrekken vereist het laten zakken van het versnellingsbak-/differentieel-samenstel met een column-type krik. [p52]
 - Controleer na het hermonteren de voertuighoogte en de achterwielgeometrie. [p51]
 
-
-
-
-
-
-
 ## Speciaal gereedschap
 
 Op p51-53 worden geen gereedschapscodes (A.X.XXXX / R.X.XXXX) expliciet genoemd voor deze deelbewerkingen. Wel wordt een **column-type krik** vereist om de gearbox/differential-unit te ondersteunen en te laten zakken bij het uittrekken van de anti-roll bar. [p52]
@@ -3759,16 +3653,12 @@ Op p51-53 worden geen gereedschapscodes (A.X.XXXX / R.X.XXXX) expliciet genoemd 
 
 [OCR onduidelijk — check scan] — voor genummerde gereedschapscodes (A.X.XXXX) specifiek voor achterwielophanging: zie samenvattende tool-tabel buiten p51-53.
 
-
-
 ## Smeermiddelen en borgmiddelen
 
 | Middel | Fabrikant | Toepassing | Bron |
 |--------|-----------|-----------|------|
 | NEVER SEEZ (anti-seize compound) | R. GORI | coating op Watts-linkage-bouten naar de carrosserie | [p51] |
 | MOLYKOTE BR 2 (pasta) | — | smering halfas-retaining bolts bij hermontage op stub shaft | [p51] |
-
-
 
 ## Aandraaimomenten (uit deze procedure)
 
@@ -3780,10 +3670,6 @@ Op p51-53 worden geen gereedschapscodes (A.X.XXXX / R.X.XXXX) expliciet genoemd 
 | Anti-roll bar bushes (bij rubber caps) | vastdraaien op normale rijhoogte, voorkómt lateraal verplaatsen bar (geen kgm-waarde op p51-53) | [p51] |
 
 [OCR onduidelijk — check scan] — kgm-waarden voor Watts-linkage-bouten en anti-roll bar bushes staan niet op p51-53; zie dedicated torque-tabel DOC-03.
-
-
-
-
 
 ## Jargon (EN → NL)
 
@@ -3865,8 +3751,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/achterwielophanging-demonteren
 1. Bevestig het achteras-geheel aan de werkbank en verwijder de Watts-stang van de spil. Doe dit door de bevestigingsmoer van de balansarm te verwijderen, na het **kraagwerk** (caulking) te hebben doorbroken. Verwijder ook de ring, indien aanwezig. [p47]
 2. Koppel de Watts-stang los van de balansarm door de bevestigingsmoeren te verwijderen. [p47]
 
-
-
 ## Naaf en halfas verwijderen
 
 1. Verwijder splitpen en borgmoer van de bevestigingsmoer van de halfas. [p47]
@@ -3884,15 +3768,11 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/achterwielophanging-demonteren
 
 
 
-
-
 ## Naaflager losnemen
 
 1. Verwijder het kraagwerk van de ringmoer die het naaflager borgt. Draai de ringmoer los met sleutel **A.5.0187** (3). [p48]
 2. **Let op schroefdraad-richting:** de ringmoer heeft een **linkse schroefdraad aan de linker zijde** en een **rechtse schroefdraad aan de rechter zijde**. [p48]
 3. Trek het lager uit de naaf met gereedschap **A.3.0432**, bediend met een sleutel. [p48]
-
-
 
 
 
@@ -3906,16 +3786,12 @@ Controleer de staat van de De Dion-as, Watts-stang, balansarm en alle rubber-mon
 4. Plaats de boven-ring. [p48]
 5. Kraag de rand van de rubber-montage-zitting met gereedschap **A.2.0269**. [p48]
 
-
-
 ## Rubber-bussen Watts-stang en balansarm vervangen
 
 1. Trek de bussen uit de Watts-stang met gereedschappen **A.3.0443** en **A.4.0444** en een pers. [p48]
 2. Vervang de bussen met dezelfde gereedschappen, maar breng ze in vanaf de **gekanfreerde zijde**. [p48]
 3. Trek de balansarm-bus uit met gereedschappen **A.3.0445** en **A.3.0446** en een pers. [p48]
 4. Monteer de bus met dezelfde gereedschappen, maar breng hem in vanaf de **gekanfreerde zijde**. [p48]
-
-
 
 ## Stabilisatorstang — rubber-montages smeren
 
@@ -3931,18 +3807,12 @@ Controleer dat de rubber-montages (2) die de stabilisatorstang aan de carrosseri
 
 
 
-
-
 ## Let op
 
 - Ringmoer-schroefdraad is **zijde-afhankelijk**: links = linkse schroefdraad, rechts = rechtse schroefdraad. Verwisselen = beschadiging. [p48]
 - Rubber-bussen van Watts-stang en balansarm worden altijd vanaf de **gekanfreerde zijde** ingebracht. [p48]
 - Kraagwerk op ringmoer en balansarm-moer moet **doorbroken** worden vóór losdraaien. [p47] [p48]
 - Rubber-montages stabilisatorstang niet droog monteren — altijd eerst smeren met Spagraph, Ergon Rubber Grease No. 3 of Sferul B2 AR. [p48]
-
-
-
-
 
 ## Speciaal gereedschap
 
@@ -4050,21 +3920,15 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/achterwielophanging-hermonteren
 1. Verbind de Watts-stangen met de balanshefboom. Plaats de bouten zonder ze vast te zetten. [p50]
 2. **Let op:** de onderste bout van de **rechter (RH)** Watts-stang moet zijn **kop naar de as toe** gericht hebben om aanlopen te voorkomen. [p50]
 
-
-
 ## Stabilisator aansluiten
 
 1. Plaats de stabilisator (anti-roll bar) compleet met rubber-steunen en bussen in positie en bevestig aan de carrosserie. [p50]
 2. Hef de versnellingsbak/differentieel-eenheid met een kolomkrik in combinatie met gereedschap **R.4.0150** (dat vooraf is gemonteerd) en bevestig aan de carrosserie. Draai de bevestigingsbouten aan tot **4,5 – 5,5 kgm**. [p50]
 3. Verbind de koppelstangen (links) weer met de stabilisator en draai de bevestigingsbouten aan. [p50]
 
-
-
 ## Schokdempers op carrosserie aansluiten
 
 1. Verbind de schokdempers aan de carrosserie-zijde in omgekeerde volgorde van demontage. [p50]
-
-
 
 ## As terugplaatsen
 
@@ -4077,8 +3941,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/achterwielophanging-hermonteren
 7. Coat de schokdemper-stammen met **NEVER SEEZ** compound (R. GORI) **voordat** je ze aansluit. Sluit daarna de schokdempers aan de as aan. [p50]
 
 **Opmerking:** de bron eindigt op p50 met "Also reconnect to the axle:" — vervolg staat op p51 (buiten scope van deze draft). [OCR onduidelijk — check scan p51 voor vervolg aansluitingen aan de as]
-
-
 
 ## Aandraaimomenten-overzicht
 
@@ -4118,8 +3980,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/achterwielophanging-hermonteren
 - Watts-stang rechts: onderste bout met **kop naar as toe** gericht, anders loopt hij aan. [p50]
 - Flexibele koppeling: eerst **MOLYKOTE BR 2 (±7 cm³)** in centreerzitting en rubberkap, **dan pas** aandraaien tot 4,1 – 4,5 kgm. [p50]
 - Schokdemper-stammen **vóór** aansluiten insmeren met NEVER SEEZ — staal-op-staal zonder smering vreet vast. [p50]
-
-
 
 ## Jargon (EN → NL)
 
@@ -4281,8 +4141,6 @@ Productnamen letterlijk overgenomen; per toepassing zijn de aanbevolen commerci�
 | Bouten Watts-koppeling aan carrosserie (Watts linkage to body) | Anti-seizure compound | R. GORI NEVER SEEZ [p59] |
 | Schroefdraad-uiteinde aandrijfflens (drive flange threaded end) | Beschermcompound | HOUGHTON RUST VETO 1064 [p59] |
 
-
-
 ## Jargon (EN → NL)
 
 | Engels | Nederlands | Context |
@@ -4358,8 +4216,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/achterwielophanging-verwijderen
 
 
 
-
-
 ## Watt-linkage en veren
 
 1. Koppel de transversale armen van de Watt-linkage **1** los van de carrosserie door de bevestigingsbouten **2** te verwijderen. [p45]
@@ -4385,8 +4241,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/achterwielophanging-verwijderen
 
 
 
-
-
 ## Achteras scheiden van voorste dwarsbalk
 
 1. Plaats de verwijderde onderdelen op de ramp. Scheid de achteras van de dwarsbalk door de ankerbout **1** te verwijderen. [p46]
@@ -4406,13 +4260,9 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/achterwielophanging-verwijderen
 4. Monteer de kolomkrik op gereedschap **R.4.0150** en til de versnellingsbak/differentieel-eenheid op om de bout die deze aan de carrosserie bevestigt te kunnen verwijderen. [p46]
 5. Laat het geheel tenslotte zakken zodat de stabilisatorstang kan worden uitgenomen. [p46]
 
-
-
 ## Schokbrekers losmaken van carrosserie
 
 1. Maak de schokbrekers los van hun ankerpunten aan de carrosserie: verwijder vanuit de kofferbak de vleugelmoeren die de achterkussens (rear squabs) vasthouden. Vervolg-stappen staan op p47 (zie [Achterwielophanging demonteren](/onderstel/achterwielophanging-demonteren)). [p46]
-
-
 
 
 
@@ -4422,12 +4272,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/achterwielophanging-verwijderen
 - Bij het losmaken van de voorste dwarsbalk (bouten **10**): ondersteun de achteras tijdelijk — zonder tijdelijke ondersteuning valt de eenheid. [p45]
 - Monteer de voorste dwarsbalk **tijdelijk** terug aan de carrosserie voordat je de krik verwijdert — dit draagt de versnellingsbak/achteras-eenheid tijdens het volledig uitnemen. [p46]
 - Uitlaat-demontage en versnellingsstang-loskoppeling staan beschreven op p6 van DOC-03.
-
-
-
-
-
-
 
 ## Speciaal gereedschap
 
@@ -4622,8 +4466,6 @@ De rijhoogte aan de achterzijde wordt afgesteld door de veren op te vullen (shim
 
 
 
-
-
 ## Speciaal gereedschap
 
 | Code | Toepassing |
@@ -4647,10 +4489,6 @@ De rijhoogte aan de achterzijde wordt afgesteld door de veren op te vullen (shim
 
 
 
-
-
-
-
 ## Aandraaimomenten
 
 | Bevestiging | Conditie | Bron |
@@ -4658,8 +4496,6 @@ De rijhoogte aan de achterzijde wordt afgesteld door de veren op te vullen (shim
 | Watts-link bouten aan carrosserie | Aandraaien **nadat** rijhoogte correct is afgesteld | [p63] |
 
 [OCR onduidelijk — check scan: bron geeft geen expliciete kgm-waarde voor Watts-link bouten op p60-63; koppel moet uit elders in DOC-03 komen]
-
-
 
 ## Smeermiddelen
 
@@ -4675,14 +4511,6 @@ De bron p60-63 specificeert geen smeermiddelen voor deze procedure. Voor torsies
 - **Achterzijde-correctie > 21 mm** vereist veervervanging, niet meer shimmen. [p63]
 - **Watts-link bouten aan carrosserie**: aandraaien **pas nadat** de rijhoogte op de correcte waarde is afgesteld. [p63]
 - Preparatie: **anti-rolstaven los, schokdempers los, Watts-link bouten gelost**, auto laten uitveren door enkele keren te laten wippen. [p60]
-
-
-
-
-
-
-
-
 
 ## Jargon (EN → NL)
 
@@ -4759,16 +4587,12 @@ Volg de procedure op p24, met de volgende afwijkingen:
 2. Het is **niet** nodig om de anti-roll bar te verwijderen. [p34]
 3. Het verwijderen van het wiel is **optioneel**. [p34]
 
-
-
 ## Naaf van de fusee losmaken
 
 Voer de bewerkingen op p25 en p26 uit, met de volgende afwijkingen:
 
 1. Het wiel aan de betreffende zijde van de auto **moet** worden verwijderd. [p34]
 2. Het is **niet** nodig om de remklauw te verwijderen. [p34]
-
-
 
 
 
@@ -4785,13 +4609,9 @@ Om de rubbers (mountings) voor de camber-afstelstang te verwijderen en terug te 
 7. Draai de contramoeren op de afsteller vast. [p35]
 
 
-
-
 ## Onderste draagarm verwijderen
 
 Voer de bewerkingen op p24 uit, waarbij geldt dat het **niet** nodig is om de schokbreker van de carrosserie los te maken. [p35]
-
-
 
 ## Kogelgewricht van de onderste draagarm verwijderen
 
@@ -4801,8 +4621,6 @@ Maak de onderste draagarm los van de fusee. Vervang het kogelgewricht als volgt:
 
 1. Trek het kogelgewricht uit met gereedschappen **A.3.0440** en **A.3.0441**. [p35]
 2. Plaats een nieuw kogelgewricht met gereedschappen **A.3.0440** en **A.3.0442**. [p35]
-
-
 
 ## Bovenste draagarm verwijderen
 
@@ -4815,15 +4633,11 @@ Voer de procedure voor de onderste draagarm uit, met de volgende afwijkingen:
 5. Maak de stuurstang los en volg de procedure op p25. [p35]
 6. Verwijder tot slot de bovenste draagarm door de bout los te draaien die hem aan de carrosserie bevestigt, en door de caster-afstelstang te verwijderen. [p35]
 
-
-
 ## Fusee verwijderen
 
 1. Maak de fusee los van de onderste draagarm en de bovenste draagarm. Ga te werk als voor het losmaken van de bovenste draagarm. [p35]
 2. Verwijder de kogelgewrichten van de onderste draagarm en de bovenste draagarm. Ga te werk zoals beschreven op p24 en p25. [p35]
 3. Demonteer de fusee zoals beschreven op p25. [p35]
-
-
 
 ## Dwarsbalk en torsiestaven verwijderen
 
@@ -4833,21 +4647,15 @@ Voer voor het verwijderen van de dwarsbalk (crossmember) de procedure voor het l
 2. Dezelfde procedure geldt voor beide zijden van de auto. [p35]
 3. Verwijder de dwarsbalk door de torsiestaven (torsion bars) uit hun zittingen te trekken en de bevestigingsbouten van de dwarsbalk aan de carrosserie te verwijderen. [p35]
 
-
-
 ## Hermonteren
 
 Voor het terugplaatsen van onderdelen die tijdens bovenstaande deelbewerkingen zijn losgemaakt: ga te werk in omgekeerde volgorde. [p35]
-
-
 
 ## Let op
 
 - **Controleer na iedere deelbewerking** waarbij draagarmen, torsiestaven of de fusee zijn verwijderd, de geometrie van de voorwielophanging (zie hoofdstuk voertuighoogte). [p35]
 - Het onderste kogelgewricht kan apart worden vervangen zonder de draagarm los te maken van de carrosserie en zonder de anti-roll bar te verwijderen. [p35]
 - Bij terugplaatsing van caster-stang-rubbers: zet de bovenste draagarm **1 tot 2 mm** van de rebound-pad af voordat je de moer aan de carrosserie vastdraait. [p35]
-
-
 
 ## Speciaal gereedschap
 
@@ -4871,8 +4679,6 @@ Voor het terugplaatsen van onderdelen die tijdens bovenstaande deelbewerkingen z
 
 
 
-
-
 ## Smeermiddelen
 
 [OCR onduidelijk — check scan] — p36 is blanco en p37 bevat alleen de sectietitels "TOOLS / TIGHTENING TORQUES / LUBRICANTS / ANTI-SEIZING COMPOUNDS" zonder tabelinhoud in dit paginabereik. [p36] [p37]
@@ -4883,8 +4689,6 @@ Voor het terugplaatsen van onderdelen die tijdens bovenstaande deelbewerkingen z
 ## Aandraaimomenten (uit deze procedure)
 
 [OCR onduidelijk — check scan] — de sectie "TIGHTENING TORQUES" is op p37 alleen als koptekst aanwezig; tabelgegevens vallen buiten p34-39. [p37]
-
-
 
 ## Jargon (EN → NL)
 
@@ -4950,8 +4754,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-demonteren
 
 
 
-
-
 ## Controle componenten
 
 ### Lagers, naaf en fusee
@@ -4982,8 +4784,6 @@ Controleer de rubbers van de achterste dwarsbalk en vervang indien nodig met ger
 **Let op:** voor het **extraheren** gebruik je de basis van gereedschap A.3.0423. Voor het **inzetten** gebruik je hetzelfde gereedschap in omgekeerde richting — dat bepaalt de inbouwdiepte. [p29]
 
 
-
-
 ## Onderste draagarm — bussen vervangen
 
 1. Klem de onderste draagarm in een bankschroef. Verwijder de uitstekende sluitring uit de torsiestaaf-zitting. [p29]
@@ -5012,16 +4812,12 @@ Controleer de rubbers van de achterste dwarsbalk en vervang indien nodig met ger
 - Draai de palmutter-moer aan tot **6 – 7,2 kgm**. [p30]
 
 
-
-
 ## Kogelgewricht (ball swivel) op onderste draagarm vervangen
 
 1. Om het kogelgewricht uit te drukken: gebruik een pers, gereedschap **A.3.0441** (A) en deel (B) van gereedschap **A.3.0435**. [p30]
 2. Om in te drukken: gebruik gereedschap **A.3.0442** (D) samen met deel C van **A.3.0440** en deel E van **A.3.0435**. [p30]
 3. Let op: zorg dat de uitlijnmarkering op het kogelgewricht overeenkomt met die op de zitting in de draagarm — verkeerde uitlijning beschadigt de kogel en verslechtert de werking. [p30]
 4. Monteer de verbindingsmoer aan de draagarm — nog **niet** aandraaien. [p30]
-
-
 
 
 
@@ -5035,16 +4831,11 @@ Controleer de rubbers van de achterste dwarsbalk en vervang indien nodig met ger
 - De metingen moeten voldoen aan de data op **p52** (dempings-kalibratie tabel). [p30]
 - Voorste en achterste schokbrekers van elke auto moeten samen worden **gematched** volgens de tabel op p52. [p30]
 
-
-
 ## Let op
 
 - De uitlijnmarkering op het kogelgewricht MOET samenvallen met die op de draagarm-zitting — misalignment-schade is niet te herstellen. [p30]
 - Bij vervangen rubbers achterste dwarsbalk: de **richting** van inzetten (afgeschuinde zijde) en **inbouwdiepte** worden bepaald door hoe je A.3.0423 positioneert. [p29]
 - Schokbrekers zijn gematched als voor/achter-set per auto — bij vervanging dus beide assen tegelijk beschouwen. [p30]
-
-
-
 
 ## Speciaal gereedschap
 
@@ -5163,8 +4954,6 @@ Controleer de rubbers, bussen, verbindingsstangen en stabilisatorstang. Bij verv
 
 
 
-
-
 ## Naaf op fusee monteren — klem-procedure
 
 1. Monteer het spatscherm op de fusee en borg met de moeren. [p32]
@@ -5176,14 +4965,10 @@ Controleer de rubbers, bussen, verbindingsstangen en stabilisatorstang. Bij verv
    3. Draai de moer **90° terug** en plaats de splitpen, als het gat in de as uitlijnt. Zo niet: draai de moer **zo min mogelijk** terug tot de gaten uitlijnen. [p32]
 5. Verbeter de lagerzetting door met een hamer op het uiteinde van de fusee te tikken. [p32]
 
-
-
 ## Controle na hermontage
 
 1. Controleer dat de borgring van het lager **niet vastgelopen** is. Steek een schroevendraaier in een van de radiale gaten om de speling te checken. [p32]
 2. Als de borgring **wél** vastzit: draai de moer één tandje los en tik opnieuw licht met een hamer op het uiteinde van de fusee. [p32]
-
-
 
 ## Let op
 
@@ -5191,9 +4976,6 @@ Controleer de rubbers, bussen, verbindingsstangen en stabilisatorstang. Bij verv
 - De klem-procedure (2-2,5 → 0 → 0,5-1 → 90° terug) is cruciaal voor correcte lagerspeling — niet overslaan of vereenvoudigen. [p32]
 - Roteer de naaf tijdens eerste aandraaien, anders beschadigen de rollen de banen. [p32]
 - Controle borgring met schroevendraaier is de eindcheck — overslaan = risico vastzittende lagers. [p32]
-
-
-
 
 ## Speciaal gereedschap
 
@@ -5313,8 +5095,6 @@ Productnamen letterlijk overgenomen; per toepassing staan meerdere commerciële 
 | Stabilisator-steunen (anti-roll bar supports) | Rubbervet | ISECO ERGON RUBBER GREASE N. 3; REINACH OLEOBLITZ SFERUL B2 AR | Voldoende hoeveelheid [p42] |
 | Binnenruimte tussen bus en onderste draagarm (inner space between bush and lower wishbone) | Langdurig vet | MOLYKOTE LONG TERM No. 2 | **6 g** [p42] |
 | Bouten bovenste arm; kleine bevestiging op onderste draagarm voor stabilisator-stang; torsiestaaf-splines | Anti-seizure compound | R. GORI NEVER SEEZ | Voldoende hoeveelheid [p42] |
-
-
 
 ## Jargon (EN → NL)
 
@@ -5470,15 +5250,11 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-verwijderen
 
 
 
-
-
 ## Schokbrekers ontkoppelen
 
 1. Vanuit de motorkamer: ontkoppel de schokbrekers van de carrosserie-verankeringspunten door de borgmoeren, bevestigingsmoeren, sluitring en het bijbehorende rubber buffer te verwijderen. [p26]
 2. Bij bewerking aan de **linkerzijde** van de auto: ontkoppel het expansievat eerst — dit is nodig voor de bewerking. [p26]
 3. Ontkoppel de schokbrekers van de onderste draagarmen door de bevestigingsbouten te verwijderen. [p26]
-
-
 
 
 
@@ -5491,8 +5267,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-verwijderen
 5. Verwijder het dopje over de torsiestaaf op het achterste dwarsbalk. [p26]
 6. Markeer de uitlijnings-componenten als die nog niet gemarkeerd zijn. [p26]
 7. Plaats extractor **A.3.0374** en trek de torsiestaaf uit zijn zitting. [p26]
-
-
 
 
 
@@ -5519,8 +5293,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-verwijderen
 
 
 
-
-
 ## Bovenste draagarm verwijderen
 
 1. Vanuit de motorkamer: verwijder borgmoer **1** die de caster-afstelstang aan de carrosserie bevestigt, en neem deze uit samen met sluitring **2** en rubber pad **3**. [p27]
@@ -5529,21 +5301,15 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-verwijderen
 
 
 
-
-
 ## Achterste dwarsbalk lossen
 
 1. Ontkoppel tenslotte de achterste dwarsbalk die de torsiestaven draagt, door de bevestigingsbouten te verwijderen. Hiermee is de demontage van de voorwielophanging voltooid. [p27]
-
-
 
 ## Let op
 
 - De aanduiding "linkerzijde" is gezien vanuit rijrichting (bestuurder-perspectief) — kruis-check met fig op p25 voor oriëntatie. [p26]
 - De torsiestaven zijn L/R-specifiek. Markeer bij demontage welke aan welke zijde zat — herplaatsing in verkeerde zitting leidt tot verkeerde rijhoogte.
 - De rebound-aanslag moet weg voordat je de onderste kogel volledig kunt ontlasten.
-
-
 
 ## Speciaal gereedschap
 
@@ -5611,8 +5377,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/wieluitlijning
 
 
 
-
-
 ## Voor-camber controleren en afstellen
 
 1. Controleer de camber-hoek aan beide zijden. Doelwaarde: **β = 0°20' ± 30'**. Het maximaal toegestane verschil tussen links en rechts is **0°40'**. [p64]
@@ -5620,8 +5384,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/wieluitlijning
 3. Overschrijdt de camber-hoek de specificatie: stel af door **shims te plaatsen tussen de spacer en de langsligger** waar de onderste draagarm (lower wishbone) bevestigd is. Elke shim geeft een variatie van **ca. 15'**. [p65]
 
 **Let op:** de afstelling kan **alleen in negatieve richting** uitgevoerd worden. [p65]
-
-
 
 
 
@@ -5638,13 +5400,9 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/wieluitlijning
 
 
 
-
-
 ## Stuurinslag controleren
 
 1. Met het voorwiel in volledige LH- of RH-aanslag moet de maximale hoek, gemeten aan het **buitenwiel**, **30°** zijn. [p65]
-
-
 
 ## Achter-toe-in controleren
 
@@ -5659,8 +5417,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/wieluitlijning
 
 2. Controleer de toe-in aan beide zijden — de waarde **δ voor elk wiel** moet binnen bovenstaande specificatie vallen. [p65]
 3. Het maximale verschil in toe-in tussen LH en RH zijde mag **0°10'** niet overschrijden. [p65]
-
-
 
 ## Achter-camber controleren
 
@@ -5713,12 +5469,6 @@ Niet gespecificeerd op DOC-03 p64-68. De pagina's beschrijven geometrie-controle
 - Type A vs type B achter-toe-in: **chassis 2034000 is de grens**. Type B auto's dragen een **witte verfmarkering op de as** ter identificatie. Check altijd het chassisnummer vóór afstellen. [p65]
 - Caster-afstelling: kleine variaties binnen tolerantie zijn **bewust toegestaan** om de stabiliteit bij te sturen — niet elke afwijking vraagt correctie. [p64]
 - Toe-out-kalibratie: **1 omwenteling stuurstang ≈ 35' / 3,5 mm op D-E** — onthoud deze verhouding voor snelle bijstelling. [p65]
-
-
-
-
-
-
 
 ## Jargon (EN → NL)
 
@@ -5837,10 +5587,6 @@ Bron: https://alfetta-wiki.vercel.app/remmen/achterremmen
 
 1. Test de werking van de achter-remklauwen en vervang ze indien nodig. [p93]
 
-
-
-
-
 ## Achterremmen monteren
 
 ### Hub en schijf voorbereiden
@@ -5896,22 +5642,12 @@ Bron: https://alfetta-wiki.vercel.app/remmen/achterremmen
 
 
 
-
-
-
-
 ## Let op
 
 - Het niet spanningsvrij afstellen van de handremkabel reduceert de eerder ingestelde end-float tussen binnenblok en schijf, waardoor de binnenblokken blijven aanlopen met de handrem in de niet-bediende stand. [p94]
 - Zowel "nieuw = 15 mm" als "versleten (minimum) = 7 mm" zijn inclusief metalen rugplaat — niet alleen het wrijvingsmateriaal. [p92]
 - Na montage altijd ontluchten (zie p100) — anders geen goede remwerking. [p93]
 - Bij het machinaal bewerken van de schijven geldt de 9 mm minimum-dikte en de 0,5 mm maximale afname per zijde strikt — anders schijf vervangen.
-
-
-
-
-
-
 
 ## Speciaal gereedschap
 
@@ -6225,26 +5961,12 @@ De set, geleverd compleet met alle accessoires, bestaat uit: pomp compleet **3**
 - Pakking tussen pedaalassemblage-zittingvlak en dashboardschot **altijd vervangen** na reiniging van de contactvlakken. [p97]
 - Koppelingspedaal-slag is bepaald door de plaatjes onder de twee onderste moeren bij het koppelingspedaal — vang deze op bij demontage. [p96]
 
-
-
-
-
-
-
-
-
-
-
 ## Speciaal gereedschap
 
 | Nummer | Functie | Gebruikt bij |
 |--------|---------|--------------|
 | R.2.0105 | Ontluchtpomp-set (pomp **3**, aansluitplug **4**, flexibele slang, twee transparante flessen **5** voor vloeistof-opvang) | Remsysteem ontluchten — alternatieve methode [p102] |
 | Spuit (syringe) | Afzuigen remvloeistof uit beide kamers van reservoir **3**; leegmaken rem- en koppeling-reservoirs | Hoofdcilinder/reservoir loskoppelen; pedaalassemblage demonteren [p95] |
-
-
-
-
 
 ## Smeermiddelen en afdichtmiddelen
 
@@ -6256,12 +5978,6 @@ De set, geleverd compleet met alle accessoires, bestaat uit: pomp compleet **3**
 | LONGTERM MOLYKOTE No. 2 | Smering pedaalas bij hermontage pedaalassemblage | [p96] |
 | LOWAC Perfect Seal | Afdichtmiddel op contactvlakken pedaalassemblage ↔ rembekrachtiger | [p97] |
 
-
-
-
-
-
-
 ## Aandraaimomenten
 
 | Punt | Moment (kg.m) | Bron |
@@ -6272,14 +5988,6 @@ De set, geleverd compleet met alle accessoires, bestaat uit: pomp compleet **3**
 | Remleiding-unions (rigide en flexibel) bij hermontage | 0,8 — 1 | [p98] |
 | De Dion-dwarsbalk-bevestigingsbouten (na pipe E-ingreep) | 4 — 4,5 | [p100] |
 
-
-
-
-
-
-
-
-
 ## Afstelmaten
 
 | Maat | Waarde | Bron |
@@ -6287,12 +5995,6 @@ De set, geleverd compleet met alle accessoires, bestaat uit: pomp compleet **3**
 | Koppelings-hoofdcilinder push-rod + vork — afstellengte | 99,5 mm | [p96] |
 | Koppelings-slaafcilinder — slag (bedient de vork) | 10,6 — 12,2 mm (afstelbaar via aantal plaatjes) | [p97] |
 | Hoofdcilinder-reservoir-vulniveau bij gebruik R.2.0105 | ca. drie kwart vol | [p102] |
-
-
-
-
-
-
 
 ## Jargon (EN → NL)
 
@@ -6407,13 +6109,9 @@ Bron: https://alfetta-wiki.vercel.app/remmen/handrem
 
 
 
-
-
 ## Controle
 
 1. Controleer de verwijderde onderdelen en vervang ze indien nodig. [p106]
-
-
 
 ## Hermonteren
 
@@ -6422,15 +6120,11 @@ Bron: https://alfetta-wiki.vercel.app/remmen/handrem
 3. Sluit het selecteurgestel weer aan op de koppeling. Selecteer daarvoor **5e versnelling** via de achterste selecteurhefboom op de versnellingsbak. [p106]
 4. Draai de bevestigingsmoeren van het selecteurgestel aan het koppelstuk aan tot **2 tot 3,25 kgm**. [p106]
 
-
-
 ## Veer van handremontgrendelknop vervangen
 
 1. Draai de drukknop van de bedieningsstang af. [p106]
 2. Verwijder de ring en verwijder de veer. [p106]
 3. Plaats de nieuwe veer in omgekeerde volgorde. [p106]
-
-
 
 
 
@@ -6442,15 +6136,11 @@ Bron: https://alfetta-wiki.vercel.app/remmen/handrem
 
 
 
-
-
 ## Aandraaimomenten (uit deze procedure)
 
 | Bevestiging | Koppel |
 |-------------|--------|
 | Bevestigingsmoeren selecteurgestel aan koppelstuk | 2 — 3,25 kgm [p106] |
-
-
 
 ## Jargon (EN → NL)
 
@@ -6534,27 +6224,19 @@ Gereedschappen-tabel voor het remsysteem, letterlijk uit de bron. Gereedschappen
 
 
 
-
-
 ## Aandraaimomenten
 
 De divider op p107 kondigt een Tightening-Torques-subsectie aan voor de remmen, maar de bijbehorende tabel ontbreekt in de OCR van p108-109. [p107] [OCR onduidelijk — check scan]
 
-
-
 ## Smeermiddelen, vloeistoffen en afdichtmiddelen
 
 De divider op p107 kondigt een Lubricants/Fluids/Sealants-subsectie aan voor de remmen, maar de bijbehorende tabel ontbreekt in de OCR van p108-109. [p107] [OCR onduidelijk — check scan]
-
-
 
 ## Let op
 
 - De Tools-pagina is gedateerd **March 1978** — dit kan een latere revisie zijn ten opzichte van de hoofdstuktekst (november 1975). [p108]
 - De gereedschappen met `*` zijn volgens de bron ook voor andere Alfa-modellen toepasbaar — dat is relevant bij het inventariseren van je werkplaats-uitrusting. [p108]
 - Voor remvloeistof-druk tijdens ontluchting geeft de procedure **max. 3 kg/cm²** aan, met **2,8 kg/cm²** tijdens het aflaten van vloeistof — zie procedure-pagina p103, niet deze specs-sectie. [p103]
-
-
 
 
 
@@ -6696,8 +6378,6 @@ Bron: https://alfetta-wiki.vercel.app/remmen/voorremmen
 
 
 
-
-
 ## Voorremmen monteren
 
 ### Remklauw herplaatsen
@@ -6723,10 +6403,6 @@ Bron: https://alfetta-wiki.vercel.app/remmen/voorremmen
 1. Monteer de voorremmen in omgekeerde volgorde van demontage, met de volgende aandachtspunten: [p90]
 2. Maak de remschijven zorgvuldig schoon en controleer ze zoals eerder beschreven. [p90]
 
-
-
-
-
 ## Let op
 
 - De voorremklauwen stellen zich automatisch af; niet handmatig ingrijpen in de zuigerpositie behalve met **A.2.0149** (meten) en **A.2.0355** (herstellen). [p89]
@@ -6734,12 +6410,6 @@ Bron: https://alfetta-wiki.vercel.app/remmen/voorremmen
 - Remschijven altijd **in paar** bewerken (beide voor, symmetrisch per zijde) om onbalans in remkracht links/rechts te voorkomen. [p90]
 - Stofkappen vooraf invetten met ATE Bremszylinder-vet — andere vetsoorten kunnen het rubber aantasten. [p90]
 - Na elke ingreep aan het hydraulische circuit: systeem ontluchten (zie p100). [p89]
-
-
-
-
-
-
 
 ## Speciaal gereedschap
 
@@ -6755,8 +6425,6 @@ Bron: https://alfetta-wiki.vercel.app/remmen/voorremmen
 |-------------|------------|------|
 | ATE Bremszylinder-vet | Stofkappen remklauw invetten vóór montage | [p90] |
 
-
-
 ## Aandraaimomenten
 
 | Verbinding | Moment |
@@ -6765,10 +6433,6 @@ Bron: https://alfetta-wiki.vercel.app/remmen/voorremmen
 | Toevoerleiding-adapter naar remklauw | 0,8 – 1,0 kg·m |
 
 [p89] [p90]
-
-
-
-
 
 ## Jargon (EN → NL)
 
@@ -7258,8 +6922,6 @@ De aandrijfassen zijn **symmetrisch en onderling uitwisselbaar** — de ondersta
 
 
 
-
-
 ## CV-joint hoes vervangen — hermontage
 
 1. Vervang de hoes. Pas op dat je hem niet beschadigt bij het over de splines van de aandrijfas schuiven — **tape de splines** als bescherming. [p17]
@@ -7273,15 +6935,10 @@ De aandrijfassen zijn **symmetrisch en onderling uitwisselbaar** — de ondersta
 
 
 
-
-
-
 ## Aandrijfas terugplaatsen in auto
 
 1. Sluit de aandrijfas weer aan en smeer het schroefdraad van de bevestigingsbouten met **Molykote BR 2** vet. [p18]
 2. Draai de bouten aan tot **2,8 – 3 kgm**. [p18]
-
-
 
 ## Let op
 
@@ -7291,9 +6948,6 @@ De aandrijfassen zijn **symmetrisch en onderling uitwisselbaar** — de ondersta
 - Gebruik alleen de **klemclips van Alfa Romeo Parts Department** om onbalans van de aandrijfassen te voorkomen. [p18]
 - Aandrijfassen zijn **symmetrisch en uitwisselbaar** — de procedure is identiek voor beide assen en alle 4 de CV-joints. [p18]
 - Beschadig de hoes niet bij het aanspannen van de klemclips. [p18]
-
-
-
 
 ## Speciaal gereedschap
 
@@ -7320,8 +6974,6 @@ De aandrijfassen zijn **symmetrisch en onderling uitwisselbaar** — de ondersta
 | Bevestiging | Koppel | Conditie |
 |-------------|--------|----------|
 | Aandrijfas-bouten aan remschijf-afstandsring/naaf-as | **2,8 – 3 kgm** | Draad met Molykote BR 2 [p18] |
-
-
 
 ## Jargon (EN → NL)
 
@@ -7459,11 +7111,6 @@ Productnamen letterlijk overgenomen uit "LUBRICANTS AND SEALANTS — TRANSMISSIO
 | Flywheel | Vliegwiel | Motor-vliegwiel [p21] |
 | Bi-hexagon spanner | Zeskant(dop)sleutel (twaalfkant-profiel) | 17 mm, L-vormig [p20] |
 | Circlip | Borgring | Op as van homokinetische koppeling [p18] |
-
-
-
-
-
 
 
 <SourceRef
@@ -8325,8 +7972,8 @@ Controleer op tekenen van vastzetten, hamerslagen of overmatige slijtage in het 
 |-----------|--------|---------|
 | Moer, joek aan vliegwiel-koppelingsas | **9,5 tot 10,5 Kgm** | Droog |
 | Bouten, drukplaat aan vliegwiel | **1,3 tot 1,6 Kgm** | Droog |
-| Moer, achterste schakelaar-hendel | **2,9 tot 3,8 Kgm** | Droog |
-| Hydraulische koppeling, flexibele slang aan slaafcilinder | **0,86 tot 1 Kgm** | Droog |
+| Moer, achterste schakelaar-hendel | **2,9 tot 3,6 Kgm** | Droog |
+| Hydraulische koppeling, flexibele slang aan slaafcilinder | **0,8 tot 1 Kgm** | Droog |
 
 ## Smeermiddelen koppeling
 
