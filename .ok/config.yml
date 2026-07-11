@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://unpkg.com/@inkeep/open-knowledge@latest/dist/schemas/v0/config.project.schema.json
+# OpenKnowledge — project configuration (alfetta-wiki)
+#
+# Model: internal-docs setup (2026-07-09), aangepast aan de alfetta-wiki
+# structuur. Precedence (lowest -> highest):
+#   Built-in defaults
+#     -> ~/.ok/global.yml         (user defaults)
+#     -> ./.ok/config.yml         (this file)
+
+
+# --- Content ---------------------------------------------------------------
+# dir: where the CRDT editor reads/writes documents. Relative to the project
+# root (the directory containing .ok/), NOT to this file.
+#
+# Path exclusions live in .okignore (gitignore syntax) at the project root.
+#
+# Besluit (wiki-verbetersessie 2026-07, zelfde beslissing als internal-docs
+# 2026-07-09): pages/ is de Nextra-siteroot, dus ook de OK-content-root.
+# Root-docs (AGENTS.md, README.md, VALIDATIE.md) vallen bewust buiten
+# OK-scope — die lees/bewerk je met native tools.
+content:
+  dir: pages
+
+
+# --- Sync ------------------------------------------------------------------
+# auto-sync: UIT (built-in default; hier niet overriden). Publicatie loopt
+# uitsluitend via git — commit + push, Vercel bouwt. De OK-editor mag NOOIT
+# zelf syncen; nieuwe of hernoemde pagina's vereisen bovendien een handmatige
+# _meta.ts-update in dezelfde commit (OK doet dat niet).
+
+
+# --- Server ----------------------------------------------------------------
+# Host: set via `--host` flag or `HOST` env var (default: localhost).
+# Port: set via `--port` flag or `PORT` env var (auto-allocated if unset).
+# Both are per-process runtime knobs — no `server:` schema field exists.
+
+
+# --- Appearance ------------------------------------------------------------
+# Theme for the chrome. Defaults UNSET so the existing localStorage cache
+# (`ok-theme-v1`) keeps powering FOUC-free first paint.
+#
+# appearance:
+#   theme: system            # 'light' | 'dark' | 'system'

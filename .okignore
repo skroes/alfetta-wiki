@@ -1,0 +1,35 @@
+# .okignore — alfetta-wiki (wiki-verbetersessie 2026-07)
+# Houdt de OK-indexer/editor weg van alles wat geen redigeerbare site-content is.
+# Syntax: gitignore-stijl. Content-root is pages/ (zie .ok/config.yml).
+
+# --- code & config (geen content) ---
+*.tsx
+*.ts
+*.js
+*.mjs
+_meta.ts
+components/
+scripts/
+styles/
+tsconfig.json
+next-sitemap.config.js
+next.config.mjs
+package.json
+pnpm-lock.yaml
+theme.config.tsx
+statusline.json
+.eslintrc.json
+
+# --- niet-gepubliceerde of gegenereerde content ---
+drafts/
+public/
+.next/
+.vercel/
+next-env.d.ts
+
+# --- secrets & tooling ---
+.env*
+node_modules/
+.claude/
+.codex/
+.DS_Store
