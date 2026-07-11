@@ -50,7 +50,8 @@ const config: DocsThemeConfig = {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={description} />
         <meta name="robots" content="noindex, nofollow" />
-        <meta name="theme-color" content="#cc0000" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#af1d2c" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#d97a72" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="canonical" href={url} />
 

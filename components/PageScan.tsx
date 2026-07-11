@@ -31,7 +31,7 @@ export default function PageScan({ doc, page, caption, figureId, size = 'lg' }: 
 
   return (
     <div data-figure-id={figureId} data-doc={doc} data-page={page}>
-      <Figure src={src} caption={caption} alt={alt} page={page} size={size} />
+      <Figure src={src} caption={caption} alt={alt} page={page} doc={doc} size={size} />
     </div>
   )
 }

@@ -91,6 +91,14 @@ article table tr:nth-child(2n) {
   background: var(--af-paper) !important;
 }
 
+/* Mobiele jargon-lijst (figure.css maakt rijen daar display:block
+   "kaarten" met border-separator) — zebra zou blok-ruis geven. */
+@media (max-width: 640px) {
+  article .jargon-table-wrapper tr:nth-child(2n) {
+    background: transparent !important;
+  }
+}
+
 /* --- 4. Blockquotes (TL;DR + status) — archief-kaart ---------- */
 
 article blockquote {

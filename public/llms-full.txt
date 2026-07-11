@@ -1,7 +1,7 @@
 # Alfetta Archief — volledige content-dump
 
 > Bron: https://alfetta-wiki.vercel.app
-> Gegenereerd: 2026-04-26T08:41:38Z
+> Gegenereerd: 2026-07-11T10:50:47Z
 > Bevat alleen pagina's met frontmatter status: validated.
 > Voor structuur zie https://alfetta-wiki.vercel.app/llms.txt en https://alfetta-wiki.vercel.app/sitemap.xml
 
@@ -2319,6 +2319,8 @@ Het antivries-mengsel kan worden versterkt door de concentratie te verhogen. Tap
 | **−30°C** | 1.000 | 200 | 1.200 |
 | **−40°C** | 2.200 | 450 | 2.650 |
 
+
+
 ## Koppelmomenten overzicht
 
 | Onderdeel | Koppelmoment |
@@ -3151,15 +3153,7 @@ De conditie-tabel hierboven is model-neutraal (Champion supplied voor alle Hayne
 
 
 
-<div style={{
-  marginTop: '2rem',
-  marginBottom: '0.5rem',
-  padding: '0.65rem 0.9rem',
-  background: 'rgba(202,138,4,0.09)',
-  borderLeft: '3px solid #ca8a04',
-  borderRadius: '4px',
-  fontSize: '0.88rem',
-}}>
+
   Aftermarket bron. Deze pagina komt uit de Haynes Owners Workshop Manual —
   een naslagboek van derden, geen fabriekshandleiding. De 6 bougie-condities zijn
   door Champion Sparking Plug Company aangeleverd en gelden universeel voor benzinemotoren.
@@ -3441,15 +3435,7 @@ De Haynes-tabellen zijn indicatief. Voor afstel-waarden, specificaties en proced
 
 
 
-<div style={{
-  marginTop: '2rem',
-  marginBottom: '0.5rem',
-  padding: '0.65rem 0.9rem',
-  background: 'rgba(202,138,4,0.09)',
-  borderLeft: '3px solid #ca8a04',
-  borderRadius: '4px',
-  fontSize: '0.88rem',
-}}>
+
   Aftermarket bron. Deze fault-diagnose-tabellen komen uit de Haynes Owners Workshop Manual —
   een naslagboek van derden, geen fabriekshandleiding. De tabellen zijn een indicatieve fault-tree,
   bedoeld om snel een richting te kiezen bij pech-onderweg of startweigering. Gebruik ze altijd samen met de fabrieks-procedures voor
@@ -3630,15 +3616,7 @@ Het schema op deze pagina is het **raamwerk**; de getalsmatige invulling komt ui
 
 
 
-<div style={{
-  marginTop: '2rem',
-  marginBottom: '0.5rem',
-  padding: '0.65rem 0.9rem',
-  background: 'rgba(202,138,4,0.09)',
-  borderLeft: '3px solid #ca8a04',
-  borderRadius: '4px',
-  fontSize: '0.88rem',
-}}>
+
   Aftermarket bron. Deze pagina komt uit de Haynes Owners Workshop Manual —
   een naslagboek van derden, geen fabriekshandleiding. Het schema is de combinatie van
   Alfa Romeo’s aanbeveling + aanvullingen van de Haynes-auteur. Sommige taken (emissie-systemen,
@@ -5404,8 +5382,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-terugplaatsen
 | Rechts (RH) | Blauw | D of R | voorzijde van staaf |
 | Links (LH) | Geel | S of L | voorzijde van staaf |
 
-
-
 ## Onderste draagarm
 
 1. Positioneer de onderste draagarm tegen de carrosserie. Plaats de bijbehorende afstandsbussen tussen de langsligger en de bevestigingspen van de draagarm, in lijn met de gaten voor de bevestigingsbout. [p33]
@@ -5415,8 +5391,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-terugplaatsen
 
 **Opmerking:** de bevestigingspunten van de stabilisator-links op de onderste draagarm moeten met **Never Seez** (R. Gori) gesmeerd worden. [p33]
 
-
-
 ## Fusee aansluiten
 
 1. Leg gereedschappen **A.2.0265** en **A.2.0069** klaar (zoals beschreven op p24 — zie [Voorwielophanging verwijderen](/onderstel/voorwielophanging-verwijderen)) en belast de torsiestaaf zodat **zowel de onderste draagarm als de bovenste draagarm aan de fusee gekoppeld kunnen worden**. [p33]
@@ -5424,8 +5398,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-terugplaatsen
 3. Scheid de onderste draagarm van het gereedschap. [p33]
 4. Draai de moer die het onderste kogelgewricht aan de draagarm bevestigt aan tot **1,5 – 2 kgm**. [p33]
 5. Herhaal voor de andere zijde van de auto. [p33]
-
-
 
 ## Aandraaimomenten-overzicht
 
@@ -5450,8 +5422,6 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-terugplaatsen
 - **Torsiestaaf L/R omwisselen** = verkeerde rijhoogte + gevaarlijk rijgedrag. Check markering (kleur + letter) voor montage. [p33]
 - **Spline-aantal verschilt**: 35 voor / 34 achter. De staaf past maar op één manier, maar visueel checken vóór insteken voorkomt krassen. [p33]
 - Never Seez op alle splines en boutverbindingen — staal-op-staal zonder smering vreet vast en is later niet meer los te krijgen zonder schade. [p33]
-
-
 
 ## Jargon (EN → NL)
 
@@ -8142,6 +8112,10 @@ De tandkrans en het nok-tandwiel zijn van het hypoid-type. De buitenste halfasse
 - Montagevolgorde bij herbouw: afstand nok-tandwiel instellen → voorbespanning differentieel-draaglagers instellen → tandharkspeling instellen. Zie staging p67-72 voor uitgebreide uitlijnprocedure (Blok B in SELECTIE.md). [p67]
 - Kortste halfas aan de linkerkant monteren. [p74]
 
+
+
+
+
 ## Jargon (EN → NL)
 
 | Engels | Nederlands | Context |
@@ -8198,6 +8172,8 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/hydraulisch-ontluchten
 
 > **Kwaliteitscontrole:** Als het ontluchten goed is uitgevoerd, voelt de rempedaal direct na de vrijgang hard aan zonder sponginess. Is dit niet het geval, herhaal dan de ontluchtprocedure. [p16]
 
+
+
 ## Ontluchten koppeling
 
 1. Ga op dezelfde manier te werk als bij het ontluchten van de remmen: bevestig de transparante slang op de ontluchtschroef op de verbindingsleiding 1 van de koppeling-slaafcilinder. [p17]
@@ -8218,6 +8194,8 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/hydraulisch-ontluchten
 1. Draai de aftapplug vast op het voorgeschreven moment van **1,5 tot 1,8 Kgm**. [p17]
 2. Vul de versnellingsbak-differentieel met nieuwe olie van de voorgeschreven kwaliteit en hoeveelheid (zie [Transmissievloeistoffen](/transmissie/transmissie-vloeistoffen)). [p17]
 3. Het oliepeil moet tot aan de onderkant van het vulgat komen. Draai de vulplug aan op **1,5 tot 1,8 Kgm**. [p17]
+
+
 
 ## Jargon (EN → NL)
 
@@ -8286,6 +8264,10 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/koppeling-revisie
 1. Verwijder het borgringetje 1 met borgring-tang en tik het voorste lager uit de koppelingsbehuizing met gereedschap 2 (A.3.0401). [p26]
 2. Verwijder uit de koppeling-versnellingsbak-behuizing: het ontgrendelingslager 3 van de geleidebus 4; stofafdekking 5 van het ontgrendelingshendel-huis; de ontgrendelingshendel 6 door hem los te koppelen van de kogelbout en het stofdichtsel 7 te verwijderen; verwijder dan de geleidebus. [p26]
 
+
+
+
+
 ## Inspectie
 
 ### Koppelingschijf
@@ -8305,6 +8287,8 @@ Controleer of het ontgrendelingslager 3 in goede staat is, niet luidruchtig is, 
 ### Centeerbusje
 
 Controleer op tekenen van vastzetten, hamerslagen of overmatige slijtage in het centeerbusje in de koppelingsas (voor centrering van de hoofdas). Vervang het busje indien nodig. [p26]
+
+
 
 ## Hermontage koppeling
 
@@ -8331,6 +8315,10 @@ Controleer op tekenen van vastzetten, hamerslagen of overmatige slijtage in het 
 6. Koppel de koppelingseenheid weer aan de koppeling-versnellingsbak-behuizing in omgekeerde volgorde van demontage. Draai moer 3 voor de achterste schakelaandrijfhendel aan op **2,9 tot 3,6 Kgm**. [p28]
 7. Sluit indien eerder losgekoppeld de flexibele pijp van het koppelingshydraulisch systeem aan op de slaafcilinder. Draai de moer aan op **0,8 tot 1 Kgm**. [p28]
 
+
+
+
+
 ## Aandraaimomenten koppeling
 
 | Verbinding | Moment | Toestand |
@@ -8349,6 +8337,8 @@ Controleer op tekenen van vastzetten, hamerslagen of overmatige slijtage in het 
 | Centeerbusje vliegwiel-koppelingsas | AGIP F1 GREASE 33 FD of Shell Retinax AX |
 | Achterste lager, vliegwiel-koppelingsas (borgvloeistof) | STA-LOK 1000 / Loctite A-A |
 | Vertanding, instelvorkvergrendeling koppeling | STA-LOK 400 / Loctite Nut-Lock |
+
+
 
 ## Jargon (EN → NL)
 
@@ -8409,6 +8399,8 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/koppeling-specificaties
 De koppeling wordt hydraulisch bediend en de speling wordt automatisch bijgesteld. De koppelingspedaal bedient een hoofdcilinder die wordt gevoed door een reservoir. Bij indrukken van de pedaal beweegt de vloeistofdruk de slaafcilinder-zuiger, die op zijn beurt de ontgrendelingshendel bedient. [p22]
 
 De ontgrendelingslager staat continu in contact met de membraanveer. Hierdoor is er geen speling tussen de ontgrendelingslager en de koppeling en wordt de slijtage automatisch gecompenseerd. **Periodieke afstelling van de speling is niet nodig.** [p22]
+
+
 
 ## Jargon (EN → NL)
 
@@ -8483,6 +8475,8 @@ Demonteer de uitlaatpijp zoals beschreven voor de volledige transaxle-demontage 
 3. Til de eenheid met de krik omhoog zodat de koppelingseenheid verwijderd kan worden via de ruimte tussen de carrosserie en de kruisdrager van het asframe. Draai dan bouten 6 los die de koppeling aan de koppeling-versnellingsbakbehuizing bevestigen. [p12]
 4. Schuif de koppelingseenheid 7 van de hoofdas en verwijder hem via de ruimte tussen de carrosserie en de voorste steunbeugel 8 van het asframe. [p12]
 
+
+
 ## Let op
 
 - Na revisie: vet het centeerbusje van de cardanas op de koppelingsas in met het voorgeschreven vet voor herinstallatie.
@@ -8548,6 +8542,8 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/transaxle-terugplaatsen
 7. Ontlucht het hydraulisch rem- en koppelingsysteem (zie [Hydraulisch ontluchten](/transmissie/hydraulisch-ontluchten)). [p14]
 8. Controleer en vul het oliepeil van de versnellingsbak-differentieel aan (zie [Transmissievloeistoffen](/transmissie/transmissie-vloeistoffen)). [p14]
 
+
+
 ## Terugplaatsen van alleen de versnellingsbak
 
 1. Reinig de aanligvlakken van de tussenflens en de versnellingsbak-differentieel-behuizing én de koppeling-versnellingsbak-behuizing met de voorgeschreven vloeistof. Breng de voorgeschreven afdichtmiddel aan. [p14]
@@ -8574,6 +8570,8 @@ Na montage: controleer of alle bouten in alle kruisstukken van de cardanas het c
 
 - Na herinstallatie altijd het hydraulisch systeem ontluchten — luchtbellen in het koppelingsysteem geven een "sponsig" gevoel bij de koppelingspedaal.
 - Afdichtmiddel (LOWAC PERFECT SEAL) aanbrengen op de aanligvlakken van de tussenflens na reiniging met methylated spirit of trichloorethaan. [p14]
+
+
 
 ## Jargon (EN → NL)
 
@@ -8629,6 +8627,8 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/transaxle-verwijderen
 1. Verwijder de manchet 7 van de schakelhendelbeugelhouder. [p8]
 2. Draai de schroef met ring 8 los die verbindingsstang 9 met de schakelhendel verbindt. Verwijder de moeren en ringen 10 van de flexibele koppeling van de verbindingsstang naar de achterste schakelkeuzehendel op de koppeling. Verwijder de verbindingsstang zelf. [p8]
 
+
+
 ## Stap 3 — Losse onderdelen ontkoppelen
 
 1. Ontkoppel de cardanas 1 van het koppelingsas-kruisstuk-joek door de bouten en ringen 2 los te draaien en te verwijderen met sleutel A.5.0192. [p9]
@@ -8637,6 +8637,8 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/transaxle-verwijderen
 4. Draai verbinding 6 los op de slang van de koppeling-slaafcilinder. Draai moer en ring 7 los die de slang aan de carrosserie-beugel bevestigt. [p9]
 5. Draai verbinding 8 los op de slang van het hydraulisch remsysteem. Verwijder moer en ring 9 van de steunbeugel. [p9]
 6. Ontkoppel de handrem-Bowdenkabel 10 van de hefboompjes op de remklaauwen door borgmoer en stelmoer 11 los te draaien. [p9]
+
+
 
 ## Stap 4 — Aandrijfassen losmaken en De Dion-as kantelen
 
@@ -8647,12 +8649,16 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/transaxle-verwijderen
 
 > **Tip:** Ter vergemakkelijking: bevestig afstandsstuk 9 (gereedschap A.2.0268) tussen de arm van de De Dion-as en de carrosserie; verwijder dan de hydraulische krik van de as. [p10]
 
+
+
 ## Stap 5 — Eenheid ondersteunen en verwijderen
 
 1. Ondersteun de eenheid met het speciale gereedschap 1 (R.4.0150) en een krik 2 (R.7.0010). Verwijder de bouten 8 die eerder zijn losgedraaid (zie p9). [p11]
 2. Til de eenheid op zodat de achterste rubberbushing ontlast wordt. Draai dan de bevestigingsbout 3 los en verwijder hem. [p11]
 3. Kantel de eenheid naar voren. [p11]
 4. Laat de eenheid neer en verwijder hem onder de as 4 uit. [p11]
+
+
 
 ## Let op
 
@@ -8718,6 +8724,8 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/transmissie-vloeistoffen
 ## Versnellingsbak-olie vullen
 
 De aftapplug en vulplug worden aangedraaid op **1,5 tot 1,8 Kgm**. Het oliepeil moet tot aan de onderkant van het vulgat komen. [p17]
+
+
 
 ## Remvloeistof — Belangrijk
 
@@ -8810,6 +8818,10 @@ De versnellingsbak bestaat uit drie onderdelen: [p34]
 | Selectorspindel-positioneringsballen | AGIP F1 GREASE 33 FD of Shell Retinax AX |
 | Hoofdas- en nok-as-voorste rollagers | AGIP F1 GREASE 33 FD of Shell Retinax AX |
 | Oliedichtinglippen (hoofdas en nok-as) | ISECO MOLYKOTE BR 2 |
+
+
+
+
 
 ## Jargon (EN → NL)
 

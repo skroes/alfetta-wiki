@@ -13,15 +13,18 @@ type SourceProps = {
   language?: SourceLanguage
 }
 
-/** Herkenbaar label voor de archief-link (ISS-008) i.p.v. kale URL */
-function archiveLabel(url: string): string {
+/** Herkenbaar label + gevalideerde href voor de archief-link (ISS-008).
+ * Bij een waarde die geen absolute URL is: href null → geen kapotte
+ * relatieve link, val terug op platte tekst. */
+function archiveLink(url: string): { label: string; href: string | null } {
   try {
-    const host = new URL(url).hostname
-    if (host.includes('drive.google')) return 'Google Drive'
-    if (host.includes('docs.google')) return 'Google Docs'
-    return host.replace(/^www\./, '')
+    const parsed = new URL(url)
+    const host = parsed.hostname
+    if (host.includes('drive.google')) return { label: 'Google Drive', href: parsed.href }
+    if (host.includes('docs.google')) return { label: 'Google Docs', href: parsed.href }
+    return { label: host.replace(/^www\./, ''), href: parsed.href }
   } catch {
-    return 'archief'
+    return { label: url.replace(/^https?:\/\//, '').replace(/\/+$/, ''), href: null }
   }
 }
 
@@ -89,19 +92,21 @@ export function SourceRef(props: SourceProps) {
         })}
       </div>
 
-      {archive_url && (
-        <div style={{ marginTop: '0.3rem', fontSize: '0.85em', opacity: 0.85 }}>
-          Archief-locatie:{' '}
-          <a
-            href={archive_url}
-            target="_blank"
-            rel="noreferrer"
-            style={{ textDecoration: 'underline' }}
-          >
-            {archiveLabel(archive_url)} ↗
-          </a>
-        </div>
-      )}
+      {archive_url && (() => {
+        const { label, href } = archiveLink(archive_url)
+        return (
+          <div style={{ marginTop: '0.3rem', fontSize: '0.85em', opacity: 0.85 }}>
+            Archief-locatie:{' '}
+            {href ? (
+              <a href={href} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
+                {label} ↗
+              </a>
+            ) : (
+              <span>{label}</span>
+            )}
+          </div>
+        )
+      })()}
     </aside>
   )
 }
