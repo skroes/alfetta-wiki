@@ -100,7 +100,15 @@ echo ""
 if [ $ERRORS -gt 0 ]; then
     red "FAIL — $ERRORS bronregel-schending(en) gevonden"
     exit 1
-else
-    green "PASS — alle content-pagina's voldoen aan de bronregel"
-    exit 0
 fi
+
+# Structurele gates (refs ⊆ source.pages, SourceRef == source.pages,
+# assets bestaan, eigenaarspagina's meegenomen) — zie validate-refs.py
+echo ""
+if ! python3 "$WIKI_ROOT/scripts/validate-refs.py"; then
+    red "FAIL — structurele bronverwijzing-gates geschonden (validate-refs.py)"
+    exit 1
+fi
+
+green "PASS — alle content-pagina's voldoen aan de bronregel"
+exit 0
