@@ -1,0 +1,167 @@
+/* Jargon-index — B-13: NL→EN, context op eigen regel, zebra zonder
+ * witte scheidslijnen. Kleuren via alfetta-theme.css variabelen. */
+
+.jargon-index {
+  margin-top: 1.5rem;
+}
+
+.jargon-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.jargon-toolbar input[type='search'] {
+  flex: 1 1 260px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--af-line);
+  border-radius: 6px;
+  background: var(--af-paper);
+  font-size: 0.95rem;
+}
+
+.jargon-toolbar input[type='search']:focus {
+  outline: 2px solid var(--af-rosso);
+  outline-offset: 1px;
+}
+
+.jargon-stats {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.jargon-letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.jargon-letters a {
+  min-width: 1.75rem;
+  padding: 0.15rem 0.35rem;
+  text-align: center;
+  border: 1px solid var(--af-line);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--af-rosso-heading);
+}
+
+.jargon-letters a:hover {
+  background: var(--af-paper-deep);
+}
+
+.jargon-list {
+  margin: 0;
+}
+
+.jargon-letter {
+  margin: 1.5rem 0 0.25rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--af-rosso-heading);
+  scroll-margin-top: 5rem;
+}
+
+/* Zebra op groepsniveau — geen borders, alleen tint-wissel */
+.jargon-group {
+  padding: 0.55rem 0.75rem;
+  border-radius: 6px;
+  scroll-margin-top: 5rem;
+}
+
+.jargon-group:nth-of-type(even) {
+  background: var(--af-paper-deep);
+}
+
+.jargon-group dt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.jargon-nl {
+  font-size: 1rem;
+}
+
+.jargon-en {
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.85;
+  font-size: 0.9rem;
+}
+
+.jargon-lang {
+  margin-left: 0.4rem;
+  padding: 0 0.3rem;
+  border: 1px solid var(--af-line);
+  border-radius: 3px;
+  font-style: normal;
+  font-size: 0.65rem;
+  vertical-align: 0.1rem;
+  opacity: 0.8;
+}
+
+/* Context op eigen regel onder de term (B-13) */
+.jargon-group dd {
+  margin: 0.15rem 0 0;
+  padding-left: 0;
+  font-size: 0.85rem;
+}
+
+.jargon-context {
+  display: block;
+  opacity: 0.85;
+}
+
+.jargon-links {
+  display: block;
+  font-size: 0.78rem;
+}
+
+.jargon-links a {
+  color: var(--af-rosso-heading);
+  text-decoration: none;
+}
+
+.jargon-links a:hover {
+  text-decoration: underline;
+}
+
+.jargon-doc {
+  margin-left: 0.4rem;
+  opacity: 0.6;
+}
+
+.jargon-conflict {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.78rem;
+  color: var(--af-amber);
+}
+
+.jargon-conflict a {
+  color: var(--af-amber);
+}
+
+.jargon-empty {
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 640px) {
+  .jargon-stats {
+    white-space: normal;
+  }
+
+  .jargon-group dt {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}

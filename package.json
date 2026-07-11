@@ -2,10 +2,10 @@
   "name": "alfetta-wiki",
   "version": "0.1.0",
   "private": true,
-  "description": "Publicatie-laag voor Alfetta archief (skroes/alfetta-project) — walking skeleton",
+  "description": "Publicatie-laag voor Alfetta archief (skroes/alfetta-project) \u2014 walking skeleton",
   "scripts": {
     "dev": "next dev -p 3017",
-    "prebuild": "node scripts/generate-llms-txt.js && ./scripts/validate-sources.sh",
+    "prebuild": "node scripts/generate-jargon-index.js && node scripts/generate-llms-txt.js && ./scripts/validate-sources.sh",
     "build": "next build",
     "postbuild": "next-sitemap && ./scripts/generate-llms-full.sh",
     "start": "next start -p 3017",

@@ -1,7 +1,7 @@
 # Alfetta Archief — volledige content-dump
 
 > Bron: https://alfetta-wiki.vercel.app
-> Gegenereerd: 2026-07-11T20:30:49Z
+> Gegenereerd: 2026-07-11T21:58:10Z
 > Bevat alleen pagina's met frontmatter status: validated.
 > Voor structuur zie https://alfetta-wiki.vercel.app/llms.txt en https://alfetta-wiki.vercel.app/sitemap.xml
 
@@ -724,7 +724,7 @@ Voor het terugplaatsen van delen die tijdens de bovenstaande deelbewerkingen zij
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes"
-  pages={[75, 76, 77, 78, 79, 80, 81, 82]}
+  pages={[69, 75, 76, 77, 78, 79, 80, 81, 82]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -742,6 +742,8 @@ Bron: https://alfetta-wiki.vercel.app/eigenaar/deze-alfetta
 > **Status: validated** — feiten uit RDW kentekenregister, INDEX.md, en DOC-06 p.11. Internal/private data (kenteken, aankoopdatum, eigenaar-aantal) staat alleen in het archief, niet op deze pagina.
 
 # Deze Alfetta
+
+> **TL;DR** — Alfa Romeo Alfetta 2000, bouwjaar 1977, Serie 2, Berlina/Saloon, blauw; eerste toelating NL 1 juni 1977, massa rijklaar 1.235 kg (RDW). Officieel Tipo **116.55**; de verwachte motorcode is **016.23**, maar fysieke verificatie via het blokstempel staat nog open. [p11]
 
 ## Identiteit
 
@@ -1780,7 +1782,7 @@ Test de radiateur op lekkages: [p31]
 <SourceRef
   doc="DOC-04"
   title="Alfetta Workshop Manual — Engine (publ. 2448, april 1977)"
-  pages={[5, 15, 31]}
+  pages={[5, 14, 15, 31]}
   pdf="/docs/DOC-04-engine.pdf"
   archive_url="https://drive.google.com/file/d/1o2T2skgkFZzfFDMcZ62DlK46_QG0kPte/view"
   language="en"
@@ -3872,7 +3874,7 @@ Controleer dat de rubber-montages (2) die de stabilisatorstang aan de carrosseri
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes"
-  pages={[47, 48]}
+  pages={[47, 48, 49]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -4546,7 +4548,7 @@ De bron p60-63 specificeert geen smeermiddelen voor deze procedure. Voor torsies
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes"
-  pages={[60, 61, 62, 63]}
+  pages={[60, 61, 62, 63, 68]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -4890,7 +4892,7 @@ Controleer de rubbers van de achterste dwarsbalk en vervang indien nodig met ger
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes"
-  pages={[28, 29, 30]}
+  pages={[28, 29, 30, 38, 39]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -5016,7 +5018,7 @@ Controleer de rubbers, bussen, verbindingsstangen en stabilisatorstang. Bij verv
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes"
-  pages={[31, 32]}
+  pages={[31, 32, 38]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -5121,7 +5123,7 @@ Productnamen letterlijk overgenomen; per toepassing staan meerdere commerciële 
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes (publ. 2064, november 1975)"
-  pages={[39, 40, 41, 42]}
+  pages={[38, 39, 40, 41, 42]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -5340,7 +5342,7 @@ Bron: https://alfetta-wiki.vercel.app/onderstel/voorwielophanging-verwijderen
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes"
-  pages={[26, 27]}
+  pages={[26, 27, 39]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -6032,7 +6034,7 @@ De set, geleverd compleet met alle accessoires, bestaat uit: pomp compleet **3**
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes (publ. 2064, november 1975)"
-  pages={[95, 96, 97, 98, 99, 100, 101, 102]}
+  pages={[95, 96, 97, 98, 99, 100, 101, 102, 103]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -6260,7 +6262,7 @@ De divider op p107 kondigt een Lubricants/Fluids/Sealants-subsectie aan voor de 
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes (publ. 2064, november 1975)"
-  pages={[108, 109]}
+  pages={[103, 107, 108, 109]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -6993,7 +6995,7 @@ De aandrijfassen zijn **symmetrisch en onderling uitwisselbaar** — de ondersta
 <SourceRef
   doc="DOC-03"
   title="Alfetta Workshop Manual — Transmission/Suspension/Steering/Brakes"
-  pages={[17, 18]}
+  pages={[6, 17, 18]}
   pdf="/docs/DOC-03-transmission-suspension-steering-brakes.pdf"
   archive_url="https://drive.google.com/file/d/11GPcK6-deb0ykBMwIGsVnG35R_zjSpEM/view"
   language="en"
@@ -7787,7 +7789,7 @@ De tandkrans en het nok-tandwiel zijn van het hypoid-type. De buitenste halfasse
 <SourceRef
   doc="DOC-05"
   title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
-  pages={[60, 81]}
+  pages={[60, 65, 67, 74, 81]}
   pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
   archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
   language="en"
@@ -8146,7 +8148,7 @@ Demonteer de uitlaatpijp zoals beschreven voor de volledige transaxle-demontage 
 <SourceRef
   doc="DOC-05"
   title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
-  pages={[12]}
+  pages={[12, 14]}
   pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
   archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
   language="en"
@@ -8337,7 +8339,7 @@ Bron: https://alfetta-wiki.vercel.app/transmissie/transaxle-verwijderen
 <SourceRef
   doc="DOC-05"
   title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
-  pages={[8, 9, 10, 11]}
+  pages={[8, 9, 10, 11, 14]}
   pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
   archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
   language="en"
@@ -8392,7 +8394,7 @@ Gebruik uitsluitend vloeistof uit **nieuwe, verzegelde blikken**. Open blikken p
 <SourceRef
   doc="DOC-05"
   title="Alfetta Workshop Manual — Clutch/Gearbox/Differential (publ. 1681, jan 1973)"
-  pages={[21]}
+  pages={[16, 17, 21]}
   pdf="/docs/DOC-05-clutch-gearbox-diff.pdf"
   archive_url="https://drive.google.com/file/d/1IX39WZCEpzccGRB7Gm9Kf45raBl3YBK_/view"
   language="en"

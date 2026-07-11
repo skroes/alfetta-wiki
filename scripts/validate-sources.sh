@@ -31,7 +31,8 @@ while IFS= read -r file; do
     fi
 
     # Skip catalogus/index pagina's (geen artikel-bronregel)
-    if [[ "$rel" == "bronnen.mdx" ]] || [[ "$rel" == "figuren.mdx" ]]; then
+    # jargon.mdx is een aggregaat van al-gevalideerde blokken (fase 7)
+    if [[ "$rel" == "bronnen.mdx" ]] || [[ "$rel" == "figuren.mdx" ]] || [[ "$rel" == "jargon.mdx" ]]; then
         continue
     fi
 

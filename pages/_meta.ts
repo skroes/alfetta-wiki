@@ -10,5 +10,6 @@ export default {
   eigenaar: 'Eigenaar',
   bronnen: 'Bronnen',
   figuren: 'Figuren',
+  jargon: 'Jargon',
   governance: 'Governance'
 }
