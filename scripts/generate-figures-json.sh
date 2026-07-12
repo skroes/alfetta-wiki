@@ -28,11 +28,22 @@ if [[ $# -eq 0 ]]; then
 fi
 
 if [[ "$1" == "--all" ]]; then
+    # Unie van crops-dirs (public/figures/doc-*) en page-scan-dirs met
+    # daadwerkelijke <PageScan>-placements — DOCs zonder crops (bv. DOC-05,
+    # DOC-01) krijgen anders nooit een manifest (task461-reconciliatie).
     DOCS=()
     for d in "$FIGURES_ROOT"/doc-*; do
         [[ -d "$d" ]] || continue
-        DOCS+=("$(basename "$d" | tr '[:lower:]' '[:upper:]' | sed 's/DOC-/DOC-/')")
+        DOCS+=("$(basename "$d" | tr '[:lower:]' '[:upper:]')")
     done
+    while IFS= read -r placed_doc; do
+        found=0
+        for existing in "${DOCS[@]}"; do
+            [[ "$existing" == "$placed_doc" ]] && found=1 && break
+        done
+        [[ $found -eq 0 ]] && DOCS+=("$placed_doc")
+    done < <(grep -rhoE '<PageScan[^>]*doc="[^"]*"' "$PAGES_ROOT" --include="*.mdx" 2>/dev/null \
+             | sed -n 's/.*doc="\([^"]*\)".*/\1/p' | sort -u)
 else
     DOCS=("$@")
 fi
@@ -47,8 +58,16 @@ for DOC_CODE in "${DOCS[@]}"; do
     out_file="$out_dir/figures.json"
 
     if [[ ! -d "$fig_dir" ]]; then
-        echo "[$DOC_CODE] geen $fig_dir — overslaan"
-        continue
+        # Geen crops, maar mogelijk wél page-scans (DOC-05, DOC-01): manifest
+        # met alleen page-scan entries. Lege crops-dir aanmaken zodat de
+        # crop-loop en de wiki-public kopie ongewijzigd werken.
+        if [[ -d "$WIKI_ROOT/public/pages/$DOC_CODE" ]]; then
+            echo "[$DOC_CODE] geen crops — manifest met alleen page-scans"
+            mkdir -p "$fig_dir"
+        else
+            echo "[$DOC_CODE] geen $fig_dir en geen page-scans — overslaan"
+            continue
+        fi
     fi
     mkdir -p "$out_dir"
 
